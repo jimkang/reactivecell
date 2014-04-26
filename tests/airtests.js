@@ -1,5 +1,8 @@
+require('approvals').mocha(__dirname + '/approvals/airreaction');
+
 var airReactionFactory = require('../reactions/airreaction');
 var assert = require('assert');
+var _ = require('lodash');
 
 // cellCross in a cross formation.
 var cellCross = [
@@ -29,10 +32,10 @@ var reactions = {};
 
 suite('Cross formation', function cellCrossSuite() {
   test('A reaction should be created with flow coefficient 0.5', 
-    function testCreateEqualibriumReaction() {
-      reactions.airEquilibrium = airReactionFactory();
-      assert.equal(typeof reactions.airEquilibrium, 'function');
-      assert.equal(reactions.airEquilibrium.opts().flowCoeff, 0.5);
+    function testCreateDefaultReaction() {
+      reactions.airDefault = airReactionFactory();
+      assert.equal(typeof reactions.airDefault, 'function');
+      assert.equal(reactions.airDefault.opts().flowCoeff, 0.5);
     }
   );
 
@@ -68,38 +71,39 @@ suite('Cross formation', function cellCrossSuite() {
     assert.ok(Math.abs(a - b) <= tolerance, message);
   }
 
-  test('With an equilibrium reaction, ' +
-    'pressure should oscillate between the center and arm cells',
-    function testEquilibrium() {      
-      for (var i = 0; i < 100; ++i) {
-        console.log('Iteration ' + i);
+  function applyReactionToCrossCells(reaction, cellCross) {
+    var centerCell = cellCross[0];
+    var armCells = cellCross.slice(1);
+    armCells.forEach(function reactWithArmCell(armCell, i) {
+      reaction(centerCell, armCell, i, 4);
+    });
+    armCells.forEach(function reactWithCenterCell(armCell) {
+      reaction(armCell, centerCell, 0, 1);
+    });
+  }
 
+  test('With an Default reaction, ' +
+    'pressure should oscillate between the center and arm cells',
+    function testDefault() {
+      var cellCrossResults = [];
+
+      for (var i = 0; i < 100; ++i) {
         cellCross.forEach(function updateP(cell) {
           cell.p = cell.newP;
         });
 
-        reactions.airEquilibrium(cellCross[0], cellCross[1], 0, 4);
-        reactions.airEquilibrium(cellCross[0], cellCross[2], 1, 4);
-        reactions.airEquilibrium(cellCross[0], cellCross[3], 2, 4);
-        reactions.airEquilibrium(cellCross[0], cellCross[4], 3, 4);
-
-        reactions.airEquilibrium(cellCross[1], cellCross[0], 0, 1);
-        reactions.airEquilibrium(cellCross[2], cellCross[0], 0, 1);
-        reactions.airEquilibrium(cellCross[3], cellCross[0], 0, 1);
-        reactions.airEquilibrium(cellCross[4], cellCross[0], 0, 1);
+        applyReactionToCrossCells(reactions.airDefault, cellCross);
 
         var totalP = cellCross.reduce(addToP, 0);
         assertTolerance(totalP, 14, 0.00001,
           'The total p of the cells changed in iteration ' + i + '. ' + 
           'It is now ' + totalP + '.');
 
-        cellCross.forEach(function printNewP(cell) {
-          console.log(cell.newP);
-        });
+        cellCrossResults.push(_.cloneDeep(cellCross));
       }
+
+      this.verify(JSON.stringify(cellCrossResults, null, '  '));
     }
   );
 
 });
-
-
