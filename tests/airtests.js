@@ -82,7 +82,7 @@ suite('Cross formation', function cellCrossSuite() {
     });
   }
 
-  test('With an Default reaction, ' +
+  test('With a default reaction, ' +
     'pressure should oscillate between the center and arm cells',
     function testDefault() {
       var cellCrossResults = [];
@@ -102,7 +102,7 @@ suite('Cross formation', function cellCrossSuite() {
         cellCrossResults.push(_.cloneDeep(cellCross));
       }
 
-      this.verify(JSON.stringify(cellCrossResults, null, '  '));
+      this.verifyAsJSON(cellCrossResults);
     }
   );
 
