@@ -133,4 +133,17 @@ suite('Cross formation', function cellCrossSuite() {
   );
 
 
+  test('With a slosh reaction, ' +
+    'pressure should oscillate rapidly between the center and arm cells',
+    function testSlosh() {
+      var cellCrossResults = applyReactions({
+        formation: _.cloneDeep(cellCross),
+        reaction: reactions.airSlosh,
+        applyReactionToFormation: applyReactionToCrossCells,
+        iterations: 100
+      });
+
+      this.verifyAsJSON(cellCrossResults);
+    }
+  );
 });
