@@ -146,4 +146,19 @@ suite('Cross formation', function cellCrossSuite() {
       this.verifyAsJSON(cellCrossResults);
     }
   );
+
+  test('With a faster-than-default reaction, ' +
+    'pressure should oscillate between the center and arm cells',
+    function test0_6() {
+      var cellCrossResults = applyReactions({
+        formation: _.cloneDeep(cellCross),
+        reaction: reactions.air0_6,
+        applyReactionToFormation: applyReactionToCrossCells,
+        iterations: 100
+      });
+
+      this.verifyAsJSON(cellCrossResults);
+    }
+  );
+
 });
