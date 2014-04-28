@@ -8,29 +8,40 @@ var _ = require('lodash');
 var cellCross = [
   {
     name: 'c_2_2',
-    newP: 5
+    p: 5
   },
   {
     name: 'c_3_2',
-    newP: 3
+    p: 3
   },
   {
     name: 'c_2_1',
-    newP: 1
+    p: 1
   },
   {
     name: 'c_1_2',
-    newP: 3
+    p: 3
   },
   {
     name: 'c_2_3',
-    newP: 2
+    p: 2
   }
 ];
+
+function initCell(cell) {
+  if (!cell.newP) {
+    cell.newP = cell.p;
+  }
+}
+
 
 var reactions = {};
 
 suite('Cross formation', function cellCrossSuite() {
+  before(function initCells() {
+    cellCross.forEach(initCell);
+  });
+
   test('A reaction should be created with flow coefficient 0.5', 
     function testCreateDefaultReaction() {
       reactions.airDefault = airReactionFactory();
@@ -82,28 +93,44 @@ suite('Cross formation', function cellCrossSuite() {
     });
   }
 
+  function updateP(cell) {
+    cell.p = cell.newP;
+  }
+
+  function applyReactions(opts) {
+    var resultFormations = [];
+    var initialTotalP = opts.formation.reduce(addToP, 0);
+
+    for (var i = 0; i < opts.iterations; ++i) {
+      opts.applyReactionToFormation(opts.reaction, opts.formation);
+      resultFormations.push(_.cloneDeep(opts.formation));
+      checkTotalPressureInFormation(opts.formation, i, initialTotalP);
+
+      opts.formation.forEach(updateP);
+    }
+    return resultFormations;
+  }
+
+  function checkTotalPressureInFormation(formation, iteration, expectedTotal) {
+    var totalP = formation.reduce(addToP, 0);
+    assertTolerance(totalP, expectedTotal, 0.00001,
+      'The total p of the cells changed in iteration ' + iteration + '. ' + 
+      'It is now ' + totalP + '.');
+  }
+
   test('With a default reaction, ' +
     'pressure should oscillate between the center and arm cells',
     function testDefault() {
-      var cellCrossResults = [];
-
-      for (var i = 0; i < 100; ++i) {
-        cellCross.forEach(function updateP(cell) {
-          cell.p = cell.newP;
-        });
-
-        applyReactionToCrossCells(reactions.airDefault, cellCross);
-
-        var totalP = cellCross.reduce(addToP, 0);
-        assertTolerance(totalP, 14, 0.00001,
-          'The total p of the cells changed in iteration ' + i + '. ' + 
-          'It is now ' + totalP + '.');
-
-        cellCrossResults.push(_.cloneDeep(cellCross));
-      }
+      var cellCrossResults = applyReactions({
+        formation: _.cloneDeep(cellCross),
+        reaction: reactions.airDefault,
+        applyReactionToFormation: applyReactionToCrossCells,
+        iterations: 100
+      });
 
       this.verifyAsJSON(cellCrossResults);
     }
   );
+
 
 });
