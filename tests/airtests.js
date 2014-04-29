@@ -161,4 +161,18 @@ suite('Cross formation', function cellCrossSuite() {
     }
   );
 
+  test('With a slow flow reaction, ' +
+    'pressure should eventually reach equalibrium between all cells',
+    function testSlowFlow() {
+      var cellCrossResults = applyReactions({
+        formation: _.cloneDeep(cellCross),
+        reaction: reactions.airSlowFlow,
+        applyReactionToFormation: applyReactionToCrossCells,
+        iterations: 100
+      });
+
+      this.verifyAsJSON(cellCrossResults);
+    }
+  );
+
 });
