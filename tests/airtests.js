@@ -128,6 +128,11 @@ suite('Cross formation', function cellCrossSuite() {
     return (~~(n * factor))/factor;
   }
 
+  function roundCell(cell) {
+    cell.p = roundToPlaces(cell.p, 3);
+    cell.newP = roundToPlaces(cell.newP, 3);
+  }
+
   function applyReactions(opts) {
     var resultCells = [];
     var initialTotalP = opts.coords.map(opts.cellmap.getCell).reduce(addToP, 0);
@@ -141,12 +146,9 @@ suite('Cross formation', function cellCrossSuite() {
     }
     
     // Round cell values for the purpose of reporting in approvals so that 
-    // rounding diffs don't trigger a test failure.
+    // rounding diffs don't trigger a test failure.    
     resultCells.forEach(function roundCellGroup(cellGroup) {
-      cellGroup.forEach(function roundCell(cell) {
-        cell.p = roundToPlaces(cell.p, 3);
-        cell.newP = roundToPlaces(cell.newP, 3);
-      });
+      cellGroup.forEach(roundCell);
     });
 
     return resultCells;
