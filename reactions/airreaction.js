@@ -13,9 +13,8 @@ function createAirReaction(opts) {
       var pDiff = cell.p - neighbor.p;
       var flow = opts.flowCoeff * pDiff;
       flow = clamp(flow, 0, cell.p/neighborCount);
-      // console.log(cell.name, flow);
       cell.newP -= flow;
-      neighbor.newP += + flow;
+      neighbor.newP += flow;
     }
   };
 
