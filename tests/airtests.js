@@ -133,11 +133,11 @@ suite('Cross formation', function cellCrossSuite() {
     var initialTotalP = opts.coords.map(opts.cellmap.getCell).reduce(addToP, 0);
 
     for (var i = 0; i < opts.iterations; ++i) {
-      var cells = opts.coords.map(opts.cellmap.getCell);
-      cells.forEach(updateP);
       applyReactionToCoords(opts.reaction, opts.coords);
+      var cells = opts.coords.map(opts.cellmap.getCell);
       checkTotalPressureInFormation(cells, i, initialTotalP);
       resultCells.push(_.cloneDeep(cells));      
+      cells.forEach(updateP);
     }
     
     // Round cell values for the purpose of reporting in approvals so that 
