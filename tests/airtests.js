@@ -3,45 +3,22 @@ require('approvals').mocha(__dirname + '/approvals/airreaction');
 var airReactionFactory = require('../reactions/airreaction');
 var assert = require('assert');
 var _ = require('lodash');
+var cellmapmaker = require('cellmap');
 
-// cellCross in a cross formation.
-var cellCross = [
-  {
-    name: 'c_2_2',
-    p: 5
-  },
-  {
-    name: 'c_3_2',
-    p: 3
-  },
-  {
-    name: 'c_2_1',
-    p: 1
-  },
-  {
-    name: 'c_1_2',
-    p: 3
-  },
-  {
-    name: 'c_2_3',
-    p: 2
-  }
+var cellCrossMap = null;
+
+// The cells are arranged in a cross formation.
+var cellCoords = [
+  [2, 2],
+  [3, 2],
+  [2, 1],
+  [1, 2],
+  [2, 3]
 ];
-
-function initCell(cell) {
-  if (!cell.newP) {
-    cell.newP = cell.p;
-  }
-}
-
 
 var reactions = {};
 
-suite('Cross formation', function cellCrossSuite() {
-  before(function initCells() {
-    cellCross.forEach(initCell);
-  });
-
+suite('Reaction creation', function reactionCreationSuite() {
   test('A reaction should be created with flow coefficient 0.5', 
     function testCreateDefaultReaction() {
       reactions.airDefault = airReactionFactory();
@@ -73,6 +50,54 @@ suite('Cross formation', function cellCrossSuite() {
       assert.equal(reactions.airSlosh.opts().flowCoeff, 1.0);
     }
   );
+});
+
+suite('Cross formation', function cellCrossSuite() {
+  beforeEach(function setUpCrossMap() {
+    cellCrossMap = cellmapmaker.createMap({size: [4, 4]});
+    cellCrossMap.addCells([
+      [
+        {
+          name: 'c_2_2',
+          p: 5,
+          newP: 5
+        },
+        [2, 2]
+      ],
+      [
+        {
+          name: 'c_3_2',
+          p: 3,
+          newP: 3
+        },
+        [3, 2]
+      ],
+      [
+        {
+          name: 'c_2_1',
+          p: 1,
+          newP: 1
+        },
+        [2, 1]
+      ],
+      [
+        {
+          name: 'c_1_2',
+          p: 3,
+          newP: 3
+        },
+        [1, 2]
+      ],
+      [
+        {
+          name: 'c_2_3',
+          p: 2,
+          newP: 2
+        },
+        [2, 3]
+      ]
+    ]);
+  });
 
   function addToP(sum, cell) {
     return sum + cell.p;
@@ -82,14 +107,15 @@ suite('Cross formation', function cellCrossSuite() {
     assert.ok(Math.abs(a - b) <= tolerance, message);
   }
 
-  function applyReactionToCrossCells(reaction, cellCross) {
-    var centerCell = cellCross[0];
-    var armCells = cellCross.slice(1);
-    armCells.forEach(function reactWithArmCell(armCell, i) {
-      reaction(centerCell, armCell, i, 4);
-    });
-    armCells.forEach(function reactWithCenterCell(armCell) {
-      reaction(armCell, centerCell, 0, 1);
+  function applyReactionToCoords(reaction, cellCoords) {
+    cellCoords.forEach(function applyReactionToNeighbors(coord) {
+      var actingCell = cellCrossMap.getCell(coord);
+      var neighbors = _.compact(cellCrossMap.getNeighbors(coord));
+      // console.log('neighbors.length', neighbors.length)
+      neighbors.forEach(applyReactionToNeighbor);
+      function applyReactionToNeighbor(neighbor, neighborNumber) {
+        reaction(actingCell, neighbor, neighborNumber, neighbors.length);
+      }
     });
   }
 
@@ -97,18 +123,33 @@ suite('Cross formation', function cellCrossSuite() {
     cell.p = cell.newP;
   }
 
+  function roundToPlaces(n, places) {
+    var factor = Math.pow(10, places);
+    return (~~(n * factor))/factor;
+  }
+
   function applyReactions(opts) {
-    var resultFormations = [];
-    var initialTotalP = opts.formation.reduce(addToP, 0);
+    var resultCells = [];
+    var initialTotalP = opts.coords.map(opts.cellmap.getCell).reduce(addToP, 0);
 
     for (var i = 0; i < opts.iterations; ++i) {
-      opts.applyReactionToFormation(opts.reaction, opts.formation);
-      resultFormations.push(_.cloneDeep(opts.formation));
-      checkTotalPressureInFormation(opts.formation, i, initialTotalP);
-
-      opts.formation.forEach(updateP);
+      var cells = opts.coords.map(opts.cellmap.getCell);
+      cells.forEach(updateP);
+      applyReactionToCoords(opts.reaction, opts.coords);
+      checkTotalPressureInFormation(cells, i, initialTotalP);
+      resultCells.push(_.cloneDeep(cells));      
     }
-    return resultFormations;
+    
+    // Round cell values for the purpose of reporting in approvals so that 
+    // rounding diffs don't trigger a test failure.
+    resultCells.forEach(function roundCellGroup(cellGroup) {
+      cellGroup.forEach(function roundCell(cell) {
+        cell.p = roundToPlaces(cell.p, 3);
+        cell.newP = roundToPlaces(cell.newP, 3);
+      });
+    });
+
+    return resultCells;
   }
 
   function checkTotalPressureInFormation(formation, iteration, expectedTotal) {
@@ -122,9 +163,9 @@ suite('Cross formation', function cellCrossSuite() {
     'pressure should oscillate between the center and arm cells',
     function testDefault() {
       var cellCrossResults = applyReactions({
-        formation: _.cloneDeep(cellCross),
         reaction: reactions.airDefault,
-        applyReactionToFormation: applyReactionToCrossCells,
+        cellmap: cellCrossMap,
+        coords: cellCoords,
         iterations: 100
       });
 
@@ -137,9 +178,9 @@ suite('Cross formation', function cellCrossSuite() {
     'pressure should oscillate rapidly between the center and arm cells',
     function testSlosh() {
       var cellCrossResults = applyReactions({
-        formation: _.cloneDeep(cellCross),
         reaction: reactions.airSlosh,
-        applyReactionToFormation: applyReactionToCrossCells,
+        cellmap: cellCrossMap,
+        coords: cellCoords,
         iterations: 100
       });
 
@@ -151,9 +192,9 @@ suite('Cross formation', function cellCrossSuite() {
     'pressure should oscillate between the center and arm cells',
     function test0_6() {
       var cellCrossResults = applyReactions({
-        formation: _.cloneDeep(cellCross),
         reaction: reactions.air0_6,
-        applyReactionToFormation: applyReactionToCrossCells,
+        cellmap: cellCrossMap,
+        coords: cellCoords,
         iterations: 100
       });
 
@@ -165,9 +206,9 @@ suite('Cross formation', function cellCrossSuite() {
     'pressure should eventually reach equalibrium between all cells',
     function testSlowFlow() {
       var cellCrossResults = applyReactions({
-        formation: _.cloneDeep(cellCross),
         reaction: reactions.airSlowFlow,
-        applyReactionToFormation: applyReactionToCrossCells,
+        cellmap: cellCrossMap,
+        coords: cellCoords,
         iterations: 100
       });
 
