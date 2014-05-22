@@ -19,6 +19,34 @@ var cellCoords = [
   [2, 3]
 ];
 
+var cellLegend = {
+  a: {
+    name: 'c_2_2',
+    p: 5,
+    newP: 5
+  },
+  b: {
+    name: 'c_3_2',
+    p: 3,
+    newP: 3
+  },
+  c: {
+    name: 'c_2_1',
+    p: 1,
+    newP: 1
+  },
+  d: {
+    name: 'c_1_2',
+    p: 3,
+    newP: 3
+  },
+  e: {
+    name: 'c_2_3',
+    p: 2,
+    newP: 2
+  }
+};
+
 var reactions = {};
 
 suite('Reaction creation', function reactionCreationSuite() {
@@ -56,50 +84,35 @@ suite('Reaction creation', function reactionCreationSuite() {
 });
 
 suite('Cross formation', function cellCrossSuite() {
-  beforeEach(function setUpCrossMap() {
+  beforeEach(function setUpCrossMap(setupDone) {
     cellCrossMap = cellmapmaker.createMap({size: [4, 4]});
-    cellCrossMap.addCells([
-      [
-        {
-          name: 'c_2_2',
-          p: 5,
-          newP: 5
-        },
-        [2, 2]
-      ],
-      [
-        {
-          name: 'c_3_2',
-          p: 3,
-          newP: 3
-        },
-        [3, 2]
-      ],
-      [
-        {
-          name: 'c_2_1',
-          p: 1,
-          newP: 1
-        },
-        [2, 1]
-      ],
-      [
-        {
-          name: 'c_1_2',
-          p: 3,
-          newP: 3
-        },
-        [1, 2]
-      ],
-      [
-        {
-          name: 'c_2_3',
-          p: 2,
-          newP: 2
-        },
-        [2, 3]
-      ]
-    ]);
+
+    var mapStream = Writable({objectMode: true});
+    var cell
+    mapStream._write = function addCells(cellTokens, enc, next) {
+      var cellPacks = cellTokens.forEach(function cellPackForToken(cellToken) {
+        // TODO: Transform stream for to look up keys in legend and return 
+        // cell contents?
+        var cell = cellLegend[cellToken.key];
+        if (cell) {
+          cellCrossMap.addCell(_.cloneDeep(cell), cellToken.coords);
+        }
+      });
+      next();
+    };
+    var fileStream = fs.createReadStream(
+      __dirname + '/data/' + 'airtests-cross-map.txt', {encoding: 'utf8'}
+    );
+    var parserStream = createMapParserStream({
+      batchSize: 1
+    });
+
+    fileStream.pipe(parserStream);
+    parserStream.pipe(mapStream);
+    
+    parserStream.on('end', function onParseEnd() {
+      setupDone();
+    });
   });
 
   function addToP(sum, cell) {
