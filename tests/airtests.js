@@ -4,6 +4,9 @@ var airReactionFactory = require('../reactions/airreaction');
 var assert = require('assert');
 var _ = require('lodash');
 var cellmapmaker = require('cellmap');
+var createMapParserStream = require('roguemap-parse-stream');
+var Writable = require('stream').Writable;
+var fs = require('fs');
 
 var cellCrossMap = null;
 
