@@ -17,16 +17,6 @@ function assembleCell(data, coords) {
   };
 }
 
-// The cells are arranged in a cross formation.
-var cellCoords = [
-  [2, 2],
-  [3, 2],
-  [2, 1],
-  [1, 2],
-  [2, 3]
-];
-// TODO: Infer this from the map instead of listing coords.
-
 var cellLegend = {
   a: {
     name: 'c_2_2',
@@ -138,10 +128,9 @@ suite('Cross formation', function cellCrossSuite() {
     assert.ok(Math.abs(a - b) <= tolerance, message);
   }
 
-  function applyReactionToCoords(reaction, cellCoords) {
-    cellCoords.forEach(function applyReactionToNeighbors(coord) {
-      var actingCell = cellCrossMap.getCell(coord);
-      var neighbors = _.filter(cellCrossMap.getNeighbors(coord), 
+  function applyReactionToCells(reaction, cells, cellmap) {
+    cells.forEach(function applyReactionToNeighbors(actingCell) {
+      var neighbors = _.filter(cellmap.getNeighbors(actingCell.coords), 
         function isDataNonNull(neighbor) {
           return neighbor.d;
         }
@@ -173,13 +162,20 @@ suite('Cross formation', function cellCrossSuite() {
 
   function applyReactions(opts) {
     var resultCells = [];
-    var initialTotalP = opts.coords.map(opts.cellmap.getCell).reduce(addToP, 0);
+    var initialTotalP = opts.cellmap.interestingCells().reduce(addToP, 0);
 
     for (var i = 0; i < opts.iterations; ++i) {
-      applyReactionToCoords(opts.reaction, opts.coords);
-      var cells = opts.coords.map(opts.cellmap.getCell);
+      var cells = opts.cellmap.interestingCells();
+      applyReactionToCells(opts.reaction, cells, opts.cellmap);
       checkTotalPressureInFormation(cells, i, initialTotalP);
-      resultCells.push(_.cloneDeep(cells));      
+      var comparisonCells = _.cloneDeep(cells);
+      resultCells.push([
+          comparisonCells[2],
+          comparisonCells[3],
+          comparisonCells[0],
+          comparisonCells[1],
+          comparisonCells[4]
+        ]);
       cells.forEach(updateP);
     }
     
@@ -205,7 +201,6 @@ suite('Cross formation', function cellCrossSuite() {
       var cellCrossResults = applyReactions({
         reaction: reactions.airDefault,
         cellmap: cellCrossMap,
-        coords: cellCoords,
         iterations: 100
       });
 
@@ -220,7 +215,6 @@ suite('Cross formation', function cellCrossSuite() {
       var cellCrossResults = applyReactions({
         reaction: reactions.airSlosh,
         cellmap: cellCrossMap,
-        coords: cellCoords,
         iterations: 100
       });
 
@@ -234,7 +228,6 @@ suite('Cross formation', function cellCrossSuite() {
       var cellCrossResults = applyReactions({
         reaction: reactions.air0_6,
         cellmap: cellCrossMap,
-        coords: cellCoords,
         iterations: 100
       });
 
@@ -248,7 +241,6 @@ suite('Cross formation', function cellCrossSuite() {
       var cellCrossResults = applyReactions({
         reaction: reactions.airSlowFlow,
         cellmap: cellCrossMap,
-        coords: cellCoords,
         iterations: 100
       });
 
