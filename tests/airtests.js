@@ -10,6 +10,13 @@ var fs = require('fs');
 
 var cellCrossMap = null;
 
+function assembleCell(data, coords) {
+  return {
+    d: _.cloneDeep(data),
+    coords: _.cloneDeep(coords)
+  };
+}
+
 // The cells are arranged in a cross formation.
 var cellCoords = [
   [2, 2],
@@ -18,6 +25,7 @@ var cellCoords = [
   [1, 2],
   [2, 3]
 ];
+// TODO: Infer this from the map instead of listing coords.
 
 var cellLegend = {
   a: {
@@ -84,6 +92,13 @@ suite('Reaction creation', function reactionCreationSuite() {
 });
 
 suite('Cross formation', function cellCrossSuite() {
+  before(function setUpReactions() {
+      reactions.airDefault = airReactionFactory();
+      reactions.air0_6 = airReactionFactory({flowCoeff: 0.6});
+      reactions.airSlowFlow = airReactionFactory({flowCoeff: 0.1});
+      reactions.airSlosh = airReactionFactory({flowCoeff: 1.0});
+  });
+
   beforeEach(function setUpCrossMap(setupDone) {
     cellCrossMap = cellmapmaker.createMap({size: [4, 4]});
 
@@ -93,9 +108,9 @@ suite('Cross formation', function cellCrossSuite() {
       var cellPacks = cellTokens.forEach(function cellPackForToken(cellToken) {
         // TODO: Transform stream for to look up keys in legend and return 
         // cell contents?
-        var cell = cellLegend[cellToken.key];
-        if (cell) {
-          cellCrossMap.addCell(_.cloneDeep(cell), cellToken.coords);
+        var cellData = cellLegend[cellToken.key];
+        if (cellData) {
+          cellCrossMap.setCell(assembleCell(cellData, cellToken.coords));
         }
       });
       next();
@@ -116,7 +131,7 @@ suite('Cross formation', function cellCrossSuite() {
   });
 
   function addToP(sum, cell) {
-    return sum + cell.p;
+    return sum + cell.d.p;
   }
 
   function assertTolerance(a, b, tolerance, message) {
@@ -126,17 +141,24 @@ suite('Cross formation', function cellCrossSuite() {
   function applyReactionToCoords(reaction, cellCoords) {
     cellCoords.forEach(function applyReactionToNeighbors(coord) {
       var actingCell = cellCrossMap.getCell(coord);
-      var neighbors = _.compact(cellCrossMap.getNeighbors(coord));
+      var neighbors = _.filter(cellCrossMap.getNeighbors(coord), 
+        function isDataNonNull(neighbor) {
+          return neighbor.d;
+        }
+      );
       // console.log('neighbors.length', neighbors.length)
       neighbors.forEach(applyReactionToNeighbor);
       function applyReactionToNeighbor(neighbor, neighborNumber) {
-        reaction(actingCell, neighbor, neighborNumber, neighbors.length);
+        // Don't try to react to non-existent neighbors.
+        if (actingCell.d && neighbor.d) {
+          reaction(actingCell.d, neighbor.d, neighborNumber, neighbors.length);
+        }
       }
     });
   }
 
   function updateP(cell) {
-    cell.p = cell.newP;
+    cell.d.p = cell.d.newP;
   }
 
   function roundToPlaces(n, places) {
@@ -145,8 +167,8 @@ suite('Cross formation', function cellCrossSuite() {
   }
 
   function roundCell(cell) {
-    cell.p = roundToPlaces(cell.p, 3);
-    cell.newP = roundToPlaces(cell.newP, 3);
+    cell.d.p = roundToPlaces(cell.d.p, 3);
+    cell.d.newP = roundToPlaces(cell.d.newP, 3);
   }
 
   function applyReactions(opts) {

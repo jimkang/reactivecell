@@ -8,12 +8,12 @@ function createAirReaction(opts) {
   opts = opts ? opts : {};
   _.defaults(opts, {flowCoeff: 0.5});
 
-  function airReaction(cell, neighbor, neighborIndex, neighborCount) {
-    if (!cell.inert) {
-      var pDiff = cell.p - neighbor.p;
+  function airReaction(cellData, neighbor, neighborIndex, neighborCount) {
+    if (!cellData.inert) {
+      var pDiff = cellData.p - neighbor.p;
       var flow = opts.flowCoeff * pDiff;
-      flow = clamp(flow, 0, cell.p/neighborCount);
-      cell.newP -= flow;
+      flow = clamp(flow, 0, cellData.p/neighborCount);
+      cellData.newP -= flow;
       neighbor.newP += flow;
     }
   };
