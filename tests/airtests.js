@@ -169,13 +169,7 @@ suite('Cross formation', function cellCrossSuite() {
       applyReactionToCells(opts.reaction, cells, opts.cellmap);
       checkTotalPressureInFormation(cells, i, initialTotalP);
       var comparisonCells = _.cloneDeep(cells);
-      resultCells.push([
-          comparisonCells[2],
-          comparisonCells[3],
-          comparisonCells[0],
-          comparisonCells[1],
-          comparisonCells[4]
-        ]);
+      resultCells.push(comparisonCells);
       cells.forEach(updateP);
     }
     
