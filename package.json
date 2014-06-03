@@ -4,7 +4,7 @@
   "description": "A cellular automata module that uses a quadtree as storage.",
   "main": "app.js",
   "scripts": {
-    "test": "make test",
+    "test": "make testview",
     "dtest": "mocha debug --ui tdd -R spec tests/airtests.js"
   },
   "keywords": [
