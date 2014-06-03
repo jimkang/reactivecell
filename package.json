@@ -15,7 +15,8 @@
   "dependencies": {
     "d3": "3.0.0",
     "lodash": "2.4.1",
-    "cellmap": "~0.4.0"
+    "cellmap": "~0.4.0",
+    "cellseriesviewer": "~0.1.1"
   },
   "author": "Jim Kang",
   "license": "ISC",
