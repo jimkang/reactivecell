@@ -2,49 +2,7 @@ require('approvals').mocha(__dirname + '/approvals/airreaction');
 
 var airReactionFactory = require('../reactions/airreaction');
 var assert = require('assert');
-var _ = require('lodash');
-var cellmapmaker = require('cellmap');
-var createMapParserStream = require('roguemap-parse-stream');
-var Writable = require('stream').Writable;
-var fs = require('fs');
 var fixtures = require('./airtests-fixtures');
-
-var cellCrossMap = null;
-
-function assembleCell(data, coords) {
-  return {
-    d: _.cloneDeep(data),
-    coords: _.cloneDeep(coords)
-  };
-}
-
-var cellLegend = {
-  a: {
-    name: 'c_2_2',
-    p: 5,
-    newP: 5
-  },
-  b: {
-    name: 'c_3_2',
-    p: 3,
-    newP: 3
-  },
-  c: {
-    name: 'c_2_1',
-    p: 1,
-    newP: 1
-  },
-  d: {
-    name: 'c_1_2',
-    p: 3,
-    newP: 3
-  },
-  e: {
-    name: 'c_2_3',
-    p: 2,
-    newP: 2
-  }
-};
 
 var reactions = {};
 
@@ -91,34 +49,16 @@ suite('Cross formation', function cellCrossSuite() {
   });
 
   beforeEach(function setUpCrossMap(setupDone) {
-    cellCrossMap = cellmapmaker.createMap({size: [4, 4]});
-
-    var mapStream = Writable({objectMode: true});
-    var cell
-    mapStream._write = function addCells(cellTokens, enc, next) {
-      var cellPacks = cellTokens.forEach(function cellPackForToken(cellToken) {
-        // TODO: Transform stream for to look up keys in legend and return 
-        // cell contents?
-        var cellData = cellLegend[cellToken.key];
-        if (cellData) {
-          cellCrossMap.setCell(assembleCell(cellData, cellToken.coords));
-        }
-      });
-      next();
-    };
-    var fileStream = fs.createReadStream(
-      __dirname + '/data/' + 'airtests-cross-map.txt', {encoding: 'utf8'}
+    fixtures.loadMap(
+      {
+        mapSize: [4, 4],
+        mapFilename: 'airtests-cross-map.txt'
+      },
+      function done(error, map) {
+        cellCrossMap = map;
+        setupDone();
+      }
     );
-    var parserStream = createMapParserStream({
-      batchSize: 1
-    });
-
-    fileStream.pipe(parserStream);
-    parserStream.pipe(mapStream);
-    
-    parserStream.on('end', function onParseEnd() {
-      setupDone();
-    });
   });
 
   test('With a default reaction, ' +

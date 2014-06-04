@@ -1,6 +1,12 @@
 var assert = require('assert');
 var _ = require('lodash');
 
+var cellmapmaker = require('cellmap');
+var createMapParserStream = require('roguemap-parse-stream');
+var Writable = require('stream').Writable;
+var fs = require('fs');
+var cellCrossMap = null;
+
 function addToP(sum, cell) {
   return sum + cell.d.p;
 }
@@ -70,6 +76,74 @@ function checkTotalPressureInFormation(formation, iteration, expectedTotal) {
     'It is now ' + totalP + '.');
 }
 
+
+var cellLegend = {
+  a: {
+    name: 'c_2_2',
+    p: 5,
+    newP: 5
+  },
+  b: {
+    name: 'c_3_2',
+    p: 3,
+    newP: 3
+  },
+  c: {
+    name: 'c_2_1',
+    p: 1,
+    newP: 1
+  },
+  d: {
+    name: 'c_1_2',
+    p: 3,
+    newP: 3
+  },
+  e: {
+    name: 'c_2_3',
+    p: 2,
+    newP: 2
+  }
+};
+
+function loadMap(opts, done) {
+  cellCrossMap = cellmapmaker.createMap({size: opts.mapSize});
+
+  var mapStream = Writable({objectMode: true});
+  mapStream._write = function addCells(cellTokens, enc, next) {
+    var cellPacks = cellTokens.forEach(function cellPackForToken(cellToken) {
+      // TODO: Transform stream for to look up keys in legend and return 
+      // cell contents?
+      var cellData = cellLegend[cellToken.key];
+      if (cellData) {
+        cellCrossMap.setCell(assembleCell(cellData, cellToken.coords));
+      }
+    });
+    next();
+  };
+
+  var fileStream = fs.createReadStream(
+    __dirname + '/data/' + opts.mapFilename, {encoding: 'utf8'}
+  );
+  var parserStream = createMapParserStream({
+    batchSize: 1
+  });
+
+  fileStream.pipe(parserStream);
+  parserStream.pipe(mapStream);
+  
+  parserStream.on('end', function onParseEnd() {
+    done(null, cellCrossMap);
+  });
+}
+
+function assembleCell(data, coords) {
+  return {
+    d: _.cloneDeep(data),
+    coords: _.cloneDeep(coords)
+  };
+}
+
 module.exports = {
-  applyReactions: applyReactions
+  applyReactions: applyReactions,
+  loadMap: loadMap
 };
