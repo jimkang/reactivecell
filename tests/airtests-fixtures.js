@@ -77,34 +77,6 @@ function checkTotalPressureInFormation(formation, iteration, expectedTotal) {
 }
 
 
-var cellLegend = {
-  a: {
-    name: 'c_2_2',
-    p: 5,
-    newP: 5
-  },
-  b: {
-    name: 'c_3_2',
-    p: 3,
-    newP: 3
-  },
-  c: {
-    name: 'c_2_1',
-    p: 1,
-    newP: 1
-  },
-  d: {
-    name: 'c_1_2',
-    p: 3,
-    newP: 3
-  },
-  e: {
-    name: 'c_2_3',
-    p: 2,
-    newP: 2
-  }
-};
-
 function loadMap(opts, done) {
   cellCrossMap = cellmapmaker.createMap({size: opts.mapSize});
 
@@ -113,7 +85,7 @@ function loadMap(opts, done) {
     var cellPacks = cellTokens.forEach(function cellPackForToken(cellToken) {
       // TODO: Transform stream for to look up keys in legend and return 
       // cell contents?
-      var cellData = cellLegend[cellToken.key];
+      var cellData = opts.mapLegend[cellToken.key];
       if (cellData) {
         cellCrossMap.setCell(assembleCell(cellData, cellToken.coords));
       }

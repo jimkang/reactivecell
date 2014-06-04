@@ -52,7 +52,34 @@ suite('Cross formation', function cellCrossSuite() {
     fixtures.loadMap(
       {
         mapSize: [4, 4],
-        mapFilename: 'airtests-cross-map.txt'
+        mapFilename: 'airtests-cross-map.txt',
+        mapLegend: {
+          a: {
+            name: 'c_2_2',
+            p: 5,
+            newP: 5
+          },
+          b: {
+            name: 'c_3_2',
+            p: 3,
+            newP: 3
+          },
+          c: {
+            name: 'c_2_1',
+            p: 1,
+            newP: 1
+          },
+          d: {
+            name: 'c_1_2',
+            p: 3,
+            newP: 3
+          },
+          e: {
+            name: 'c_2_3',
+            p: 2,
+            newP: 2
+          }
+        }
       },
       function done(error, map) {
         cellCrossMap = map;
