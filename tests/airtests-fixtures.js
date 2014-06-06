@@ -5,7 +5,7 @@ var cellmapmaker = require('cellmap');
 var createMapParserStream = require('roguemap-parse-stream');
 var Writable = require('stream').Writable;
 var fs = require('fs');
-var cellCrossMap = null;
+var cellMap = null;
 
 function addToP(sum, cell) {
   return sum + cell.d.p;
@@ -16,25 +16,65 @@ function assertTolerance(a, b, tolerance, message) {
 }
 
 function applyReactionToCells(reaction, cells, cellmap) {
-  cells.forEach(function applyReactionToNeighbors(actingCell) {
-    var neighbors = _.filter(cellmap.getNeighbors(actingCell.coords), 
-      function isDataNonNull(neighbor) {
-        return neighbor.d;
-      }
-    );
-    // console.log('neighbors.length', neighbors.length)
-    neighbors.forEach(applyReactionToNeighbor);
-    function applyReactionToNeighbor(neighbor, neighborNumber) {
-      // Don't try to react to non-existent neighbors.
-      if (actingCell.d && neighbor.d) {
-        reaction(actingCell.d, neighbor.d, neighborNumber, neighbors.length);
-      }
-    }
-  });
+  var applier = _.curry(applyReactionToNeighbors)(reaction, cellmap);
+  cells.forEach(applier);
 }
 
-function updateP(cell) {
-  cell.d.p = cell.d.newP;
+function cellNeedsUpdate(cell) {
+  return cell.needsUpdate;
+}
+
+function newPIsNonZero(cell) {
+  return cell.nextD.p !== 0;
+}
+
+function addToNewP(sum, cell) {
+  return sum + cell.nextD.p;
+}
+
+function applyReactionToNeighbors(reaction, cellmap, actingCell) {
+  var neighbors = cellmap.getNeighbors(actingCell.coords);
+  reaction(actingCell, neighbors);
+
+  // The problem here is that setCell will count cells with d.p === 0 as default 
+  // cells, even if nextD.p is not 0.  
+  _.compact(neighbors).forEach(cellmap.setCell);
+  cellmap.setCell(actingCell);
+
+  // This is just here for debugging.
+  var totalNewP = cellmap.filterCells(newPIsNonZero).reduce(addToNewP, 0);
+
+  // assertTolerance(totalNewP, 36, 0.01, 'Pressure leaked!');
+  if (Math.abs(36 - totalNewP) > 0.01) {
+    console.log('Pressure leaked!');
+  } 
+
+
+  // // console.log('neighbors.length', neighbors.length)
+  // neighbors.forEach(applyReactionToNeighbor);
+  // function applyReactionToNeighbor(neighbor, neighborNumber) {
+  //   // Don't try to react to non-existent neighbors.
+  //   if (actingCell.d && neighbor.d) {
+  //     // console.log('total p before:', cells.reduce(addToP, 0));
+  //     reaction(actingCell.d, neighbor.d, neighborNumber, neighbors.length);
+  //     var totalNewP = cells.reduce(function addToP(sum, cell) {
+  //       return sum + cell.nextD.p;
+  //     }, 0);
+
+  //     if (totalNewP !== 36) {
+  //       debugger;
+  //     }
+  //     console.log('total p after:', totalNewP);
+  //   }
+  // }
+}
+
+function updateP(cellmap, cell) {
+  if (cell.needsUpdate) {
+    cell.d.p = cell.nextD.p;
+    cell.needsUpdate = false;
+    cellmap.setCell(cell);    
+  }
 }
 
 function roundToPlaces(n, places) {
@@ -44,20 +84,40 @@ function roundToPlaces(n, places) {
 
 function roundCell(cell) {
   cell.d.p = roundToPlaces(cell.d.p, 3);
-  cell.d.newP = roundToPlaces(cell.d.newP, 3);
+  cell.nextD.p = roundToPlaces(cell.nextD.p, 3);
 }
 
 function applyReactions(opts) {
   var resultCells = [];
   var initialTotalP = opts.cellmap.interestingCells().reduce(addToP, 0);
 
+  var updatePWithCellMap = _.curry(updateP)(opts.cellmap);
+
   for (var i = 0; i < opts.iterations; ++i) {
     var cells = opts.cellmap.interestingCells();
+    console.log('Iteration', i, 'cell count:', cells.length);
+    // console.log('total p before:', cells.reduce(addToP, 0));
+    opts.cellmap.filterCells(function sure() { return true; })
+      .forEach(function checkNextD(cell, i) {
+        if (!cell.nextD) {
+          debugger;
+        }
+      });
+
     applyReactionToCells(opts.reaction, cells, opts.cellmap);
-    checkTotalPressureInFormation(cells, i, initialTotalP);
     var comparisonCells = _.cloneDeep(cells);
     resultCells.push(comparisonCells);
-    cells.forEach(updateP);
+
+    var changedCells = opts.cellmap.filterCells(cellNeedsUpdate);
+    changedCells.forEach(updatePWithCellMap);
+
+    var totalNewP = opts.cellmap.interestingCells().reduce(addToNewP, 0);
+    // debugger;
+    // WAS HERE: interestingCells AND nonZero cell are very different for some 
+    // reason. Maybe the default cell checker is messed up.
+    checkTotalPressureInFormation(opts.cellmap.interestingCells(), i, 
+      initialTotalP);
+    // console.log('total p after:', cells.reduce(addToP, 0));
   }
   
   // Round cell values for the purpose of reporting in approvals so that 
@@ -71,14 +131,34 @@ function applyReactions(opts) {
 
 function checkTotalPressureInFormation(formation, iteration, expectedTotal) {
   var totalP = formation.reduce(addToP, 0);
+  // debugger;
   assertTolerance(totalP, expectedTotal, 0.00001,
     'The total p of the cells changed in iteration ' + iteration + '. ' + 
-    'It is now ' + totalP + '.');
+    'It is now ' + totalP + ' instead of ' + expectedTotal);
 }
 
 
 function loadMap(opts, done) {
-  cellCrossMap = cellmapmaker.createMap({size: opts.mapSize});
+  var mapOpts = {
+    size: opts.mapSize,
+  };
+
+  if (opts.defaultCellData) {
+    mapOpts.isDefault = function isDefault(cell) {
+      return !cell.d.inert && 
+        (cell.d.p === opts.defaultCellData.p && // TODO: Revisit. 
+          cell.nextD.p === opts.defaultCellData.p);
+    };
+    mapOpts.createDefaultCell = function createDefaultCell(coords) {
+      return {
+        d: _.cloneDeep(opts.defaultCellData),
+        nextD: _.cloneDeep(opts.defaultCellData),
+        coords: coords
+      };
+    };
+  }
+
+  var cellMap = cellmapmaker.createMap(mapOpts);
 
   var mapStream = Writable({objectMode: true});
   mapStream._write = function addCells(cellTokens, enc, next) {
@@ -87,7 +167,7 @@ function loadMap(opts, done) {
       // cell contents?
       var cellData = opts.mapLegend[cellToken.key];
       if (cellData) {
-        cellCrossMap.setCell(assembleCell(cellData, cellToken.coords));
+        cellMap.setCell(assembleCell(cellData, cellToken.coords));
       }
     });
     next();
@@ -104,13 +184,14 @@ function loadMap(opts, done) {
   parserStream.pipe(mapStream);
   
   parserStream.on('end', function onParseEnd() {
-    done(null, cellCrossMap);
+    done(null, cellMap);
   });
 }
 
 function assembleCell(data, coords) {
   return {
     d: _.cloneDeep(data),
+    nextD: _.cloneDeep(data),
     coords: _.cloneDeep(coords)
   };
 }
