@@ -18,5 +18,10 @@ var seriesData = [
     id: 'slow-cell-layer',
     url: '../approvals/airreaction/Cross_formation.With_a_slow_flow_reaction__pressure_should_eventually_reach_equalibrium_between_all_cells.approved.txt',
     offset: [200, 200]
-  }
+  },
+  {
+    id: 'wind-tunnel-layer',
+    url: '../approvals/airreaction/Wind_tunnel_formation.With_a_default_reaction__pressure_should_do_something.approved.txt',
+    offset: [0, 500]
+  }  
 ];
