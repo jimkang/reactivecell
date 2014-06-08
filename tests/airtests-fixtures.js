@@ -32,10 +32,6 @@ function addToNewP(sum, cell) {
   return sum + cell.nextD.p;
 }
 
-function sure() { 
-  return true;
-}
-
 function applyReactionToNeighbors(reaction, cellmap, actingCell) {
   var neighbors = cellmap.getNeighbors(actingCell.coords);
   reaction(actingCell, neighbors);
@@ -45,13 +41,15 @@ function applyReactionToNeighbors(reaction, cellmap, actingCell) {
   _.compact(neighbors).forEach(cellmap.setCell);
   cellmap.setCell(actingCell);
 
-  // This is just here for debugging.
-  var totalNewP = cellmap.nonZeroNewPCells().reduce(addToNewP, 0);
+  /*
+  // This is just here for debugging. Watch out, it brings things to a crawl.
+  var totalNewP = cellmap.filterCells(newPIsNonZero).reduce(addToNewP, 0);
 
   // assertTolerance(totalNewP, 36, 0.01, 'Pressure leaked!');
   if (Math.abs(36 - totalNewP) > 0.01) {
     console.log('Pressure leaked!');
-  } 
+  }
+  */
 
 
   // // console.log('neighbors.length', neighbors.length)
@@ -101,7 +99,7 @@ function applyReactions(opts) {
     var cells = opts.cellmap.interestingCells();
     console.log('Iteration', i, 'cell count:', cells.length);
     // console.log('total p before:', cells.reduce(addToP, 0));
-    opts.cellmap.interestingCells()
+    opts.cellmap.filterCells(function sure() { return true; })
       .forEach(function checkNextD(cell, i) {
         if (!cell.nextD) {
           debugger;
@@ -112,7 +110,7 @@ function applyReactions(opts) {
     var comparisonCells = _.cloneDeep(cells);
     resultCells.push(comparisonCells);
 
-    var changedCells = opts.cellmap.cellsThatNeedUpdate();
+    var changedCells = opts.cellmap.filterCells(cellNeedsUpdate);
     changedCells.forEach(updatePWithCellMap);
 
     var totalNewP = opts.cellmap.interestingCells().reduce(addToNewP, 0);
