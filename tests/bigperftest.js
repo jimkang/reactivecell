@@ -6,8 +6,8 @@ var reactions = {};
 
 reactions.airDefault = airReactionFactory();
 
-function windTunnelSuite() {
-  var windTunnelMap = null;
+function bigTunnelSuite() {
+  var bigTunnelMap = null;
 
   var defaultCellData = {
     name: 'still',
@@ -16,8 +16,8 @@ function windTunnelSuite() {
 
   fixtures.loadMap(
     {
-      mapSize: [32, 6],
-      mapFilename: 'airtests-wind-tunnel-map.txt',
+      mapSize: [78, 82],
+      mapFilename: 'airtests-big-tunnel-map.txt',
       mapLegend: {
         l: {
           name: 'low',
@@ -25,11 +25,11 @@ function windTunnelSuite() {
         },
         m: {
           name: 'medium',
-          p: 3
+          p: 8
         },
         h: {
           name: 'high',
-          p: 5
+          p: 20
         },
         x: {
           name: 'block',
@@ -41,7 +41,7 @@ function windTunnelSuite() {
       defaultCellData: defaultCellData
     },
     function done(error, map) {
-      windTunnelMap = map;
+      bigTunnelMap = map;
       testDefault();
     }
   );
@@ -49,10 +49,11 @@ function windTunnelSuite() {
   function testDefault() {
     var windTunnelResults = fixtures.applyReactions({
       reaction: reactions.airDefault,
-      cellmap: windTunnelMap,
+      cellmap: bigTunnelMap,
       iterations: 100
     });
   }
 }
 
-windTunnelSuite();
+bigTunnelSuite();
+
