@@ -200,7 +200,7 @@ suite('Wind tunnel formation', function windTunnelSuite() {
       var windTunnelResults = fixtures.applyReactions({
         reaction: reactions.airDefault,
         cellmap: windTunnelMap,
-        iterations: 100
+        iterations: 80
       });
 
       this.verifyAsJSON(windTunnelResults);
