@@ -61,7 +61,7 @@ suite('Big tunnel formation', function bigTunnelSuite() {
       var bigTunnelResults = fixtures.applyReactions({
         reaction: reactions.airDefault,
         cellmap: bigTunnelMap,
-        iterations: 100
+        iterations: 80
       });
 
       this.verifyAsJSON(bigTunnelResults);
