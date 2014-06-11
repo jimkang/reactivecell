@@ -1,7 +1,8 @@
 var assert = require('assert');
 var _ = require('lodash');
 
-var cellmapmaker = require('../node_modules/cellmap/hashcellmapmaker');
+// var cellmapmaker = require('../node_modules/cellmap/hashcellmapmaker');
+var cellmapmaker = require('cellmap');
 var createMapParserStream = require('roguemap-parse-stream');
 var Writable = require('stream').Writable;
 var fs = require('fs');
@@ -108,6 +109,11 @@ function applyReactions(opts) {
 
     applyReactionToCells(opts.reaction, cells, opts.cellmap);
     var comparisonCells = _.cloneDeep(cells);
+    if (!opts.skipSortingResults) {
+      comparisonCells = _.sortBy(comparisonCells, function compareCoords(cell) {
+        return cell.coords[0] * 1000 + cell.coords[1];
+      });
+    }
     resultCells.push(comparisonCells);
 
     var changedCells = opts.cellmap.filterCells(cellNeedsUpdate);

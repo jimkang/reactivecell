@@ -21,12 +21,12 @@ var seriesData = [
   },
   {
     id: 'wind-tunnel-layer',
-    url: '../approvals/airreaction/Wind_tunnel_formation.With_a_default_reaction__pressure_should_do_something.approved.txt',
+    url: '../approvals/airreaction/Wind_tunnel_formation.With_a_default_reaction__pressure_should_do_something.received.txt',
     offset: [0, 500]
   },
   {
     id: 'big-tunnel-layer',
-    url: '../approvals/airreaction/Big_tunnel_formation.With_a_default_reaction__pressure_should_do_something.approved.txt',
+    url: '../approvals/airreaction/Big_tunnel_formation.With_a_default_reaction__pressure_should_do_something.received.txt',
     offset: [0, 1000]
   }  
 ];
