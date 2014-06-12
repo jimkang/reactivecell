@@ -121,8 +121,6 @@ function applyReactions(opts) {
 
     var totalNewP = opts.cellmap.interestingCells().reduce(addToNewP, 0);
     // debugger;
-    // WAS HERE: interestingCells AND nonZero cell are very different for some 
-    // reason. Maybe the default cell checker is messed up.
     checkTotalPressureInFormation(opts.cellmap.interestingCells(), i, 
       initialTotalP);
     // console.log('total p after:', cells.reduce(addToP, 0));
@@ -152,11 +150,16 @@ function loadMap(opts, done) {
   };
 
   if (opts.defaultCellData) {
-    mapOpts.isDefault = function isDefault(cell) {
-      return !cell.d.inert && 
-        (cell.d.p === opts.defaultCellData.p && // TODO: Revisit. 
-          cell.nextD.p === opts.defaultCellData.p);
-    };
+    if (opts.isDefault) {
+      mapOpts.isDefault = opts.isDefault
+    }
+    else {
+      mapOpts.isDefault = function isDefault(cell) {
+        return !cell.d.inert && 
+          (cell.d.p === opts.defaultCellData.p && // TODO: Revisit. 
+            cell.nextD.p === opts.defaultCellData.p);
+      };
+    }
     mapOpts.createDefaultCell = function createDefaultCell(coords) {
       return {
         d: _.cloneDeep(opts.defaultCellData),
