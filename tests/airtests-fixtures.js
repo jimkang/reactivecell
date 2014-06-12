@@ -108,7 +108,7 @@ function applyReactions(opts) {
       });
 
     applyReactionToCells(opts.reaction, cells, opts.cellmap);
-    var comparisonCells = _.cloneDeep(cells);
+    var comparisonCells = _.cloneDeep(opts.cellmap.interestingCells());
     if (!opts.skipSortingResults) {
       comparisonCells = _.sortBy(comparisonCells, function compareCoords(cell) {
         return cell.coords[0] * 1000 + cell.coords[1];
@@ -156,7 +156,7 @@ function loadMap(opts, done) {
     else {
       mapOpts.isDefault = function isDefault(cell) {
         return !cell.d.inert && 
-          (cell.d.p === opts.defaultCellData.p && // TODO: Revisit. 
+          (cell.d.p === opts.defaultCellData.p && 
             cell.nextD.p === opts.defaultCellData.p);
       };
     }

@@ -154,10 +154,10 @@ suite('Wind tunnel formation', function windTunnelSuite() {
   var windTunnelMap = null;
 
   before(function setUpReactions() {
-      reactions.airDefault = airReactionFactory();
-      reactions.air0_6 = airReactionFactory({flowCoeff: 0.6});
-      reactions.airSlowFlow = airReactionFactory({flowCoeff: 0.1});
-      reactions.airSlosh = airReactionFactory({flowCoeff: 1.0});
+    reactions.airDefault = airReactionFactory();
+    reactions.air0_6 = airReactionFactory({flowCoeff: 0.6});
+    reactions.airSlowFlow = airReactionFactory({flowCoeff: 0.1});
+    reactions.airSlosh = airReactionFactory({flowCoeff: 1.0});
   });
 
   beforeEach(function setUpWindTunnelMap(setupDone) {
@@ -190,7 +190,11 @@ suite('Wind tunnel formation', function windTunnelSuite() {
           },
           '.': defaultCellData
         },
-        defaultCellData: defaultCellData
+        defaultCellData: defaultCellData,
+        isDefault: function isZero(cell) {
+          return !cell.d.inert && cell.d.p === 0 && cell.nextD.p === 0;
+        },
+
       },
       function done(error, map) {
         windTunnelMap = map;
@@ -199,8 +203,7 @@ suite('Wind tunnel formation', function windTunnelSuite() {
     );
   });
 
-  test('With a default reaction, ' +
-    'pressure should do something',
+  test('With a default reaction, pressure should do something',
     function testDefault() {
       var windTunnelResults = fixtures.applyReactions({
         reaction: reactions.airDefault,
