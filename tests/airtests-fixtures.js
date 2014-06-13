@@ -1,8 +1,8 @@
 var assert = require('assert');
 var _ = require('lodash');
 
-// var cellmapmaker = require('../node_modules/cellmap/hashcellmapmaker');
-var cellmapmaker = require('cellmap');
+var cellmapmaker = require('../node_modules/cellmap/hashcellmapmaker');
+// var cellmapmaker = require('cellmap');
 var createMapParserStream = require('roguemap-parse-stream');
 var Writable = require('stream').Writable;
 var fs = require('fs');
