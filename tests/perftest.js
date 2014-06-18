@@ -47,10 +47,11 @@ function windTunnelSuite() {
   );
 
   function testDefault() {
-    var windTunnelResults = fixtures.applyReactions({
+    fixtures.applyReactions({
       reaction: reactions.airDefault,
       cellmap: windTunnelMap,
-      iterations: 100
+      iterations: 100,
+      skipComparison: true
     });
   }
 }

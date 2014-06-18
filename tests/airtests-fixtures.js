@@ -108,13 +108,15 @@ function applyReactions(opts) {
       });
 
     applyReactionToCells(opts.reaction, cells, opts.cellmap);
-    var comparisonCells = _.cloneDeep(opts.cellmap.interestingCells());
-    if (!opts.skipSortingResults) {
-      comparisonCells = _.sortBy(comparisonCells, function compareCoords(cell) {
-        return cell.coords[0] * 1000 + cell.coords[1];
-      });
+    if (!opts.skipComparison) {
+      var comparisonCells = _.cloneDeep(opts.cellmap.interestingCells());
+      if (!opts.skipSortingResults) {
+        comparisonCells = _.sortBy(comparisonCells, function compareCoords(cell) {
+          return cell.coords[0] * 1000 + cell.coords[1];
+        });
+      }
+      resultCells.push(comparisonCells);
     }
-    resultCells.push(comparisonCells);
 
     var changedCells = opts.cellmap.filterCells(cellNeedsUpdate);
     changedCells.forEach(updatePWithCellMap);
@@ -126,12 +128,14 @@ function applyReactions(opts) {
     // console.log('total p after:', cells.reduce(addToP, 0));
   }
   
-  // Round cell values for the purpose of reporting in approvals so that 
-  // rounding diffs don't trigger a test failure.    
-  resultCells.forEach(function roundCellGroup(cellGroup) {
-    cellGroup.forEach(roundCell);
-  });
-
+  if (!opts.skipComparison) {
+    // Round cell values for the purpose of reporting in approvals so that 
+    // rounding diffs don't trigger a test failure.    
+    resultCells.forEach(function roundCellGroup(cellGroup) {
+      cellGroup.forEach(roundCell);
+    });
+  }
+  
   return resultCells;
 }
 
