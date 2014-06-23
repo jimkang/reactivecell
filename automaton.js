@@ -1,9 +1,6 @@
 
-function createAutomaton() {
+function createAutomaton(opts) {
   // TODO: Make this non-air-specific.
-  function addToP(sum, cell) {
-    return sum + cell.d.p;
-  }
 
   function applyReactionToCells(reaction, cellmap) {
     var applier = _.curry(applyReactionToNeighbors)(reaction, cellmap);
@@ -12,14 +9,6 @@ function createAutomaton() {
 
   function cellNeedsUpdate(cell) {
     return cell.needsUpdate;
-  }
-
-  function newPIsNonZero(cell) {
-    return cell.nextD.p !== 0;
-  }
-
-  function addToNewP(sum, cell) {
-    return sum + cell.nextD.p;
   }
 
   function applyReactionToNeighbors(reaction, cellmap, actingCell) {
@@ -39,32 +28,12 @@ function createAutomaton() {
       cellmap.setCell(cell);    
     }
   }
-
-  function roundToPlaces(n, places) {
-    var factor = Math.pow(10, places);
-    return (~~(n * factor))/factor;
-  }
-
-  function roundCell(cell) {
-    cell.d.p = roundToPlaces(cell.d.p, 3);
-    cell.nextD.p = roundToPlaces(cell.nextD.p, 3);
-  }
-
+  
   function updateCellmap(cellmap) {
-    // var resultCells = [];
-    // var initialTotalP = cellmap.interestingCells().reduce(addToP, 0);
-
+    var changedCells = cellmap.filterCells(cellNeedsUpdate);
     var updatePWithCellMap = _.curry(updateP)(cellmap);
+    changedCells.forEach(updatePWithCellMap);
 
-    // // for (var i = 0; i < opts.iterations; ++i) {
-    //   // var cells = cellmap.interestingCells();
-    //   // console.log('Iteration', i, 'cell count:', cells.length);
-
-    //   applyReactionToCells(reaction, cellmap);
-
-      var changedCells = cellmap.filterCells(cellNeedsUpdate);
-      changedCells.forEach(updatePWithCellMap);
-    // }
     return changedCells;
   }
 
@@ -79,4 +48,3 @@ if (typeof module === 'object' && typeof module.exports === 'object') {
     createAutomaton: createAutomaton
   };
 }
-
