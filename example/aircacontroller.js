@@ -49,7 +49,7 @@ function createAirCAController() {
     }
   });
 
-  var automaton = createAutomaton();
+  var automaton = createAutomaton({cellmap: cellmap});
   var airReaction = createAirReaction();
 
   function loadMap(maptext, done) {
@@ -131,8 +131,8 @@ function createAirCAController() {
   }
 
   function advanceAutomaton() {
-    automaton.applyReactionToCells(airReaction, cellmap);
-    automaton.updateCellmap(cellmap);
+    automaton.applyReactionToCells(airReaction);
+    automaton.updateCellmap();
     renderer.renderCells(cellmap.interestingCells());
   }
 
