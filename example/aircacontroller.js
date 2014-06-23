@@ -7,10 +7,10 @@ function createAirCAController() {
 
   function fillForPressure(cell) {
     if (cell.d.inert) {
-      return '#048';
+      return '#bbb';
     }
     else {
-      return 'hsla(0, 0%, 0%, ' + (0.5 + 0.5 * cell.d.p/20.0) + ')';
+      return 'hsla(200, 100%, 80%, ' + (0.25 + 0.75 * cell.d.p/20.0) + ')';
     }
   }
 
@@ -147,6 +147,7 @@ function createAirCAController() {
 
   (function init() {
     setUpKeyCommands();
+    d3.select('#next-button').on('click', advanceAutomaton);
 
     var req = createRequestMaker().makeRequest({
       method: 'GET',
