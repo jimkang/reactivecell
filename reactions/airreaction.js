@@ -1,4 +1,6 @@
-var _ = require('lodash');
+if (typeof module === 'object' && typeof module.exports === 'object') {
+  _ = require('lodash');
+}
 
 function clamp(value, min, max) {
   return Math.min(Math.max(value, min), max);
@@ -44,4 +46,7 @@ function createAirReaction(opts) {
   return airReaction;
 }
 
-module.exports = createAirReaction;
+if (typeof module === 'object' && typeof module.exports === 'object') {
+  module.exports = createAirReaction;
+}
+
