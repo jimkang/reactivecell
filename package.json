@@ -24,6 +24,7 @@
     "cellmap": "~0.8.2",
     "cellseriesviewer": "~0.1.1",
     "roguemap-parse-stream": "~0.1.4",
-    "basic-browser-request": "~0.1.0"
+    "basic-browser-request": "~0.1.0",
+    "cellgridrenderer": "~0.3.0"
   }
 }

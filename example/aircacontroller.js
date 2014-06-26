@@ -16,18 +16,19 @@ function createAirCAController() {
 
   var airLayer = d3.select('#air-layer');
 
-  var renderer = createCellGridRenderer({
+  var renderer = createFixedCellGridRenderer({
     cellWidth: 8,
     cellHeight: 8,
     cellClass: 'cell',
-    customizeCellRendition: function customize(cell) {
+    customUpdate: function renderCellFills(cells) {
       // Setting the fill for this <g> means <rect>s within it will use that 
       // fill, too.
-      d3.select(this).attr('fill', fillForPressure);
+      cells.attr('fill', fillForPressure);
     },
     selectors: {
       root: '#air-layer' 
-    }
+    },
+    idFunction: a.id
   });
 
   var cellmap = createCellMapmaker().createMap({
@@ -40,6 +41,7 @@ function createAirCAController() {
         nextD: {
           p: 0
         },
+        id: coords[0] + '_' + coords[1],
         coords: _.cloneDeep(coords)
       };
     },
