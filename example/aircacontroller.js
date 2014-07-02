@@ -51,7 +51,12 @@ function createAirCAController() {
     }
   });
 
-  var automaton = createAutomaton({cellmap: cellmap});
+  var automaton = createAutomaton({
+    cellmap: cellmap,
+    updateCell: function updateAirCell(cell) {
+      cell.d.p = cell.nextD.p;
+    }
+  });
   var airReaction = createAirReaction();
 
   function loadMap(maptext, done) {
@@ -132,10 +137,17 @@ function createAirCAController() {
     return textReadStream;
   }
 
+  var advancing = false;
+
   function advanceAutomaton() {
-    automaton.applyReactionToCells(airReaction);
-    automaton.updateCellmap();
-    renderer.renderCells(cellmap.interestingCells());
+    if (advancing) {
+      console.log('Already advancing!');
+    }
+    else {
+      automaton.applyReactionToCells(airReaction);
+      automaton.updateCellmap();
+      renderer.renderCells(cellmap.interestingCells());
+    }
   }
 
   function setUpKeyCommands() {

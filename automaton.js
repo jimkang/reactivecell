@@ -1,7 +1,5 @@
 
 function createAutomaton(opts) {
-  // TODO: Make this non-air-specific.
-
   function applyReactionToCells(reaction) {
     var applier = _.curry(applyReactionToNeighbors)(reaction);
     opts.cellmap.interestingCells().forEach(applier);
@@ -21,9 +19,9 @@ function createAutomaton(opts) {
     opts.cellmap.setCell(actingCell);
   }
 
-  function updateP(cell) {
+  function updateCell(cell) {
     if (cell.needsUpdate) {
-      cell.d.p = cell.nextD.p;
+      opts.updateCell(cell);
       cell.needsUpdate = false;
       opts.cellmap.setCell(cell);    
     }
@@ -31,7 +29,7 @@ function createAutomaton(opts) {
 
   function updateCellmap() {
     var changedCells = opts.cellmap.filterCells(cellNeedsUpdate);
-    changedCells.forEach(updateP);
+    changedCells.forEach(updateCell);
 
     return changedCells;
   }

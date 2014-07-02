@@ -1,11 +1,12 @@
 var assert = require('assert');
 var _ = require('lodash');
-
 var cellmapmaker = require('../node_modules/cellmap/hashcellmapmaker');
 // var cellmapmaker = require('cellmap');
 var createMapParserStream = require('roguemap-parse-stream');
 var Writable = require('stream').Writable;
 var fs = require('fs');
+var automatonFactory = require('../automaton');
+
 var cellMap = null;
 
 function addToP(sum, cell) {
@@ -16,60 +17,8 @@ function assertTolerance(a, b, tolerance, message) {
   assert.ok(Math.abs(a - b) <= tolerance, message);
 }
 
-function applyReactionToCells(reaction, cells, cellmap) {
-  var applier = _.curry(applyReactionToNeighbors)(reaction, cellmap);
-  cells.forEach(applier);
-}
-
-function cellNeedsUpdate(cell) {
-  return cell.needsUpdate;
-}
-
-function newPIsNonZero(cell) {
-  return cell.nextD.p !== 0;
-}
-
 function addToNewP(sum, cell) {
   return sum + cell.nextD.p;
-}
-
-function applyReactionToNeighbors(reaction, cellmap, actingCell) {
-  var neighbors = cellmap.getNeighbors(actingCell.coords);
-  reaction(actingCell, neighbors);
-
-  // The problem here is that setCell will count cells with d.p === 0 as default 
-  // cells, even if nextD.p is not 0.  
-  _.compact(neighbors).forEach(cellmap.setCell);
-  cellmap.setCell(actingCell);
-
-  /*
-  // This is just here for debugging. Watch out, it brings things to a crawl.
-  var totalNewP = cellmap.filterCells(newPIsNonZero).reduce(addToNewP, 0);
-
-  // assertTolerance(totalNewP, 36, 0.01, 'Pressure leaked!');
-  if (Math.abs(36 - totalNewP) > 0.01) {
-    console.log('Pressure leaked!');
-  }
-  */
-
-
-  // // console.log('neighbors.length', neighbors.length)
-  // neighbors.forEach(applyReactionToNeighbor);
-  // function applyReactionToNeighbor(neighbor, neighborNumber) {
-  //   // Don't try to react to non-existent neighbors.
-  //   if (actingCell.d && neighbor.d) {
-  //     // console.log('total p before:', cells.reduce(addToP, 0));
-  //     reaction(actingCell.d, neighbor.d, neighborNumber, neighbors.length);
-  //     var totalNewP = cells.reduce(function addToP(sum, cell) {
-  //       return sum + cell.nextD.p;
-  //     }, 0);
-
-  //     if (totalNewP !== 36) {
-  //       debugger;
-  //     }
-  //     console.log('total p after:', totalNewP);
-  //   }
-  // }
 }
 
 function updateP(cellmap, cell) {
@@ -91,23 +40,22 @@ function roundCell(cell) {
 }
 
 function applyReactions(opts) {
+  var automaton = automatonFactory.createAutomaton({
+    cellmap: opts.cellmap,
+    updateCell: function updateAirCell(cell) {
+      cell.d.p = cell.nextD.p;
+    }
+  });
   var resultCells = [];
   var initialTotalP = opts.cellmap.interestingCells().reduce(addToP, 0);
 
   var updatePWithCellMap = _.curry(updateP)(opts.cellmap);
 
   for (var i = 0; i < opts.iterations; ++i) {
-    var cells = opts.cellmap.interestingCells();
-    console.log('Iteration', i, 'cell count:', cells.length);
-    // console.log('total p before:', cells.reduce(addToP, 0));
-    opts.cellmap.filterCells(function sure() { return true; })
-      .forEach(function checkNextD(cell, i) {
-        if (!cell.nextD) {
-          debugger;
-        }
-      });
+    console.log('Iteration', i);
 
-    applyReactionToCells(opts.reaction, cells, opts.cellmap);
+    automaton.applyReactionToCells(opts.reaction);
+
     if (!opts.skipComparison) {
       var comparisonCells = _.cloneDeep(opts.cellmap.interestingCells());
       if (!opts.skipSortingResults) {
@@ -118,11 +66,9 @@ function applyReactions(opts) {
       resultCells.push(comparisonCells);
     }
 
-    var changedCells = opts.cellmap.filterCells(cellNeedsUpdate);
-    changedCells.forEach(updatePWithCellMap);
+    automaton.updateCellmap();
 
     var totalNewP = opts.cellmap.interestingCells().reduce(addToNewP, 0);
-    // debugger;
     checkTotalPressureInFormation(opts.cellmap.interestingCells(), i, 
       initialTotalP);
     // console.log('total p after:', cells.reduce(addToP, 0));
@@ -141,7 +87,6 @@ function applyReactions(opts) {
 
 function checkTotalPressureInFormation(formation, iteration, expectedTotal) {
   var totalP = formation.reduce(addToP, 0);
-  // debugger;
   assertTolerance(totalP, expectedTotal, 0.00001,
     'The total p of the cells changed in iteration ' + iteration + '. ' + 
     'It is now ' + totalP + ' instead of ' + expectedTotal);
