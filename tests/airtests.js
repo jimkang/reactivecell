@@ -68,23 +68,23 @@ suite('Cross formation', function cellCrossSuite() {
         mapLegend: {
           a: {
             name: 'c_2_2',
-            p: 5
+            p: 5000
           },
           b: {
             name: 'c_3_2',
-            p: 3
+            p: 3000
           },
           c: {
             name: 'c_2_1',
-            p: 1
+            p: 1000
           },
           d: {
             name: 'c_1_2',
-            p: 3
+            p: 3000
           },
           e: {
             name: 'c_2_3',
-            p: 2
+            p: 2000
           },
           ',': defaultCellData
         }
@@ -173,15 +173,15 @@ suite('Wind tunnel formation', function windTunnelSuite() {
         mapLegend: {
           l: {
             name: 'low',
-            p: 1
+            p: 1000
           },
           m: {
             name: 'medium',
-            p: 3
+            p: 3000
           },
           h: {
             name: 'high',
-            p: 5
+            p: 5000
           },
           x: {
             name: 'block',

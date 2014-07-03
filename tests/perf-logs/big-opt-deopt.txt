@@ -1,719 +1,847 @@
-[deoptimize global object @ 0x1ab0cf97ca11]
-[marking 0x1ab0cf971401 <JS Function ToString (SharedFunctionInfo 0x1ab0cf936b91)> for recompilation, reason: small function, ICs with typeinfo: 0/4 (0%)]
-[disabled optimization for 0x1ab0cf936b91 <SharedFunctionInfo ToString>, reason: Call to a JavaScript runtime function]
+[deoptimize global object @ 0x21952387ca11]
+[marking 0x219523871401 <JS Function ToString (SharedFunctionInfo 0x219523836b91)> for recompilation, reason: small function, ICs with typeinfo: 0/4 (0%)]
+[disabled optimization for 0x219523836b91 <SharedFunctionInfo ToString>, reason: Call to a JavaScript runtime function]
 [failed to optimize ToString: Call to a JavaScript runtime function]
-[marking 0x1ab0cf96b7f1 <JS Function IN (SharedFunctionInfo 0x1ab0cf935b39)> for recompilation, reason: hot and stable, ICs with typeinfo: 1/2 (50%)]
-[disabled optimization for 0x1ab0cf935b39 <SharedFunctionInfo IN>, reason: Call to a JavaScript runtime function]
+[marking 0x21952386b7f1 <JS Function IN (SharedFunctionInfo 0x219523835b39)> for recompilation, reason: hot and stable, ICs with typeinfo: 1/2 (50%)]
+[disabled optimization for 0x219523835b39 <SharedFunctionInfo IN>, reason: Call to a JavaScript runtime function]
 [failed to optimize IN: Call to a JavaScript runtime function]
-[marking 0x3aa53307f649 <JS Function a (SharedFunctionInfo 0x58ddcb9cb79)> for recompilation, reason: small function, ICs with typeinfo: 5/5 (100%)]
-[optimizing 0x3aa53307f649 <JS Function a (SharedFunctionInfo 0x58ddcb9cb79)> - took 0.050, 0.112, 0.059 ms]
-[marking 0x3aa533089e49 <JS Function (SharedFunctionInfo 0x58ddcb9c869)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[optimizing 0x3aa533089e49 <JS Function (SharedFunctionInfo 0x58ddcb9c869)> - took 0.087, 0.071, 0.027 ms]
-[marking 0x3aa53308b291 <JS Function (SharedFunctionInfo 0x58ddcb9c6e1)> for recompilation, reason: small function, ICs with typeinfo: 5/5 (100%)]
-[optimizing 0x3aa53308b291 <JS Function (SharedFunctionInfo 0x58ddcb9c6e1)> - took 0.014, 0.076, 0.040 ms]
-[marking 0x1ab0cf97a009 <JS Function ToObject (SharedFunctionInfo 0x1ab0cf936e11)> for recompilation, reason: small function, ICs with typeinfo: 1/5 (20%)]
-[disabled optimization for 0x1ab0cf936e11 <SharedFunctionInfo ToObject>, reason: Call to a JavaScript runtime function]
+[marking 0x270e9107f649 <JS Function a (SharedFunctionInfo 0x3407eff9cb89)> for recompilation, reason: small function, ICs with typeinfo: 5/5 (100%)]
+[optimizing 0x270e9107f649 <JS Function a (SharedFunctionInfo 0x3407eff9cb89)> - took 0.055, 0.115, 0.053 ms]
+[marking 0x270e91089e49 <JS Function (SharedFunctionInfo 0x3407eff9c879)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[optimizing 0x270e91089e49 <JS Function (SharedFunctionInfo 0x3407eff9c879)> - took 0.099, 0.072, 0.027 ms]
+[marking 0x270e9108b291 <JS Function (SharedFunctionInfo 0x3407eff9c6f1)> for recompilation, reason: small function, ICs with typeinfo: 5/5 (100%)]
+[optimizing 0x270e9108b291 <JS Function (SharedFunctionInfo 0x3407eff9c6f1)> - took 0.014, 0.076, 0.039 ms]
+[marking 0x21952387a009 <JS Function ToObject (SharedFunctionInfo 0x219523836e11)> for recompilation, reason: small function, ICs with typeinfo: 1/5 (20%)]
+[disabled optimization for 0x219523836e11 <SharedFunctionInfo ToObject>, reason: Call to a JavaScript runtime function]
 [failed to optimize ToObject: Call to a JavaScript runtime function]
-[marking 0x1ab0cf96fca9 <JS Function ToName (SharedFunctionInfo 0x1ab0cf936d29)> for recompilation, reason: hot and stable, ICs with typeinfo: 1/1 (100%)]
-[disabled optimization for 0x1ab0cf936d29 <SharedFunctionInfo ToName>, reason: Call to a JavaScript runtime function]
+[marking 0x21952386fca9 <JS Function ToName (SharedFunctionInfo 0x219523836d29)> for recompilation, reason: hot and stable, ICs with typeinfo: 1/1 (100%)]
+[disabled optimization for 0x219523836d29 <SharedFunctionInfo ToName>, reason: Call to a JavaScript runtime function]
 [failed to optimize ToName: Call to a JavaScript runtime function]
-[marking 0x1ab0cf983369 <JS Function NativeModule.require (SharedFunctionInfo 0x1ab0cf980ee1)> for recompilation, reason: small function, ICs with typeinfo: 12/14 (85%)]
-[marking 0x1ab0cf9833b1 <JS Function NativeModule.getCached (SharedFunctionInfo 0x1ab0cf980f71)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[marking 0x3aa5330d6fd1 <JS Function (SharedFunctionInfo 0x58ddcb05211)> for recompilation, reason: hot and stable, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x1ab0cf983369 <JS Function NativeModule.require (SharedFunctionInfo 0x1ab0cf980ee1)> - took 0.351, 0.514, 0.454 ms]
-[optimizing 0x1ab0cf9833b1 <JS Function NativeModule.getCached (SharedFunctionInfo 0x1ab0cf980f71)> - took 0.005, 0.064, 0.007 ms]
-[optimizing 0x3aa5330d6fd1 <JS Function (SharedFunctionInfo 0x58ddcb05211)> - took 0.010, 0.042, 0.005 ms]
-[marking 0x3aa533078821 <JS Function isObject (SharedFunctionInfo 0x58ddcb6d239)> for recompilation, reason: small function, ICs with typeinfo: 3/3 (100%)]
-[optimizing 0x3aa533078821 <JS Function isObject (SharedFunctionInfo 0x58ddcb6d239)> - took 0.013, 0.072, 0.026 ms]
-[marking 0x3aa533144af9 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[marking 0x58ddcb31e51 <JS Function debugs.(anonymous function) (SharedFunctionInfo 0x58ddcb283e1)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[optimizing 0x3aa533144af9 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> - took 0.016, 0.057, 0.023 ms]
-[optimizing 0x58ddcb31e51 <JS Function debugs.(anonymous function) (SharedFunctionInfo 0x58ddcb283e1)> - took 0.003, 0.027, 0.005 ms]
-[marking 0x58ddcba8cc9 <JS Function addCells (SharedFunctionInfo 0x58ddcba7c71)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x58ddcba8cc9 <JS Function addCells (SharedFunctionInfo 0x58ddcba7c71)> - took 0.043, 0.076, 0.021 ms]
-[marking 0x3aa53307a169 <JS Function getArray (SharedFunctionInfo 0x58ddcb6a8c1)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[marking 0x3aa53307a1f9 <JS Function releaseArray (SharedFunctionInfo 0x58ddcb6a9e1)> for recompilation, reason: small function, ICs with typeinfo: 4/4 (100%)]
-[optimizing 0x3aa53307a169 <JS Function getArray (SharedFunctionInfo 0x58ddcb6a8c1)> - took 0.024, 0.142, 0.051 ms]
-[optimizing 0x3aa53307a1f9 <JS Function releaseArray (SharedFunctionInfo 0x58ddcb6a9e1)> - took 0.017, 0.054, 0.024 ms]
-[marking 0x58ddcb5be91 <JS Function isBuffer (SharedFunctionInfo 0x1ab0cf9856f9)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x58ddcb5be91 <JS Function isBuffer (SharedFunctionInfo 0x1ab0cf9856f9)> - took 0.007, 0.036, 0.036 ms]
-[marking 0x1ab0cf963c79 <JS Function isArray (SharedFunctionInfo 0x1ab0cf933599)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[optimizing 0x1ab0cf963c79 <JS Function isArray (SharedFunctionInfo 0x1ab0cf933599)> - took 0.010, 0.039, 0.024 ms]
-[marking 0x58ddcb5bce1 <JS Function isFunction (SharedFunctionInfo 0x1ab0cf9855d9)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[optimizing 0x58ddcb5bce1 <JS Function isFunction (SharedFunctionInfo 0x1ab0cf9855d9)> - took 0.006, 0.039, 0.009 ms]
-[marking 0x1ab0cf978b31 <JS Function UseSparseVariant (SharedFunctionInfo 0x1ab0cf9320c9)> for recompilation, reason: small function, ICs with typeinfo: 3/6 (50%)]
-[marking 0x58ddcb61f21 <JS Function isNull (SharedFunctionInfo 0x1ab0cf985039)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x58ddcb5be01 <JS Function isString (SharedFunctionInfo 0x1ab0cf9851e9)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[optimizing 0x1ab0cf978b31 <JS Function UseSparseVariant (SharedFunctionInfo 0x1ab0cf9320c9)> - took 0.020, 0.105, 0.024 ms]
-[optimizing 0x58ddcb61f21 <JS Function isNull (SharedFunctionInfo 0x1ab0cf985039)> - took 0.006, 0.026, 0.005 ms]
-[optimizing 0x58ddcb5be01 <JS Function isString (SharedFunctionInfo 0x1ab0cf9851e9)> - took 0.005, 0.020, 0.004 ms]
-[marking 0x58ddcb62181 <JS Function isNullOrUndefined (SharedFunctionInfo 0x1ab0cf9850c9)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[marking 0x1ab0cf9685a1 <JS Function toString (SharedFunctionInfo 0x1ab0cf923c49)> for recompilation, reason: small function, ICs with typeinfo: 3/3 (100%)]
-[disabled optimization for 0x1ab0cf923c49 <SharedFunctionInfo toString>, reason: Inlined runtime function: ClassOf]
+[marking 0x219523883369 <JS Function NativeModule.require (SharedFunctionInfo 0x219523880ee1)> for recompilation, reason: small function, ICs with typeinfo: 12/14 (85%)]
+[marking 0x2195238833b1 <JS Function NativeModule.getCached (SharedFunctionInfo 0x219523880f71)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[marking 0x270e910d6fd1 <JS Function (SharedFunctionInfo 0x3407eff05211)> for recompilation, reason: hot and stable, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x219523883369 <JS Function NativeModule.require (SharedFunctionInfo 0x219523880ee1)> - took 0.445, 0.480, 0.428 ms]
+[optimizing 0x2195238833b1 <JS Function NativeModule.getCached (SharedFunctionInfo 0x219523880f71)> - took 0.006, 0.029, 0.007 ms]
+[optimizing 0x270e910d6fd1 <JS Function (SharedFunctionInfo 0x3407eff05211)> - took 0.007, 0.026, 0.008 ms]
+[marking 0x270e91078821 <JS Function isObject (SharedFunctionInfo 0x3407eff6d261)> for recompilation, reason: small function, ICs with typeinfo: 3/3 (100%)]
+[marking 0x3407eff31e51 <JS Function debugs.(anonymous function) (SharedFunctionInfo 0x3407eff283e1)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[optimizing 0x270e91078821 <JS Function isObject (SharedFunctionInfo 0x3407eff6d261)> - took 0.013, 0.093, 0.019 ms]
+[optimizing 0x3407eff31e51 <JS Function debugs.(anonymous function) (SharedFunctionInfo 0x3407eff283e1)> - took 0.003, 0.019, 0.004 ms]
+[marking 0x3407eff4c9b1 <JS Function isUndefined (SharedFunctionInfo 0x219523885309)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x3407eff5bd09 <JS Function isFunction (SharedFunctionInfo 0x2195238855d9)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[optimizing 0x3407eff5bd09 <JS Function isFunction (SharedFunctionInfo 0x2195238855d9)> - took 0.006, 0.039, 0.007 ms]
+[marking 0x270e911464f9 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x270e911464f9 <JS Function (SharedFunctionInfo 0x3407effb9501)> - took 0.014, 0.058, 0.015 ms]
+[optimizing 0x3407eff4c9b1 <JS Function isUndefined (SharedFunctionInfo 0x219523885309)> - took 0.006, 0.029, 0.006 ms]
+[marking 0x270e9107a169 <JS Function getArray (SharedFunctionInfo 0x3407eff6a8e9)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[marking 0x270e9107a1f9 <JS Function releaseArray (SharedFunctionInfo 0x3407eff6aa09)> for recompilation, reason: small function, ICs with typeinfo: 4/4 (100%)]
+[marking 0x3407eff5beb9 <JS Function isBuffer (SharedFunctionInfo 0x2195238856f9)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x270e9107a169 <JS Function getArray (SharedFunctionInfo 0x3407eff6a8e9)> - took 0.023, 0.140, 0.049 ms]
+[optimizing 0x270e9107a1f9 <JS Function releaseArray (SharedFunctionInfo 0x3407eff6aa09)> - took 0.017, 0.054, 0.020 ms]
+[marking 0x3407eff5ec51 <JS Function validChunk (SharedFunctionInfo 0x3407eff324c1)> for recompilation, reason: small function, ICs with typeinfo: 8/12 (66%)]
+[optimizing 0x3407eff5beb9 <JS Function isBuffer (SharedFunctionInfo 0x2195238856f9)> - took 0.006, 0.034, 0.031 ms]
+[optimizing 0x3407eff5ec51 <JS Function validChunk (SharedFunctionInfo 0x3407eff324c1)> - took 0.078, 0.157, 0.074 ms]
+[marking 0x219523878b31 <JS Function UseSparseVariant (SharedFunctionInfo 0x2195238320c9)> for recompilation, reason: small function, ICs with typeinfo: 3/6 (50%)]
+[marking 0x3407eff61f01 <JS Function isNull (SharedFunctionInfo 0x219523885039)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x2195238685a1 <JS Function toString (SharedFunctionInfo 0x219523823c49)> for recompilation, reason: small function, ICs with typeinfo: 3/3 (100%)]
+[optimizing 0x219523878b31 <JS Function UseSparseVariant (SharedFunctionInfo 0x2195238320c9)> - took 0.019, 0.105, 0.021 ms]
+[optimizing 0x3407eff61f01 <JS Function isNull (SharedFunctionInfo 0x219523885039)> - took 0.006, 0.026, 0.005 ms]
+[disabled optimization for 0x219523823c49 <SharedFunctionInfo toString>, reason: Inlined runtime function: ClassOf]
 [failed to optimize toString: Inlined runtime function: ClassOf]
-[optimizing 0x58ddcb62181 <JS Function isNullOrUndefined (SharedFunctionInfo 0x1ab0cf9850c9)> - took 0.008, 0.049, 0.009 ms]
-[marking 0x3aa533005e31 <JS Function cloneDeep (SharedFunctionInfo 0x58ddcb6c939)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x3aa533005e31 <JS Function cloneDeep (SharedFunctionInfo 0x58ddcb6c939)> - took 0.010, 0.077, 0.020 ms]
-[marking 0x58ddcb342d1 <JS Function Transform.push (SharedFunctionInfo 0x58ddcb33df9)> for recompilation, reason: small function, ICs with typeinfo: 5/5 (100%)]
-[marking 0x1ab0cf96abc1 <JS Function hasOwnProperty (SharedFunctionInfo 0x1ab0cf923df9)> for recompilation, reason: small function, ICs with typeinfo: 2/6 (33%)]
-[optimizing 0x1ab0cf96abc1 <JS Function hasOwnProperty (SharedFunctionInfo 0x1ab0cf923df9)> - took 0.036, 0.105, 0.026 ms]
-[optimizing 0x58ddcb342d1 <JS Function Transform.push (SharedFunctionInfo 0x58ddcb33df9)> - took 0.013, 0.043, 0.013 ms]
-[marking 0x1ab0cf95b821 <JS Function keys (SharedFunctionInfo 0x1ab0cf924249)> for recompilation, reason: small function, ICs with typeinfo: 1/5 (20%)]
-[marking 0x3aa5330787d9 <JS Function keys (SharedFunctionInfo 0x58ddcb70af9)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x1ab0cf95b821 <JS Function keys (SharedFunctionInfo 0x1ab0cf924249)> - took 0.024, 0.097, 0.052 ms]
-[optimizing 0x3aa5330787d9 <JS Function keys (SharedFunctionInfo 0x58ddcb70af9)> - took 0.048, 0.099, 0.045 ms]
-[marking 0x58ddcb5ed01 <JS Function doWrite (SharedFunctionInfo 0x58ddcb32671)> for recompilation, reason: small function, ICs with typeinfo: 8/10 (80%)]
-[optimizing 0x58ddcb5ed01 <JS Function doWrite (SharedFunctionInfo 0x58ddcb32671)> - took 0.057, 0.145, 0.055 ms]
-[marking 0x58ddcba7eb9 <JS Function isDefault (SharedFunctionInfo 0x58ddcba7aa9)> for recompilation, reason: small function, ICs with typeinfo: 4/15 (26%)]
-[optimizing 0x58ddcba7eb9 <JS Function isDefault (SharedFunctionInfo 0x58ddcba7aa9)> - took 0.018, 0.109, 0.028 ms]
-[deoptimizing (DEOPT eager): begin 0x58ddcba7eb9 isDefault (opt #30) @3, FP to SP delta: 24]
-  translating isDefault => node=3, height=8
-    0x7fff5fbf67d8: [top + 48] <- 0x3aa5330eb569 ; [sp + 48] 0x3aa5330eb569 <an Object with map 0x34666ba0f081>
-    0x7fff5fbf67d0: [top + 40] <- 0x3aa533195641 ; rbx 0x3aa533195641 <an Object with map 0x34666ba1ad81>
-    0x7fff5fbf67c8: [top + 32] <- 0x31af356f0f87 ; caller's pc
-    0x7fff5fbf67c0: [top + 24] <- 0x7fff5fbf6800 ; caller's fp
-    0x7fff5fbf67b8: [top + 16] <- 0x3aa5330eb479; context
-    0x7fff5fbf67b0: [top + 8] <- 0x58ddcba7eb9; function
-    0x7fff5fbf67a8: [top + 0] <- 0x1ab0cf904141 <the hole> ; literal
-[deoptimizing (eager): end 0x58ddcba7eb9 isDefault @3 => node=3, pc=0x31af356f17aa, state=NO_REGISTERS, alignment=no padding, took 0.021 ms]
-[removing optimized code for: isDefault]
-[evicting entry from optimizing code map (notify deoptimized) for 0x58ddcba7aa9 <SharedFunctionInfo isDefault>]
-[marking 0x58ddcb4c9b1 <JS Function isUndefined (SharedFunctionInfo 0x1ab0cf985309)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[optimizing 0x58ddcb4c9b1 <JS Function isUndefined (SharedFunctionInfo 0x1ab0cf985309)> - took 0.006, 0.045, 0.010 ms]
-[marking 0x58ddcb31f71 <JS Function Readable.read (SharedFunctionInfo 0x58ddcb315e9)> for recompilation, reason: hot and stable, ICs with typeinfo: 52/67 (77%)]
-[marking 0x1ab0cf993179 <JS Function nextTick (SharedFunctionInfo 0x1ab0cf9909e1)> for recompilation, reason: small function, ICs with typeinfo: 14/14 (100%)]
-[marking 0x58ddcb5e7d1 <JS Function chunkInvalid (SharedFunctionInfo 0x58ddcb30d79)> for recompilation, reason: small function, ICs with typeinfo: 8/9 (88%)]
-[marking 0x58ddcb5ec29 <JS Function validChunk (SharedFunctionInfo 0x58ddcb324c1)> for recompilation, reason: small function, ICs with typeinfo: 8/12 (66%)]
-[marking 0x58ddcb5ec71 <JS Function decodeChunk (SharedFunctionInfo 0x58ddcb32551)> for recompilation, reason: small function, ICs with typeinfo: 2/7 (28%)]
-[marking 0x58ddcb343a9 <JS Function Transform._read (SharedFunctionInfo 0x58ddcb33fa9)> for recompilation, reason: small function, ICs with typeinfo: 9/14 (64%)]
-[marking 0x3aa5330a1841 <JS Function assembleCell (SharedFunctionInfo 0x58ddcba32e1)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x1ab0cf9631b9 <JS Function toString (SharedFunctionInfo 0x1ab0cf932549)> for recompilation, reason: small function, ICs with typeinfo: 6/10 (60%)]
-[marking 0x3aa5330eb731 <JS Function setCell (SharedFunctionInfo 0x58ddcba7ff9)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
-[marking 0x3aa5331d2a71 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x58ddcb5ed91 <JS Function onwriteStateUpdate (SharedFunctionInfo 0x58ddcb32791)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
-[marking 0x58ddcb5eef9 <JS Function needFinish (SharedFunctionInfo 0x58ddcb32a61)> for recompilation, reason: small function, ICs with typeinfo: 5/14 (35%)]
-[marking 0x58ddcb5ecb9 <JS Function writeOrBuffer (SharedFunctionInfo 0x58ddcb325e1)> for recompilation, reason: small function, ICs with typeinfo: 15/19 (78%)]
-[marking 0x58ddcb333c1 <JS Function Writable.write (SharedFunctionInfo 0x58ddcb32d31)> for recompilation, reason: small function, ICs with typeinfo: 15/15 (100%)]
-[marking 0x3aa53312bf49 <JS Function ondata (SharedFunctionInfo 0x58ddcbaad79)> for recompilation, reason: small function, ICs with typeinfo: 2/9 (22%)]
-[marking 0x58ddcb5e8f1 <JS Function maybeReadMore (SharedFunctionInfo 0x58ddcb30fb9)> for recompilation, reason: small function, ICs with typeinfo: 2/5 (40%)]
-[marking 0x58ddcb5e6f9 <JS Function needMoreData (SharedFunctionInfo 0x58ddcb30bc9)> for recompilation, reason: small function, ICs with typeinfo: 6/11 (54%)]
-[marking 0x58ddcb31e99 <JS Function Readable.push (SharedFunctionInfo 0x58ddcb31439)> for recompilation, reason: small function, ICs with typeinfo: 3/10 (30%)]
-[optimizing 0x58ddcb31f71 <JS Function Readable.read (SharedFunctionInfo 0x58ddcb315e9)> - took 0.256, 0.743, 0.110 ms]
-[optimizing 0x1ab0cf993179 <JS Function nextTick (SharedFunctionInfo 0x1ab0cf9909e1)> - took 0.034, 0.162, 0.086 ms]
-[optimizing 0x58ddcb5e7d1 <JS Function chunkInvalid (SharedFunctionInfo 0x58ddcb30d79)> - took 0.071, 0.128, 0.029 ms]
-[optimizing 0x58ddcb5ec29 <JS Function validChunk (SharedFunctionInfo 0x58ddcb324c1)> - took 0.072, 0.186, 0.074 ms]
-[optimizing 0x58ddcb5ec71 <JS Function decodeChunk (SharedFunctionInfo 0x58ddcb32551)> - took 0.027, 0.077, 0.012 ms]
-[optimizing 0x58ddcb343a9 <JS Function Transform._read (SharedFunctionInfo 0x58ddcb33fa9)> - took 0.039, 0.104, 0.017 ms]
-[optimizing 0x58ddcb31e99 <JS Function Readable.push (SharedFunctionInfo 0x58ddcb31439)> - took 0.033, 0.114, 0.014 ms]
-[optimizing 0x3aa53312bf49 <JS Function ondata (SharedFunctionInfo 0x58ddcbaad79)> - took 0.386, 0.670, 0.130 ms]
-[marking 0x58ddcba7eb9 <JS Function isDefault (SharedFunctionInfo 0x58ddcba7aa9)> for recompilation, reason: small function, ICs with typeinfo: 15/15 (100%)]
-[optimizing 0x58ddcb333c1 <JS Function Writable.write (SharedFunctionInfo 0x58ddcb32d31)> - took 0.221, 0.582, 0.108 ms]
-[optimizing 0x58ddcb5ecb9 <JS Function writeOrBuffer (SharedFunctionInfo 0x58ddcb325e1)> - took 0.116, 0.342, 0.074 ms]
-[optimizing 0x3aa5330a1841 <JS Function assembleCell (SharedFunctionInfo 0x58ddcba32e1)> - took 0.081, 0.196, 0.074 ms]
-[optimizing 0x3aa5330eb731 <JS Function setCell (SharedFunctionInfo 0x58ddcba7ff9)> - took 0.064, 0.215, 0.034 ms]
-[optimizing 0x1ab0cf9631b9 <JS Function toString (SharedFunctionInfo 0x1ab0cf932549)> - took 0.030, 0.099, 0.018 ms]
-[optimizing 0x58ddcb5ed91 <JS Function onwriteStateUpdate (SharedFunctionInfo 0x58ddcb32791)> - took 0.011, 0.041, 0.014 ms]
-[optimizing 0x58ddcb5eef9 <JS Function needFinish (SharedFunctionInfo 0x58ddcb32a61)> - took 0.032, 0.106, 0.019 ms]
-[optimizing 0x58ddcb5e8f1 <JS Function maybeReadMore (SharedFunctionInfo 0x58ddcb30fb9)> - took 0.016, 0.061, 0.016 ms]
+[marking 0x219523863c79 <JS Function isArray (SharedFunctionInfo 0x219523833599)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e91005e31 <JS Function cloneDeep (SharedFunctionInfo 0x3407eff6c961)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[marking 0x3407eff5be29 <JS Function isString (SharedFunctionInfo 0x2195238851e9)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[optimizing 0x270e91005e31 <JS Function cloneDeep (SharedFunctionInfo 0x3407eff6c961)> - took 0.010, 0.076, 0.021 ms]
+[optimizing 0x219523863c79 <JS Function isArray (SharedFunctionInfo 0x219523833599)> - took 0.008, 0.025, 0.010 ms]
+[marking 0x3407effa8b99 <JS Function WritableState.onwrite (SharedFunctionInfo 0x3407effa8a61)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x3407eff62161 <JS Function isNullOrUndefined (SharedFunctionInfo 0x2195238850c9)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x3407eff5be29 <JS Function isString (SharedFunctionInfo 0x2195238851e9)> - took 0.006, 0.039, 0.008 ms]
+[optimizing 0x3407effa8b99 <JS Function WritableState.onwrite (SharedFunctionInfo 0x3407effa8a61)> - took 0.006, 0.035, 0.018 ms]
+[marking 0x3407eff342d1 <JS Function Transform.push (SharedFunctionInfo 0x3407eff33df9)> for recompilation, reason: small function, ICs with typeinfo: 5/5 (100%)]
+[optimizing 0x3407eff62161 <JS Function isNullOrUndefined (SharedFunctionInfo 0x2195238850c9)> - took 0.007, 0.049, 0.019 ms]
+[marking 0x21952386abc1 <JS Function hasOwnProperty (SharedFunctionInfo 0x219523823df9)> for recompilation, reason: small function, ICs with typeinfo: 2/6 (33%)]
+[optimizing 0x3407eff342d1 <JS Function Transform.push (SharedFunctionInfo 0x3407eff33df9)> - took 0.012, 0.057, 0.026 ms]
+[optimizing 0x21952386abc1 <JS Function hasOwnProperty (SharedFunctionInfo 0x219523823df9)> - took 0.018, 0.105, 0.036 ms]
+[marking 0x21952385b821 <JS Function keys (SharedFunctionInfo 0x219523824249)> for recompilation, reason: small function, ICs with typeinfo: 1/5 (20%)]
+[marking 0x270e910787d9 <JS Function keys (SharedFunctionInfo 0x3407eff70b21)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x21952385b821 <JS Function keys (SharedFunctionInfo 0x219523824249)> - took 0.020, 0.098, 0.036 ms]
+[optimizing 0x270e910787d9 <JS Function keys (SharedFunctionInfo 0x3407eff70b21)> - took 0.025, 0.089, 0.040 ms]
+[marking 0x219523893179 <JS Function nextTick (SharedFunctionInfo 0x2195238909e1)> for recompilation, reason: small function, ICs with typeinfo: 14/14 (100%)]
+[marking 0x3407eff5e7f9 <JS Function chunkInvalid (SharedFunctionInfo 0x3407eff30d79)> for recompilation, reason: small function, ICs with typeinfo: 8/9 (88%)]
+[marking 0x3407eff5ec99 <JS Function decodeChunk (SharedFunctionInfo 0x3407eff32551)> for recompilation, reason: small function, ICs with typeinfo: 2/7 (28%)]
+[marking 0x3407eff343a9 <JS Function Transform._read (SharedFunctionInfo 0x3407eff33fa9)> for recompilation, reason: small function, ICs with typeinfo: 9/14 (64%)]
+[optimizing 0x219523893179 <JS Function nextTick (SharedFunctionInfo 0x2195238909e1)> - took 0.030, 0.172, 0.058 ms]
+[optimizing 0x3407eff5e7f9 <JS Function chunkInvalid (SharedFunctionInfo 0x3407eff30d79)> - took 0.044, 0.102, 0.023 ms]
+[marking 0x270e910a1841 <JS Function assembleCell (SharedFunctionInfo 0x3407effa32f1)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[optimizing 0x3407eff5ec99 <JS Function decodeChunk (SharedFunctionInfo 0x3407eff32551)> - took 0.015, 0.057, 0.021 ms]
+[marking 0x270e910eb731 <JS Function setCell (SharedFunctionInfo 0x3407effa8009)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
+[marking 0x2195238631b9 <JS Function toString (SharedFunctionInfo 0x219523832549)> for recompilation, reason: small function, ICs with typeinfo: 6/10 (60%)]
+[marking 0x3407effa7ec9 <JS Function isDefault (SharedFunctionInfo 0x3407effa7ab9)> for recompilation, reason: small function, ICs with typeinfo: 15/15 (100%)]
+[marking 0x270e911ce2f9 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x3407eff5edb9 <JS Function onwriteStateUpdate (SharedFunctionInfo 0x3407eff32791)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
+[marking 0x3407eff5ef21 <JS Function needFinish (SharedFunctionInfo 0x3407eff32a61)> for recompilation, reason: small function, ICs with typeinfo: 5/14 (35%)]
+[marking 0x3407effa8cd9 <JS Function addCells (SharedFunctionInfo 0x3407effa7c81)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[marking 0x3407eff5ed29 <JS Function doWrite (SharedFunctionInfo 0x3407eff32671)> for recompilation, reason: small function, ICs with typeinfo: 8/10 (80%)]
+[marking 0x3407eff5ece1 <JS Function writeOrBuffer (SharedFunctionInfo 0x3407eff325e1)> for recompilation, reason: small function, ICs with typeinfo: 15/19 (78%)]
+[marking 0x3407eff333c1 <JS Function Writable.write (SharedFunctionInfo 0x3407eff32d31)> for recompilation, reason: small function, ICs with typeinfo: 15/15 (100%)]
+[marking 0x270e9112bf49 <JS Function ondata (SharedFunctionInfo 0x3407effaad89)> for recompilation, reason: small function, ICs with typeinfo: 2/9 (22%)]
+[marking 0x3407eff5e919 <JS Function maybeReadMore (SharedFunctionInfo 0x3407eff30fb9)> for recompilation, reason: small function, ICs with typeinfo: 2/5 (40%)]
+[marking 0x3407eff5e721 <JS Function needMoreData (SharedFunctionInfo 0x3407eff30bc9)> for recompilation, reason: small function, ICs with typeinfo: 6/11 (54%)]
+[marking 0x3407eff31e99 <JS Function Readable.push (SharedFunctionInfo 0x3407eff31439)> for recompilation, reason: small function, ICs with typeinfo: 3/10 (30%)]
+[optimizing 0x3407eff343a9 <JS Function Transform._read (SharedFunctionInfo 0x3407eff33fa9)> - took 0.027, 0.105, 0.036 ms]
+[optimizing 0x3407eff31e99 <JS Function Readable.push (SharedFunctionInfo 0x3407eff31439)> - took 0.031, 0.116, 0.017 ms]
+[optimizing 0x270e9112bf49 <JS Function ondata (SharedFunctionInfo 0x3407effaad89)> - took 0.431, 0.641, 0.158 ms]
+[optimizing 0x3407eff333c1 <JS Function Writable.write (SharedFunctionInfo 0x3407eff32d31)> - took 0.253, 0.517, 0.114 ms]
+[optimizing 0x3407eff5ece1 <JS Function writeOrBuffer (SharedFunctionInfo 0x3407eff325e1)> - took 0.142, 0.344, 0.057 ms]
+[optimizing 0x3407eff5ed29 <JS Function doWrite (SharedFunctionInfo 0x3407eff32671)> - took 0.050, 0.124, 0.048 ms]
+[optimizing 0x3407effa8cd9 <JS Function addCells (SharedFunctionInfo 0x3407effa7c81)> - took 0.021, 0.066, 0.015 ms]
+[optimizing 0x270e910a1841 <JS Function assembleCell (SharedFunctionInfo 0x3407effa32f1)> - took 0.065, 0.169, 0.049 ms]
+[optimizing 0x270e910eb731 <JS Function setCell (SharedFunctionInfo 0x3407effa8009)> - took 0.103, 0.209, 0.036 ms]
+[optimizing 0x2195238631b9 <JS Function toString (SharedFunctionInfo 0x219523832549)> - took 0.044, 0.104, 0.018 ms]
+[optimizing 0x3407effa7ec9 <JS Function isDefault (SharedFunctionInfo 0x3407effa7ab9)> - took 0.022, 0.106, 0.020 ms]
+[optimizing 0x3407eff5edb9 <JS Function onwriteStateUpdate (SharedFunctionInfo 0x3407eff32791)> - took 0.010, 0.082, 0.012 ms]
+[optimizing 0x3407eff5ef21 <JS Function needFinish (SharedFunctionInfo 0x3407eff32a61)> - took 0.028, 0.159, 0.023 ms]
+[marking 0x270e91079129 <JS Function forOwn (SharedFunctionInfo 0x3407eff70e49)> for recompilation, reason: hot and stable, ICs with typeinfo: 13/13 (100%)]
+[optimizing 0x3407eff5e919 <JS Function maybeReadMore (SharedFunctionInfo 0x3407eff30fb9)> - took 0.011, 0.059, 0.030 ms]
+[optimizing 0x3407eff5e721 <JS Function needMoreData (SharedFunctionInfo 0x3407eff30bc9)> - took 0.015, 0.090, 0.012 ms]
 [deoptimize marked code in all contexts]
-[deoptimizer unlinked: nextTick / 1ab0cf993179]
-[evicting entry from optimizing code map (deoptimized code) for 0x1ab0cf9909e1 <SharedFunctionInfo nextTick>]
-[optimizing 0x58ddcb5e6f9 <JS Function needMoreData (SharedFunctionInfo 0x58ddcb30bc9)> - took 0.016, 0.083, 0.022 ms]
-[optimizing 0x58ddcba7eb9 <JS Function isDefault (SharedFunctionInfo 0x58ddcba7aa9)> - took 0.022, 0.106, 0.029 ms]
-[marking 0x3aa5320cee99 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x1ab0cf993179 <JS Function nextTick (SharedFunctionInfo 0x1ab0cf9909e1)> for recompilation, reason: small function, ICs with typeinfo: 14/14 (100%)]
-[optimizing 0x1ab0cf993179 <JS Function nextTick (SharedFunctionInfo 0x1ab0cf9909e1)> - took 0.060, 0.185, 0.053 ms]
-[marking 0x58ddcb5e789 <JS Function howMuchToRead (SharedFunctionInfo 0x58ddcb30ce9)> for recompilation, reason: hot and stable, ICs with typeinfo: 17/30 (56%)]
-[marking 0x3aa532158f39 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x58ddcb5edd9 <JS Function onwrite (SharedFunctionInfo 0x58ddcb32821)> for recompilation, reason: hot and stable, ICs with typeinfo: 15/15 (100%)]
-[marking 0x58ddcb5e6b1 <JS Function readableAddChunk (SharedFunctionInfo 0x58ddcb30b39)> for recompilation, reason: hot and stable, ICs with typeinfo: 25/53 (47%)]
-[optimizing 0x58ddcb5e789 <JS Function howMuchToRead (SharedFunctionInfo 0x58ddcb30ce9)> - took 0.040, 0.208, 0.035 ms]
-[optimizing 0x58ddcb5e6b1 <JS Function readableAddChunk (SharedFunctionInfo 0x58ddcb30b39)> - took 0.180, 0.659, 0.108 ms]
-[optimizing 0x58ddcb5edd9 <JS Function onwrite (SharedFunctionInfo 0x58ddcb32821)> - took 0.080, 0.312, 0.097 ms]
-[marking 0x3aa5321deed9 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x34910f00f6f9 <JS Function baseClone (SharedFunctionInfo 0x58ddcb6be89)> for recompilation, reason: hot and stable, ICs with typeinfo: 30/43 (69%)]
-[marking 0x3aa533089121 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[optimizing 0x34910f00f6f9 <JS Function baseClone (SharedFunctionInfo 0x58ddcb6be89)> - took 0.214, 1.156, 0.238 ms]
-[marking 0x3aa533113d71 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x34910f00f669 <JS Function forOwn (SharedFunctionInfo 0x58ddcb70e21)> for recompilation, reason: hot and stable, ICs with typeinfo: 13/13 (100%)]
-[marking 0x3aa53319d8e9 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[optimizing 0x34910f00f669 <JS Function forOwn (SharedFunctionInfo 0x58ddcb70e21)> - took 0.070, 0.291, 0.062 ms]
-[marking 0x3aa53204f9f9 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa5320d5171 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x34910f00f621 <JS Function forEach (SharedFunctionInfo 0x58ddcb6dd79)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
-[optimizing 0x34910f00f621 <JS Function forEach (SharedFunctionInfo 0x58ddcb6dd79)> - took 0.045, 0.162, 0.044 ms]
-[marking 0x3aa532163c61 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa5321e9199 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa532271ab1 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa5322f6b69 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa53237f8b1 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x1ab0cf9635e1 <JS Function forEach (SharedFunctionInfo 0x1ab0cf933119)> for recompilation, reason: hot and stable, ICs with typeinfo: 10/18 (55%)]
-[optimizing 0x1ab0cf9635e1 <JS Function forEach (SharedFunctionInfo 0x1ab0cf933119)> - took 0.071, 0.358, 0.075 ms]
-[marking 0x3aa53305a5f1 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa5330e0f69 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa53316ac61 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa5331f0619 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa53327b0b9 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa5333057f1 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa53338c709 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa532063e31 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa5320f4b01 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa532180441 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa53220d3e9 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa532295981 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa5323212b1 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x34910f01b639 <JS Function chunkToMapEvents (SharedFunctionInfo 0x58ddcbaa029)> for recompilation, reason: hot and stable, ICs with typeinfo: 15/15 (100%)]
-[marking 0x3aa5323a9729 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x1ab0cf987791 <JS Function emit (SharedFunctionInfo 0x1ab0cf9841a1)> for recompilation, reason: hot and stable, ICs with typeinfo: 21/73 (28%)]
-[optimizing 0x1ab0cf987791 <JS Function emit (SharedFunctionInfo 0x1ab0cf9841a1)> - took 0.178, 0.556, 0.083 ms]
-[marking 0x3aa533091d11 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa533119ce1 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa53319e4a9 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa5332276c1 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa5332a9f09 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa53333e309 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa5333c0911 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa5320a1089 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa532128401 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[optimizing 0x34910f01b639 <JS Function chunkToMapEvents (SharedFunctionInfo 0x58ddcbaa029)> - took 0.092, 0.279, 0.101 ms]
-[marking 0x3aa5321aa4e1 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa53222ecf1 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa5322b0ef9 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa532335839 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa5323b51c1 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa533083021 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa533107cf1 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa533187319 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa533209311 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa533286f59 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x3aa533308f49 <JS Function cellPackForToken (SharedFunctionInfo 0x58ddcbb9179)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[deoptimizing (DEOPT eager): begin 0x58ddcb5edd9 onwrite (opt #53) @2, FP to SP delta: 48]
+[deoptimizer unlinked: nextTick / 219523893179]
+[evicting entry from optimizing code map (deoptimized code) for 0x2195238909e1 <SharedFunctionInfo nextTick>]
+[optimizing 0x3407effc68a1 <JS Function forOwn (SharedFunctionInfo 0x3407eff70e49)> - took 0.077, 0.266, 0.065 ms]
+[marking 0x3407effc8eb1 <JS Function forEach (SharedFunctionInfo 0x3407eff6dda1)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
+[optimizing 0x3407effc8eb1 <JS Function forEach (SharedFunctionInfo 0x3407eff6dda1)> - took 0.031, 0.161, 0.039 ms]
+[marking 0x3407eff5be71 <JS Function isNumber (SharedFunctionInfo 0x219523885159)> for recompilation, reason: hot and stable, ICs with typeinfo: 0/0 (100%)]
+[optimizing 0x3407eff5be71 <JS Function isNumber (SharedFunctionInfo 0x219523885159)> - took 0.006, 0.038, 0.008 ms]
+[marking 0x270e900cd119 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x3407eff5ee01 <JS Function onwrite (SharedFunctionInfo 0x3407eff32821)> for recompilation, reason: hot and stable, ICs with typeinfo: 15/15 (100%)]
+[marking 0x219523893179 <JS Function nextTick (SharedFunctionInfo 0x2195238909e1)> for recompilation, reason: small function, ICs with typeinfo: 14/14 (100%)]
+[optimizing 0x3407eff5ee01 <JS Function onwrite (SharedFunctionInfo 0x3407eff32821)> - took 0.079, 0.320, 0.112 ms]
+[optimizing 0x219523893179 <JS Function nextTick (SharedFunctionInfo 0x2195238909e1)> - took 0.030, 0.154, 0.049 ms]
+[marking 0x3407effc6811 <JS Function baseClone (SharedFunctionInfo 0x3407eff6beb1)> for recompilation, reason: hot and stable, ICs with typeinfo: 30/43 (69%)]
+[marking 0x3407eff5e7b1 <JS Function howMuchToRead (SharedFunctionInfo 0x3407eff30ce9)> for recompilation, reason: hot and stable, ICs with typeinfo: 17/30 (56%)]
+[marking 0x3407eff31f71 <JS Function Readable.read (SharedFunctionInfo 0x3407eff315e9)> for recompilation, reason: hot and stable, ICs with typeinfo: 52/67 (77%)]
+[optimizing 0x3407effc6811 <JS Function baseClone (SharedFunctionInfo 0x3407eff6beb1)> - took 0.189, 1.074, 0.237 ms]
+[marking 0x270e9015cd71 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x3407eff5e6d9 <JS Function readableAddChunk (SharedFunctionInfo 0x3407eff30b39)> for recompilation, reason: hot and stable, ICs with typeinfo: 25/53 (47%)]
+[optimizing 0x3407eff31f71 <JS Function Readable.read (SharedFunctionInfo 0x3407eff315e9)> - took 0.267, 0.632, 0.109 ms]
+[optimizing 0x3407eff5e7b1 <JS Function howMuchToRead (SharedFunctionInfo 0x3407eff30ce9)> - took 0.039, 0.195, 0.027 ms]
+[optimizing 0x3407eff5e6d9 <JS Function readableAddChunk (SharedFunctionInfo 0x3407eff30b39)> - took 0.179, 0.624, 0.120 ms]
+[marking 0x270e901e1339 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e91087a31 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e91111661 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e9119a831 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e9004caf9 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e900d2271 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e90160a21 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e901e5f59 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e9026e829 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e902f38e1 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e9037c621 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x2195238635e1 <JS Function forEach (SharedFunctionInfo 0x219523833119)> for recompilation, reason: hot and stable, ICs with typeinfo: 10/18 (55%)]
+[optimizing 0x2195238635e1 <JS Function forEach (SharedFunctionInfo 0x219523833119)> - took 0.083, 0.383, 0.082 ms]
+[marking 0x270e91056f09 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e910dd881 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e911675b1 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e911ecf69 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e91277a31 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e912fe049 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e91389091 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e900607f9 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e900f14c9 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e9017ce09 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e90209dc1 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e90292359 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e9031dce9 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x3407effd97e1 <JS Function chunkToMapEvents (SharedFunctionInfo 0x3407effaa039)> for recompilation, reason: hot and stable, ICs with typeinfo: 15/15 (100%)]
+[marking 0x270e903a6161 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x219523887791 <JS Function emit (SharedFunctionInfo 0x2195238841a1)> for recompilation, reason: hot and stable, ICs with typeinfo: 21/73 (28%)]
+[optimizing 0x219523887791 <JS Function emit (SharedFunctionInfo 0x2195238841a1)> - took 0.142, 0.570, 0.082 ms]
+[marking 0x270e9108e429 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e91116401 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e9119abc9 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e91223d91 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e912a65d9 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e9133a9b9 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e913bcfc1 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e9009d9e1 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e90124d91 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[optimizing 0x3407effd97e1 <JS Function chunkToMapEvents (SharedFunctionInfo 0x3407effaa039)> - took 0.090, 0.278, 0.097 ms]
+[marking 0x270e901a6e71 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e9022b6d9 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e902ad8e1 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e90332211 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e903b1b99 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e9107f4e1 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e91104189 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e911837b1 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e91205779 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e912833c1 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e91305351 <JS Function cellPackForToken (SharedFunctionInfo 0x3407effb9189)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[deoptimizing (DEOPT eager): begin 0x3407eff5ee01 onwrite (opt #52) @2, FP to SP delta: 48]
   translating onwrite => node=3, height=8
-    0x7fff5fbf6b78: [top + 56] <- 0x1ab0cf904121 ; [sp + 80] 0x1ab0cf904121 <undefined>
-    0x7fff5fbf6b70: [top + 48] <- 0x34910f01b4c1 ; [sp + 72] 0x34910f01b4c1 <a Transform with map 0x34666ba113f1>
-    0x7fff5fbf6b68: [top + 40] <- 0x1ab0cf904121 ; [sp + 64] 0x1ab0cf904121 <undefined>
-    0x7fff5fbf6b60: [top + 32] <- 0x31af356f1a19 ; caller's pc
+    0x7fff5fbf6b78: [top + 56] <- 0x219523804121 ; [sp + 80] 0x219523804121 <undefined>
+    0x7fff5fbf6b70: [top + 48] <- 0x3407effd9669 ; [sp + 72] 0x3407effd9669 <a Transform with map 0x360f68b113f1>
+    0x7fff5fbf6b68: [top + 40] <- 0x219523804121 ; [sp + 64] 0x219523804121 <undefined>
+    0x7fff5fbf6b60: [top + 32] <- 0x1bd42bdf1a19 ; caller's pc
     0x7fff5fbf6b58: [top + 24] <- 0x7fff5fbf6b98 ; caller's fp
-    0x7fff5fbf6b50: [top + 16] <- 0x3aa533376ea9; context
-    0x7fff5fbf6b48: [top + 8] <- 0x58ddcb5edd9; function
-    0x7fff5fbf6b40: [top + 0] <- 0x1ab0cf904121 <undefined> ; literal
-[deoptimizing (eager): end 0x58ddcb5edd9 onwrite @2 => node=3, pc=0x31af356f1b43, state=NO_REGISTERS, alignment=no padding, took 0.016 ms]
+    0x7fff5fbf6b50: [top + 16] <- 0x270e913732b1; context
+    0x7fff5fbf6b48: [top + 8] <- 0x3407eff5ee01; function
+    0x7fff5fbf6b40: [top + 0] <- 0x219523804121 <undefined> ; literal
+[deoptimizing (eager): end 0x3407eff5ee01 onwrite @2 => node=3, pc=0x1bd42bdf1b43, state=NO_REGISTERS, alignment=no padding, took 0.019 ms]
 [removing optimized code for: onwrite]
-[evicting entry from optimizing code map (notify deoptimized) for 0x58ddcb32821 <SharedFunctionInfo onwrite>]
-[deoptimizing (DEOPT eager): begin 0x58ddcb31f71 Readable.read (opt #32) @21, FP to SP delta: 112]
+[evicting entry from optimizing code map (notify deoptimized) for 0x3407eff32821 <SharedFunctionInfo onwrite>]
+[deoptimizing (DEOPT eager): begin 0x3407eff31f71 Readable.read (opt #55) @21, FP to SP delta: 112]
   translating Readable.read => node=426, height=32
-    0x7fff5fbf7008: [top + 72] <- 0x34910f01b981 ; r9 0x34910f01b981 <a ReadStream with map 0x34666ba1a901>
+    0x7fff5fbf7008: [top + 72] <- 0x3407effd9b29 ; r9 0x3407effd9b29 <a ReadStream with map 0x360f68b1a901>
     0x7fff5fbf7000: [top + 64] <- 0x00000000 ; rbx 0
-    0x7fff5fbf6ff8: [top + 56] <- 0x31af356e94ee ; caller's pc
+    0x7fff5fbf6ff8: [top + 56] <- 0x1bd42bde94ee ; caller's pc
     0x7fff5fbf6ff0: [top + 48] <- 0x7fff5fbf7038 ; caller's fp
-    0x7fff5fbf6fe8: [top + 40] <- 0x58ddcb83c31; context
-    0x7fff5fbf6fe0: [top + 32] <- 0x58ddcb31f71; function
-    0x7fff5fbf6fd8: [top + 24] <- 0x34910f01ba89 ; rcx 0x34910f01ba89 <a ReadableState with map 0x34666ba1a361>
+    0x7fff5fbf6fe8: [top + 40] <- 0x3407eff83c59; context
+    0x7fff5fbf6fe0: [top + 32] <- 0x3407eff31f71; function
+    0x7fff5fbf6fd8: [top + 24] <- 0x3407effd9c31 ; rcx 0x3407effd9c31 <a ReadableState with map 0x360f68b1a361>
     0x7fff5fbf6fd0: [top + 16] <- 0x00000000 ; [sp + 128] 0
-    0x7fff5fbf6fc8: [top + 8] <- 0x1ab0cf904161 ; r8 0x1ab0cf904161 <true>
-    0x7fff5fbf6fc0: [top + 0] <- 0x1ab0cf904121 <undefined> ; literal
-[deoptimizing (eager): end 0x58ddcb31f71 Readable.read @21 => node=426, pc=0x31af356dc226, state=NO_REGISTERS, alignment=no padding, took 0.022 ms]
+    0x7fff5fbf6fc8: [top + 8] <- 0x219523804161 ; r8 0x219523804161 <true>
+    0x7fff5fbf6fc0: [top + 0] <- 0x219523804121 <undefined> ; literal
+[deoptimizing (eager): end 0x3407eff31f71 Readable.read @21 => node=426, pc=0x1bd42bddc226, state=NO_REGISTERS, alignment=no padding, took 0.020 ms]
 [removing optimized code for: Readable.read]
-[evicting entry from optimizing code map (notify deoptimized) for 0x58ddcb315e9 <SharedFunctionInfo Readable.read>]
-[marking 0x34910f069199 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x58ddcb5ef89 <JS Function finishMaybe (SharedFunctionInfo 0x58ddcb32b81)> for recompilation, reason: small function, ICs with typeinfo: 1/5 (20%)]
-[marking 0x58ddcb5ee21 <JS Function afterWrite (SharedFunctionInfo 0x58ddcb328b1)> for recompilation, reason: small function, ICs with typeinfo: 4/4 (100%)]
-[marking 0x34910f062ff9 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x58ddcb5ee69 <JS Function onwriteDrain (SharedFunctionInfo 0x58ddcb32941)> for recompilation, reason: small function, ICs with typeinfo: 4/6 (66%)]
-[marking 0x34910f097321 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x34910f08c3d9 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x34910f08e8c9 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x34910f07f8f9 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x34910f090de1 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x34910f081f51 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x34910f0bf369 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x34910f0a6e09 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x34910f0c2fe1 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x34910f0a9d81 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x34910f0c7129 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x34910f0ace89 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a06f01 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x34910f0db001 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[optimizing 0x58ddcb5ee21 <JS Function afterWrite (SharedFunctionInfo 0x58ddcb328b1)> - took 0.147, 0.299, 0.054 ms]
-[marking 0x34910f0dc399 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a0aa29 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x34910f0dde69 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a0ea41 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x34910f0e0f61 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a12419 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x34910f0e3d39 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a15681 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x34910f0e67e1 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[optimizing 0x58ddcb5ef89 <JS Function finishMaybe (SharedFunctionInfo 0x58ddcb32b81)> - took 0.038, 0.154, 0.025 ms]
-[marking 0x34910f0e7db9 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a18cd9 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[optimizing 0x58ddcb5ee69 <JS Function onwriteDrain (SharedFunctionInfo 0x58ddcb32941)> - took 0.010, 0.053, 0.019 ms]
-[marking 0x34910f0e9439 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a1c1e1 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x34910f0ec001 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a8a281 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a5b311 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a8e279 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a5e389 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a91da1 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a611f1 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a95709 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a63f99 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a99701 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a67011 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a9d619 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a6a029 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46aa1841 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46a6d191 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46ae3861 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46ab0a09 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46ae8269 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46ab3ed1 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46aec811 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46ab71b9 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46af1609 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46aba831 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46af6161 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46abdd89 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46afa709 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46ac1071 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46aff111 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0xaad46ac4539 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x1c2bb051621 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x1c2bb020439 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x1c2bb055bc9 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x1c2bb023721 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x1c2bb05a481 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x1c2bb026b59 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x1c2bb05f199 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x1c2bb02a171 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x1c2bb062e11 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x1c2bb02d069 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x1c2bb066ee9 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x1c2bb030141 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x1c2bb06ab61 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x1c2bb033039 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa5330344b9 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa533005ba1 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa533038591 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa533008c79 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa53303c379 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa53300bca1 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa53303f961 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa53300e8c9 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa533043a39 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa5330119a1 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa5330473a1 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa533014749 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa53304abb9 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa533017461 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa533082f99 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa533083cf9 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa533107c69 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa5331089c9 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa533187291 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa533187ff1 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa533209289 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa533209fe9 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa533286ed1 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa533287c31 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa533308ec1 <JS Function cb (SharedFunctionInfo 0x58ddcbb8b09)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[marking 0x3aa533309c21 <JS Function (SharedFunctionInfo 0x58ddcbb9c81)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[deoptimizing (DEOPT eager): begin 0x58ddcb31e99 Readable.push (opt #38) @2, FP to SP delta: 40]
+[evicting entry from optimizing code map (notify deoptimized) for 0x3407eff315e9 <SharedFunctionInfo Readable.read>]
+[marking 0x1911c1d1fae9 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x3407eff5efb1 <JS Function finishMaybe (SharedFunctionInfo 0x3407eff32b81)> for recompilation, reason: small function, ICs with typeinfo: 1/5 (20%)]
+[marking 0x3407eff5ee49 <JS Function afterWrite (SharedFunctionInfo 0x3407eff328b1)> for recompilation, reason: small function, ICs with typeinfo: 4/4 (100%)]
+[marking 0x1911c1d11141 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x3407eff5ee91 <JS Function onwriteDrain (SharedFunctionInfo 0x3407eff32941)> for recompilation, reason: small function, ICs with typeinfo: 4/6 (66%)]
+[marking 0x1911c1d55769 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1d4acf9 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1d4d269 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1d3e389 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1d4f759 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1d40999 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1d7cf01 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1d64841 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1d80b79 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1d67739 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1d84cc1 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1d6a841 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1dc60f9 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1d98c49 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[optimizing 0x3407eff5ee49 <JS Function afterWrite (SharedFunctionInfo 0x3407eff328b1)> - took 0.160, 0.287, 0.050 ms]
+[marking 0x1911c1dc6fe9 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1dc9c21 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1d9bab1 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1dcdc19 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1d9eb29 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1dd15f1 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1da1901 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1dd4859 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1da43a9 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[optimizing 0x3407eff5efb1 <JS Function finishMaybe (SharedFunctionInfo 0x3407eff32b81)> - took 0.039, 0.151, 0.025 ms]
+[marking 0x1911c1dd64a9 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1dd7eb1 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1da7001 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[optimizing 0x3407eff5ee91 <JS Function onwriteDrain (SharedFunctionInfo 0x3407eff32941)> - took 0.011, 0.052, 0.011 ms]
+[marking 0x1911c1da7049 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1ddb3b9 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1da9bc9 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d26aa11 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d23b8d1 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d26ea09 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d23e949 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d272531 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d2417b1 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d275e99 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d244559 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d279e91 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d2475d1 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d27dda9 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d24a5e9 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d281fd1 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d24d751 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d2c3e71 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d291259 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d2c8879 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d294721 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d2cce21 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d297a09 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d2d1c19 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d29b081 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d2d6771 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d29e5d9 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d2dad19 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d2a18c1 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d2df721 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d2a4d89 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x15511a811a49 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d2fc921 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x15511a815ff1 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x14ae4d2ffc09 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x15511a81a8a9 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1de2cc9 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x15511a81f5c1 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1de62e1 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x15511a823239 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1de91d9 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x15511a827311 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1dec2b1 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x15511a82af89 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x1911c1def1a9 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e91033f31 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e910057d1 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e91038009 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e910088a9 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e9103bdf1 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e9100b8d1 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e9103f3d9 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e9100e4f9 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e910434b1 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e910115d1 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e91046e19 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e91014379 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e9104a631 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e91017091 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e9107f459 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e910801b9 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e91104101 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e91104e61 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e91183729 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e91184489 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e912056f1 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e91206451 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e91283339 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e91284099 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e913052c9 <JS Function cb (SharedFunctionInfo 0x3407effb8b19)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[marking 0x270e91306029 <JS Function (SharedFunctionInfo 0x3407effb9c91)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[deoptimizing (DEOPT eager): begin 0x3407eff31e99 Readable.push (opt #35) @2, FP to SP delta: 40]
   translating Readable.push => node=3, height=8
-    0x7fff5fbf70b8: [top + 56] <- 0x34910f01b981 ; rax 0x34910f01b981 <a ReadStream with map 0x34666ba1a901>
-    0x7fff5fbf70b0: [top + 48] <- 0x1ab0cf904101 ; [sp + 64] 0x1ab0cf904101 <null>
-    0x7fff5fbf70a8: [top + 40] <- 0x1ab0cf904121 ; [sp + 56] 0x1ab0cf904121 <undefined>
-    0x7fff5fbf70a0: [top + 32] <- 0x31af35606ef8 ; caller's pc
+    0x7fff5fbf70b8: [top + 56] <- 0x3407effd9b29 ; rax 0x3407effd9b29 <a ReadStream with map 0x360f68b1a901>
+    0x7fff5fbf70b0: [top + 48] <- 0x219523804101 ; [sp + 64] 0x219523804101 <null>
+    0x7fff5fbf70a8: [top + 40] <- 0x219523804121 ; [sp + 56] 0x219523804121 <undefined>
+    0x7fff5fbf70a0: [top + 32] <- 0x1bd42bd06ef8 ; caller's pc
     0x7fff5fbf7098: [top + 24] <- 0x7fff5fbf70d8 ; caller's fp
-    0x7fff5fbf7090: [top + 16] <- 0x58ddcb83c31; context
-    0x7fff5fbf7088: [top + 8] <- 0x58ddcb31e99; function
-    0x7fff5fbf7080: [top + 0] <- 0x1ab0cf904121 <undefined> ; literal
-[deoptimizing (eager): end 0x58ddcb31e99 Readable.push @2 => node=3, pc=0x31af356e8dc2, state=NO_REGISTERS, alignment=no padding, took 0.015 ms]
+    0x7fff5fbf7090: [top + 16] <- 0x3407eff83c59; context
+    0x7fff5fbf7088: [top + 8] <- 0x3407eff31e99; function
+    0x7fff5fbf7080: [top + 0] <- 0x219523804121 <undefined> ; literal
+[deoptimizing (eager): end 0x3407eff31e99 Readable.push @2 => node=3, pc=0x1bd42bde8dc2, state=NO_REGISTERS, alignment=no padding, took 0.015 ms]
 [removing optimized code for: Readable.push]
-[evicting entry from optimizing code map (notify deoptimized) for 0x58ddcb31439 <SharedFunctionInfo Readable.push>]
-[deoptimizing (DEOPT soft): begin 0x58ddcb5e6b1 readableAddChunk (opt #52) @48, FP to SP delta: 80]
+[evicting entry from optimizing code map (notify deoptimized) for 0x3407eff31439 <SharedFunctionInfo Readable.push>]
+[deoptimizing (DEOPT soft): begin 0x3407eff5e6d9 readableAddChunk (opt #57) @48, FP to SP delta: 80]
   translating readableAddChunk => node=481, height=16
-    0x7fff5fbf7070: [top + 88] <- 0x1ab0cf904121 ; [sp + 136] 0x1ab0cf904121 <undefined>
-    0x7fff5fbf7068: [top + 80] <- 0x34910f01b981 ; [sp + 128] 0x34910f01b981 <a ReadStream with map 0x34666ba1a901>
-    0x7fff5fbf7060: [top + 72] <- 0x34910f01ba89 ; [sp + 120] 0x34910f01ba89 <a ReadableState with map 0x34666ba1a361>
-    0x7fff5fbf7058: [top + 64] <- 0x1ab0cf904101 ; [sp + 112] 0x1ab0cf904101 <null>
-    0x7fff5fbf7050: [top + 56] <- 0x1ab0cf904121 ; [sp + 104] 0x1ab0cf904121 <undefined>
-    0x7fff5fbf7048: [top + 48] <- 0x1ab0cf904181 ; [sp + 96] 0x1ab0cf904181 <false>
-    0x7fff5fbf7040: [top + 40] <- 0x31af356e8f37 ; caller's pc
+    0x7fff5fbf7070: [top + 88] <- 0x219523804121 ; [sp + 136] 0x219523804121 <undefined>
+    0x7fff5fbf7068: [top + 80] <- 0x3407effd9b29 ; [sp + 128] 0x3407effd9b29 <a ReadStream with map 0x360f68b1a901>
+    0x7fff5fbf7060: [top + 72] <- 0x3407effd9c31 ; [sp + 120] 0x3407effd9c31 <a ReadableState with map 0x360f68b1a361>
+    0x7fff5fbf7058: [top + 64] <- 0x219523804101 ; [sp + 112] 0x219523804101 <null>
+    0x7fff5fbf7050: [top + 56] <- 0x219523804121 ; [sp + 104] 0x219523804121 <undefined>
+    0x7fff5fbf7048: [top + 48] <- 0x219523804181 ; [sp + 96] 0x219523804181 <false>
+    0x7fff5fbf7040: [top + 40] <- 0x1bd42bde8f37 ; caller's pc
     0x7fff5fbf7038: [top + 32] <- 0x7fff5fbf7098 ; caller's fp
-    0x7fff5fbf7030: [top + 24] <- 0x58ddcb83c31; context
-    0x7fff5fbf7028: [top + 16] <- 0x58ddcb5e6b1; function
-    0x7fff5fbf7020: [top + 8] <- 0x1ab0cf904121 <undefined> ; literal
-    0x7fff5fbf7018: [top + 0] <- 0x1ab0cf904121 <undefined> ; literal
-[deoptimizing (soft): end 0x58ddcb5e6b1 readableAddChunk @48 => node=481, pc=0x31af356e9103, state=NO_REGISTERS, alignment=no padding, took 0.026 ms]
+    0x7fff5fbf7030: [top + 24] <- 0x3407eff83c59; context
+    0x7fff5fbf7028: [top + 16] <- 0x3407eff5e6d9; function
+    0x7fff5fbf7020: [top + 8] <- 0x219523804121 <undefined> ; literal
+    0x7fff5fbf7018: [top + 0] <- 0x219523804121 <undefined> ; literal
+[deoptimizing (soft): end 0x3407eff5e6d9 readableAddChunk @48 => node=481, pc=0x1bd42bde9103, state=NO_REGISTERS, alignment=no padding, took 0.025 ms]
 [removing optimized code for: readableAddChunk]
-[evicting entry from optimizing code map (notify deoptimized) for 0x58ddcb30b39 <SharedFunctionInfo readableAddChunk>]
-[deoptimizing (DEOPT soft): begin 0x1ab0cf987791 emit (opt #58) @18, FP to SP delta: 72]
+[evicting entry from optimizing code map (notify deoptimized) for 0x3407eff30b39 <SharedFunctionInfo readableAddChunk>]
+[deoptimizing (DEOPT soft): begin 0x219523887791 emit (opt #59) @18, FP to SP delta: 72]
   translating emit => node=639, height=64
-    0x7fff5fbf7118: [top + 104] <- 0x34910f01b981 ; [sp + 96] 0x34910f01b981 <a ReadStream with map 0x34666ba1a901>
-    0x7fff5fbf7110: [top + 96] <- 0x389ed4d1d7b1 ; [sp + 88] 0x389ed4d1d7b1 <String[3]: end>
-    0x7fff5fbf7108: [top + 88] <- 0x31af3571fb41 ; caller's pc
+    0x7fff5fbf7118: [top + 104] <- 0x3407effd9b29 ; [sp + 96] 0x3407effd9b29 <a ReadStream with map 0x360f68b1a901>
+    0x7fff5fbf7110: [top + 96] <- 0x4eb99b1d7b1 ; [sp + 88] 0x4eb99b1d7b1 <String[3]: end>
+    0x7fff5fbf7108: [top + 88] <- 0x1bd42be1f4e1 ; caller's pc
     0x7fff5fbf7100: [top + 80] <- 0x7fff5fbf7138 ; caller's fp
-    0x7fff5fbf70f8: [top + 72] <- 0x3aa533379111; context
-    0x7fff5fbf70f0: [top + 64] <- 0x1ab0cf987791; function
-    0x7fff5fbf70e8: [top + 56] <- 0x1ab0cf9041e1 <Odd Oddball> ; object (length = 1, is_args = 1)
-      object @0x7fff5fbf70e8: [field #0] <- 0x389ed4d1d7b1 ; [sp + 88] 0x389ed4d1d7b1 <String[3]: end>
-    0x7fff5fbf70e0: [top + 48] <- 0x1ab0cf904121 <undefined> ; literal
-    0x7fff5fbf70d8: [top + 40] <- 0x34910f052fc1 ; [sp + 24] 0x34910f052fc1 <JS Array[2]>
-    0x7fff5fbf70d0: [top + 32] <- 0x1ab0cf904121 <undefined> ; literal
-    0x7fff5fbf70c8: [top + 24] <- 0x1ab0cf904121 <undefined> ; literal
-    0x7fff5fbf70c0: [top + 16] <- 0x1ab0cf904121 <undefined> ; literal
-    0x7fff5fbf70b8: [top + 8] <- 0x1ab0cf904121 <undefined> ; literal
-    0x7fff5fbf70b0: [top + 0] <- 0x1ab0cf987791 ; [sp + 40] 0x1ab0cf987791 <JS Function emit (SharedFunctionInfo 0x1ab0cf9841a1)>
-[deoptimizing (soft): end 0x1ab0cf987791 emit @18 => node=639, pc=0x31af3565e63f, state=NO_REGISTERS, alignment=no padding, took 0.025 ms]
-Materialized arguments object of length 1 for 0x7fff5fbf70e8: 0x3aa533379149 <an Arguments with map 0x3291d5108049>
+    0x7fff5fbf70f8: [top + 72] <- 0x270e91375519; context
+    0x7fff5fbf70f0: [top + 64] <- 0x219523887791; function
+    0x7fff5fbf70e8: [top + 56] <- 0x2195238041e1 <Odd Oddball> ; object (length = 1, is_args = 1)
+      object @0x7fff5fbf70e8: [field #0] <- 0x4eb99b1d7b1 ; [sp + 88] 0x4eb99b1d7b1 <String[3]: end>
+    0x7fff5fbf70e0: [top + 48] <- 0x219523804121 <undefined> ; literal
+    0x7fff5fbf70d8: [top + 40] <- 0x1911c1d18b69 ; [sp + 24] 0x1911c1d18b69 <JS Array[2]>
+    0x7fff5fbf70d0: [top + 32] <- 0x219523804121 <undefined> ; literal
+    0x7fff5fbf70c8: [top + 24] <- 0x219523804121 <undefined> ; literal
+    0x7fff5fbf70c0: [top + 16] <- 0x219523804121 <undefined> ; literal
+    0x7fff5fbf70b8: [top + 8] <- 0x219523804121 <undefined> ; literal
+    0x7fff5fbf70b0: [top + 0] <- 0x219523887791 ; [sp + 40] 0x219523887791 <JS Function emit (SharedFunctionInfo 0x2195238841a1)>
+[deoptimizing (soft): end 0x219523887791 emit @18 => node=639, pc=0x1bd42bd5e63f, state=NO_REGISTERS, alignment=no padding, took 0.023 ms]
+Materialized arguments object of length 1 for 0x7fff5fbf70e8: 0x270e91375551 <an Arguments with map 0x1e2067a08049>
 [removing optimized code for: emit]
-[evicting entry from optimizing code map (notify deoptimized) for 0x1ab0cf9841a1 <SharedFunctionInfo emit>]
-[deoptimizing (DEOPT soft): begin 0x58ddcb5ef89 finishMaybe (opt #61) @4, FP to SP delta: 24]
+[evicting entry from optimizing code map (notify deoptimized) for 0x2195238841a1 <SharedFunctionInfo emit>]
+[deoptimizing (DEOPT soft): begin 0x3407eff5efb1 finishMaybe (opt #62) @4, FP to SP delta: 24]
   translating finishMaybe => node=16, height=16
-    0x7fff5fbf6ed0: [top + 64] <- 0x1ab0cf904121 ; [sp + 56] 0x1ab0cf904121 <undefined>
-    0x7fff5fbf6ec8: [top + 56] <- 0x34910f01b4c1 ; [sp + 48] 0x34910f01b4c1 <a Transform with map 0x34666ba113f1>
-    0x7fff5fbf6ec0: [top + 48] <- 0x34910f01b7a1 ; rdx 0x34910f01b7a1 <a WritableState with map 0x34666ba10ee1>
-    0x7fff5fbf6eb8: [top + 40] <- 0x31af357215f2 ; caller's pc
+    0x7fff5fbf6ed0: [top + 64] <- 0x219523804121 ; [sp + 56] 0x219523804121 <undefined>
+    0x7fff5fbf6ec8: [top + 56] <- 0x3407effd9669 ; [sp + 48] 0x3407effd9669 <a Transform with map 0x360f68b113f1>
+    0x7fff5fbf6ec0: [top + 48] <- 0x3407effd9949 ; rdx 0x3407effd9949 <a WritableState with map 0x360f68b10ee1>
+    0x7fff5fbf6eb8: [top + 40] <- 0x1bd42be20f92 ; caller's pc
     0x7fff5fbf6eb0: [top + 32] <- 0x7fff5fbf6ef0 ; caller's fp
-    0x7fff5fbf6ea8: [top + 24] <- 0x58ddcb850a9; context
-    0x7fff5fbf6ea0: [top + 16] <- 0x58ddcb5ef89; function
-    0x7fff5fbf6e98: [top + 8] <- 0x1ab0cf904121 <undefined> ; literal
-    0x7fff5fbf6e90: [top + 0] <- 0x58ddcb5eef9 ; rbx 0x58ddcb5eef9 <JS Function needFinish (SharedFunctionInfo 0x58ddcb32a61)>
+    0x7fff5fbf6ea8: [top + 24] <- 0x3407eff850d1; context
+    0x7fff5fbf6ea0: [top + 16] <- 0x3407eff5efb1; function
+    0x7fff5fbf6e98: [top + 8] <- 0x219523804121 <undefined> ; literal
+    0x7fff5fbf6e90: [top + 0] <- 0x3407eff5ef21 ; rbx 0x3407eff5ef21 <JS Function needFinish (SharedFunctionInfo 0x3407eff32a61)>
   translating needFinish => node=2, height=0
-    0x7fff5fbf6e88: [top + 48] <- 0x1ab0cf97cb21 <JS Global Object> ; literal
-    0x7fff5fbf6e80: [top + 40] <- 0x34910f01b4c1 ; [sp + 48] 0x34910f01b4c1 <a Transform with map 0x34666ba113f1>
-    0x7fff5fbf6e78: [top + 32] <- 0x34910f01b7a1 ; rdx 0x34910f01b7a1 <a WritableState with map 0x34666ba10ee1>
-    0x7fff5fbf6e70: [top + 24] <- 0x31af3571d139 ; caller's pc
+    0x7fff5fbf6e88: [top + 48] <- 0x21952387cb21 <JS Global Object> ; literal
+    0x7fff5fbf6e80: [top + 40] <- 0x3407effd9669 ; [sp + 48] 0x3407effd9669 <a Transform with map 0x360f68b113f1>
+    0x7fff5fbf6e78: [top + 32] <- 0x3407effd9949 ; rdx 0x3407effd9949 <a WritableState with map 0x360f68b10ee1>
+    0x7fff5fbf6e70: [top + 24] <- 0x1bd42be1cad9 ; caller's pc
     0x7fff5fbf6e68: [top + 16] <- 0x7fff5fbf6eb0 ; caller's fp
-    0x7fff5fbf6e60: [top + 8] <- 0x58ddcb850a9; context
-    0x7fff5fbf6e58: [top + 0] <- 0x58ddcIteration 0
-b5eef9; function
-[deoptimizing (soft): end 0x58ddcb5eef9 finishMaybe @4 => node=2, pc=0x31af356f20be, state=NO_REGISTERS, alignment=no padding, took 0.031 ms]
+    0x7fff5fbf6e60: [top + 8] <- 0x3407eff850d1; context
+    0x7fff5fbf6e58: [top + 0] <- 0x3407eff5ef21; function
+[deoptimizing (soft): end 0x3407eff5ef21 finishMaybe @4 => node=2, pc=0x1bd42bdf20be, state=NO_REGISTERS, alignment=no padding, toIteration 0
+ok 0.023 ms]
 [removing optimized code for: finishMaybe]
-[evicting entry from optimizing code map (notify deoptimized) for 0x58ddcb32b81 <SharedFunctionInfo finishMaybe>]
-[deoptimizing (DEOPT soft): begin 0x58ddcb5eef9 needFinish (opt #46) @3, FP to SP delta: 24]
+[evicting entry from optimizing code map (notify deoptimized) for 0x3407eff32b81 <SharedFunctionInfo finishMaybe>]
+[deoptimizing (DEOPT soft): begin 0x3407eff5ef21 needFinish (opt #46) @3, FP to SP delta: 24]
   translating needFinish => node=3, height=0
-    0x7fff5fbf6e88: [top + 48] <- 0x1ab0cf904121 ; [sp + 56] 0x1ab0cf904121 <undefined>
-    0x7fff5fbf6e80: [top + 40] <- 0x34910f01b381 ; [sp + 48] 0x34910f01b381 <a Writable with map 0x34666ba0fa59>
-    0x7fff5fbf6e78: [top + 32] <- 0x34910f01b279 ; rax 0x34910f01b279 <a WritableState with map 0x34666ba10ee1>
-    0x7fff5fbf6e70: [top + 24] <- 0x31af3571d139 ; caller's pc
+    0x7fff5fbf6e88: [top + 48] <- 0x219523804121 ; [sp + 56] 0x219523804121 <undefined>
+    0x7fff5fbf6e80: [top + 40] <- 0x3407effd9421 ; [sp + 48] 0x3407effd9421 <a Writable with map 0x360f68b0fa59>
+    0x7fff5fbf6e78: [top + 32] <- 0x3407effd9489 ; rax 0x3407effd9489 <a WritableState with map 0x360f68b10ee1>
+    0x7fff5fbf6e70: [top + 24] <- 0x1bd42be1cad9 ; caller's pc
     0x7fff5fbf6e68: [top + 16] <- 0x7fff5fbf6eb0 ; caller's fp
-    0x7fff5fbf6e60: [top + 8] <- 0x58ddcb850a9; context
-    0x7fff5fbf6e58: [top + 0] <- 0x58ddcb5eef9; function
-[deoptimizing (soft): end 0x58ddcb5eef9 needFinish @3 => node=3, pc=0x31af356f20be, state=NO_REGISTERS, alignment=no padding, took 0.014 ms]
+    0x7fff5fbf6e60: [top + 8] <- 0x3407eff850d1; context
+    0x7fff5fbf6e58: [top + 0] <- 0x3407eff5ef21; function
+[deoptimizing (soft): end 0x3407eff5ef21 needFinish @3 => node=3, pc=0x1bd42bdf20be, state=NO_REGISTERS, alignment=no padding, took 0.013 ms]
 [removing optimized code for: needFinish]
-[evicting entry from optimizing code map (notify deoptimized) for 0x58ddcb32a61 <SharedFunctionInfo needFinish>]
-[marking 0x34910f047399 <JS Function addToP (SharedFunctionInfo 0x58ddcba2dd1)> for recompilation, reason: small function, ICs with typeinfo: 3/3 (100%)]
-[optimizing 0x34910f047399 <JS Function addToP (SharedFunctionInfo 0x58ddcba2dd1)> - took 0.040, 0.076, 0.028 ms]
-[deoptimizing (DEOPT eager): begin 0x1ab0cf9635e1 forEach (opt #57) @12, FP to SP delta: 72]
+[evicting entry from optimizing code map (notify deoptimized) for 0x3407eff32a61 <SharedFunctionInfo needFinish>]
+[marking 0x1911c1d139b9 <JS Function addToP (SharedFunctionInfo 0x3407effa2de1)> for recompilation, reason: small function, ICs with typeinfo: 3/3 (100%)]
+[optimizing 0x1911c1d139b9 <JS Function addToP (SharedFunctionInfo 0x3407effa2de1)> - took 0.019, 0.078, 0.020 ms]
+[deoptimizing (DEOPT eager): begin 0x2195238635e1 forEach (opt #58) @12, FP to SP delta: 72]
   translating forEach => node=105, height=32
-    0x7fff5fbf68a8: [top + 80] <- 0x3aa533395ce9 ; [sp + 104] 0x3aa533395ce9 <JS Array[9]>
-    0x7fff5fbf68a0: [top + 72] <- 0x3aa533395d09 ; [sp + 96] 0x3aa533395d09 <JS Function (SharedFunctionInfo 0x1c2bb07a209)>
-    0x7fff5fbf6898: [top + 64] <- 0x3aa533395359 ; rdx 0x3aa533395359 <a Console with map 0x34666ba1b8c1>
-    0x7fff5fbf6890: [top + 56] <- 0x31af3572d9f6 ; caller's pc
+    0x7fff5fbf68a8: [top + 80] <- 0x270e913920f1 ; [sp + 104] 0x270e913920f1 <JS Array[9]>
+    0x7fff5fbf68a0: [top + 72] <- 0x270e91392111 ; [sp + 96] 0x270e91392111 <JS Function (SharedFunctionInfo 0x15511a83a809)>
+    0x7fff5fbf6898: [top + 64] <- 0x270e91391761 ; rdx 0x270e91391761 <a Console with map 0x360f68b1b8c1>
+    0x7fff5fbf6890: [top + 56] <- 0x1bd42be2d396 ; caller's pc
     0x7fff5fbf6888: [top + 48] <- 0x7fff5fbf68d0 ; caller's fp
-    0x7fff5fbf6880: [top + 40] <- 0x1ab0cf95b8e9; context
-    0x7fff5fbf6878: [top + 32] <- 0x1ab0cf9635e1; function
-    0x7fff5fbf6870: [top + 24] <- 0x3aa533395ce9 ; rax 0x3aa533395ce9 <JS Array[9]>
+    0x7fff5fbf6880: [top + 40] <- 0x21952385b8e9; context
+    0x7fff5fbf6878: [top + 32] <- 0x2195238635e1; function
+    0x7fff5fbf6870: [top + 24] <- 0x270e913920f1 ; rax 0x270e913920f1 <JS Array[9]>
     0x7fff5fbf6868: [top + 16] <- 9 ; rbx (smi)
-    0x7fff5fbf6860: [top + 8] <- 0x1ab0cf904121 <undefined> ; literal
-    0x7fff5fbf6858: [top + 0] <- 0x1ab0cf904121 <undefined> ; literal
-[deoptimizing (eager): end 0x1ab0cf9635e1 forEach @12 => node=105, pc=0x31af3568548b, state=NO_REGISTERS, alignment=no padding, took 0.019 ms]
+    0x7fff5fbf6860: [top + 8] <- 0x219523804121 <undefined> ; literal
+    0x7fff5fbf6858: [top + 0] <- 0x219523804121 <undefined> ; literal
+[deoptimizing (eager): end 0x2195238635e1 forEach @12 => node=105, pc=0x1bd42bd8548b, state=NO_REGISTERS, alignment=no padding, took 0.021 ms]
 [removing optimized code for: forEach]
-[evicting entry from optimizing code map (notify deoptimized) for 0x1ab0cf933119 <SharedFunctionInfo forEach>]
-[deoptimizing (DEOPT eager): begin 0x1ab0cf9631b9 toString (opt #44) @4, FP to SP delta: 24]
+[evicting entry from optimizing code map (notify deoptimized) for 0x219523833119 <SharedFunctionInfo forEach>]
+[deoptimizing (DEOPT eager): begin 0x2195238631b9 toString (opt #43) @4, FP to SP delta: 24]
   translating toString => node=93, height=16
-    0x7fff5fbf6b60: [top + 48] <- 0x3aa5333ad879 ; rax 0x3aa5333ad879 <JS Array[2]>
-    0x7fff5fbf6b58: [top + 40] <- 0x31af357350c5 ; caller's pc
+    0x7fff5fbf6b60: [top + 48] <- 0x270e913a9c81 ; rax 0x270e913a9c81 <JS Array[2]>
+    0x7fff5fbf6b58: [top + 40] <- 0x1bd42be34a65 ; caller's pc
     0x7fff5fbf6b50: [top + 32] <- 0x7fff5fbf6b90 ; caller's fp
-    0x7fff5fbf6b48: [top + 24] <- 0x1ab0cf95b8e9; context
-    0x7fff5fbf6b40: [top + 16] <- 0x1ab0cf9631b9; function
-    0x7fff5fbf6b38: [top + 8] <- 0x1ab0cf904121 <undefined> ; literal
-    0x7fff5fbf6b30: [top + 0] <- 0x1ab0cf904121 <undefined> ; literal
-[deoptimizing (eager): end 0x1ab0cf9631b9 toString @4 => node=93, pc=0x31af356f1105, state=NO_REGISTERS, alignment=no padding, took 0.012 ms]
+    0x7fff5fbf6b48: [top + 24] <- 0x21952385b8e9; context
+    0x7fff5fbf6b40: [top + 16] <- 0x2195238631b9; function
+    0x7fff5fbf6b38: [top + 8] <- 0x219523804121 <undefined> ; literal
+    0x7fff5fbf6b30: [top + 0] <- 0x219523804121 <undefined> ; literal
+[deoptimizing (eager): end 0x2195238631b9 toString @4 => node=93, pc=0x1bd42bdf1105, state=NO_REGISTERS, alignment=no padding, took 0.011 ms]
 [removing optimized code for: toString]
-[evicting entry from optimizing code map (notify deoptimized) for 0x1ab0cf932549 <SharedFunctionInfo toString>]
-[marking 0x1ab0cf9631b9 <JS Function toString (SharedFunctionInfo 0x1ab0cf932549)> for recompilation, reason: small function, ICs with typeinfo: 6/10 (60%)]
-[deoptimizing (DEOPT eager): begin 0x34910f01b1e9 setCell (opt #43) @3, FP to SP delta: 32]
+[evicting entry from optimizing code map (notify deoptimized) for 0x219523832549 <SharedFunctionInfo toString>]
+[marking 0x2195238631b9 <JS Function toString (SharedFunctionInfo 0x219523832549)> for recompilation, reason: small function, ICs with typeinfo: 6/10 (60%)]
+[deoptimizing (DEOPT eager): begin 0x1911c1d13d71 setCell (opt #42) @3, FP to SP delta: 32]
   translating setCell => node=3, height=8
-    0x7fff5fbf6c08: [top + 48] <- 0x1ab0cf97cb21 ; [sp + 56] 0x1ab0cf97cb21 <JS Global Object>
-    0x7fff5fbf6c00: [top + 40] <- 0x3aa5333bae39 ; rax 0x3aa5333bae39 <an Object with map 0x34666ba1ad81>
-    0x7fff5fbf6bf8: [top + 32] <- 0x31af35606ef8 ; caller's pc
+    0x7fff5fbf6c08: [top + 48] <- 0x21952387cb21 ; [sp + 56] 0x21952387cb21 <JS Global Object>
+    0x7fff5fbf6c00: [top + 40] <- 0x270e913b7241 ; rax 0x270e913b7241 <an Object with map 0x360f68b1ad81>
+    0x7fff5fbf6bf8: [top + 32] <- 0x1bd42bd06ef8 ; caller's pc
     0x7fff5fbf6bf0: [top + 24] <- 0x7fff5fbf6c28 ; caller's fp
-    0x7fff5fbf6be8: [top + 16] <- 0x34910f0478c9; context
-    0x7fff5fbf6be0: [top + 8] <- 0x34910f01b1e9; function
-    0x7fff5fbf6bd8: [top + 0] <- 0x1ab0cf904121 <undefined> ; literal
-[deoptimizing (eager): end 0x34910f01b1e9 setCell @3 => node=3, pc=0x31af356f0ee2, state=NO_REGISTERS, alignment=no padding, took 0.032 ms]
+    0x7fff5fbf6be8: [top + 16] <- 0x1911c1d1cfe1; context
+    0x7fff5fbf6be0: [top + 8] <- 0x1911c1d13d71; function
+    0x7fff5fbf6bd8: [top + 0] <- 0x219523804121 <undefined> ; literal
+[deoptimizing (eager): end 0x1911c1d13d71 setCell @3 => node=3, pc=0x1bd42bdf0ee2, state=NO_REGISTERS, alignment=no padding, took 0.027 ms]
 [removing optimized code for: setCell]
-[evicting entry from optimizing code map (notify deoptimized) for 0x58ddcba7ff9 <SharedFunctionInfo setCell>]
-[optimizing 0x1ab0cf9631b9 <JS Function toString (SharedFunctionInfo 0x1ab0cf932549)> - took 0.059, 0.219, 0.026 ms]
-[marking 0x34910f04c6c1 <JS Function coordsAreWithinBounds (SharedFunctionInfo 0x58ddcba8239)> for recompilation, reason: small function, ICs with typeinfo: 15/15 (100%)]
-[marking 0x34910f047689 <JS Function getCell (SharedFunctionInfo 0x58ddcba7f69)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
-[marking 0x34910f01b1e9 <JS Function setCell (SharedFunctionInfo 0x58ddcba7ff9)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
-[optimizing 0x34910f047689 <JS Function getCell (SharedFunctionInfo 0x58ddcba7f69)> - took 0.191, 0.322, 0.077 ms]
-[optimizing 0x34910f04c6c1 <JS Function coordsAreWithinBounds (SharedFunctionInfo 0x58ddcba8239)> - took 0.019, 0.118, 0.024 ms]
-[marking 0x1ab0cf973621 <JS Function ToUint32 (SharedFunctionInfo 0x1ab0cf936f31)> for recompilation, reason: small function, ICs with typeinfo: 1/2 (50%)]
-[optimizing 0x34910f01b1e9 <JS Function setCell (SharedFunctionInfo 0x58ddcba7ff9)> - took 0.058, 0.157, 0.037 ms]
-[optimizing 0x1ab0cf973621 <JS Function ToUint32 (SharedFunctionInfo 0x1ab0cf936f31)> - took 0.011, 0.065, 0.015 ms]
-[deoptimizing (DEOPT eager): begin 0x34910f01b1e9 setCell (opt #67) @2, FP to SP delta: 32]
+[evicting entry from optimizing code map (notify deoptimized) for 0x3407effa8009 <SharedFunctionInfo setCell>]
+[optimizing 0x2195238631b9 <JS Function toString (SharedFunctionInfo 0x219523832549)> - took 0.034, 0.118, 0.022 ms]
+[marking 0x1911c1d20cd9 <JS Function coordsAreWithinBounds (SharedFunctionInfo 0x3407effa8249)> for recompilation, reason: small function, ICs with typeinfo: 15/15 (100%)]
+[marking 0x1911c1d13d29 <JS Function getCell (SharedFunctionInfo 0x3407effa7f79)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
+[marking 0x1911c1d13d71 <JS Function setCell (SharedFunctionInfo 0x3407effa8009)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
+[optimizing 0x1911c1d13d29 <JS Function getCell (SharedFunctionInfo 0x3407effa7f79)> - took 0.162, 0.297, 0.101 ms]
+[optimizing 0x1911c1d20cd9 <JS Function coordsAreWithinBounds (SharedFunctionInfo 0x3407effa8249)> - took 0.017, 0.110, 0.021 ms]
+[marking 0x219523873621 <JS Function ToUint32 (SharedFunctionInfo 0x219523836f31)> for recompilation, reason: small function, ICs with typeinfo: 1/2 (50%)]
+[optimizing 0x1911c1d13d71 <JS Function setCell (SharedFunctionInfo 0x3407effa8009)> - took 0.054, 0.148, 0.041 ms]
+[optimizing 0x219523873621 <JS Function ToUint32 (SharedFunctionInfo 0x219523836f31)> - took 0.020, 0.061, 0.026 ms]
+[deoptimizing (DEOPT eager): begin 0x1911c1d13d71 setCell (opt #68) @2, FP to SP delta: 32]
   translating setCell => node=3, height=8
-    0x7fff5fbf6c08: [top + 48] <- 0x1ab0cf97cb21 ; [sp + 56] 0x1ab0cf97cb21 <JS Global Object>
-    0x7fff5fbf6c00: [top + 40] <- 0x34910f0587f1 ; rax 0x34910f0587f1 <an Object with map 0x34666ba1dc79>
-    0x7fff5fbf6bf8: [top + 32] <- 0x31af35606ef8 ; caller's pc
+    0x7fff5fbf6c08: [top + 48] <- 0x21952387cb21 ; [sp + 56] 0x21952387cb21 <JS Global Object>
+    0x7fff5fbf6c00: [top + 40] <- 0x1911c1d25f11 ; rax 0x1911c1d25f11 <an Object with map 0x360f68b1dc79>
+    0x7fff5fbf6bf8: [top + 32] <- 0x1bd42bd06ef8 ; caller's pc
     0x7fff5fbf6bf0: [top + 24] <- 0x7fff5fbf6c28 ; caller's fp
-    0x7fff5fbf6be8: [top + 16] <- 0x34910f0478c9; context
-    0x7fff5fbf6be0: [top + 8] <- 0x34910f01b1e9; function
-    0x7fff5fbf6bd8: [top + 0] <- 0x1ab0cf904121 <undefined> ; literal
-[deoptimizing (eager): end 0x34910f01b1e9 setCell @2 => node=3, pc=0x31af356f0ee2, state=NO_REGISTERS, alignment=no padding, took 0.016 ms]
+    0x7fff5fbf6be8: [top + 16] <- 0x1911c1d1cfe1; context
+    0x7fff5fbf6be0: [top + 8] <- 0x1911c1d13d71; function
+    0x7fff5fbf6bd8: [top + 0] <- 0x219523804121 <undefined> ; literal
+[deoptimizing (eager): end 0x1911c1d13d71 setCell @2 => node=3, pc=0x1bd42bdf0ee2, state=NO_REGISTERS, alignment=no padding, took 0.014 ms]
 [removing optimized code for: setCell]
-[evicting entry from optimizing code map (notify deoptimized) for 0x58ddcba7ff9 <SharedFunctionInfo setCell>]
-[deoptimizing (DEOPT eager): begin 0x58ddcba7eb9 isDefault (opt #49) @2, FP to SP delta: 24]
+[evicting entry from optimizing code map (notify deoptimized) for 0x3407effa8009 <SharedFunctionInfo setCell>]
+[deoptimizing (DEOPT eager): begin 0x3407effa7ec9 isDefault (opt #44) @2, FP to SP delta: 24]
   translating isDefault => node=3, height=8
-    0x7fff5fbf6bc8: [top + 48] <- 0x34910f04c689 ; [sp + 48] 0x34910f04c689 <an Object with map 0x34666ba0f081>
-    0x7fff5fbf6bc0: [top + 40] <- 0x34910f0587f1 ; rbx 0x34910f0587f1 <an Object with map 0x34666ba1dc79>
-    0x7fff5fbf6bb8: [top + 32] <- 0x31af356f0f87 ; caller's pc
+    0x7fff5fbf6bc8: [top + 48] <- 0x1911c1d20ca1 ; [sp + 48] 0x1911c1d20ca1 <an Object with map 0x360f68b0f081>
+    0x7fff5fbf6bc0: [top + 40] <- 0x1911c1d25f11 ; rbx 0x1911c1d25f11 <an Object with map 0x360f68b1dc79>
+    0x7fff5fbf6bb8: [top + 32] <- 0x1bd42bdf0f87 ; caller's pc
     0x7fff5fbf6bb0: [top + 24] <- 0x7fff5fbf6bf0 ; caller's fp
-    0x7fff5fbf6ba8: [top + 16] <- 0x34910f01b231; context
-    0x7fff5fbf6ba0: [top + 8] <- 0x58ddcba7eb9; function
-    0x7fff5fbf6b98: [top + 0] <- 0x1ab0cf904141 <the hole> ; literal
-[deoptimizing (eager): end 0x58ddcba7eb9 isDefault @2 => node=3, pc=0x31af356f17aa, state=NO_REGISTERS, alignment=no padding, took 0.011 ms]
+    0x7fff5fbf6ba8: [top + 16] <- 0x3407effee641; context
+    0x7fff5fbf6ba0: [top + 8] <- 0x3407effa7ec9; function
+    0x7fff5fbf6b98: [top + 0] <- 0x219523804141 <the hole> ; literal
+[deoptimizing (eager): end 0x3407effa7ec9 isDefault @2 => node=3, pc=0x1bd42bdf17aa, state=NO_REGISTERS, alignment=no padding, took 0.010 ms]
 [removing optimized code for: isDefault]
-[evicting entry from optimizing code map (notify deoptimized) for 0x58ddcba7aa9 <SharedFunctionInfo isDefault>]
-[marking 0x1ab0cf97a679 <JS Function $Array.enumerable_ (SharedFunctionInfo 0x1ab0cf926d91)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x1ab0cf97a679 <JS Function $Array.enumerable_ (SharedFunctionInfo 0x1ab0cf926d91)> - took 0.009, 0.035, 0.012 ms]
-[marking 0x1ab0cf97a9d9 <JS Function $Array.set_ (SharedFunctionInfo 0x1ab0cf9274c9)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[marking 0x1ab0cf963349 <JS Function APPLY_PREPARE (SharedFunctionInfo 0x1ab0cf936309)> for recompilation, reason: hot and stable, ICs with typeinfo: 10/14 (71%)]
-[disabled optimization for 0x1ab0cf936309 <SharedFunctionInfo APPLY_PREPARE>, reason: Call to a JavaScript runtime function]
+[evicting entry from optimizing code map (notify deoptimized) for 0x3407effa7ab9 <SharedFunctionInfo isDefault>]
+[marking 0x21952387a679 <JS Function $Array.enumerable_ (SharedFunctionInfo 0x219523826d91)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x21952387a679 <JS Function $Array.enumerable_ (SharedFunctionInfo 0x219523826d91)> - took 0.007, 0.041, 0.010 ms]
+[marking 0x219523863349 <JS Function APPLY_PREPARE (SharedFunctionInfo 0x219523836309)> for recompilation, reason: hot and stable, ICs with typeinfo: 10/14 (71%)]
+[disabled optimization for 0x219523836309 <SharedFunctionInfo APPLY_PREPARE>, reason: Call to a JavaScript runtime function]
 [failed to optimize APPLY_PREPARE: Call to a JavaScript runtime function]
-[optimizing 0x1ab0cf97a9d9 <JS Function $Array.set_ (SharedFunctionInfo 0x1ab0cf9274c9)> - took 0.006, 0.033, 0.012 ms]
-[marking 0x58ddcba7eb9 <JS Function isDefault (SharedFunctionInfo 0x58ddcba7aa9)> for recompilation, reason: small function, ICs with typeinfo: 15/15 (100%)]
-[marking 0x1ab0cf970e59 <JS Function ToBoolean (SharedFunctionInfo 0x1ab0cf936931)> for recompilation, reason: small function, ICs with typeinfo: 0/5 (0%)]
-[optimizing 0x58ddcba7eb9 <JS Function isDefault (SharedFunctionInfo 0x58ddcba7aa9)> - took 0.025, 0.125, 0.047 ms]
-[optimizing 0x1ab0cf970e59 <JS Function ToBoolean (SharedFunctionInfo 0x1ab0cf936931)> - took 0.029, 0.111, 0.028 ms]
-[marking 0x34910f0491d1 <JS Function isReactive (SharedFunctionInfo 0x58ddcba6f79)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[marking 0x1ab0cf97a829 <JS Function $Array.configurable_ (SharedFunctionInfo 0x1ab0cf927169)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[marking 0x1ab0cf964d29 <JS Function IsAccessorDescriptor (SharedFunctionInfo 0x1ab0cf9242d9)> for recompilation, reason: small function, ICs with typeinfo: 3/3 (100%)]
-[marking 0x1ab0cf970919 <JS Function IsDataDescriptor (SharedFunctionInfo 0x1ab0cf924369)> for recompilation, reason: small function, ICs with typeinfo: 3/3 (100%)]
-[optimizing 0x34910f0491d1 <JS Function isReactive (SharedFunctionInfo 0x58ddcba6f79)> - took 0.017, 0.081, 0.019 ms]
-[optimizing 0x1ab0cf97a829 <JS Function $Array.configurable_ (SharedFunctionInfo 0x1ab0cf927169)> - took 0.009, 0.019, 0.005 ms]
-[optimizing 0x1ab0cf964d29 <JS Function IsAccessorDescriptor (SharedFunctionInfo 0x1ab0cf9242d9)> - took 0.015, 0.065, 0.017 ms]
-[optimizing 0x1ab0cf970919 <JS Function IsDataDescriptor (SharedFunctionInfo 0x1ab0cf924369)> - took 0.011, 0.043, 0.012 ms]
-[deoptimizing (DEOPT eager): begin 0x34910f0491d1 isReactive (opt #74) @6, FP to SP delta: 16]
-  translating isReactive => node=13, height=8
-    0x7fff5fbf6ba0: [top + 48] <- 0x1ab0cf97cb21 ; [sp + 40] 0x1ab0cf97cb21 <JS Global Object>
-    0x7fff5fbf6b98: [top + 40] <- 0x34910f082f89 ; rax 0x34910f082f89 <an Object with map 0x34666ba1ad81>
-    0x7fff5fbf6b90: [top + 32] <- 0x31af35606ef8 ; caller's pc
-    0x7fff5fbf6b88: [top + 24] <- 0x7fff5fbf6bc0 ; caller's fp
-    0x7fff5fbf6b80: [top + 16] <- 0x34910f02fb69; context
-    0x7fff5fbf6b78: [top + 8] <- 0x34910f0491d1; function
-    0x7fff5fbf6b70: [top + 0] <- 0x34910f08a6b1 ; rbx 0x34910f08a6b1 <an Object with deprecated map 0x34666ba1aea1>
-[deoptimizing (eager): end 0x34910f0491d1 isReactive @6 => node=13, pc=0x31af35738ebc, state=TOS_REG, alignment=no padding, took 0.012 ms]
-[removing optimized code for: isReactive]
-[evicting entry from optimizing code map (notify deoptimized) for 0x58ddcba6f79 <SharedFunctionInfo isReactive>]
-[marking 0x1ab0cf97a221 <JS Function PropertyDescriptor (SharedFunctionInfo 0x1ab0cf924759)> for recompilation, reason: small function, ICs with typeinfo: 12/12 (100%)]
-[marking 0x1ab0cf963821 <JS Function ConvertDescriptorArrayToDescriptor (SharedFunctionInfo 0x1ab0cf9247e9)> for recompilation, reason: small function, ICs with typeinfo: 1/16 (6%)]
-[marking 0x1ab0cf97a751 <JS Function $Array.writable_ (SharedFunctionInfo 0x1ab0cf926f69)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[marking 0x1ab0cf97a8b9 <JS Function $Array.get_ (SharedFunctionInfo 0x1ab0cf927289)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[marking 0x1ab0cf974629 <JS Function DefineOwnProperty (SharedFunctionInfo 0x1ab0cf924d89)> for recompilation, reason: small function, ICs with typeinfo: 2/5 (40%)]
-[marking 0x58ddcb5c631 <JS Function clamp (SharedFunctionInfo 0x58ddcb3abe1)> for recompilation, reason: small function, ICs with typeinfo: 4/4 (100%)]
-[optimizing 0x58ddcb5c631 <JS Function clamp (SharedFunctionInfo 0x58ddcb3abe1)> - took 0.015, 0.047, 0.028 ms]
-[optimizing 0x1ab0cf97a221 <JS Function PropertyDescriptor (SharedFunctionInfo 0x1ab0cf924759)> - took 0.030, 0.056, 0.041 ms]
-[optimizing 0x1ab0cf974629 <JS Function DefineOwnProperty (SharedFunctionInfo 0x1ab0cf924d89)> - took 0.021, 0.097, 0.031 ms]
-[optimizing 0x1ab0cf963821 <JS Function ConvertDescriptorArrayToDescriptor (SharedFunctionInfo 0x1ab0cf9247e9)> - took 0.033, 0.122, 0.018 ms]
-[optimizing 0x1ab0cf97a751 <JS Function $Array.writable_ (SharedFunctionInfo 0x1ab0cf926f69)> - took 0.005, 0.021, 0.006 ms]
-[optimizing 0x1ab0cf97a8b9 <JS Function $Array.get_ (SharedFunctionInfo 0x1ab0cf927289)> - took 0.004, 0.013, 0.013 ms]
-[marking 0x3aa5320a2529 <JS Function bound (SharedFunctionInfo 0x1c2bb079309)> for recompilation, reason: hot and stable, ICs with typeinfo: 16/21 (76%)]
-[disabled optimization for 0x1c2bb079309 <SharedFunctionInfo bound>, reason: Bad value context for arguments value]
-[failed to optimize bound: Bad value context for arguments value]
-[marking 0x1ab0cf975051 <JS Function IsInconsistentDescriptor (SharedFunctionInfo 0x1ab0cf924489)> for recompilation, reason: small function, ICs with typeinfo: 3/3 (100%)]
-[marking 0x1ab0cf97a6c1 <JS Function $Array.writable_ (SharedFunctionInfo 0x1ab0cf926e21)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[marking 0x1ab0cf97a709 <JS Function $Array.writable_ (SharedFunctionInfo 0x1ab0cf926ed9)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x1ab0cf975051 <JS Function IsInconsistentDescriptor (SharedFunctionInfo 0x1ab0cf924489)> - took 0.009, 0.053, 0.026 ms]
-[optimizing 0x1ab0cf97a6c1 <JS Function $Array.writable_ (SharedFunctionInfo 0x1ab0cf926e21)> - took 0.010, 0.057, 0.014 ms]
-[optimizing 0x1ab0cf97a709 <JS Function $Array.writable_ (SharedFunctionInfo 0x1ab0cf926ed9)> - took 0.006, 0.044, 0.008 ms]
-[marking 0x34910f0477a9 <JS Function getNeighbors (SharedFunctionInfo 0x58ddcba8119)> for recompilation, reason: small function, ICs with typeinfo: 13/13 (100%)]
-[marking 0x34910f049219 <JS Function airReaction (SharedFunctionInfo 0x58ddcba6ee9)> for recompilation, reason: small function, ICs with typeinfo: 10/10 (100%)]
-[marking 0x34910f01b1e9 <JS Function setCell (SharedFunctionInfo 0x58ddcba7ff9)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
-[marking 0x3aa5320041d9 <JS Function applyReactionToNeighbors (SharedFunctionInfo 0x1c2bb078789)> for recompilation, reason: small function, ICs with typeinfo: 10/10 (100%)]
-[optimizing 0x34910f01b1e9 <JS Function setCell (SharedFunctionInfo 0x58ddcba7ff9)> - took 0.053, 0.175, 0.051 ms]
-[marking 0x1ab0cf97a5e9 <JS Function $Array.enumerable_ (SharedFunctionInfo 0x1ab0cf926c49)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[marking 0x1ab0cf97a631 <JS Function $Array.enumerable_ (SharedFunctionInfo 0x1ab0cf926d01)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x3aa5320041d9 <JS Function applyReactionToNeighbors (SharedFunctionInfo 0x1c2bb078789)> - took 0.303, 0.414, 0.112 ms]
-[marking 0x1ab0cf97a799 <JS Function $Array.configurable_ (SharedFunctionInfo 0x1ab0cf926ff9)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[marking 0x1ab0cf97a7e1 <JS Function $Array.configurable_ (SharedFunctionInfo 0x1ab0cf9270d9)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x34910f0477a9 <JS Function getNeighbors (SharedFunctionInfo 0x58ddcba8119)> - took 0.030, 0.226, 0.068 ms]
-[marking 0x1ab0cf97a871 <JS Function $Array.get_ (SharedFunctionInfo 0x1ab0cf9271f9)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[marking 0x1ab0cf97a901 <JS Function $Array.get_ (SharedFunctionInfo 0x1ab0cf927319)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x34910f049219 <JS Function airReaction (SharedFunctionInfo 0x58ddcba6ee9)> - took 0.110, 0.250, 0.059 ms]
-[optimizing 0x1ab0cf97a5e9 <JS Function $Array.enumerable_ (SharedFunctionInfo 0x1ab0cf926c49)> - took 0.010, 0.034, 0.008 ms]
-[optimizing 0x1ab0cf97a631 <JS Function $Array.enumerable_ (SharedFunctionInfo 0x1ab0cf926d01)> - took 0.006, 0.018, 0.007 ms]
-[optimizing 0x1ab0cf97a799 <JS Function $Array.configurable_ (SharedFunctionInfo 0x1ab0cf926ff9)> - took 0.007, 0.018, 0.011 ms]
-[optimizing 0x1ab0cf97a7e1 <JS Function $Array.configurable_ (SharedFunctionInfo 0x1ab0cf9270d9)> - took 0.006, 0.012, 0.004 ms]
-[optimizing 0x1ab0cf97a871 <JS Function $Array.get_ (SharedFunctionInfo 0x1ab0cf9271f9)> - took 0.007, 0.015, 0.004 ms]
-[optimizing 0x1ab0cf97a901 <JS Function $Array.get_ (SharedFunctionInfo 0x1ab0cf927319)> - took 0.005, 0.031, 0.008 ms]
-[marking 0x34910f012789 <JS Function setBindData (SharedFunctionInfo 0x58ddcb70949)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x34910f012789 <JS Function setBindData (SharedFunctionInfo 0x58ddcb70949)> - took 0.008, 0.053, 0.024 ms]
-[marking 0x34910f0491d1 <JS Function isReactive (SharedFunctionInfo 0x58ddcba6f79)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[optimizing 0x34910f0491d1 <JS Function isReactive (SharedFunctionInfo 0x58ddcba6f79)> - took 0.016, 0.080, 0.027 ms]
-[deoptimizing (DEOPT eager): begin 0x34910f0491d1 isReactive (opt #99) @6, FP to SP delta: 16]
-  translating isReactive => node=13, height=8
-    0x7fff5fbf6bb8: [top + 48] <- 0x1ab0cf97cb21 ; [sp + 40] 0x1ab0cf97cb21 <JS Global Object>
-    0x7fff5fbf6bb0: [top + 40] <- 0x34910f0ab851 ; rax 0x34910f0ab851 <an Object with map 0x34666ba1ad81>
-    0x7fff5fbf6ba8: [top + 32] <- 0x31af35606ef8 ; caller's pc
-    0x7fff5fbf6ba0: [top + 24] <- 0x7fff5fbf6bd8 ; caller's fp
-    0x7fff5fbf6b98: [top + 16] <- 0x34910f02fb69; context
-    0x7fff5fbf6b90: [top + 8] <- 0x34910f0491d1; function
-    0x7fff5fbf6b88: [top + 0] <- 0x34910f0b7bd9 ; rbx 0x34910f0b7bd9 <an Object with deprecated map 0x34666ba1aea1>
-[deoptimizing (eager): end 0x34910f0491d1 isReactive @6 => node=13, pc=0x31af35738ebc, state=TOS_REG, alignment=no padding, took 0.013 ms]
-[removing optimized code for: isReactive]
-[evicting entry from optimizing code map (notify deoptimized) for 0x58ddcba6f79 <SharedFunctionInfo isReactive>]
-[marking 0x1ab0cf9643f1 <JS Function map (SharedFunctionInfo 0x1ab0cf9332c9)> for recompilation, reason: hot and stable, ICs with typeinfo: 13/22 (59%)]
-[deoptimizing (DEOPT eager): begin 0x34910f01b1e9 setCell (opt #88) @8, FP to SP delta: 32]
+[marking 0x21952387a9d9 <JS Function $Array.set_ (SharedFunctionInfo 0x2195238274c9)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[marking 0x1911c1d13d71 <JS Function setCell (SharedFunctionInfo 0x3407effa8009)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
+[optimizing 0x21952387a9d9 <JS Function $Array.set_ (SharedFunctionInfo 0x2195238274c9)> - took 0.006, 0.031, 0.019 ms]
+[marking 0x3407effa7ec9 <JS Function isDefault (SharedFunctionInfo 0x3407effa7ab9)> for recompilation, reason: small function, ICs with typeinfo: 15/15 (100%)]
+[optimizing 0x1911c1d13d71 <JS Function setCell (SharedFunctionInfo 0x3407effa8009)> - took 0.067, 0.171, 0.062 ms]
+[marking 0x219523870e59 <JS Function ToBoolean (SharedFunctionInfo 0x219523836931)> for recompilation, reason: small function, ICs with typeinfo: 0/5 (0%)]
+[optimizing 0x3407effa7ec9 <JS Function isDefault (SharedFunctionInfo 0x3407effa7ab9)> - took 0.023, 0.135, 0.030 ms]
+[optimizing 0x219523870e59 <JS Function ToBoolean (SharedFunctionInfo 0x219523836931)> - took 0.021, 0.112, 0.027 ms]
+[marking 0x1911c1d0b821 <JS Function isReactive (SharedFunctionInfo 0x3407effa6f89)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x21952387a829 <JS Function $Array.configurable_ (SharedFunctionInfo 0x219523827169)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[marking 0x219523864d29 <JS Function IsAccessorDescriptor (SharedFunctionInfo 0x2195238242d9)> for recompilation, reason: small function, ICs with typeinfo: 3/3 (100%)]
+[marking 0x219523870919 <JS Function IsDataDescriptor (SharedFunctionInfo 0x219523824369)> for recompilation, reason: small function, ICs with typeinfo: 3/3 (100%)]
+[optimizing 0x1911c1d0b821 <JS Function isReactive (SharedFunctionInfo 0x3407effa6f89)> - took 0.015, 0.081, 0.019 ms]
+[optimizing 0x21952387a829 <JS Function $Array.configurable_ (SharedFunctionInfo 0x219523827169)> - took 0.005, 0.018, 0.005 ms]
+[marking 0x1911c1d0b869 <JS Function airReaction (SharedFunctionInfo 0x3407effa6ef9)> for recompilation, reason: small function, ICs with typeinfo: 10/10 (100%)]
+[marking 0x3407effc9259 <JS Function compact (SharedFunctionInfo 0x3407eff6e611)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
+[optimizing 0x219523864d29 <JS Function IsAccessorDescriptor (SharedFunctionInfo 0x2195238242d9)> - took 0.013, 0.065, 0.025 ms]
+[optimizing 0x219523870919 <JS Function IsDataDescriptor (SharedFunctionInfo 0x219523824369)> - took 0.010, 0.044, 0.013 ms]
+[optimizing 0x3407effc9259 <JS Function compact (SharedFunctionInfo 0x3407eff6e611)> - took 0.037, 0.122, 0.042 ms]
+[marking 0x21952387a221 <JS Function PropertyDescriptor (SharedFunctionInfo 0x219523824759)> for recompilation, reason: small function, ICs with typeinfo: 12/12 (100%)]
+[marking 0x219523863821 <JS Function ConvertDescriptorArrayToDescriptor (SharedFunctionInfo 0x2195238247e9)> for recompilation, reason: small function, ICs with typeinfo: 1/16 (6%)]
+[marking 0x21952387a751 <JS Function $Array.writable_ (SharedFunctionInfo 0x219523826f69)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[marking 0x21952387a8b9 <JS Function $Array.get_ (SharedFunctionInfo 0x219523827289)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[marking 0x219523874629 <JS Function DefineOwnProperty (SharedFunctionInfo 0x219523824d89)> for recompilation, reason: small function, ICs with typeinfo: 2/5 (40%)]
+[marking 0x3407eff5c659 <JS Function clamp (SharedFunctionInfo 0x3407eff3abe1)> for recompilation, reason: small function, ICs with typeinfo: 4/4 (100%)]
+[optimizing 0x1911c1d0b869 <JS Function airReaction (SharedFunctionInfo 0x3407effa6ef9)> - took 0.196, 0.269, 0.070 ms]
+[optimizing 0x3407eff5c659 <JS Function clamp (SharedFunctionInfo 0x3407eff3abe1)> - took 0.015, 0.037, 0.012 ms]
+[optimizing 0x21952387a221 <JS Function PropertyDescriptor (SharedFunctionInfo 0x219523824759)> - took 0.021, 0.057, 0.033 ms]
+[optimizing 0x219523874629 <JS Function DefineOwnProperty (SharedFunctionInfo 0x219523824d89)> - took 0.017, 0.078, 0.030 ms]
+[optimizing 0x219523863821 <JS Function ConvertDescriptorArrayToDescriptor (SharedFunctionInfo 0x2195238247e9)> - took 0.019, 0.116, 0.017 ms]
+[optimizing 0x21952387a751 <JS Function $Array.writable_ (SharedFunctionInfo 0x219523826f69)> - took 0.005, 0.020, 0.006 ms]
+[optimizing 0x21952387a8b9 <JS Function $Array.get_ (SharedFunctionInfo 0x219523827289)> - took 0.004, 0.012, 0.005 ms]
+[marking 0x3407effcb4d1 <JS Function setBindData (SharedFunctionInfo 0x3407eff70971)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[deoptimizing (DEOPT eager): begin 0x1911c1d13d71 setCell (opt #73) @14, FP to SP delta: 32]
   translating setCell => node=46, height=16
-    0x7fff5fbf6bd0: [top + 56] <- 0x1ab0cf97cb21 ; [sp + 56] 0x1ab0cf97cb21 <JS Global Object>
-    0x7fff5fbf6bc8: [top + 48] <- 0x34910f0e14d1 ; rcx 0x34910f0e14d1 <an Object with map 0x34666ba1ad81>
-    0x7fff5fbf6bc0: [top + 40] <- 0x31af35606ef8 ; caller's pc
-    0x7fff5fbf6bb8: [top + 32] <- 0x7fff5fbf6bf0 ; caller's fp
-    0x7fff5fbf6bb0: [top + 24] <- 0x34910f0478c9; context
-    0x7fff5fbf6ba8: [top + 16] <- 0x34910f01b1e9; function
-    0x7fff5fbf6ba0: [top + 8] <- 0x3aa532237579 ; rax 0x3aa532237579 <String[4]: 1,17>
-    0x7fff5fbf6b98: [top + 0] <- 0x58ddcba7eb9 <JS Function isDefault (SharedFunctionInfo 0x58ddcba7aa9)> ; literal
-  translating isDefault => node=2, height=8
-    0x7fff5fbf6b90: [top + 48] <- 0x34910f04c689 ; rdx 0x34910f04c689 <an Object with map 0x34666ba0f081>
-    0x7fff5fbf6b88: [top + 40] <- 0x34910f0e14d1 ; rcx 0x34910f0e14d1 <an Object with map 0x34666ba1ad81>
-    0x7fff5fbf6b80: [top + 32] <- 0x31af356f0f87 ; caller's pc
-    0x7fff5fbf6b78: [top + 24] <- 0x7fff5fbf6bb8 ; caller's fp
-    0x7fff5fbf6b70: [top + 16] <- 0x34910f01b231; context
-    0x7fff5fbf6b68: [top + 8] <- 0x58ddcba7eb9; function
-    0x7fff5fbf6b60: [top + 0] <- 0x1ab0cf904121 <undefined> ; literal
-[deoptimizing (eager): end 0x58ddcba7eb9 setCell @8 => node=2, pc=0x31af356f17a2, state=NO_REGISTERS, alignment=no padding, took 0.041 ms]
+    0x7fff5fbf6c08: [top + 56] <- 0x21952387cb21 ; [sp + 56] 0x21952387cb21 <JS Global Object>
+    0x7fff5fbf6c00: [top + 48] <- 0x270e90079b41 ; rcx 0x270e90079b41 <an Object with map 0x360f68b1dc79>
+    0x7fff5fbf6bf8: [top + 40] <- 0x1bd42bd06ef8 ; caller's pc
+    0x7fff5fbf6bf0: [top + 32] <- 0x7fff5fbf6c28 ; caller's fp
+    0x7fff5fbf6be8: [top + 24] <- 0x1911c1d1cfe1; context
+    0x7fff5fbf6be0: [top + 16] <- 0x1911c1d13d71; function
+    0x7fff5fbf6bd8: [top + 8] <- 0x270e900a0af9 ; rax 0x270e900a0af9 <String[3]: 9,3>
+    0x7fff5fbf6bd0: [top + 0] <- 0x3407effa7ec9 <JS Function isDefault (SharedFunctionInfo 0x3407effa7ab9)> ; literal
+  translating isDefault => node=83, height=8
+    0x7fff5fbf6bc8: [top + 48] <- 0x1911c1d20ca1 ; rdx 0x1911c1d20ca1 <an Object with map 0x360f68b0f081>
+    0x7fff5fbf6bc0: [top + 40] <- 0x270e90079b41 ; rcx 0x270e90079b41 <an Object with map 0x360f68b1dc79>
+    0x7fff5fbf6bb8: [top + 32] <- 0x1bd42bdf0f87 ; caller's pc
+    0x7fff5fbf6bb0: [top + 24] <- 0x7fff5fbf6bf0 ; caller's fp
+    0x7fff5fbf6ba8: [top + 16] <- 0x3407effee641; context
+    0x7fff5fbf6ba0: [top + 8] <- 0x3407effa7ec9; function
+    0x7fff5fbf6b98: [top + 0] <- 0x3407effa7ec9 <JS Function isDefault (SharedFunctionInfo 0x3407effa7ab9)> ; literal
+[deoptimizing (eager): end 0x3407effa7ec9 setCell @14 => node=83, pc=0x1bd42bdf18a8, state=NO_REGISTERS, alignment=no padding, took 0.034 ms]
 [removing optimized code for: setCell]
-[evicting entry from optimizing code map (notify deoptimized) for 0x58ddcba7ff9 <SharedFunctionInfo setCell>]
-[optimizing 0x1ab0cf9643f1 <JS Function map (SharedFunctionInfo 0x1ab0cf9332c9)> - took 0.077, 0.432, 0.101 ms]
-[marking 0x34910f01b1e9 <JS Function setCell (SharedFunctionInfo 0x58ddcba7ff9)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
-[optimizing 0x34910f01b1e9 <JS Function setCell (SharedFunctionInfo 0x58ddcba7ff9)> - took 0.056, 0.175, 0.050 ms]
-[marking 0x1ab0cf9635e1 <JS Function forEach (SharedFunctionInfo 0x1ab0cf933119)> for recompilation, reason: hot and stable, ICs with typeinfo: 11/18 (61%)]
-[optimizing 0x1ab0cf9635e1 <JS Function forEach (SharedFunctionInfo 0x1ab0cf933119)> - took 0.059, 0.365, 0.076 ms]
-[marking 0x34910f0134b1 <JS Function slice (SharedFunctionInfo 0x58ddcb6ab01)> for recompilation, reason: small function, ICs with typeinfo: 12/12 (100%)]
-[optimizing 0x34910f0134b1 <JS Function slice (SharedFunctionInfo 0x58ddcb6ab01)> - took 0.060, 0.243, 0.099 ms]
-[marking 0x3aa533221a71 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[marking 0x3aa5332a8701 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x3aa5332a8701 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> - took 0.016, 0.071, 0.030 ms]
-[deoptimize marked code in all contexts]
-[deoptimizer unlinked: NativeModule.require / 1ab0cf983369]
-[marking 0x3aa5320403c9 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[marking 0x3aa5320a50e1 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x3aa5320a50e1 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> - took 0.017, 0.071, 0.028 ms]
-[deoptimizing (DEOPT eager): begin 0x1c2bb0d2181 applyReactionToNeighbors (opt #89) @9, FP to SP delta: 88]
-  translating applyReactionToNeighbors => node=43, height=16
-    0x7fff5fbf6d28: [top + 64] <- 0x1ab0cf97cb21 ; [sp + 120] 0x1ab0cf97cb21 <JS Global Object>
-    0x7fff5fbf6d20: [top + 56] <- 0x34910f049219 ; rbx 0x34910f049219 <JS Function airReaction (SharedFunctionInfo 0x58ddcba6ee9)>
-    0x7fff5fbf6d18: [top + 48] <- 0x1c2bb08c429 ; rcx 0x1c2bb08c429 <an Object with map 0x34666ba1ad81>
-    0x7fff5fbf6d10: [top + 40] <- 0x31af35606ef8 ; caller's pc
-    0x7fff5fbf6d08: [top + 32] <- 0x7fff5fbf6d48 ; caller's fp
-    0x7fff5fbf6d00: [top + 24] <- 0x1c2bb0d2131; context
-    0x7fff5fbf6cf8: [top + 16] <- 0x1c2bb0d2181; function
-    0x7fff5fbf6cf0: [top + 8] <- 0x3aa53224f439 ; rax 0x3aa53224f439 <JS Array[4]>
-    0x7fff5fbf6ce8: [top + 0] <- 0x34910f049219 ; rbx 0x34910f049219 <JS Function airReaction (SharedFunctionInfo 0x58ddcba6ee9)>
-  translating airReaction => node=2, height=16
-    0x7fff5fbf6ce0: [top + 64] <- 0x1ab0cf97cb21 <JS Global Object> ; literal
-    0x7fff5fbf6cd8: [top + 56] <- 0x1c2bb08c429 ; rcx 0x1c2bb08c429 <an Object with map 0x34666ba1ad81>
-    0x7fff5fbf6cd0: [top + 48] <- 0x3aa53224f439 ; rax 0x3aa53224f439 <JS Array[4]>
-    0x7fff5fbf6cc8: [top + 40] <- 0x31af3573266f ; caller's pc
-    0x7fff5fbf6cc0: [top + 32] <- 0x7fff5fbf6d08 ; caller's fp
-    0x7fff5fbf6cb8: [top + 24] <- 0x34910f02fb69; context
-    0x7fff5fbf6cb0: [top + 16] <- 0x34910f049219; function
-    0x7fff5fbf6ca8: [top + 8] <- 0x1ab0cf904121 <undefined> ; literal
-    0x7fff5fbf6ca0: [top + 0] <- 0x1ab0cf904121 <undefined> ; literal
-[deoptimizing (eager): end 0x34910f049219 applyReactionToNeighbors @9 => node=2, pc=0x31af35735a24, state=NO_REGISTERS, alignment=no padding, took 0.030 ms]
-[removing optimized code for: applyReactionToNeighbors]
-[deoptimizing (DEOPT eager): begin 0x34910f049219 airReaction (opt #91) @3, FP to SP delta: 64]
+[evicting entry from optimizing code map (notify deoptimized) for 0x3407effa8009 <SharedFunctionInfo setCell>]
+[optimizing 0x3407effcb4d1 <JS Function setBindData (SharedFunctionInfo 0x3407eff70971)> - took 0.009, 0.053, 0.014 ms]
+[deoptimizing (DEOPT eager): begin 0x3407effa7ec9 isDefault (opt #74) @3, FP to SP delta: 24]
+  translating isDefault => node=3, height=8
+    0x7fff5fbf6bc8: [top + 48] <- 0x1911c1d20ca1 ; [sp + 48] 0x1911c1d20ca1 <an Object with map 0x360f68b0f081>
+    0x7fff5fbf6bc0: [top + 40] <- 0x270e900a1421 ; rbx 0x270e900a1421 <an Object with map 0x360f68b1ad81>
+    0x7fff5fbf6bb8: [top + 32] <- 0x1bd42bdf0f87 ; caller's pc
+    0x7fff5fbf6bb0: [top + 24] <- 0x7fff5fbf6bf0 ; caller's fp
+    0x7fff5fbf6ba8: [top + 16] <- 0x3407effee641; context
+    0x7fff5fbf6ba0: [top + 8] <- 0x3407effa7ec9; function
+    0x7fff5fbf6b98: [top + 0] <- 0x219523804141 <the hole> ; literal
+[deoptimizing (eager): end 0x3407effa7ec9 isDefault @3 => node=3, pc=0x1bd42bdf17aa, state=NO_REGISTERS, alignment=no padding, took 0.011 ms]
+[removing optimized code for: isDefault]
+[evicting entry from optimizing code map (notify deoptimized) for 0x3407effa7ab9 <SharedFunctionInfo isDefault>]
+[deoptimizing (DEOPT eager): begin 0x1911c1d0b869 airReaction (opt #81) @3, FP to SP delta: 64]
   translating airReaction => node=3, height=16
-    0x7fff5fbf6ce0: [top + 64] <- 0x1ab0cf904121 ; [sp + 96] 0x1ab0cf904121 <undefined>
-    0x7fff5fbf6cd8: [top + 56] <- 0x1c2bb08df11 ; rax 0x1c2bb08df11 <an Object with map 0x34666ba1ad81>
-    0x7fff5fbf6cd0: [top + 48] <- 0x3aa532271b41 ; [sp + 80] 0x3aa532271b41 <JS Array[4]>
-    0x7fff5fbf6cc8: [top + 40] <- 0x31af3573266f ; caller's pc
+    0x7fff5fbf6ce0: [top + 64] <- 0x219523804121 ; [sp + 96] 0x219523804121 <undefined>
+    0x7fff5fbf6cd8: [top + 56] <- 0x1911c1d41971 ; rax 0x1911c1d41971 <an Object with map 0x360f68b1ad81>
+    0x7fff5fbf6cd0: [top + 48] <- 0x270e900a3c01 ; [sp + 80] 0x270e900a3c01 <JS Array[4]>
+    0x7fff5fbf6cc8: [top + 40] <- 0x1bd42be3200f ; caller's pc
     0x7fff5fbf6cc0: [top + 32] <- 0x7fff5fbf6d08 ; caller's fp
-    0x7fff5fbf6cb8: [top + 24] <- 0x34910f02fb69; context
-    0x7fff5fbf6cb0: [top + 16] <- 0x34910f049219; function
-    0x7fff5fbf6ca8: [top + 8] <- 0x1ab0cf904121 <undefined> ; literal
-    0x7fff5fbf6ca0: [top + 0] <- 0x1ab0cf904121 <undefined> ; literal
-[deoptimizing (eager): end 0x34910f049219 airReaction @3 => node=3, pc=0x31af35735a24, state=NO_REGISTERS, alignment=no padding, took 0.029 ms]
+    0x7fff5fbf6cb8: [top + 24] <- 0x3407effedcf1; context
+    0x7fff5fbf6cb0: [top + 16] <- 0x1911c1d0b869; function
+    0x7fff5fbf6ca8: [top + 8] <- 0x219523804121 <undefined> ; literal
+    0x7fff5fbf6ca0: [top + 0] <- 0x219523804121 <undefined> ; literal
+[deoptimizing (eager): end 0x1911c1d0b869 airReaction @3 => node=3, pc=0x1bd42be353c4, state=NO_REGISTERS, alignment=no padding, took 0.023 ms]
 [removing optimized code for: airReaction]
-[marking 0x34910f0491d1 <JS Function isReactive (SharedFunctionInfo 0x58ddcba6f79)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[optimizing 0x34910f0491d1 <JS Function isReactive (SharedFunctionInfo 0x58ddcba6f79)> - took 0.027, 0.072, 0.030 ms]
-[marking 0x1ab0cf97aab1 <JS Function (SharedFunctionInfo 0x1ab0cf927679)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x1ab0cf97aab1 <JS Function (SharedFunctionInfo 0x1ab0cf927679)> - took 0.006, 0.031, 0.009 ms]
-[marking 0x34910f00f5d9 <JS Function isFunction (SharedFunctionInfo 0x58ddcb6d1a9)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
-[optimizing 0x34910f00f5d9 <JS Function isFunction (SharedFunctionInfo 0x58ddcb6d1a9)> - took 0.007, 0.038, 0.010 ms]
-[marking 0x1c2bb0d2181 <JS Function applyReactionToNeighbors (SharedFunctionInfo 0x1c2bb078789)> for recompilation, reason: small function, ICs with typeinfo: 10/10 (100%)]
-[marking 0x1ab0cf973a89 <JS Function INSTANCE_OF (SharedFunctionInfo 0x1ab0cf935c61)> for recompilation, reason: small function, ICs with typeinfo: 4/7 (57%)]
-[disabled optimization for 0x1ab0cf935c61 <SharedFunctionInfo INSTANCE_OF>, reason: Call to a JavaScript runtime function]
-[failed to optimize INSTANCE_OF: Call to a JavaScript runtime function]
-[marking 0x34910f049219 <JS Function airReaction (SharedFunctionInfo 0x58ddcba6ee9)> for recompilation, reason: small function, ICs with typeinfo: 10/10 (100%)]
-[optimizing 0x1c2bb0d2181 <JS Function applyReactionToNeighbors (SharedFunctionInfo 0x1c2bb078789)> - took 0.188, 0.420, 0.099 ms]
-[optimizing 0x34910f049219 <JS Function airReaction (SharedFunctionInfo 0x58ddcba6ee9)> - took 0.135, 0.267, 0.058 ms]
-[marking 0x3aa5323f2b71 <JS Function (SharedFunctionInfo 0x1a9ed0b166f9)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[marking 0x1c2bb0e9ce9 <JS Function cellNeedsUpdate (SharedFunctionInfo 0x1c2bb0786f9)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x3aa5323f2b71 <JS Function (SharedFunctionInfo 0x1a9ed0b166f9)> - took 0.047, 0.104, 0.026 ms]
-[optimizing 0x1c2bb0e9ce9 <JS Function cellNeedsUpdate (SharedFunctionInfo 0x1c2bb0786f9)> - took 0.007, 0.035, 0.008 ms]
-[marking 0x1a9ed0b07dc9 <JS Function updateAirCell (SharedFunctionInfo 0x1c2bb0783a9)> for recompilation, reason: small function, ICs with typeinfo: 4/4 (100%)]
-[marking 0x1c2bb0e9d31 <JS Function updateCell (SharedFunctionInfo 0x1c2bb078819)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[optimizing 0x1c2bb0e9d31 <JS Function updateCell (SharedFunctionInfo 0x1c2bb078819)> - took 0.014, 0.080, 0.015 ms]
-[optimizing 0x1a9ed0b07dc9 <JS Function updateAirCell (SharedFunctionInfo 0x1c2bb0783a9)> - took 0.008, 0.034, 0.010 ms]
-[marking 0x34910f047429 <JS Function addToNewP (SharedFunctionInfo 0x58ddcba2ef1)> for recompilation, reason: small function, ICs with typeinfo: 3/3 (100%)]
-[optimizing 0x34910f047429 <JS Function addToNewP (SharedFunctionInfo 0x58ddcba2ef1)> - took 0.011, 0.068, 0.026 ms]
-[deoptimizing (DEOPT eager): begin 0x34910f047399 addToP (opt #63) @3, FP to SP delta: 1Iteration 1
-Iteration 2
-6]
-  translating addToP => node=3, height=0
-    0x7fff5fbf6e30: [top + 48] <- 0x1ab0cf97cb21 ; [sp + 48] 0x1ab0cf97cb21 <JS Global Object>
-    0x7fff5fbf6e28: [top + 40] <- 0x00000000 ; [sp + 40] 0
-    0x7fff5fbf6e20: [top + 32] <- 0x34910f0586d1 ; rax 0x34910f0586d1 <an Object with map 0x34666ba1ad81>
-    0x7fff5fbf6e18: [top + 24] <- 0x31af35606ef8 ; caller's pc
-    0x7fff5fbf6e10: [top + 16] <- 0x7fff5fbf6e50 ; caller's fp
-    0x7fff5fbf6e08: [top + 8] <- 0x34910f01b069; context
-    0x7fff5fbf6e00: [top + 0] <- 0x34910f047399; function
-[deoptimizing (eager): end 0x34910f047399 addToP @3 => node=3, pc=0x31af35729e5e, state=NO_REGISTERS, alignment=no padding, took 0.024 ms]
-[removing optimized code for: addToP]
-[marking 0x34910f047399 <JS Function addToP (SharedFunctionInfo 0x58ddcba2dd1)> for recompilation, reason: small function, ICs with typeinfo: 3/3 (100%)]
-[optimizing 0x34910f047399 <JS Function addToP (SharedFunctionInfo 0x58ddcba2dd1)> - took 0.012, 0.067, 0.026 ms]
-[deoptimizing (DEOPT eager): begin 0x34910f0491d1 isReactive (opt #106) @6, FP to SP delta: 16]
+[evicting entry from optimizing code map (notify deoptimized) for 0x3407effa6ef9 <SharedFunctionInfo airReaction>]
+[deoptimizing (DEOPT eager): begin 0x1911c1d0b821 isReactive (opt #76) @6, FP to SP delta: 16]
   translating isReactive => node=13, height=8
-    0x7fff5fbf6ba0: [top + 48] <- 0x1ab0cf97cb21 ; [sp + 40] 0x1ab0cf97cb21 <JS Global Object>
-    0x7fff5fbf6b98: [top + 40] <- 0x34910f0584c1 ; rax 0x34910f0584c1 <an Object with map 0x34666ba1ad81>
-    0x7fff5fbf6b90: [top + 32] <- 0x31af35606ef8 ; caller's pc
+    0x7fff5fbf6ba0: [top + 48] <- 0x21952387cb21 ; [sp + 40] 0x21952387cb21 <JS Global Object>
+    0x7fff5fbf6b98: [top + 40] <- 0x1911c1d41971 ; rax 0x1911c1d41971 <an Object with map 0x360f68b1ad81>
+    0x7fff5fbf6b90: [top + 32] <- 0x1bd42bd06ef8 ; caller's pc
     0x7fff5fbf6b88: [top + 24] <- 0x7fff5fbf6bc0 ; caller's fp
-    0x7fff5fbf6b80: [top + 16] <- 0x34910f02fb69; context
-    0x7fff5fbf6b78: [top + 8] <- 0x34910f0491d1; function
-    0x7fff5fbf6b70: [top + 0] <- 0x34910f05aa31 ; rbx 0x34910f05aa31 <an Object with map 0x34666ba1ae59>
-[deoptimizing (eager): end 0x34910f0491d1 isReactive @6 => node=13, pc=0x31af35738ebc, state=TOS_REG, alignment=no padding, took 0.015 ms]
+    0x7fff5fbf6b80: [top + 16] <- 0x3407effedcf1; context
+    0x7fff5fbf6b78: [top + 8] <- 0x1911c1d0b821; function
+    0x7fff5fbf6b70: [top + 0] <- 0x1911c1d490f9 ; rbx 0x1911c1d490f9 <an Object with map 0x360f68b20661>
+[deoptimizing (eager): end 0x1911c1d0b821 isReactive @6 => node=13, pc=0x1bd42be3885c, state=TOS_REG, alignment=no padding, took 0.010 ms]
 [removing optimized code for: isReactive]
-[evicting entry from optimizing code map (notify deoptimized) for 0x58ddcba6f79 <SharedFunctionInfo isReactive>]
-[marking 0x34910f0491d1 <JS Function isReactive (SharedFunctionInfo 0x58ddcba6f79)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
-[optimizing 0x34910f0491d1 <JS Function isReactive (SharedFunctionInfo 0x58ddcba6f79)> - took 0.021, 0.084, 0.030 ms]
-[marking 0x34910f0124b9 <JS Function baseCreateWrapper (SharedFunctionInfo 0x58ddcb6c039)> for recompilation, reason: hot and stable, ICs with typeinfo: 10/10 (100%)]
-[optimizing 0x34910f0124b9 <JS Function baseCreateWrapper (SharedFunctionInfo 0x58ddcb6c039)> - took 0.042, 0.137, 0.090 ms]
-[marking 0x1ab0cf970879 <JS Function ToPropertyDescriptor (SharedFunctionInfo 0x1ab0cf924639)> for recompilation, reason: hot and stable, ICs with typeinfo: 17/24 (70%)]
-[optimizing 0x1ab0cf970879 <JS Function ToPropertyDescriptor (SharedFunctionInfo 0x1ab0cf924639)> - took 0.087, 0.380, 0.091 ms]
-[deoptimizing (DEOPT eager): begin 0x34910f0477a9 getNeighbors (opt #90) @4, FP to SP delta: 32]
-  translating getNeighbors => node=3, height=8
-    0x7fff5fbf6c90: [top + 48] <- 0x34910f01b161 ; [sp + 56] 0x34910f01b161 <an Object with map 0x34666ba0f159>
-    0x7fff5fbf6c88: [top + 40] <- 0x1a9ed0b09079 ; rbx 0x1a9ed0b09079 <JS Array[2]>
-    0x7fff5fbf6c80: [top + 32] <- 0x31af35749403 ; caller's pc
-    0x7fff5fbf6c78: [top + 24] <- 0x7fff5fbf6cf0 ; caller's fp
-    0x7fff5fbf6c70: [top + 16] <- 0x34910f0478c9; context
-    0x7fff5fbf6c68: [top + 8] <- 0x34910f0477a9; function
-    0x7fff5fbf6c60: [top + 0] <- 0x1ab0cf904121 <undefined> ; literal
-[deoptimizing (eager): end 0x34910f0477a9 getNeighbors @4 => node=3, pc=0x31af357345e2, state=NO_REGISTERS, alignment=no padding, took 0.016 ms]
-[removing optimized code for: getNeighbors]
-[marking 0x34910f0477a9 <JS Function getNeighbors (SharedFunctionInfo 0x58ddcba8119)> for recompilation, reason: small function, ICs with typeinfo: 13/13 (100%)]
-[optimizing 0x34910f0477a9 <JS Function getNeighbors (SharedFunctionInfo 0x58ddcba8119)> - took 0.050, 0.261, 0.064 ms]
-[marking 0x34910f0126b1 <JS Function createWrapper (SharedFunctionInfo 0x58ddcb6c4b9)> for recompilation, reason: hot and stable, ICIteration 3
+[evicting entry from optimizing code map (notify deoptimized) for 0x3407effa6f89 <SharedFunctionInfo isReactive>]
+[marking 0x21952387a709 <JS Function $Array.writable_ (SharedFunctionInfo 0x219523826ed9)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x21952387a709 <JS Function $Array.writable_ (SharedFunctionInfo 0x219523826ed9)> - took 0.005, 0.032, 0.008 ms]
+[marking 0x270e90004169 <JS Function applyReactionToNeighbors (SharedFunctionInfo 0x15511a838d89)> for recompilation, reason: small function, ICs with typeinfo: 10/10 (100%)]
+[marking 0x21952387a5e9 <JS Function $Array.enumerable_ (SharedFunctionInfo 0x219523826c49)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[marking 0x21952387a631 <JS Function $Array.enumerable_ (SharedFunctionInfo 0x219523826d01)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x270e90004169 <JS Function applyReactionToNeighbors (SharedFunctionInfo 0x15511a838d89)> - took 0.166, 1.705, 0.240 ms]
+[optimizing 0x21952387a5e9 <JS Function $Array.enumerable_ (SharedFunctionInfo 0x219523826c49)> - took 0.007, 0.058, 0.028 ms]
+[optimizing 0x21952387a631 <JS Function $Array.enumerable_ (SharedFunctionInfo 0x219523826d01)> - took 0.012, 0.031, 0.008 ms]
+[marking 0x21952387a7e1 <JS Function $Array.configurable_ (SharedFunctionInfo 0x2195238270d9)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x21952387a7e1 <JS Function $Array.configurable_ (SharedFunctionInfo 0x2195238270d9)> - took 0.013, 0.058, 0.019 ms]
+[marking 0x21952387a871 <JS Function $Array.get_ (SharedFunctionInfo 0x2195238271f9)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[marking 0x21952387a901 <JS Function $Array.get_ (SharedFunctionInfo 0x219523827319)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x21952387a871 <JS Function $Array.get_ (SharedFunctionInfo 0x2195238271f9)> - took 0.012, 0.050, 0.015 ms]
+[optimizing 0x21952387a901 <JS Function $Array.get_ (SharedFunctionInfo 0x219523827319)> - took 0.007, 0.031, 0.006 ms]
+[marking 0x270e900c1ea9 <JS Function bound (SharedFunctionInfo 0x15511a839909)> for recompilation, reason: hot and stable, ICs with typeinfo: 16/21 (76%)]
+[disabled optimization for 0x15511a839909 <SharedFunctionInfo bound>, reason: Bad value context for arguments value]
+[failed to optimize bound: Bad value context for arguments value]
+[marking 0x1911c1d13d71 <JS Function setCell (SharedFunctionInfo 0x3407effa8009)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
+[marking 0x3407effa7ec9 <JS Function isDefault (SharedFunctionInfo 0x3407effa7ab9)> for recompilation, reason: small function, ICs with typeinfo: 15/15 (100%)]
+[optimizing 0x1911c1d13d71 <JS Function setCell (SharedFunctionInfo 0x3407effa8009)> - took 0.060, 0.202, 0.055 ms]
+[optimizing 0x3407effa7ec9 <JS Function isDefault (SharedFunctionInfo 0x3407effa7ab9)> - took 0.023, 0.107, 0.032 ms]
+[marking 0x3407effcb201 <JS Function baseCreateWrapper (SharedFunctionInfo 0x3407eff6c061)> for recompilation, reason: hot and stable, ICs with typeinfo: 10/10 (100%)]
+[optimizing 0x3407effcb201 <JS Function baseCreateWrapper (SharedFunctionInfo 0x3407eff6c061)> - took 0.037, 0.138, 0.104 ms]
+[marking 0x1911c1d13e91 <JS Function getNeighbors (SharedFunctionInfo 0x3407effa8129)> for recompilation, reason: small function, ICs with typeinfo: 13/13 (100%)]
+[optimizing 0x1911c1d13e91 <JS Function getNeighbors (SharedFunctionInfo 0x3407effa8129)> - took 0.031, 0.233, 0.079 ms]
+[marking 0x1911c1d0b821 <JS Function isReactive (SharedFunctionInfo 0x3407effa6f89)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[optimizing 0x1911c1d0b821 <JS Function isReactive (SharedFunctionInfo 0x3407effa6f89)> - took 0.016, 0.081, 0.028 ms]
+[deoptimizing (DEOPT eager): begin 0x1911c1d0b821 isReactive (opt #101) @6, FP to SP delta: 16]
+  translating isReactive => node=13, height=8
+    0x7fff5fbf6bb8: [top + 48] <- 0x21952387cb21 ; [sp + 40] 0x21952387cb21 <JS Global Object>
+    0x7fff5fbf6bb0: [top + 40] <- 0x1911c1d9b829 ; rax 0x1911c1d9b829 <an Object with map 0x360f68b1ad81>
+    0x7fff5fbf6ba8: [top + 32] <- 0x1bd42bd06ef8 ; caller's pc
+    0x7fff5fbf6ba0: [top + 24] <- 0x7fff5fbf6bd8 ; caller's fp
+    0x7fff5fbf6b98: [top + 16] <- 0x3407effedcf1; context
+    0x7fff5fbf6b90: [top + 8] <- 0x1911c1d0b821; function
+    0x7fff5fbf6b88: [top + 0] <- 0x1911c1db0b49 ; rbx 0x1911c1db0b49 <an Object with deprecated map 0x360f68b1aea1>
+[deoptimizing (eager): end 0x1911c1d0b821 isReactive @6 => node=13, pc=0x1bd42be3885c, state=TOS_REG, alignment=no padding, took 0.014 ms]
+[removing optimized code for: isReactive]
+[evicting entry from optimizing code map (notify deoptimized) for 0x3407effa6f89 <SharedFunctionInfo isReactive>]
+[deoptimizing (DEOPT eager): begin 0x1911c1d13d71 setCell (opt #97) @8, FP to SP delta: 32]
+  translating setCell => node=46, height=16
+    0x7fff5fbf6bd0: [top + 56] <- 0x21952387cb21 ; [sp + 56] 0x21952387cb21 <JS Global Object>
+    0x7fff5fbf6bc8: [top + 48] <- 0x1911c1d9f099 ; rcx 0x1911c1d9f099 <an Object with map 0x360f68b1ad81>
+    0x7fff5fbf6bc0: [top + 40] <- 0x1bd42bd06ef8 ; caller's pc
+    0x7fff5fbf6bb8: [top + 32] <- 0x7fff5fbf6bf0 ; caller's fp
+    0x7fff5fbf6bb0: [top + 24] <- 0x1911c1d1cfe1; context
+    0x7fff5fbf6ba8: [top + 16] <- 0x1911c1d13d71; function
+    0x7fff5fbf6ba0: [top + 8] <- 0x270e902342c9 ; rax 0x270e902342c9 <String[4]: 1,17>
+    0x7fff5fbf6b98: [top + 0] <- 0x3407effa7ec9 <JS Function isDefault (SharedFunctionInfo 0x3407effa7ab9)> ; literal
+  translating isDefault => node=2, height=8
+    0x7fff5fbf6b90: [top + 48] <- 0x1911c1d20ca1 ; rdx 0x1911c1d20ca1 <an Object with map 0x360f68b0f081>
+    0x7fff5fbf6b88: [top + 40] <- 0x1911c1d9f099 ; rcx 0x1911c1d9f099 <an Object with map 0x360f68b1ad81>
+    0x7fff5fbf6b80: [top + 32] <- 0x1bd42bdf0f87 ; caller's pc
+    0x7fff5fbf6b78: [top + 24] <- 0x7fff5fbf6bb8 ; caller's fp
+    0x7fff5fbf6b70: [top + 16] <- 0x3407effee641; context
+    0x7fff5fbf6b68: [top + 8] <- 0x3407effa7ec9; function
+    0x7fff5fbf6b60: [top + 0] <- 0x219523804121 <undefined> ; literal
+[deoptimizing (eager): end 0x3407effa7ec9 setCell @8 => node=2, pc=0x1bd42bdf17a2, state=NO_REGISTERS, alignment=no padding, took 0.030 ms]
+[removing optimized code for: setCell]
+[evicting entry from optimizing code map (notify deoptimized) for 0x3407effa8009 <SharedFunctionInfo setCell>]
+[marking 0x1911c1d13d71 <JS Function setCell (SharedFunctionInfo 0x3407effa8009)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
+[optimizing 0x1911c1d13d71 <JS Function setCell (SharedFunctionInfo 0x3407effa8009)> - took 0.071, 0.293, 0.053 ms]
+[marking 0x2195238635e1 <JS Function forEach (SharedFunctionInfo 0x219523833119)> for recompilation, reason: hot and stable, ICs with typeinfo: 11/18 (61%)]
+[optimizing 0x2195238635e1 <JS Function forEach (SharedFunctionInfo 0x219523833119)> - took 0.078, 0.416, 0.081 ms]
+[marking 0x2195238643f1 <JS Function map (SharedFunctionInfo 0x2195238332c9)> for recompilation, reason: hot and stable, ICs with typeinfo: 13/22 (59%)]
+[optimizing 0x2195238643f1 <JS Function map (SharedFunctionInfo 0x2195238332c9)> - took 0.086, 0.455, 0.102 ms]
+[marking 0x3407effcc969 <JS Function slice (SharedFunctionInfo 0x3407eff6ab29)> for recompilation, reason: small function, ICs with typeinfo: 12/12 (100%)]
+[optimizing 0x3407effcc969 <JS Function slice (SharedFunctionInfo 0x3407eff6ab29)> - took 0.051, 0.257, 0.096 ms]
+[deoptimizing (DEOPT eager): begin 0x15511a892f29 applyReactionToNeighbors (opt #90) @9, FP to SP delta: 88]
+  translating applyReactionToNeighbors => node=43, height=16
+    0x7fff5fbf6d28: [top + 64] <- 0x21952387cb21 ; [sp + 120] 0x21952387cb21 <JS Global Object>
+    0x7fff5fbf6d20: [top + 56] <- 0x1911c1d0b869 ; rbx 0x1911c1d0b869 <JS Function airReaction (SharedFunctionInfo 0x3407effa6ef9)>
+    0x7fff5fbf6d18: [top + 48] <- 0x15511a84c8a1 ; rcx 0x15511a84c8a1 <an Object with map 0x360f68b1ad81>
+    0x7fff5fbf6d10: [top + 40] <- 0x1bd42bd06ef8 ; caller's pc
+    0x7fff5fbf6d08: [top + 32] <- 0x7fff5fbf6d48 ; caller's fp
+    0x7fff5fbf6d00: [top + 24] <- 0x15511a892ed9; context
+    0x7fff5fbf6cf8: [top + 16] <- 0x15511a892f29; function
+    0x7fff5fbf6cf0: [top + 8] <- 0x270e90187cd9 ; rax 0x270e90187cd9 <JS Array[4]>
+    0x7fff5fbf6ce8: [top + 0] <- 0x1911c1d0b869 ; rbx 0x1911c1d0b869 <JS Function airReaction (SharedFunctionInfo 0x3407effa6ef9)>
+  translating airReaction => node=2, height=16
+    0x7fff5fbf6ce0: [top + 64] <- 0x21952387cb21 <JS Global Object> ; literal
+    0x7fff5fbf6cd8: [top + 56] <- 0x15511a84c8a1 ; rcx 0x15511a84c8a1 <an Object with map 0x360f68b1ad81>
+    0x7fff5fbf6cd0: [top + 48] <- 0x270e90187cd9 ; rax 0x270e90187cd9 <JS Array[4]>
+    0x7fff5fbf6cc8: [top + 40] <- 0x1bd42be3200f ; caller's pc
+    0x7fff5fbf6cc0: [top + 32] <- 0x7fff5fbf6d08 ; caller's fp
+    0x7fff5fbf6cb8: [top + 24] <- 0x3407effedcf1; context
+    0x7fff5fbf6cb0: [top + 16] <- 0x1911c1d0b869; function
+    0x7fff5fbf6ca8: [top + 8] <- 0x219523804121 <undefined> ; literal
+    0x7fff5fbf6ca0: [top + 0] <- 0x219523804121 <undefined> ; literal
+[deoptimizing (eager): end 0x1911c1d0b869 applyReactionToNeighbors @9 => node=2, pc=0x1bd42be353c4, state=NO_REGISTERS, alignment=no padding, took 0.033 ms]
+[removing optimized code for: applyReactionToNeighbors]
+[evicting entry from optimizing code map (notify deoptimized) for 0x15511a838d89 <SharedFunctionInfo applyReactionToNeighbors>]
+[marking 0x1911c1d0b869 <JS Function airReaction (SharedFunctionInfo 0x3407effa6ef9)> for recompilation, reason: small function, ICs with typeinfo: 10/10 (100%)]
+[optimizing 0x1911c1d0b869 <JS Function airReaction (SharedFunctionInfo 0x3407effa6ef9)> - took 0.122, 0.373, 0.086 ms]
+[deoptimizing (DEOPT eager): begin 0x1911c1d0b869 airReaction (opt #106) @27, FP to SP delta: 64]
+  translating airReaction => node=3, height=16
+    0x7fff5fbf6ce0: [top + 64] <- 0x219523804121 ; [sp + 96] 0x219523804121 <undefined>
+    0x7fff5fbf6cd8: [top + 56] <- 0x15511a84d879 ; rax 0x15511a84d879 <an Object with map 0x360f68b1ad81>
+    0x7fff5fbf6cd0: [top + 48] <- 0x270e9019f771 ; [sp + 80] 0x270e9019f771 <JS Array[4]>
+    0x7fff5fbf6cc8: [top + 40] <- 0x1bd42be3200f ; caller's pc
+    0x7fff5fbf6cc0: [top + 32] <- 0x7fff5fbf6d08 ; caller's fp
+    0x7fff5fbf6cb8: [top + 24] <- 0x3407effedcf1; context
+    0x7fff5fbf6cb0: [top + 16] <- 0x1911c1d0b869; function
+    0x7fff5fbf6ca8: [top + 8] <- 0x219523804121 <undefined> ; literal
+    0x7fff5fbf6ca0: [top + 0] <- 0x219523804121 <undefined> ; literal
+[deoptimizing (eager): end 0x1911c1d0b869 airReaction @27 => node=3, pc=0x1bd42be353c4, state=NO_REGISTERS, alignment=no padding, took 0.040 ms]
+[removing optimized code for: airReaction]
+[evicting entry from optimizing code map (notify deoptimized) for 0x3407effa6ef9 <SharedFunctionInfo airReaction>]
+[marking 0x21952387aab1 <JS Function (SharedFunctionInfo 0x219523827679)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x21952387aab1 <JS Function (SharedFunctionInfo 0x219523827679)> - took 0.007, 0.036, 0.015 ms]
+[marking 0x219523875051 <JS Function IsInconsistentDescriptor (SharedFunctionInfo 0x219523824489)> for recompilation, reason: small function, ICs with typeinfo: 3/3 (100%)]
+[marking 0x1911c1d0b821 <JS Function isReactive (SharedFunctionInfo 0x3407effa6f89)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x21952387a6c1 <JS Function $Array.writable_ (SharedFunctionInfo 0x219523826e21)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[optimizing 0x219523875051 <JS Function IsInconsistentDescriptor (SharedFunctionInfo 0x219523824489)> - took 0.012, 0.056, 0.014 ms]
+[optimizing 0x1911c1d0b821 <JS Function isReactive (SharedFunctionInfo 0x3407effa6f89)> - took 0.014, 0.060, 0.030 ms]
+[optimizing 0x21952387a6c1 <JS Function $Array.writable_ (SharedFunctionInfo 0x219523826e21)> - took 0.008, 0.045, 0.009 ms]
+[marking 0x21952387a799 <JS Function $Array.configurable_ (SharedFunctionInfo 0x219523826ff9)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[optimizing 0x21952387a799 <JS Function $Array.configurable_ (SharedFunctionInfo 0x219523826ff9)> - took 0.008, 0.040, 0.017 ms]
+[marking 0x3407effc8e69 <JS Function isFunction (SharedFunctionInfo 0x3407eff6d1d1)> for recompilation, reason: small function, ICs with typeinfo: 0/0 (100%)]
+[optimizing 0x3407effc8e69 <JS Function isFunction (SharedFunctionInfo 0x3407eff6d1d1)> - took 0.006, 0.048, 0.010 ms]
+[marking 0x15511a892f29 <JS Function applyReactionToNeighbors (SharedFunctionInfo 0x15511a838d89)> for recompilation, reason: small function, ICs with typeinfo: 10/10 (100%)]
+[marking 0x219523873a89 <JS Function INSTANCE_OF (SharedFunctionInfo 0x219523835c61)> for recompilation, reason: small function, ICs with typeinfo: 4/7 (57%)]
+[marking 0x1911c1d0b869 <JS Function airReaction (SharedFunctionInfo 0x3407effa6ef9)> for recompilation, reason: small function, ICs with typeinfo: 10/10 (100%)]
+[optimizing 0x15511a892f29 <JS Function applyReactionToNeighbors (SharedFunctionInfo 0x15511a838d89)> - took 0.179, 0.433, 0.097 ms]
+[optimizing 0x1911c1d0b869 <JS Function airReaction (SharedFunctionInfo 0x3407effa6ef9)> - took 0.129, 0.264, 0.050 ms]
+[marking 0x270e90246219 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[disabled optimization for 0x219523835c61 <SharedFunctionInfo INSTANCE_OF>, reason: Call to a JavaScript runtime function]
+[failed to optimize INSTANCE_OF: Call to a JavaScript runtime function]
+[optimizing 0x270e90246219 <JS Function (SharedFunctionInfo 0x3407effb9501)> - took 0.008, 0.057, 0.013 ms]
+[marking 0x270e903323c9 <JS Function (SharedFunctionInfo 0x15511a8fd951)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[marking 0x15511a8aa9d1 <JS Function cellNeedsUpdate (SharedFunctionInfo 0x15511a838cf9)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x270e903323c9 <JS Function (SharedFunctionInfo 0x15511a8fd951)> - took 0.046, 0.098, 0.026 ms]
+[optimizing 0x15511a8aa9d1 <JS Function cellNeedsUpdate (SharedFunctionInfo 0x15511a838cf9)> - took 0.009, 0.034, 0.015 ms]
+[deoptimize marked code in all contexts]
+[deoptimizer unlinked: NativeModule.require / 219523883369]
+[marking 0x15511a8aaa19 <JS Function updateCell (SharedFunctionInfo 0x15511a838e19)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[optimizing 0x15511a8aaa19 <JS Function updateCell (SharedFunctIteration 1
+ionInfo 0x15511a838e19)> - took 0.023, 0.099, 0.022 ms]
+[marking 0x1911c1d13a49 <JS Function addToNewP (SharedFunctionInfo 0x3407effa2f01)> for recompilation, reason: small function, ICs with typeinfo: 3/3 (100%)]
+[optimizing 0x1911c1d13a49 <JS Function addToNewP (SharedFunctionInfo 0x3407effa2f01)> - took 0.014, 0.071, 0.030 ms]
+[deoptimizing (DEOPT eager): begin 0x1911c1d139b9 addToP (opt #64) @2, FP to SP delta: 16]
+  translating addToP => node=3, height=0
+    0x7fff5fbf6e30: [top + 48] <- 0x21952387cb21 ; [sp + 48] 0x21952387cb21 <JS Global Object>
+    0x7fff5fbf6e28: [top + 40] <- 0x186a000000000 ; [sp + 40] 100000
+    0x7fff5fbf6e20: [top + 32] <- 0x1911c1d256a1 ; rax 0x1911c1d256a1 <an Object with map 0x360f68b1dc79>
+    0x7fff5fbf6e18: [top + 24] <- 0x1bd42bd06ef8 ; caller's pc
+    0x7fff5fbf6e10: [top + 16] <- 0x7fff5fbf6e50 ; caller's fp
+    0x7fff5fbf6e08: [top + 8] <- 0x1911c1d0b8f1; context
+    0x7fff5fbf6e00: [top + 0] <- 0x1911c1d139b9; function
+[deoptimizing (eager): end 0x1911c1d139b9 addToP @2 => node=3, pc=0x1bd42be297fe, state=NO_REGISTERS, alignment=no padding, took 0.016 ms]
+[removing optimized code for: addToP]
+[marking 0x1911c1d139b9 <JS Function addToP (SharedFunctionInfo 0x3407effa2de1)> for recompilation, reason: small function, ICs with typeinfo: 3/3 (100%)]
+[optimizing 0x1911c1d139b9 <JS Function addToP (SharedFunctionInfo 0x3407effa2de1)> - took 0.014, 0.076, 0.020 ms]
+[deoptimizing (DEOPT eager): begin 0x1911c1d13d71 setCell (opt #102) @8, FP to SP delta: 32]
+  translating setCell => node=46, height=16
+    0x7fff5fbf6ba0: [top + 56] <- 0x21952387cb21 ; [sp + 56] 0x21952387cb21 <JS Global Object>
+    0x7fff5fbf6b98: [top + 48] <- 0x1911c1d25dc1 ; rcx 0x1911c1d25dc1 <an Object with map 0x360f68b1ad81>
+    0x7fff5fbf6b90: [top + 40] <- 0x1bd42bd06ef8 ; caller's pc
+    0x7fff5fbf6b88: [top + 32] <- 0x7fff5fbf6bc0 ; caller's fp
+    0x7fff5fbf6b80: [top + 24] <- 0x1911c1d1cfe1; context
+    0x7fff5fbf6b78: [top + 16] <- 0x1911c1d13d71; function
+    0x7fff5fbf6b70: [top + 8] <- 0x270e9106b0b9 ; rax 0x270e9106b0b9 <String[3]: 1,1>
+    0x7fff5fbf6b68: [top + 0] <- 0x3407effa7ec9 <JS Function isDefault (SharedFunctionInfo 0x3407effa7ab9)> ; literal
+  translating isDefault => node=2, height=8
+    0x7fff5fbf6b60: [top + 48] <- 0x1911c1d20ca1 ; rdx 0x1911c1d20ca1 <an Object with map 0x360f68b0f081>
+    0x7fff5fbf6b58: [top + 40] <- 0x1911c1d25dc1 ; rcx 0x1911c1d25dc1 <an Object with map 0x360f68b1ad81>
+    0x7fff5fbf6b50: [top + 32] <- 0x1bd42bdf0f87 ; caller's pc
+    0x7fff5fbf6b48: [top + 24] <- 0x7fff5fbf6b88 ; caller's fp
+    0x7fff5fbf6b40: [top + 16] <- 0x3407effee641; context
+    0x7fff5fbf6b38: [top + 8] <- 0x3407effa7ec9; function
+    0x7fff5fbf6b30: [top + 0] <- 0x219523804121 <undefined> ; literal
+[deoptimizing (eager): end 0x3407effa7ec9 setCell @8 => node=2, pc=0x1bd42bdf17a2, state=NO_REGISTERS, alignment=no padding, took 0.025 ms]
+[removing optimized code for: setCell]
+[deoptimizing (DEOPT eager): begin 0x3407effa7ec9 isDefault (opt #98) @3, FP to SP delta: 24]
+  translating isDefault => node=3, height=8
+    0x7fff5fbf6b60: [top + 48] <- 0x1911c1d20ca1 ; [sp + 48] 0x1911c1d20ca1 <an Object with map 0x360f68b0f081>
+    0x7fff5fbf6b58: [top + 40] <- 0x1911c1d251f1 ; rbx 0x1911c1d251f1 <an Object with map 0x360f68b1ad81>
+    0x7fff5fbf6b50: [top + 32] <- 0x1bd42bdf0f87 ; caller's pc
+    0x7fff5fbf6b48: [top + 24] <- 0x7fff5fbf6b88 ; caller's fp
+    0x7fff5fbf6b40: [top + 16] <- 0x3407effee641; context
+    0x7fff5fbf6b38: [top + 8] <- 0x3407effa7ec9; function
+    0x7fff5fbf6b30: [top + 0] <- 0x219523804141 <the hole> ; literal
+[deoptimizing (eager): end 0x3407effa7ec9 isDefault @3 => node=3, pc=0x1bd42bdf17aa, state=NO_REGISTERS, alignment=no padding, took 0.013 ms]
+[removing optimized code for: isDefault]
+[marking 0x3407effa7ec9 <JS Function isDefault (SharedFunctionInfo 0x3407effa7ab9)> for recompilation, reason: small function, ICs with typeinfo: 15/15 (100%)]
+[optimizing 0x3407effa7ec9 <JS Function isDefault (SharedFunctionInfo 0x3407effa7ab9)> - took 0.029, 0.125, 0.029 ms]
+[marking 0x1911c1d13d71 <JS Function setCell (SharedFunctionInfo 0x3407effa8009)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
+[marking 0x270e9109ae51 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x1911c1d13d71 <JS Function setCell (SharedFunctionInfo 0x3407effa8009)> - took 0.058, 0.176, 0.039 ms]
+[deoptimizing (DEOPT eager): begin 0x1911c1d0b821 isReactive (opt #109) @6, FP to SP delta: 16]
+  translating isReactive => node=13, height=8
+    0x7fff5fbf6ba0: [top + 48] <- 0x21952387cb21 ; [sp + 40] 0x21952387cb21 <JS Global Object>
+    0x7fff5fbf6b98: [top + 40] <- 0x1911c1d25bb1 ; rax 0x1911c1d25bb1 <an Object with map 0x360f68b1ad81>
+    0x7fff5fbf6b90: [top + 32] <- 0x1bd42bd06ef8 ; caller's pc
+    0x7fff5fbf6b88: [top + 24] <- 0x7fff5fbf6bc0 ; caller's fp
+    0x7fff5fbf6b80: [top + 16] <- 0x3407effedcf1; context
+    0x7fff5fbf6b78: [top + 8] <- 0x1911c1d0b821; function
+    0x7fff5fbf6b70: [top + 0] <- 0x1911c1d27969 ; rbx 0x1911c1d27969 <an Object with map 0x360f68b1ae59>
+[deoptimizing (eager): end 0x1911c1d0b821 isReactive @6 => node=13, pc=0x1bd42be3885c, state=TOS_REG, alignment=no padding, took 0.014 ms]
+[removing optimized code for: isReactive]
+[marking 0x1911c1d0b821 <JS Function isReactive (SharedFunctionInfo 0x3407effa6f89)> for recompilation, reason: small function, ICs with typeinfo: 6/6 (100%)]
+[marking 0x270e910fb411 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x1911c1d0b821 <JS Function isReactive (SharedFunctionInfo 0x3407effa6f89)> - took 0.016, 0.081, 0.036 ms]
+[optimizing 0x270e910fb411 <JS Function (SharedFunctionInfo 0x3407effb9501)> - took 0.007, 0.054, 0.014 ms]
+[deoptimizing (DEOPT eager): begin 0x1911c1d13d71 setCell (opt #123) @13, FP to SP delta: 32]
+  translating setCell => node=46, height=16
+    0x7fff5fbf6ba0: [top + 56] <- 0x21952387cb21 ; [sp + 56] 0x21952387cb21 <JS Global Object>
+    0x7fff5fbf6b98: [top + 48] <- 0x270e9112e9b9 ; rcx 0x270e9112e9b9 <an Object with map 0x360f68b1dc79>
+    0x7fff5fbf6b90: [top + 40] <- 0x1bd42bd06ef8 ; caller's pc
+    0x7fff5fbf6b88: [top + 32] <- 0x7fff5fbf6bc0 ; caller's fp
+    0x7fff5fbf6b80: [top + 24] <- 0x1911c1d1cfe1; context
+    0x7fff5fbf6b78: [top + 16] <- 0x1911c1d13d71; function
+    0x7fff5fbf6b70: [top + 8] <- 0x270e91130619 ; rax 0x270e91130619 <String[3]: 2,7>
+    0x7fff5fbf6b68: [top + 0] <- 0x3407effa7ec9 <JS Function isDefault (SharedFunctionInfo 0x3407effa7ab9)> ; literal
+  translating isDefault => node=83, height=8
+    0x7fff5fbf6b60: [top + 48] <- 0x1911c1d20ca1 ; rdx 0x1911c1d20ca1 <an Object with map 0x360f68b0f081>
+    0x7fff5fbf6b58: [top + 40] <- 0x270e9112e9b9 ; rcx 0x270e9112e9b9 <an Object with map 0x360f68b1dc79>
+    0x7fff5fbf6b50: [top + 32] <- 0x1bd42bdf0f87 ; caller's pc
+    0x7fff5fbf6b48: [top + 24] <- 0x7fff5fbf6b88 ; caller's fp
+    0x7fff5fbf6b40: [top + 16] <- 0x3407effee641; context
+    0x7fff5fbf6b38: [top + 8] <- 0x3407effa7ec9; function
+    0x7fff5fbf6b30: [top + 0] <- 0x3407effa7ec9 <JS Function isDefault (SharedFunctionInfo 0x3407effa7ab9)> ; literal
+[deoptimizing (eager): end 0x3407effa7ec9 setCell @13 => node=83, pc=0x1bd42bdf18a8, state=NO_REGISTERS, alignment=no padding, took 0.024 ms]
+[removing optimized code for: setCell]
+[evicting entry from optimizing code map (notify deoptimized) for 0x3407effa8009 <SharedFunctionInfo setCell>]
+[deoptimizing (DEOPT eager): begin 0x3407effa7ec9 isDefault (opt #122) @8, FP to SP delta: 24]
+  translating isDefault => node=53, height=16
+    0x7fff5fbf6b60: [top + 56] <- 0x1911c1d20ca1 ; [sp + 48] 0x1911c1d20ca1 <an Object with map 0x360f68b0f081>
+    0x7fff5fbf6b58: [top + 48] <- 0x270e9112e9b9 ; rbx 0x270e9112e9b9 <an Object with map 0x360f68b1dc79>
+    0x7fff5fbf6b50: [top + 40] <- 0x1bd42bdf0f87 ; caller's pc
+    0x7fff5fbf6b48: [top + 32] <- 0x7fff5fbf6b88 ; caller's fp
+    0x7fff5fbf6b40: [top + 24] <- 0x3407effee641; context
+    0x7fff5fbf6b38: [top + 16] <- 0x3407effa7ecIteration 2
+Iteration 3
 Iteration 4
-Iteration 5
+9; function
+    0x7fff5fbf6b30: [top + 8] <- 0x3407effa7ec9 ; rax 0x3407effa7ec9 <JS Function isDefault (SharedFunctionInfo 0x3407effa7ab9)>
+    0x7fff5fbf6b28: [top + 0] <- 0x219523804161 ; rdx 0x219523804161 <true>
+[deoptimizing (eager): end 0x3407effa7ec9 isDefault @8 => node=53, pc=0x1bd42bdf188f, state=TOS_REG, alignment=no padding, took 0.027 ms]
+[removing optimized code for: isDefault]
+[evicting entry from optimizing code map (notify deoptimized) for 0x3407effa7ab9 <SharedFunctionInfo isDefault>]
+[marking 0x1911c1d13d71 <JS Function setCell (SharedFunctionInfo 0x3407effa8009)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
+[marking 0x3407effa7ec9 <JS Function isDefault (SharedFunctionInfo 0x3407effa7ab9)> for recompilation, reason: small function, ICs with typeinfo: 15/15 (100%)]
+[optimizing 0x1911c1d13d71 <JS Function setCell (SharedFunctionInfo 0x3407effa8009)> - took 0.067, 0.249, 0.067 ms]
+[optimizing 0x3407effa7ec9 <JS Function isDefault (SharedFunctionInfo 0x3407effa7ab9)> - took 0.027, 0.122, 0.035 ms]
+[marking 0x219523870879 <JS Function ToPropertyDescriptor (SharedFunctionInfo 0x219523824639)> for recompilation, reason: hot and stable, ICs with typeinfo: 17/24 (70%)]
+[optimizing 0x219523870879 <JS Function ToPropertyDescriptor (SharedFunctionInfo 0x219523824639)> - took 0.087, 0.369, 0.100 ms]
+[deoptimizing (DEOPT eager): begin 0x1911c1d13e91 getNeighbors (opt #100) @4, FP to SP delta: 32]
+  translating getNeighbors => node=3, height=8
+    0x7fff5fbf6c90: [top + 48] <- 0x1911c1d0ba21 ; [sp + 56] 0x1911c1d0ba21 <an Object with map 0x360f68b0f159>
+    0x7fff5fbf6c88: [top + 40] <- 0x15511a8ec139 ; rbx 0x15511a8ec139 <JS Array[2]>
+    0x7fff5fbf6c80: [top + 32] <- 0x1bd42be4e2e3 ; caller's pc
+    0x7fff5fbf6c78: [top + 24] <- 0x7fff5fbf6cf0 ; caller's fp
+    0x7fff5fbf6c70: [top + 16] <- 0x1911c1d1cfe1; context
+    0x7fff5fbf6c68: [top + 8] <- 0x1911c1d13e91; function
+    0x7fff5fbf6c60: [top + 0] <- 0x219523804121 <undefined> ; literal
+[deoptimizing (eager): end 0x1911c1d13e91 getNeighbors @4 => node=3, pc=0x1bd42be33f82, state=NO_REGISTERS, alignment=no padding, took 0.016 ms]
+[removing optimized code for: getNeighbors]
+[marking 0x270e903ed1f9 <JS Function (SharedFunctionInfo 0x15511a8fd951)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[optimizing 0x270e903ed1f9 <JS Function (SharedFunctionInfo 0x15511a8fd951)> - took 0.029, 0.078, 0.019 ms]
+[marking 0x15511a8c47d1 <JS Function updateAirCell (SharedFunctionInfo 0x15511a8389a9)> for recompilation, reason: small function, ICs with typeinfo: 4/4 (100%)]
+[optimizing 0x15511a8c47d1 <JS Function updateAirCell (SharedFunctionInfo 0x15511a8389a9)> - took 0.010, 0.047, 0.014 ms]
+[marking 0x1911c1d13e91 <JS Function getNeighbors (SharedFunctionInfo 0x3407effa8129)> for recompilation, reason: small function, ICs with typeinfo: 13/13 (100%)]
+[optimizing 0x1911c1d13e91 <JS Function getNeighbors (SharedFunctionInfo 0x3407effa8129)> - took 0.048, 0.266, 0.063 ms]
+[marking 0x3407effcb3f9 <JS Function createWrapper (SharedFunctionInfo 0x3407eff6c4e1)> for recompilation, reason: hot and stable, ICs with typeinfo: 15/59 (25%)]
+[optimizing 0x3407effcb3f9 <JS Function createWrapper (SharedFunctionInfo 0x3407eff6c4e1)> - took 0.108, 0.611, 0.108 ms]
+[marking 0x3407effca021 <JS Function values (SharedFunctionInfo 0x3407eff6d9b1)> for recompilation, reason: hot and stable, ICs with typeinfo: 6/6 (100%)]
+[optimizing 0x3407effca021 <JS Function values (SharedFunctionInfo 0x3407eff6d9b1)> - took 0.061, 0.186, 0.094 ms]
+[marking 0x1911c1d13b69 <JS Function checkTotalPressureInFormation (SharedFunctionInfo 0x3407effa31d1)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
+[marking 0x2195238644c9 <JS Function reduce (SharedFunctionInfo 0x219523833479)> for recompilation, reason: hot and stable, ICs with typeinfo: 10/20 (50%)]
+[optimizing 0x2195238644c9 <JS Function reduce (SharedFunctionInfo 0x219523833479)> - took 0.087, 0.429, 0.067 ms]
+[optimizing 0x1911c1d13b69 <JS Function checkTotalPressureInFormatioIteration 5
 Iteration 6
 Iteration 7
 Iteration 8
@@ -722,44 +850,43 @@ Iteration 10
 Iteration 11
 Iteration 12
 Iteration 13
-s with typeinfo: 15/59 (25%)]
-[optimizing 0x34910f0126b1 <JS Function createWrapper (SharedFunctionInfo 0x58ddcb6c4b9)> - took 0.125, 0.611, 0.118 ms]
-[marking 0x34910f010b49 <JS Function values (SharedFunctionInfo 0x58ddcb6d989)> for recompilation, reason: hot and stable, ICs with typeinfo: 6/6 (100%)]
-[optimizing 0x34910f010b49 <JS Function values (SharedFunctionInfo 0x58ddcb6d989)> - took 0.062, 0.188, 0.065 ms]
-[marking 0x34910f047549 <JS Function checkTotalPressureInFormation (SharedFunctionInfo 0x58ddcba31c1)> for recompilation, reason: small function, ICs with typeinfo: 7/7 (100%)]
-[marking 0x1ab0cf9644c9 <JS Function reduce (SharedFunctionInfo 0x1ab0cf933479)> for recompilation, reason: hot and stable, ICs with typeinfo: 10/20 (50%)]
-[optimizing 0x1ab0cf9644c9 <JS Function reduce (SharedFunctionInfo 0x1ab0cf933479)> - took 0.085, 0.431, 0.070 ms]
-[optimizing 0x34910f047549 <JS Function checkTotalPressureInFormation (SharedFunctionInfo 0x58ddcba31c1)> - took 0.125, 0.430, 0.091 ms]
-[marking 0x1ab0cf9642a1 <JS Function filter (SharedFunctionInfo 0x1ab0cf933089)> for recompilation, reason: hot and stable, ICs with typeinfo: 15/26 (57%)]
-[optimizing 0x1ab0cf9642a1 <JS Function filter (SharedFunctionInfo 0x1ab0cf933089)> - took 0.112, 0.658, 0.127 ms]
-[marking 0x1ab0cf96dd79 <JS Function DELETE (SharedFunctionInfo 0x1ab0cf935a49)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[disabled optimization for 0x1ab0cf935a49 <SharedFunctionInfo DELETE>, reason: Call to a JavaScript runtime function]
-[failed to optimize DELETE: Call to a JavaScript runtime function]
-[marking 0x1ab0cf970971 <JS Function defineProperty (SharedFunctionInfo 0x1ab0cf925209)> for recompilation, reason: hot and stable, ICs with typeinfo: 4/8 (50%)]
-[disabled optimization for 0x1ab0cf925209 <SharedFunctionInfo defineProperty>, reason: Object literal with complex property]
-[failed to optimize defineProperty: Object literal with complex property]
-[marking 0x3aa53220afe9 <JS Function (SharedFunctionInfo 0x1a9ed0b166f9)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[optimizing 0x3aa53220afe9 <JS Function (SharedFunctionInfo 0x1a9ed0b166f9)> - took 0.035, 0.087, 0.035 ms]
-[marking 0x3aa5322dd119 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[marking 0x3aa532308479 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x3aa532308479 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> - took 0.016, 0.071, 0.030 ms]
-[deoptimize marked code in all contexts]
-[marking 0x3aa5330bc271 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[marking 0x3aa53314a811 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x3aa53314a811 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> - took 0.017, 0.092, 0.036 ms]
-[marking 0x3aa5325a8639 <JS Function (SharedFunctionInfo 0x1a9ed0b166f9)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[optimizing 0x3aa5325a8639 <JS Function (SharedFunctionInfo 0x1a9ed0b166f9)> - took 0.060, 0.094, 0.037 ms]
-[marking 0x3aa5322f8809 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[marking 0x3aa533122849 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x3aa533122849 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> - took 0.017, 0.071, 0.030 ms]
-[marking 0x3aa5332a9049 <JS Function (SharedFunctionInfo 0x295fafd10c1)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[optimizing 0x3aa5332a9049 <JS Function (SharedFunctionInfo 0x295fafd10c1)> - took 0.027, 0.075, 0.028 ms]
-[marking 0x1ab0cf9743f9 <JS Function DefineObjectProperty (SharedFunctionInfo 0x1ab0cf924c69)> for recompilatiIteration 14
+Iteration 14
 Iteration 15
 Iteration 16
 Iteration 17
 Iteration 18
-Iteration 19
+n (SharedFunctionInfo 0x3407effa31d1)> - took 0.129, 0.432, 0.086 ms]
+[marking 0x2195238642a1 <JS Function filter (SharedFunctionInfo 0x219523833089)> for recompilation, reason: hot and stable, ICs with typeinfo: 15/26 (57%)]
+[optimizing 0x2195238642a1 <JS Function filter (SharedFunctionInfo 0x219523833089)> - took 0.108, 0.656, 0.132 ms]
+[marking 0x219523870971 <JS Function defineProperty (SharedFunctionInfo 0x219523825209)> for recompilation, reason: hot and stable, ICs with typeinfo: 4/8 (50%)]
+[disabled optimization for 0x219523825209 <SharedFunctionInfo defineProperty>, reason: Object literal with complex property]
+[failed to optimize defineProperty: Object literal with complex property]
+[marking 0x21952386dd79 <JS Function DELETE (SharedFunctionInfo 0x219523835a49)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[disabled optimization for 0x219523835a49 <SharedFunctionInfo DELETE>, reason: Call to a JavaScript runtime function]
+[failed to optimize DELETE: Call to a JavaScript runtime function]
+[marking 0x270e9113ac31 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x270e9113ac31 <JS Function (SharedFunctionInfo 0x3407effb9501)> - took 0.017, 0.071, 0.030 ms]
+[marking 0x270e911de5f9 <JS Function (SharedFunctionInfo 0x15511a8fd951)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[optimizing 0x270e911de5f9 <JS Function (SharedFunctionInfo 0x15511a8fd951)> - took 0.027, 0.075, 0.029 ms]
+[marking 0x270e91265cd9 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[marking 0x270e912b01e1 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x270e912b01e1 <JS Function (SharedFunctionInfo 0x3407effb9501)> - took 0.020, 0.189, 0.037 ms]
+[marking 0x270e90086dc1 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[marking 0x270e9010b8b9 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x270e9010b8b9 <JS Function (SharedFunctionInfo 0x3407effb9501)> - took 0.017, 0.105, 0.025 ms]
+[marking 0x270e90ca3159 <JS Function (SharedFunctionInfo 0x15511a8fd951)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[optimizing 0x270e90ca3159 <JS Function (SharedFunctionInfo 0x15511a8fd951)> - took 0.036, 0.124, 0.028 ms]
+[marking 0x2195238743f9 <JS Function DefineObjectProperty (SharedFunctionInfo 0x219523824c69)> for recompilation, reason: not much type info but very hot, ICs with typeinfo: 36/152 (23%)]
+[optimizing 0x2195238743f9 <JS Function DefineObjectProperty (SharedFunctionInfo 0x219523824c69)> - took 0.225, 1.998, 0.256 ms]
+[marking 0x270e9129f131 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[marking 0x270e912da3c9 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x270e912da3c9 <JS Function (SharedFunctionInfo 0x3407effb9501)> - took 0.017, 0.107, 0.023 ms]
+[marking 0x270e912e6599 <JS Function (SharedFunctionInfo 0x15511a8fd951)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[optimizing 0x270e912e6599 <JS Function (SharedFunctionInfo 0x15511a8fd951)> - took 0.045, 0.111, 0.033 ms]
+[marking 0x270e9002a3f1 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[marking 0x270e90063aa9 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x270e90063aa9 <JS Function (SharedFunctionInfo 0x3407effb9501)> - took 0.016, 0.103, 0.022 ms]
+[marking 0x270e910f1249 <JS Function (SharedFunctionInfo 0x15511a8fd951)> for recompilation, reasIteration 19
 Iteration 20
 Iteration 21
 Iteration 22
@@ -778,39 +905,7 @@ Iteration 34
 Iteration 35
 Iteration 36
 Iteration 37
-on, reason: not much type info but very hot, ICs with typeinfo: 36/152 (23%)]
-[optimizing 0x1ab0cf9743f9 <JS Function DefineObjectProperty (SharedFunctionInfo 0x1ab0cf924c69)> - took 0.231, 1.327, 0.227 ms]
-[marking 0x3aa5322c2c21 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[marking 0x3aa5323443b9 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x3aa5323443b9 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> - took 0.017, 0.072, 0.031 ms]
-[marking 0x3aa533096da9 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[marking 0x3aa533122211 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x3aa533122211 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> - took 0.016, 0.071, 0.031 ms]
-[marking 0x3aa533e95a41 <JS Function (SharedFunctionInfo 0x295fafd10c1)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[optimizing 0x3aa533e95a41 <JS Function (SharedFunctionInfo 0x295fafd10c1)> - took 0.035, 0.087, 0.037 ms]
-[marking 0x3aa532fbea89 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[marking 0x3aa533169961 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x3aa533169961 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> - took 0.017, 0.073, 0.032 ms]
-[marking 0x3aa5332cfb01 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[marking 0xcfc6f34dd81 <JS Function (SharedFunctionInfo 0x295fafd10c1)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[optimizing 0xcfc6f34dd81 <JS Function (SharedFunctionInfo 0x295fafd10c1)> - took 0.035, 0.088, 0.025 ms]
-[marking 0x3aa532115e69 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x3aa532115e69 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> - took 0.015, 0.069, 0.029 ms]
-[marking 0x3aa5320aba99 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[marking 0x3aa5323ab971 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x3aa5323ab971 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> - took 0.025, 0.074, 0.039 ms]
-[marking 0x3aa5326b8441 <JS Function (SharedFunctionInfo 0x295fafd10c1)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[optimizing 0x3aa5326b8441 <JS Function (SharedFunctionInfo 0x295fafd10c1)> - took 0.033, 0.084, 0.035 ms]
-[marking 0x3aa5331e8389 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[marking 0x3aa53354ae49 <JS Function (SharedFunctionInfo 0x58ddcbb94f1)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[disabled optimization for 0x58ddcbb94f1 <SharedFunctionInfo>, reason: Optimized too many times]
-[failed to optimize : Optimized too many times]
-[marking 0x3aa5336233e9 <JS Function (SharedFunctionInfo 0x295fafd10c1)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[optimizing 0x3aa5336233e9 <JS Function (SharedFunctionInfo 0x295fafd10c1)> - took 0.036, 0.089, 0.037 ms]
-[marking 0x3aa532a43a61 <JS Function (SharedFunctionInfo 0x295fafd10c1)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[optimizing 0x3aa532a43a61 <JS Function (SharedFunctionInfo 0x295fafd10c1)> - took 0.038, 0.089, 0.036 ms]
-[marking 0x3aa532287c99 <JS Function (SharedFunctionInfo 0x295fafd10c1)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[optimizing 0x3aa532287c99 <JSIteration 38
+Iteration 38
 Iteration 39
 Iteration 40
 Iteration 41
@@ -867,20 +962,42 @@ Iteration 91
 Iteration 92
 Iteration 93
 Iteration 94
-Iteration 95
+on: small function, ICs with typeinfo: 2/2 (100%)]
+[optimizing 0x270e910f1249 <JS Function (SharedFunctionInfo 0x15511a8fd951)> - took 0.038, 0.119, 0.055 ms]
+[marking 0x270e90aac751 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[marking 0x270e90b8e8c1 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x270e90b8e8c1 <JS Function (SharedFunctionInfo 0x3407effb9501)> - took 0.018, 0.105, 0.022 ms]
+[marking 0x270e91014d79 <JS Function (SharedFunctionInfo 0x15511a8fd951)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[optimizing 0x270e91014d79 <JS Function (SharedFunctionInfo 0x15511a8fd951)> - took 0.037, 0.127, 0.028 ms]
+[marking 0x270e91110799 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[marking 0x270e9113b8b9 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x270e9113b8b9 <JS Function (SharedFunctionInfo 0x3407effb9501)> - took 0.017, 0.104, 0.021 ms]
+[marking 0x270e9129eb01 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[marking 0x270e9131fff1 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x270e9131fff1 <JS Function (SharedFunctionInfo 0x3407effb9501)> - took 0.017, 0.072, 0.021 ms]
+[marking 0x270e90089a91 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[marking 0x270e900ed0d1 <JS Function (SharedFunctionInfo 0x3407effb9501)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[disabled optimization for 0x3407effb9501 <SharedFunctionInfo>, reason: Optimized too many times]
+[failed to optimize : Optimized too many times]
+[marking 0x270e90e55279 <JS Function (SharedFunctionInfo 0x15511a8fd951)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[optimizing 0x270e90e55279 <JS Function (SharedFunctionInfo 0x15511a8fd951)> - took 0.037, 0.087, 0.038 ms]
+[marking 0x270e91e11bb1 <JS Function (SharedFunctionInfo 0x15511a8fd951)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[optimizing 0x270e91e11bb1 <JS Function (SharedFunctionInfo 0x15511a8fd951)> - took 0.034, 0.087, 0.035 ms]
+[marking 0x270e9129ea81 <JS Function (SharedFunctionInfo 0x15511a8fd951)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[optimizing 0x270e9129ea81 <JS Function (SharedFunctionInfo 0x15511a8fd951)> - took 0.036, 0.087, 0.037 ms]
+[marking 0x270e9106f211 <JS Function (SharedFunctionInfo 0x15511a8fd951)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[optimizing 0x270e9106f211 <JS Function (SharedFunctionInfo 0x15511a8fd951)> - took 0.035, 0.087, 0.036 ms]
+[marking 0x270e904bd8f1 <JS Function (SharedFunctionInfo 0x15511a8fd951)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[disabled optimization for 0x15511a8fd951 <SharedFunctionInfo>, reason: Optimized too many times]
+[failed to optimize : Optimized too many times]
+[marking 0x3c52acf7a689 <JS Function interestingCells (SharedFunctionInfo 0x3407effa82d9)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
+[optimizing 0x3c52acf7a689 <JS Function interestingCells (SharedFunctionInfo 0x3407effa82d9)> - took 0.073, 0.138, 0.036 ms]
+[marking 0x3407eff5bd99 <JS Function isObject (SharedFunctionInfo 0x219523885429)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
+[optimizing 0x3407eff5bd99 <JS Function isObject (SharedFunctionInfo 0x219523885429)> - took 0.017, 0.072, 0.026 ms]
+[marking 0x219523883369 <JS Function NativeModule.require (SharedFunctionInfo 0x219523880ee1)> for recompilation, reason: small function, ICs witIteration 95
 Iteration 96
 Iteration 97
 Iteration 98
 Iteration 99
- Function (SharedFunctionInfo 0x295fafd10c1)> - took 0.036, 0.093, 0.038 ms]
-[marking 0x3aa53398c669 <JS Function (SharedFunctionInfo 0x295fafd10c1)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[optimizing 0x3aa53398c669 <JS Function (SharedFunctionInfo 0x295fafd10c1)> - took 0.039, 0.120, 0.030 ms]
-[marking 0x34e87439eda1 <JS Function interestingCells (SharedFunctionInfo 0x58ddcba82c9)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[marking 0x3aa5338b46f1 <JS Function (SharedFunctionInfo 0x6e6648e3d61)> for recompilation, reason: small function, ICs with typeinfo: 2/2 (100%)]
-[disabled optimization for 0x6e6648e3d61 <SharedFunctionInfo>, reason: Optimized too many times]
-[failed to optimize : Optimized too many times]
-[optimizing 0x34e87439eda1 <JS Function interestingCells (SharedFunctionInfo 0x58ddcba82c9)> - took 0.073, 0.137, 0.038 ms]
-[marking 0x58ddcb5bd71 <JS Function isObject (SharedFunctionInfo 0x1ab0cf985429)> for recompilation, reason: small function, ICs with typeinfo: 1/1 (100%)]
-[optimizing 0x58ddcb5bd71 <JS Function isObject (SharedFunctionInfo 0x1ab0cf985429)> - took 0.018, 0.073, 0.018 ms]
-[marking 0x1ab0cf983369 <JS Function NativeModule.require (SharedFunctionInfo 0x1ab0cf980ee1)> for recompilation, reason: small function, ICs with typeinfo: 11/14 (78%)]
-[optimizing 0x1ab0cf983369 <JS Function NativeModule.require (SharedFunctionInfo 0x1ab0cf980ee1)> - took 0.216, 0.457, 0.037 ms]
+h typeinfo: 11/14 (78%)]
+[optimizing 0x219523883369 <JS Function NativeModule.require (SharedFunctionInfo 0x219523880ee1)> - took 0.196, 0.296, 0.033 ms]

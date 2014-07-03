@@ -21,15 +21,15 @@ function bigTunnelSuite() {
       mapLegend: {
         l: {
           name: 'low',
-          p: 1
+          p: 1000
         },
         m: {
           name: 'medium',
-          p: 8
+          p: 8000
         },
         h: {
           name: 'high',
-          p: 20
+          p: 20000
         },
         x: {
           name: 'block',

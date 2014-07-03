@@ -1,515 +1,466 @@
-Statistical profiling result from v8.log, (6950 ticks, 104 unaccounted, 0 excluded).
+Code move event for unknown code: 0x1bd42be18180
+Code move event for unknown code: 0x1bd42be422c0
+Code move event for unknown code: 0x1bd42bf110e0
+Code move event for unknown code: 0x1bd42bf303a0
+Statistical profiling result from v8.log, (4692 ticks, 46 unaccounted, 0 excluded).
 
  [Unknown]:
    ticks  total  nonlib   name
-    104    1.5%
+     46    1.0%
 
  [Shared libraries]:
    ticks  total  nonlib   name
-     25    0.4%    0.0%  /usr/lib/system/libsystem_pthread.dylib
+     17    0.4%    0.0%  /usr/lib/system/libsystem_pthread.dylib
       2    0.0%    0.0%  /usr/lib/system/libsystem_c.dylib
 
  [JavaScript]:
    ticks  total  nonlib   name
-    270    3.9%    3.9%  LazyCompile: Join native array.js:68:14
-    147    2.1%    2.1%  LazyCompile: *setCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:30:21
-    146    2.1%    2.1%  LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-    117    1.7%    1.7%  Stub: LoadFieldStub
-     98    1.4%    1.4%  Stub: CEntryStub
-     97    1.4%    1.4%  LazyCompile: *forEach native array.js:874:22
-     84    1.2%    1.2%  Builtin: A builtin from the snapshot
-     67    1.0%    1.0%  LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
-     63    0.9%    0.9%  LazyCompile: *isReactive /Users/jamkang/gcw/reactivecell/reactions/airreaction.js:38:22
-     62    0.9%    0.9%  LazyCompile: *map native array.js:963:18
-     57    0.8%    0.8%  LazyCompile: *toString native array.js:239:23
-     49    0.7%    0.7%  LazyCompile: ~IN native runtime.js:203:12
-     48    0.7%    0.7%  Stub: KeyedStoreElementStub
-     48    0.7%    0.7%  KeyedLoadIC: A keyed load IC from the snapshot
-     47    0.7%    0.7%  LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
-     43    0.6%    0.6%  LazyCompile: *addToNewP /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:20:19
-     42    0.6%    0.6%  Builtin: A builtin from the snapshot {1}
-     41    0.6%    0.6%  LazyCompile: ~APPLY_PREPARE native runtime.js:258:23
-     41    0.6%    0.6%  LazyCompile: *addToP /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:12:16
-     40    0.6%    0.6%  Stub: NumberToStringStub
-     39    0.6%    0.6%  Stub: KeyedLoadElementStub {1}
-     36    0.5%    0.5%  Stub: CallFunctionStub {2}
-     34    0.5%    0.5%  LazyCompile: *baseClone /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:747:23
-     28    0.4%    0.4%  Stub: InstanceofStub
-     27    0.4%    0.4%  Stub: KeyedLoadElementStub
-     27    0.4%    0.4%  LazyCompile: *filter native array.js:836:21
-     25    0.4%    0.4%  LazyCompile: *updateAirCell /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:45:39
-     24    0.3%    0.3%  Stub: CallConstructStub
-     24    0.3%    0.3%  LazyCompile: reactToNeighbor /Users/jamkang/gcw/reactivecell/reactions/airreaction.js:13:27
-     24    0.3%    0.3%  LazyCompile: ToObject native runtime.js:345:18
-     24    0.3%    0.3%  LazyCompile: *slice /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:406:17
-     24    0.3%    0.3%  LazyCompile: *cellNeedsUpdate /Users/jamkang/gcw/reactivecell/automaton.js:8:27
-     23    0.3%    0.3%  Stub: InternalArraySingleArgumentConstructorStub
-     23    0.3%    0.3%  Stub: CallFunctionStub {4}
-     22    0.3%    0.3%  LazyCompile: *baseCreateWrapper /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:918:31
-     21    0.3%    0.3%  Stub: p
-     20    0.3%    0.3%  Stub: ArrayPushStub
-     20    0.3%    0.3%  LazyCompile: ToName native runtime.js:342:16
-     19    0.3%    0.3%  Stub: CallFunctionStub {1}
-     19    0.3%    0.3%  LazyCompile: *ToPropertyDescriptor native v8natives.js:270:30
-     19    0.3%    0.3%  LazyCompile: *DefineObjectProperty native v8natives.js:495:30
-     18    0.3%    0.3%  Stub: ArraySingleArgumentConstructorStub
-     16    0.2%    0.2%  Stub: ToBooleanStub
-     15    0.2%    0.2%  Stub: CallFunctionStub_Args2
-     15    0.2%    0.2%  LazyCompile: *UseSparseVariant native array.js:62:26
-     12    0.2%    0.2%  Stub: ArgumentsAccessStub
-     11    0.2%    0.2%  Stub: KeyedLoadElementStub {2}
-     11    0.2%    0.2%  LazyCompile: *forOwn /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:2094:26
-     10    0.1%    0.1%  Stub: KeyedLoadElementStub {3}
-     10    0.1%    0.1%  Stub: InternalArray
-     10    0.1%    0.1%  LazyCompile: *createWrapper /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:1394:27
-      9    0.1%    0.1%  Stub: ToBooleanStub(Null,SpecObject)
-      9    0.1%    0.1%  Stub: CompareICStub
-      9    0.1%    0.1%  LazyCompile: ~INSTANCE_OF native runtime.js:210:21
-      9    0.1%    0.1%  LazyCompile: *updateCell /Users/jamkang/gcw/reactivecell/automaton.js:22:22
-      9    0.1%    0.1%  LazyCompile: *$Array.get_ native v8natives.js:387:26
-      9    0.1%    0.1%  Builtin: A builtin from the snapshot {3}
-      8    0.1%    0.1%  Stub: ToBooleanStub {1}
-      8    0.1%    0.1%  KeyedStoreIC: A keyed store IC from the snapshot
-      7    0.1%    0.1%  Stub: FastNewContextStub
-      7    0.1%    0.1%  Stub: CallFunctionStub {5}
-      7    0.1%    0.1%  Stub: BinaryOpWithAllocationSiteStub
-      7    0.1%    0.1%  LazyCompile: *PropertyDescriptor native v8natives.js:319:28
-      7    0.1%    0.1%  Handler: An IC handler from the snapshot {1}
-      6    0.1%    0.1%  Stub: visited_arrays
-      6    0.1%    0.1%  Stub: needsUpdate
-      6    0.1%    0.1%  Stub: length {1}
-      6    0.1%    0.1%  Stub: LoadFieldStub {1}
-      6    0.1%    0.1%  Stub: CompareICStub {4}
-      6    0.1%    0.1%  Stub: CallFunctionStub {3}
-      6    0.1%    0.1%  Stub: BinaryOpICStub {2}
+    188    4.0%    4.0%  LazyCompile: Join native array.js:68:14
+    108    2.3%    2.3%  LazyCompile: *setCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:30:21
+     89    1.9%    1.9%  Stub: CEntryStub
+     71    1.5%    1.5%  LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+     69    1.5%    1.5%  Builtin: A builtin from the snapshot
+     65    1.4%    1.4%  LazyCompile: *forEach native array.js:874:22
+     61    1.3%    1.3%  LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+     57    1.2%    1.2%  LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
+     50    1.1%    1.1%  Stub: LoadFieldStub
+     38    0.8%    0.8%  KeyedLoadIC: A keyed load IC from the snapshot
+     35    0.7%    0.7%  LazyCompile: *map native array.js:963:18
+     35    0.7%    0.7%  LazyCompile: *baseClone /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:747:23
+     33    0.7%    0.7%  LazyCompile: *toString native array.js:239:23
+     31    0.7%    0.7%  Stub: KeyedStoreElementStub
+     31    0.7%    0.7%  LazyCompile: ~IN native runtime.js:203:12
+     31    0.7%    0.7%  LazyCompile: *addToNewP /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:20:19
+     31    0.7%    0.7%  Builtin: A builtin from the snapshot {1}
+     29    0.6%    0.6%  Stub: NumberToStringStub
+     27    0.6%    0.6%  Stub: KeyedLoadElementStub {1}
+     26    0.6%    0.6%  LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
+     23    0.5%    0.5%  Stub: InternalArraySingleArgumentConstructorStub
+     22    0.5%    0.5%  Stub: CallConstructStub
+     22    0.5%    0.5%  LazyCompile: ~Transform._read _stream_transform.js:174:37
+     21    0.4%    0.4%  LazyCompile: *slice /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:406:17
+     19    0.4%    0.4%  Stub: KeyedLoadElementStub
+     19    0.4%    0.4%  LazyCompile: ToObject native runtime.js:345:18
+     18    0.4%    0.4%  Stub: ArrayPushStub
+     18    0.4%    0.4%  LazyCompile: ~APPLY_PREPARE native runtime.js:258:23
+     18    0.4%    0.4%  LazyCompile: reactToNeighbor /Users/jamkang/gcw/reactivecell/reactions/airreaction.js:15:27
+     16    0.3%    0.3%  LazyCompile: *filter native array.js:836:21
+     15    0.3%    0.3%  LazyCompile: *ToPropertyDescriptor native v8natives.js:270:30
+     14    0.3%    0.3%  LazyCompile: ToName native runtime.js:342:16
+     14    0.3%    0.3%  LazyCompile: *reduce native array.js:1085:21
+     13    0.3%    0.3%  Stub: CallFunctionStub {5}
+     12    0.3%    0.3%  Stub: ArraySingleArgumentConstructorStub
+     12    0.3%    0.3%  LazyCompile: *updateAirCell /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:45:39
+     12    0.3%    0.3%  LazyCompile: *DefineObjectProperty native v8natives.js:495:30
+     11    0.2%    0.2%  Stub: CallFunctionStub_Args2
+      9    0.2%    0.2%  Stub: InstanceofStub
+      9    0.2%    0.2%  Stub: CompareICStub {2}
+      9    0.2%    0.2%  LazyCompile: *forOwn /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:2094:26
+      9    0.2%    0.2%  LazyCompile: *baseCreateWrapper /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:918:31
+      8    0.2%    0.2%  Stub: ToBooleanStub
+      8    0.2%    0.2%  Stub: CallFunctionStub {3}
+      8    0.2%    0.2%  Stub: CallFunctionStub {1}
+      8    0.2%    0.2%  Stub: ArgumentsAccessStub
+      8    0.2%    0.2%  LazyCompile: *cellNeedsUpdate /Users/jamkang/gcw/reactivecell/automaton.js:8:27
+      8    0.2%    0.2%  LazyCompile: *UseSparseVariant native array.js:62:26
+      7    0.1%    0.1%  Stub: ToBooleanStub(Null,SpecObject)
+      7    0.1%    0.1%  Stub: CEntryStub {1}
+      6    0.1%    0.1%  Stub: visited_arrays {1}
+      6    0.1%    0.1%  Stub: ToBooleanStub(Smi)
       6    0.1%    0.1%  LazyCompile: defineProperty native v8natives.js:831:30
-      6    0.1%    0.1%  LazyCompile: *reduce native array.js:1085:21
-      6    0.1%    0.1%  LazyCompile: *clamp /Users/jamkang/gcw/reactivecell/reactions/airreaction.js:5:15
-      6    0.1%    0.1%  LazyCompile: *$Array.writable_ native v8natives.js:367:25
-      5    0.1%    0.1%  Stub: ToUint32
-      5    0.1%    0.1%  Stub: ToName
-      5    0.1%    0.1%  Stub: CEntryStub {1}
+      5    0.1%    0.1%  Stub: ToName {1}
+      5    0.1%    0.1%  Stub: ToBooleanStub {1}
+      5    0.1%    0.1%  Stub: KeyedLoadElementStub {2}
+      5    0.1%    0.1%  Stub: CallFunctionStub
+      5    0.1%    0.1%  Stub: BinaryOpWithAllocationSiteStub
       5    0.1%    0.1%  Stub: BinaryOpICStub
       5    0.1%    0.1%  LazyCompile: ~ToString native runtime.js:327:18
-      5    0.1%    0.1%  Builtin: A builtin from the snapshot {5}
-      5    0.1%    0.1%  Builtin: A builtin from the snapshot {4}
-      4    0.1%    0.1%  Stub: ToBooleanStub(Null)
-      4    0.1%    0.1%  Stub: FastNewClosureStub
-      4    0.1%    0.1%  Stub: CompareNilICStub(NullValue)(MonomorphicMap)
-      4    0.1%    0.1%  Stub: CompareICStub {5}
-      4    0.1%    0.1%  Stub: CompareICStub {2}
-      4    0.1%    0.1%  Stub: CompareICStub {1}
-      4    0.1%    0.1%  Stub: CallFunctionStub {6}
-      4    0.1%    0.1%  Stub: BinaryOpICStub {1}
-      4    0.1%    0.1%  LazyCompile: *values /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:2904:20
-      4    0.1%    0.1%  LazyCompile: *IsInconsistentDescriptor native v8natives.js:229:34
-      4    0.1%    0.1%  LazyCompile: *$Array.enumerable_ native v8natives.js:350:20
-      3    0.0%    0.0%  Stub: ToBooleanStub(Undefined,SpecObject)
-      3    0.0%    0.0%  Stub: LoadFieldStub {2}
-      3    0.0%    0.0%  Stub: CompareNilICStub(NullValue)(Generic)
-      3    0.0%    0.0%  LazyCompile: *ToUint32 native runtime.js:359:18
-      3    0.0%    0.0%  LazyCompile: *IsDataDescriptor native v8natives.js:221:26
-      3    0.0%    0.0%  LazyCompile: *$Array.writable_ native v8natives.js:360:25
-      3    0.0%    0.0%  LazyCompile: *$Array.get_ native v8natives.js:384:27
-      3    0.0%    0.0%  LazyCompile: *$Array.get_ native v8natives.js:380:27
-      3    0.0%    0.0%  LazyCompile: *$Array.enumerable_ native v8natives.js:357:20
-      3    0.0%    0.0%  KeyedStoreIC:  {234}
-      3    0.0%    0.0%  KeyedLoadPolymorphicIC:  {262}
-      3    0.0%    0.0%  KeyedLoadIC: object
-      3    0.0%    0.0%  Builtin: A builtin from the snapshot {6}
-      2    0.0%    0.0%  Stub: apply {3}
-      2    0.0%    0.0%  Stub: apply {2}
-      2    0.0%    0.0%  Stub: UseSparseVariant {1}
-      2    0.0%    0.0%  Stub: ToBooleanStub(Smi)
+      5    0.1%    0.1%  LazyCompile: *updateCell /Users/jamkang/gcw/reactivecell/automaton.js:22:22
+      4    0.1%    0.1%  Stub: apply {2}
+      4    0.1%    0.1%  Stub: LoadFieldStub {2}
+      4    0.1%    0.1%  Stub: CompareNilICStub(NullValue)(Generic)
+      4    0.1%    0.1%  Stub: CallFunctionStub {4}
+      4    0.1%    0.1%  LazyCompile: ~INSTANCE_OF native runtime.js:210:21
+      4    0.1%    0.1%  LazyCompile: toString native v8natives.js:128:24
+      4    0.1%    0.1%  LazyCompile: <anonymous> /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:816:49
+      4    0.1%    0.1%  Builtin: A builtin from the snapshot {2}
+      3    0.1%    0.1%  Stub: length {1}
+      3    0.1%    0.1%  Stub: UseSparseVariant {1}
+      3    0.1%    0.1%  Stub: ToUint32
+      3    0.1%    0.1%  Stub: ToBooleanStub(Undefined,SpecObject)
+      3    0.1%    0.1%  Stub: CompareNilICStub(NullValue)(MonomorphicMap)
+      3    0.1%    0.1%  Stub: CompareICStub {3}
+      3    0.1%    0.1%  Stub: CompareICStub {1}
+      3    0.1%    0.1%  Stub: CompareICStub
+      3    0.1%    0.1%  Stub: BinaryOpICStub(BIT_OR:Smi*Smi->Smi)
+      3    0.1%    0.1%  Stub: BinaryOpICStub {1}
+      3    0.1%    0.1%  LazyCompile: *values /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:2904:20
+      3    0.1%    0.1%  LazyCompile: *createWrapper /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:1394:27
+      3    0.1%    0.1%  LazyCompile: *clamp /Users/jamkang/gcw/reactivecell/reactions/airreaction.js:5:15
+      3    0.1%    0.1%  LazyCompile: *PropertyDescriptor native v8natives.js:319:28
+      3    0.1%    0.1%  LazyCompile: *IsAccessorDescriptor native v8natives.js:217:30
+      3    0.1%    0.1%  LazyCompile: *<anonymous> native v8natives.js:407:21
+      3    0.1%    0.1%  KeyedStoreIC: A keyed store IC from the snapshot
+      3    0.1%    0.1%  Handler: An IC handler from the snapshot
+      3    0.1%    0.1%  Builtin: A builtin from the snapshot {3}
+      2    0.0%    0.0%  Stub: needsUpdate {4}
       2    0.0%    0.0%  Stub: StubFailureTrampolineStub
-      2    0.0%    0.0%  Stub: RecordWriteStub {1}
-      2    0.0%    0.0%  Stub: CallFunctionStub
-      2    0.0%    0.0%  Stub: BinaryOpICStub(BIT_OR:Smi*Smi->Smi)
-      2    0.0%    0.0%  Stub: BinaryOpICStub {3}
-      2    0.0%    0.0%  Stub: ArrayConstructorStub
-      2    0.0%    0.0%  LazyCompile: toString native v8natives.js:128:24
-      2    0.0%    0.0%  LazyCompile: <anonymous> /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:816:49
-      2    0.0%    0.0%  LazyCompile: *keys native v8natives.js:206:20
-      2    0.0%    0.0%  LazyCompile: *ToBoolean native runtime.js:299:19
-      2    0.0%    0.0%  LazyCompile: *IsAccessorDescriptor native v8natives.js:217:30
-      2    0.0%    0.0%  LazyCompile: *<anonymous> /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:816:49
+      2    0.0%    0.0%  Stub: LoadFieldStub {1}
+      2    0.0%    0.0%  Stub: FastNewContextStub {1}
+      2    0.0%    0.0%  Stub: FastNewContextStub
+      2    0.0%    0.0%  Stub: CallFunctionStub_Args5_Recording
+      2    0.0%    0.0%  Stub: CallConstructStub {1}
+      2    0.0%    0.0%  Stub: BinaryOpICStub(BIT_XOR_ReuseLeft:Number*Smi->Smi)
+      2    0.0%    0.0%  LoadPolymorphicIC: needsUpdate
+      2    0.0%    0.0%  LoadPolymorphicIC: d {3}
+      2    0.0%    0.0%  LazyCompile: ~emit events.js:68:44
+      2    0.0%    0.0%  LazyCompile: *readableAddChunk _stream_readable.js:135:26
+      2    0.0%    0.0%  LazyCompile: *assembleCell /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:151:22
+      2    0.0%    0.0%  LazyCompile: *ToUint32 native runtime.js:359:18
+      2    0.0%    0.0%  LazyCompile: *IsInconsistentDescriptor native v8natives.js:229:34
+      2    0.0%    0.0%  LazyCompile: *ConvertDescriptorArrayToDescriptor native v8natives.js:410:44
+      2    0.0%    0.0%  LazyCompile: *$Array.writable_ native v8natives.js:367:25
       2    0.0%    0.0%  LazyCompile: *$Array.writable_ native v8natives.js:364:24
-      2    0.0%    0.0%  LazyCompile: *$Array.enumerable_ native v8natives.js:354:20
-      2    0.0%    0.0%  Builtin: A builtin from the snapshot {2}
-      1    0.0%    0.0%  Stub: symbol(hash 24fe2280)
-      1    0.0%    0.0%  Stub: p {6}
-      1    0.0%    0.0%  Stub: needsUpdate {4}
+      2    0.0%    0.0%  LazyCompile: *$Array.enumerable_ native v8natives.js:350:20
+      2    0.0%    0.0%  KeyedLoadPolymorphicIC:  {254}
+      2    0.0%    0.0%  KeyedLoadIC: object
+      2    0.0%    0.0%  Builtin: A builtin from the snapshot {5}
       1    0.0%    0.0%  Stub: needsUpdate {3}
+      1    0.0%    0.0%  Stub: isConfigurable
+      1    0.0%    0.0%  Stub: ToString {1}
+      1    0.0%    0.0%  Stub: ToPropertyDescriptor
       1    0.0%    0.0%  Stub: ToObject
-      1    0.0%    0.0%  Stub: StoreArrayLiteralElementStub
+      1    0.0%    0.0%  Stub: RecordWriteStub {4}
+      1    0.0%    0.0%  Stub: RecordWriteStub {3}
       1    0.0%    0.0%  Stub: RecordWriteStub {2}
+      1    0.0%    0.0%  Stub: RecordWriteStub {1}
       1    0.0%    0.0%  Stub: RecordWriteStub
-      1    0.0%    0.0%  Stub: LoadFieldStub {4}
-      1    0.0%    0.0%  Stub: LoadFieldStub {3}
-      1    0.0%    0.0%  Stub: IsDataDescriptor
-      1    0.0%    0.0%  Stub: InternalArrayConstructorStub
+      1    0.0%    0.0%  Stub: NameDictionaryLookupStub
+      1    0.0%    0.0%  Stub: KeyedLoadElementStub {3}
+      1    0.0%    0.0%  Stub: FastNewClosureStub
       1    0.0%    0.0%  Stub: FastCloneShallowArrayStub
-      1    0.0%    0.0%  Stub: DefineOwnProperty {1}
-      1    0.0%    0.0%  Stub: CompareICStub {7}
-      1    0.0%    0.0%  Stub: CompareICStub {6}
-      1    0.0%    0.0%  Stub: CompareICStub {3}
-      1    0.0%    0.0%  Stub: CallFunctionStub_Args5_Recording
-      1    0.0%    0.0%  Stub: CallConstructStub {1}
-      1    0.0%    0.0%  Stub: BinaryOpICStub {4}
+      1    0.0%    0.0%  Stub: CompareICStub {5}
+      1    0.0%    0.0%  Stub: CompareICStub {4}
+      1    0.0%    0.0%  Stub: CallFunctionStub {7}
+      1    0.0%    0.0%  Stub: CallFunctionStub {6}
+      1    0.0%    0.0%  Stub: CallFunctionStub {2}
+      1    0.0%    0.0%  Stub: BinaryOpICStub {2}
+      1    0.0%    0.0%  Stub: ArrayConstructorStub
       1    0.0%    0.0%  LoadPolymorphicIC: nextD
       1    0.0%    0.0%  LoadPolymorphicIC: needsUpdate {2}
-      1    0.0%    0.0%  LoadPolymorphicIC: needsUpdate {1}
       1    0.0%    0.0%  LoadPolymorphicIC: d {2}
-      1    0.0%    0.0%  LoadPolymorphicIC: d {1}
-      1    0.0%    0.0%  LazyCompile: ~updateAirCell /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:45:39
+      1    0.0%    0.0%  LazyCompile: ~values /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:2904:20
       1    0.0%    0.0%  LazyCompile: ~forEach native array.js:874:22
       1    0.0%    0.0%  LazyCompile: ~filter native array.js:836:21
-      1    0.0%    0.0%  LazyCompile: ~chunkToMapEvents /Users/jamkang/gcw/reactivecell/node_modules/roguemap-parse-stream/mapparserstream.js:9:28
+      1    0.0%    0.0%  LazyCompile: ~cellPackForToken /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:125:65
+      1    0.0%    0.0%  LazyCompile: ~bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
       1    0.0%    0.0%  LazyCompile: ~baseClone /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:747:23
       1    0.0%    0.0%  LazyCompile: ~DELETE native runtime.js:200:16
-      1    0.0%    0.0%  LazyCompile: ~<anonymous> /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:3155:36
-      1    0.0%    0.0%  LazyCompile: *ondata _stream_readable.js:534:18
-      1    0.0%    0.0%  LazyCompile: *isArray native array.js:1163:22
-      1    0.0%    0.0%  LazyCompile: *interestingCells /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:70:30
+      1    0.0%    0.0%  LazyCompile: *validChunk _stream_writable.js:160:20
+      1    0.0%    0.0%  LazyCompile: *hasOwnProperty native v8natives.js:140:30
+      1    0.0%    0.0%  LazyCompile: *ToBoolean native runtime.js:299:19
+      1    0.0%    0.0%  LazyCompile: *Readable.read _stream_readable.js:259:35
       1    0.0%    0.0%  LazyCompile: *DefineOwnProperty native v8natives.js:707:27
-      1    0.0%    0.0%  LazyCompile: *ConvertDescriptorArrayToDescriptor native v8natives.js:410:44
-      1    0.0%    0.0%  LazyCompile: *<anonymous> /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:3155:36
-      1    0.0%    0.0%  KeyedLoadPolymorphicIC:  {276}
-      1    0.0%    0.0%  KeyedLoadPolymorphicIC:  {275}
-      1    0.0%    0.0%  KeyedLoadPolymorphicIC:  {272}
-      1    0.0%    0.0%  KeyedLoadPolymorphicIC:  {270}
-      1    0.0%    0.0%  KeyedLoadPolymorphicIC:  {268}
-      1    0.0%    0.0%  KeyedLoadPolymorphicIC:  {267}
-      1    0.0%    0.0%  KeyedLoadPolymorphicIC:  {265}
-      1    0.0%    0.0%  KeyedLoadPolymorphicIC:  {248}
-      1    0.0%    0.0%  KeyedLoadPolymorphicIC:  {201}
-      1    0.0%    0.0%  Handler: An IC handler from the snapshot
-      1    0.0%    0.0%  Builtin: A builtin from the snapshot {8}
-      1    0.0%    0.0%  Builtin: A builtin from the snapshot {7}
+      1    0.0%    0.0%  LazyCompile: *$Array.writable_ native v8natives.js:360:25
+      1    0.0%    0.0%  LazyCompile: *$Array.enumerable_ native v8natives.js:354:20
+      1    0.0%    0.0%  LazyCompile: *$Array.configurable_ native v8natives.js:377:23
+      1    0.0%    0.0%  LazyCompile: *$Array.configurable_ native v8natives.js:370:23
+      1    0.0%    0.0%  KeyedStoreIC:  {252}
+      1    0.0%    0.0%  KeyedLoadPolymorphicIC:  {266}
+      1    0.0%    0.0%  KeyedLoadPolymorphicIC:  {259}
+      1    0.0%    0.0%  KeyedLoadPolymorphicIC:  {255}
+      1    0.0%    0.0%  KeyedLoadPolymorphicIC:  {247}
+      1    0.0%    0.0%  KeyedLoadPolymorphicIC:  {241}
+      1    0.0%    0.0%  KeyedLoadPolymorphicIC:  {217}
+      1    0.0%    0.0%  KeyedLoadIC: object {1}
+      1    0.0%    0.0%  KeyedLoadIC:  {146}
+      1    0.0%    0.0%  Builtin: A builtin from the snapshot {4}
 
  [C++]:
    ticks  total  nonlib   name
-    399    5.7%    5.8%  v8::internal::Dictionary<v8::internal::NameDictionaryShape, v8::internal::Name*>::NumberOfEnumElements()
-    299    4.3%    4.3%  v8::internal::ArrayConstructInitializeElements(v8::internal::Handle<v8::internal::JSArray>, v8::internal::Arguments*)
-    112    1.6%    1.6%  v8::internal::JSObject::SetFastElementsCapacityAndLength(v8::internal::Handle<v8::internal::JSObject>, int, int, v8::internal::JSObject::SetFastElementsCapacitySmiMode)
-    108    1.6%    1.6%  v8::internal::JSObject::SetFastElement(v8::internal::Handle<v8::internal::JSObject>, unsigned int, v8::internal::Handle<v8::internal::Object>, v8::internal::StrictMode, bool)
-    102    1.5%    1.5%  v8::internal::NameDictionary::FindEntry(v8::internal::Name*)
-     94    1.4%    1.4%  v8::internal::Heap::ScavengeObject(v8::internal::HeapObject**, v8::internal::HeapObject*)
-     89    1.3%    1.3%  void v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::ObjectEvacuationStrategy<(v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::ObjectContents)1>::VisitSpecialized<64>(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*)
-     67    1.0%    1.0%  v8::internal::String::SlowEquals(v8::internal::String*)
-     63    0.9%    0.9%  v8::internal::Dictionary<v8::internal::NameDictionaryShape, v8::internal::Name*>::DeleteProperty(int, v8::internal::JSReceiver::DeleteMode)
-     62    0.9%    0.9%  v8::internal::JSObject::MigrateToMap(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Map>)
-     61    0.9%    0.9%  void v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)0, (v8::internal::LoggingAndProfiling)1>::ObjectEvacuationStrategy<(v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)0, (v8::internal::LoggingAndProfiling)1>::ObjectContents)0>::VisitSpecialized<16>(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*)
-     61    0.9%    0.9%  v8::internal::Runtime::OutOfMemory()
-     55    0.8%    0.8%  v8::internal::IncrementalMarking::Step(long, v8::internal::IncrementalMarking::CompletionAction)
-     54    0.8%    0.8%  v8::internal::Dictionary<v8::internal::NameDictionaryShape, v8::internal::Name*>::SlowReverseLookup(v8::internal::Object*)
-     53    0.8%    0.8%  v8::internal::JSObject::LocalLookupRealNamedProperty(v8::internal::Name*, v8::internal::LookupResult*)
-     52    0.7%    0.8%  v8::internal::Builtins::~Builtins()
-     51    0.7%    0.7%  v8::internal::Runtime_HasElement(int, v8::internal::Object**, v8::internal::Isolate*)
-     50    0.7%    0.7%  v8::internal::JSObject::SetElementWithCallbackSetterInPrototypes(v8::internal::Handle<v8::internal::JSObject>, unsigned int, v8::internal::Handle<v8::internal::Object>, bool*, v8::internal::StrictMode)
-     50    0.7%    0.7%  __simple_sfree
-     49    0.7%    0.7%  v8::internal::InvokeFunctionCallback(v8::FunctionCallbackInfo<v8::Value> const&, void (*)(v8::FunctionCallbackInfo<v8::Value> const&))
-     48    0.7%    0.7%  _malloc_jumpstart
-     46    0.7%    0.7%  v8::internal::JSReceiver::SetProperty(v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, PropertyAttributes, v8::internal::StrictMode, v8::internal::JSReceiver::StoreFromKeyed)
-     44    0.6%    0.6%  v8::internal::FlexibleBodyVisitor<v8::internal::NewSpaceScavenger, v8::internal::FixedArray::BodyDescriptor, int>::Visit(v8::internal::Map*, v8::internal::HeapObject*)
-     42    0.6%    0.6%  v8::internal::JSReceiver::LocalLookup(v8::internal::Name*, v8::internal::LookupResult*, bool)
-     42    0.6%    0.6%  v8::internal::JSObject::GetElementAttributeWithReceiver(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::JSReceiver>, unsigned int, bool)
-     42    0.6%    0.6%  v8::internal::Context::native_context()
-     41    0.6%    0.6%  v8::internal::JSObject::GetElementAttributeWithoutInterceptor(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::JSReceiver>, unsigned int, bool)
-     40    0.6%    0.6%  void v8::internal::StaticMarkingVisitor<v8::internal::IncrementalMarkingMarkingVisitor>::DataObjectVisitor::VisitSpecialized<16>(v8::internal::Map*, v8::internal::HeapObject*)
-     40    0.6%    0.6%  v8::internal::Runtime_PushIfAbsent(int, v8::internal::Object**, v8::internal::Isolate*)
-     40    0.6%    0.6%  v8::internal::Runtime_KeyedGetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
-     38    0.5%    0.5%  v8::internal::NameDictionary::CopyEnumKeysTo(v8::internal::FixedArray*)
-     38    0.5%    0.5%  v8::internal::JSObject::EnsureWritableFastElements(v8::internal::Handle<v8::internal::JSObject>)
-     38    0.5%    0.5%  v8::internal::JSArray::SetElementsLength(v8::internal::Handle<v8::internal::JSArray>, v8::internal::Handle<v8::internal::Object>)
-     37    0.5%    0.5%  v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, PropertyAttributes, v8::internal::StrictMode)
-     35    0.5%    0.5%  v8::internal::JSReceiver::GetPropertyAttributeWithReceiver(v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::Handle<v8::internal::Name>)
-     34    0.5%    0.5%  v8::internal::IncrementalMarkingMarkingVisitor::VisitFixedArrayIncremental(v8::internal::Map*, v8::internal::HeapObject*)
-     34    0.5%    0.5%  v8::internal::Heap::AllocateMap(v8::internal::InstanceType, int, v8::internal::ElementsKind)
-     33    0.5%    0.5%  v8::internal::JSObject::SetPropertyForResult(v8::internal::Handle<v8::internal::JSObject>, v8::internal::LookupResult*, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, PropertyAttributes, v8::internal::StrictMode, v8::internal::JSReceiver::StoreFromKeyed)
-     33    0.5%    0.5%  v8::internal::Heap::AllocateFixedArray(int, v8::internal::PretenureFlag)
-     31    0.4%    0.4%  v8::internal::Runtime_HasProperty(int, v8::internal::Object**, v8::internal::Isolate*)
-     31    0.4%    0.4%  v8::internal::Dictionary<v8::internal::SeededNumberDictionaryShape, unsigned int>::SlowReverseLookup(v8::internal::Object*)
-     30    0.4%    0.4%  v8::internal::StoreBuffer::IteratePointersInStoreBuffer(void (*)(v8::internal::HeapObject**, v8::internal::HeapObject*), bool)
-     29    0.4%    0.4%  v8::internal::Heap::IterateAndMarkPointersToFromSpace(unsigned char*, unsigned char*, void (*)(v8::internal::HeapObject**, v8::internal::HeapObject*))
-     29    0.4%    0.4%  v8::internal::Builtins::FrameDropper_LiveEdit()
-     29    0.4%    0.4%  int v8::internal::FlexibleBodyVisitor<v8::internal::NewSpaceScavenger, v8::internal::JSObject::BodyDescriptor, int>::VisitSpecialized<32>(v8::internal::Map*, v8::internal::HeapObject*)
-     28    0.4%    0.4%  v8::internal::StaticNewSpaceVisitor<v8::internal::NewSpaceScavenger>::VisitJSFunction(v8::internal::Map*, v8::internal::HeapObject*)
-     27    0.4%    0.4%  v8::internal::Dictionary<v8::internal::UnseededNumberDictionaryShape, unsigned int>::AtPut(unsigned int, v8::internal::Object*)
-     26    0.4%    0.4%  _pthread_join$NOCANCEL
-     26    0.4%    0.4%  _create_scalable_zone
-     24    0.3%    0.3%  v8::internal::Heap::CopyJSObject(v8::internal::JSObject*, v8::internal::AllocationSite*)
-     23    0.3%    0.3%  v8::internal::StoreIC_ArrayLength(int, v8::internal::Object**, v8::internal::Isolate*)
-     22    0.3%    0.3%  v8::internal::Map::CopyReplaceDescriptors(v8::internal::DescriptorArray*, v8::internal::TransitionFlag, v8::internal::Name*, v8::internal::SimpleTransitionFlag)
-     22    0.3%    0.3%  v8::internal::Heap::AllocateUninitializedFixedArray(int)
-     22    0.3%    0.3%  v8::internal::HashTable<v8::internal::SeededNumberDictionaryShape, unsigned int>::FindEntry(unsigned int)
-     22    0.3%    0.3%  _pthread_introspection_hook_install
-     21    0.3%    0.3%  v8::internal::StoreBuffer::Compact()
-     21    0.3%    0.3%  v8::internal::InnerPointerToCodeCache::GcSafeFindCodeForInnerPointer(unsigned char*)
-     20    0.3%    0.3%  v8::internal::Heap::ProcessAllocationSites(v8::internal::WeakObjectRetainer*, bool)
-     19    0.3%    0.3%  v8::internal::Runtime_LocalKeys(int, v8::internal::Object**, v8::internal::Isolate*)
-     18    0.3%    0.3%  v8::internal::Runtime_SetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
-     18    0.3%    0.3%  v8::internal::JSObject::SetLocalPropertyIgnoreAttributes(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, PropertyAttributes, v8::internal::Object::ValueType, v8::internal::StoreMode, v8::internal::JSReceiver::ExtensibilityCheck)
-     18    0.3%    0.3%  v8::internal::Heap::CopyFixedArrayWithMap(v8::internal::FixedArray*, v8::internal::Map*)
-     17    0.2%    0.2%  v8::internal::JSObject::SetPropertyUsingTransition(v8::internal::Handle<v8::internal::JSObject>, v8::internal::LookupResult*, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, PropertyAttributes)
-     17    0.2%    0.2%  v8::internal::IncrementalMarking::RecordWriteSlow(v8::internal::HeapObject*, v8::internal::Object**, v8::internal::Object*)
-     17    0.2%    0.2%  v8::internal::Heap::DoScavenge(v8::internal::ObjectVisitor*, unsigned char*)
-     17    0.2%    0.2%  node::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
-     17    0.2%    0.2%  __os_alloc_once
-     16    0.2%    0.2%  v8::internal::Heap::InitializeJSObjectFromMap(v8::internal::JSObject*, v8::internal::FixedArray*, v8::internal::Map*)
-     16    0.2%    0.2%  _bitarray_zap_first_set
-     15    0.2%    0.2%  void v8::internal::StaticMarkingVisitor<v8::internal::MarkCompactMarkingVisitor>::DataObjectVisitor::VisitSpecialized<16>(v8::internal::Map*, v8::internal::HeapObject*)
-     15    0.2%    0.2%  v8::internal::Runtime::CreateArrayLiteralBoilerplate(v8::internal::Isolate*, v8::internal::Handle<v8::internal::FixedArray>, v8::internal::Handle<v8::internal::FixedArray>)
-     15    0.2%    0.2%  v8::internal::Factory::NewUninitializedFixedArray(int)
-     15    0.2%    0.2%  v8::internal::Deoptimizer::DoComputeCompiledStubFrame(v8::internal::TranslationIterator*, int)
-     14    0.2%    0.2%  v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::EvacuateFixedArray(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*)
-     13    0.2%    0.2%  v8::internal::StringSearch<unsigned char, unsigned char>::BoyerMooreSearch(v8::internal::StringSearch<unsigned char, unsigned char>*, v8::internal::Vector<unsigned char const>, int)
-     13    0.2%    0.2%  v8::internal::Runtime_MoveArrayContents(int, v8::internal::Object**, v8::internal::Isolate*)
-     13    0.2%    0.2%  v8::internal::RuntimeHidden_CreateArrayLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
-     13    0.2%    0.2%  v8::internal::MarkCompactCollector::ClearNonLiveReferences()
-     13    0.2%    0.2%  v8::internal::Debugger::IsDebuggerActive()
-     13    0.2%    0.2%  _mach_vm_map
-     12    0.2%    0.2%  v8::internal::JSObject::SetNormalizedProperty(v8::internal::Handle<v8::internal::JSObject>, v8::internal::LookupResult const*, v8::internal::Handle<v8::internal::Object>)
-     12    0.2%    0.2%  v8::internal::Heap::ProcessPretenuringFeedback()
-     12    0.2%    0.2%  _pthread_sigmask
-     11    0.2%    0.2%  v8::internal::Object::GetPrototype(v8::internal::Isolate*)
-     11    0.2%    0.2%  v8::internal::Deoptimizer::DoComputeOutputFrames()
-     11    0.2%    0.2%  _pthread_condattr_setpshared
-     11    0.2%    0.2%  ___malloc_init
-     10    0.1%    0.1%  v8::internal::Runtime_DebugCallbackSupportsStepping(int, v8::internal::Object**, v8::internal::Isolate*)
-     10    0.1%    0.1%  v8::internal::Object::GetPropertyWithReceiver(v8::internal::Object*, v8::internal::Name*, PropertyAttributes*)
-     10    0.1%    0.1%  v8::internal::MaybeObject* v8::internal::Heap::AllocateInternalizedStringImpl<false, v8::internal::Vector<char const> >(v8::internal::Vector<char const>, int, unsigned int)
-     10    0.1%    0.1%  v8::internal::Execution::HandleStackGuardInterrupt(v8::internal::Isolate*)
-     10    0.1%    0.1%  v8::internal::DescriptorArray::CopyUpToAddAttributes(int, PropertyAttributes)
-      9    0.1%    0.1%  v8::internal::StackFrame::GetCallerState(v8::internal::StackFrame::State*) const
-      9    0.1%    0.1%  v8::internal::Runtime_GetDefaultReceiver(int, v8::internal::Object**, v8::internal::Isolate*)
-      9    0.1%    0.1%  v8::internal::LargeObjectSpace::Contains(v8::internal::HeapObject*)
-      9    0.1%    0.1%  v8::internal::JSReceiver::GetPropertyAttributeForResult(v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::LookupResult*, v8::internal::Handle<v8::internal::Name>, bool)
-      9    0.1%    0.1%  v8::internal::JSObject::AddConstantProperty(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, PropertyAttributes, v8::internal::TransitionFlag)
-      9    0.1%    0.1%  v8::internal::Factory::NewFunctionFromSharedFunctionInfo(v8::internal::Handle<v8::internal::SharedFunctionInfo>, v8::internal::Handle<v8::internal::Context>, v8::internal::PretenureFlag)
-      9    0.1%    0.1%  v8::internal::Deoptimizer::Deoptimizer(v8::internal::Isolate*, v8::internal::JSFunction*, v8::internal::Deoptimizer::BailoutType, unsigned int, unsigned char*, int, v8::internal::Code*)
-      9    0.1%    0.1%  int v8::internal::FlexibleBodyVisitor<v8::internal::NewSpaceScavenger, v8::internal::JSObject::BodyDescriptor, int>::VisitSpecialized<24>(v8::internal::Map*, v8::internal::HeapObject*)
-      8    0.1%    0.1%  v8::internal::SharedFunctionInfo::SearchOptimizedCodeMap(v8::internal::Context*, v8::internal::BailoutId)
-      8    0.1%    0.1%  v8::internal::Runtime_IsInPrototypeChain(int, v8::internal::Object**, v8::internal::Isolate*)
-      8    0.1%    0.1%  v8::internal::Runtime::ForceSetObjectProperty(v8::internal::Isolate*, v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, PropertyAttributes)
-      8    0.1%    0.1%  v8::internal::Map::RawCopy(int)
-      8    0.1%    0.1%  v8::internal::JSObject::UpdateAllocationSite(v8::internal::Handle<v8::internal::JSObject>, v8::internal::ElementsKind)
-      8    0.1%    0.1%  v8::internal::JSFunction::SetInstancePrototype(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::Handle<v8::internal::Object>)
-      8    0.1%    0.1%  v8::internal::Heap::AllocateJSObjectFromMap(v8::internal::Map*, v8::internal::PretenureFlag, bool, v8::internal::AllocationSite*)
-      8    0.1%    0.1%  v8::internal::FreeList::FindNodeFor(int, int*)
-      8    0.1%    0.1%  _pthread_workqueue_setdispatch_np
-      8    0.1%    0.1%  __platform_strncmp
-      7    0.1%    0.1%  v8::internal::RuntimeHidden_NewClosure(int, v8::internal::Object**, v8::internal::Isolate*)
-      7    0.1%    0.1%  v8::internal::LargeObjectSpace::FindPage(unsigned char*)
-      7    0.1%    0.1%  v8::internal::Heap::AllocateHashTable(int, v8::internal::PretenureFlag)
-      7    0.1%    0.1%  v8::internal::Heap::AllocateAllocationSite()
-      7    0.1%    0.1%  v8::internal::GetEnumPropertyKeys(v8::internal::Handle<v8::internal::JSObject>, bool)
-      7    0.1%    0.1%  v8::internal::DependentCode::GroupStartIndexes::GroupStartIndexes(v8::internal::DependentCode*)
+    287    6.1%    6.1%  v8::internal::Dictionary<v8::internal::NameDictionaryShape, v8::internal::Name*>::NumberOfEnumElements()
+    215    4.6%    4.6%  v8::internal::ArrayConstructInitializeElements(v8::internal::Handle<v8::internal::JSArray>, v8::internal::Arguments*)
+     94    2.0%    2.0%  v8::internal::JSObject::SetFastElement(v8::internal::Handle<v8::internal::JSObject>, unsigned int, v8::internal::Handle<v8::internal::Object>, v8::internal::StrictMode, bool)
+     84    1.8%    1.8%  v8::internal::JSObject::SetFastElementsCapacityAndLength(v8::internal::Handle<v8::internal::JSObject>, int, int, v8::internal::JSObject::SetFastElementsCapacitySmiMode)
+     81    1.7%    1.7%  v8::internal::NameDictionary::FindEntry(v8::internal::Name*)
+     66    1.4%    1.4%  void v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::ObjectEvacuationStrategy<(v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::ObjectContents)1>::VisitSpecialized<64>(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*)
+     58    1.2%    1.2%  v8::internal::Heap::ScavengeObject(v8::internal::HeapObject**, v8::internal::HeapObject*)
+     55    1.2%    1.2%  v8::internal::JSObject::SetElementWithCallbackSetterInPrototypes(v8::internal::Handle<v8::internal::JSObject>, unsigned int, v8::internal::Handle<v8::internal::Object>, bool*, v8::internal::StrictMode)
+     52    1.1%    1.1%  v8::internal::JSObject::LocalLookupRealNamedProperty(v8::internal::Name*, v8::internal::LookupResult*)
+     45    1.0%    1.0%  v8::internal::Dictionary<v8::internal::NameDictionaryShape, v8::internal::Name*>::SlowReverseLookup(v8::internal::Object*)
+     44    0.9%    0.9%  v8::internal::String::SlowEquals(v8::internal::String*)
+     43    0.9%    0.9%  v8::internal::Dictionary<v8::internal::NameDictionaryShape, v8::internal::Name*>::DeleteProperty(int, v8::internal::JSReceiver::DeleteMode)
+     43    0.9%    0.9%  __simple_sfree
+     39    0.8%    0.8%  v8::internal::JSObject::SetPropertyForResult(v8::internal::Handle<v8::internal::JSObject>, v8::internal::LookupResult*, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, PropertyAttributes, v8::internal::StrictMode, v8::internal::JSReceiver::StoreFromKeyed)
+     38    0.8%    0.8%  v8::internal::IncrementalMarking::Step(long, v8::internal::IncrementalMarking::CompletionAction)
+     37    0.8%    0.8%  v8::internal::Context::native_context()
+     37    0.8%    0.8%  v8::internal::Builtins::~Builtins()
+     36    0.8%    0.8%  v8::internal::InvokeFunctionCallback(v8::FunctionCallbackInfo<v8::Value> const&, void (*)(v8::FunctionCallbackInfo<v8::Value> const&))
+     35    0.7%    0.7%  v8::internal::Runtime_HasElement(int, v8::internal::Object**, v8::internal::Isolate*)
+     33    0.7%    0.7%  v8::internal::JSReceiver::SetProperty(v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, PropertyAttributes, v8::internal::StrictMode, v8::internal::JSReceiver::StoreFromKeyed)
+     33    0.7%    0.7%  v8::internal::Dictionary<v8::internal::UnseededNumberDictionaryShape, unsigned int>::AtPut(unsigned int, v8::internal::Object*)
+     32    0.7%    0.7%  v8::internal::JSObject::MigrateToMap(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Map>)
+     31    0.7%    0.7%  v8::internal::Runtime_KeyedGetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+     31    0.7%    0.7%  v8::internal::Runtime::OutOfMemory()
+     31    0.7%    0.7%  v8::internal::NameDictionary::CopyEnumKeysTo(v8::internal::FixedArray*)
+     30    0.6%    0.6%  v8::internal::JSArray::SetElementsLength(v8::internal::Handle<v8::internal::JSArray>, v8::internal::Handle<v8::internal::Object>)
+     30    0.6%    0.6%  v8::internal::Heap::CopyJSObject(v8::internal::JSObject*, v8::internal::AllocationSite*)
+     30    0.6%    0.6%  v8::internal::FlexibleBodyVisitor<v8::internal::NewSpaceScavenger, v8::internal::FixedArray::BodyDescriptor, int>::Visit(v8::internal::Map*, v8::internal::HeapObject*)
+     29    0.6%    0.6%  v8::internal::JSReceiver::LocalLookup(v8::internal::Name*, v8::internal::LookupResult*, bool)
+     27    0.6%    0.6%  void v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)0, (v8::internal::LoggingAndProfiling)1>::ObjectEvacuationStrategy<(v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)0, (v8::internal::LoggingAndProfiling)1>::ObjectContents)0>::VisitSpecialized<16>(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*)
+     27    0.6%    0.6%  v8::internal::JSObject::GetElementAttributeWithReceiver(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::JSReceiver>, unsigned int, bool)
+     27    0.6%    0.6%  _malloc_jumpstart
+     26    0.6%    0.6%  v8::internal::Heap::IterateAndMarkPointersToFromSpace(unsigned char*, unsigned char*, void (*)(v8::internal::HeapObject**, v8::internal::HeapObject*))
+     25    0.5%    0.5%  v8::internal::Runtime_PushIfAbsent(int, v8::internal::Object**, v8::internal::Isolate*)
+     25    0.5%    0.5%  v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, PropertyAttributes, v8::internal::StrictMode)
+     25    0.5%    0.5%  v8::internal::HashTable<v8::internal::SeededNumberDictionaryShape, unsigned int>::FindEntry(unsigned int)
+     24    0.5%    0.5%  v8::internal::Runtime_GetDefaultReceiver(int, v8::internal::Object**, v8::internal::Isolate*)
+     23    0.5%    0.5%  v8::internal::JSObject::GetElementAttributeWithoutInterceptor(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::JSReceiver>, unsigned int, bool)
+     22    0.5%    0.5%  void v8::internal::StaticMarkingVisitor<v8::internal::IncrementalMarkingMarkingVisitor>::DataObjectVisitor::VisitSpecialized<16>(v8::internal::Map*, v8::internal::HeapObject*)
+     22    0.5%    0.5%  v8::internal::StoreBuffer::IteratePointersInStoreBuffer(void (*)(v8::internal::HeapObject**, v8::internal::HeapObject*), bool)
+     22    0.5%    0.5%  v8::internal::Builtins::FrameDropper_LiveEdit()
+     20    0.4%    0.4%  v8::internal::Dictionary<v8::internal::SeededNumberDictionaryShape, unsigned int>::SlowReverseLookup(v8::internal::Object*)
+     19    0.4%    0.4%  v8::internal::JSReceiver::GetPropertyAttributeWithReceiver(v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::Handle<v8::internal::Name>)
+     19    0.4%    0.4%  _create_scalable_zone
+     18    0.4%    0.4%  v8::internal::StoreIC_ArrayLength(int, v8::internal::Object**, v8::internal::Isolate*)
+     18    0.4%    0.4%  v8::internal::Runtime_HasProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+     18    0.4%    0.4%  v8::internal::JSObject::EnsureWritableFastElements(v8::internal::Handle<v8::internal::JSObject>)
+     18    0.4%    0.4%  v8::internal::Heap::AllocateFixedArray(int, v8::internal::PretenureFlag)
+     17    0.4%    0.4%  v8::internal::IncrementalMarkingMarkingVisitor::VisitFixedArrayIncremental(v8::internal::Map*, v8::internal::HeapObject*)
+     16    0.3%    0.3%  v8::internal::Heap::CopyFixedArrayWithMap(v8::internal::FixedArray*, v8::internal::Map*)
+     16    0.3%    0.3%  v8::internal::Heap::AllocateUninitializedFixedArray(int)
+     16    0.3%    0.3%  v8::internal::Heap::AllocateMap(v8::internal::InstanceType, int, v8::internal::ElementsKind)
+     15    0.3%    0.3%  v8::internal::Factory::NewUninitializedFixedArray(int)
+     15    0.3%    0.3%  node::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+     14    0.3%    0.3%  v8::internal::Runtime_MoveArrayContents(int, v8::internal::Object**, v8::internal::Isolate*)
+     13    0.3%    0.3%  v8::internal::StaticNewSpaceVisitor<v8::internal::NewSpaceScavenger>::VisitJSFunction(v8::internal::Map*, v8::internal::HeapObject*)
+     12    0.3%    0.3%  v8::internal::JSObject::SetPropertyUsingTransition(v8::internal::Handle<v8::internal::JSObject>, v8::internal::LookupResult*, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, PropertyAttributes)
+     12    0.3%    0.3%  v8::internal::JSObject::SetNormalizedProperty(v8::internal::Handle<v8::internal::JSObject>, v8::internal::LookupResult const*, v8::internal::Handle<v8::internal::Object>)
+     12    0.3%    0.3%  v8::internal::Debugger::IsDebuggerActive()
+     11    0.2%    0.2%  v8::internal::StoreBuffer::Compact()
+     11    0.2%    0.2%  _pthread_join$NOCANCEL
+     11    0.2%    0.2%  _mach_vm_map
+     10    0.2%    0.2%  v8::internal::Runtime_SetProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+     10    0.2%    0.2%  _pthread_introspection_hook_install
+      9    0.2%    0.2%  v8::internal::Runtime_LocalKeys(int, v8::internal::Object**, v8::internal::Isolate*)
+      9    0.2%    0.2%  v8::internal::Deoptimizer::DoComputeCompiledStubFrame(v8::internal::TranslationIterator*, int)
+      8    0.2%    0.2%  void v8::internal::StaticMarkingVisitor<v8::internal::MarkCompactMarkingVisitor>::DataObjectVisitor::VisitSpecialized<16>(v8::internal::Map*, v8::internal::HeapObject*)
+      8    0.2%    0.2%  v8::internal::RuntimeHidden_NewClosure(int, v8::internal::Object**, v8::internal::Isolate*)
+      8    0.2%    0.2%  v8::internal::Runtime::CreateArrayLiteralBoilerplate(v8::internal::Isolate*, v8::internal::Handle<v8::internal::FixedArray>, v8::internal::Handle<v8::internal::FixedArray>)
+      8    0.2%    0.2%  v8::internal::Heap::ProcessAllocationSites(v8::internal::WeakObjectRetainer*, bool)
+      8    0.2%    0.2%  _bitarray_zap_first_set
+      7    0.1%    0.1%  v8::internal::MarkCompactCollector::ClearNonLiveReferences()
+      7    0.1%    0.1%  v8::internal::Map::CopyReplaceDescriptors(v8::internal::DescriptorArray*, v8::internal::TransitionFlag, v8::internal::Name*, v8::internal::SimpleTransitionFlag)
+      7    0.1%    0.1%  v8::internal::LargeObjectSpace::Contains(v8::internal::HeapObject*)
+      7    0.1%    0.1%  v8::internal::JSReceiver::GetPropertyAttributeForResult(v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::LookupResult*, v8::internal::Handle<v8::internal::Name>, bool)
+      7    0.1%    0.1%  v8::internal::JSObject::SetLocalPropertyIgnoreAttributes(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, PropertyAttributes, v8::internal::Object::ValueType, v8::internal::StoreMode, v8::internal::JSReceiver::ExtensibilityCheck)
+      7    0.1%    0.1%  v8::internal::InnerPointerToCodeCache::GcSafeFindCodeForInnerPointer(unsigned char*)
+      7    0.1%    0.1%  v8::internal::Heap::InitializeJSObjectFromMap(v8::internal::JSObject*, v8::internal::FixedArray*, v8::internal::Map*)
+      7    0.1%    0.1%  v8::internal::Factory::NewFunctionFromSharedFunctionInfo(v8::internal::Handle<v8::internal::SharedFunctionInfo>, v8::internal::Handle<v8::internal::Context>, v8::internal::PretenureFlag)
       7    0.1%    0.1%  v8::internal::Deoptimizer::DoTranslateCommand(v8::internal::TranslationIterator*, int, unsigned int)
-      6    0.1%    0.1%  void v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)0, (v8::internal::LoggingAndProfiling)0>::ObjectEvacuationStrategy<(v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)0, (v8::internal::LoggingAndProfiling)0>::ObjectContents)1>::VisitSpecialized<72>(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*)
-      6    0.1%    0.1%  v8::internal::StackFrameIterator::StackFrameIterator(v8::internal::Isolate*)
+      7    0.1%    0.1%  __platform_strncmp
+      6    0.1%    0.1%  v8::internal::StringSearch<unsigned char, unsigned char>::BoyerMooreSearch(v8::internal::StringSearch<unsigned char, unsigned char>*, v8::internal::Vector<unsigned char const>, int)
+      6    0.1%    0.1%  v8::internal::StackFrame::GetCallerState(v8::internal::StackFrame::State*) const
+      6    0.1%    0.1%  v8::internal::RuntimeHidden_CreateArrayLiteral(int, v8::internal::Object**, v8::internal::Isolate*)
       6    0.1%    0.1%  v8::internal::Runtime::GetObjectProperty(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>)
-      6    0.1%    0.1%  v8::internal::MarkCompactCollector::ClearNonLivePrototypeTransitions(v8::internal::Map*)
-      6    0.1%    0.1%  v8::internal::JSObject::GetElementsTransitionMapSlow(v8::internal::ElementsKind)
-      6    0.1%    0.1%  v8::internal::InnerPointerToCodeCache::GetCacheEntry(unsigned char*)
-      6    0.1%    0.1%  _sigwait$NOCANCEL
-      6    0.1%    0.1%  _malloc_default_purgeable_zone
-      6    0.1%    0.1%  _malloc_create_zone
-      5    0.1%    0.1%  void v8::internal::FlexibleBodyVisitor<v8::internal::IncrementalMarkingMarkingVisitor, v8::internal::JSObject::BodyDescriptor, void>::VisitSpecialized<48>(v8::internal::Map*, v8::internal::HeapObject*)
-      5    0.1%    0.1%  v8::internal::StaticMarkingVisitor<v8::internal::IncrementalMarkingMarkingVisitor>::VisitJSFunction(v8::internal::Map*, v8::internal::HeapObject*)
-      5    0.1%    0.1%  v8::internal::Runtime_Typeof(int, v8::internal::Object**, v8::internal::Isolate*)
-      5    0.1%    0.1%  v8::internal::Runtime_IsJSProxy(int, v8::internal::Object**, v8::internal::Isolate*)
-      5    0.1%    0.1%  v8::internal::RuntimeProfiler::OptimizeNow()
+      6    0.1%    0.1%  v8::internal::Object::Lookup(v8::internal::Name*, v8::internal::LookupResult*)
+      6    0.1%    0.1%  v8::internal::Object::GetProperty(v8::internal::Object*, v8::internal::LookupResult*, v8::internal::Name*, PropertyAttributes*)
+      6    0.1%    0.1%  v8::internal::Map::RawCopy(int)
+      6    0.1%    0.1%  v8::internal::Map::CopyDropDescriptors()
+      6    0.1%    0.1%  v8::internal::IncrementalMarking::RecordWriteSlow(v8::internal::HeapObject*, v8::internal::Object**, v8::internal::Object*)
+      6    0.1%    0.1%  v8::internal::GetKeysInFixedArrayFor(v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::KeyCollectionType, bool*)
+      6    0.1%    0.1%  v8::internal::GetEnumPropertyKeys(v8::internal::Handle<v8::internal::JSObject>, bool)
+      6    0.1%    0.1%  v8::internal::DescriptorArray::CopyUpToAddAttributes(int, PropertyAttributes)
+      5    0.1%    0.1%  v8::internal::StringTable::LookupKey(v8::internal::HashTableKey*, v8::internal::Object**)
+      5    0.1%    0.1%  v8::internal::String::SlowTryFlatten(v8::internal::PretenureFlag)
+      5    0.1%    0.1%  v8::internal::StaticVisitorBase::GetVisitorId(int, int)
+      5    0.1%    0.1%  v8::internal::Runtime::ForceSetObjectProperty(v8::internal::Isolate*, v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, PropertyAttributes)
       5    0.1%    0.1%  v8::internal::RelocIterator::next()
-      5    0.1%    0.1%  v8::internal::Object::Lookup(v8::internal::Name*, v8::internal::LookupResult*)
-      5    0.1%    0.1%  v8::internal::Object::GetProperty(v8::internal::Object*, v8::internal::LookupResult*, v8::internal::Name*, PropertyAttributes*)
-      5    0.1%    0.1%  v8::internal::GetKeysInFixedArrayFor(v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::KeyCollectionType, bool*)
+      5    0.1%    0.1%  v8::internal::JSFunction::SetInstancePrototype(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::Handle<v8::internal::Object>)
+      5    0.1%    0.1%  v8::internal::InnerPointerToCodeCache::GetCacheEntry(unsigned char*)
+      5    0.1%    0.1%  v8::internal::Heap::DoScavenge(v8::internal::ObjectVisitor*, unsigned char*)
       5    0.1%    0.1%  v8::internal::Factory::NewFixedArray(int, v8::internal::PretenureFlag)
-      5    0.1%    0.1%  v8::internal::CodeStub::FindCodeInCache(v8::internal::Code**, v8::internal::Isolate*)
-      5    0.1%    0.1%  v8::internal::Accessors::FunctionGetPrototype(v8::internal::Isolate*, v8::internal::Object*, void*)
-      5    0.1%    0.1%  _pthread_condattr_getpshared
-      5    0.1%    0.1%  ___cxa_demangle
-      4    0.1%    0.1%  void v8::internal::FlexibleBodyVisitor<v8::internal::IncrementalMarkingMarkingVisitor, v8::internal::JSObject::BodyDescriptor, void>::VisitSpecialized<32>(v8::internal::Map*, v8::internal::HeapObject*)
-      4    0.1%    0.1%  void v8::internal::FlexibleBodyVisitor<v8::internal::IncrementalMarkingMarkingVisitor, v8::internal::JSObject::BodyDescriptor, void>::VisitSpecialized<24>(v8::internal::Map*, v8::internal::HeapObject*)
+      5    0.1%    0.1%  int v8::internal::FlexibleBodyVisitor<v8::internal::NewSpaceScavenger, v8::internal::JSObject::BodyDescriptor, int>::VisitSpecialized<48>(v8::internal::Map*, v8::internal::HeapObject*)
+      5    0.1%    0.1%  _sigwait$NOCANCEL
+      5    0.1%    0.1%  _pthread_cancel
+      5    0.1%    0.1%  __os_alloc_once
+      5    0.1%    0.1%  ___malloc_init
       4    0.1%    0.1%  v8::internal::UnionOfKeys(v8::internal::Handle<v8::internal::FixedArray>, v8::internal::Handle<v8::internal::FixedArray>)
-      4    0.1%    0.1%  v8::internal::StringTable::LookupKey(v8::internal::HashTableKey*, v8::internal::Object**)
-      4    0.1%    0.1%  v8::internal::Runtime_StringEquals(int, v8::internal::Object**, v8::internal::Isolate*)
-      4    0.1%    0.1%  v8::internal::Parser::Parse()
-      4    0.1%    0.1%  v8::internal::MarkCompactCollector::SweepSpace(v8::internal::PagedSpace*, v8::internal::MarkCompactCollector::SweeperType)
-      4    0.1%    0.1%  v8::internal::Malloced::Delete(void*)
-      4    0.1%    0.1%  v8::internal::LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
-      4    0.1%    0.1%  v8::internal::JSObject::SetPropertyViaPrototypes(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, PropertyAttributes, v8::internal::StrictMode, bool*)
-      4    0.1%    0.1%  v8::internal::Isolate::get_initial_js_array_map(v8::internal::ElementsKind)
-      4    0.1%    0.1%  v8::internal::Isolate::code_stub_interface_descriptor(int)
-      4    0.1%    0.1%  v8::internal::Heap::AllocateFunction(v8::internal::Map*, v8::internal::SharedFunctionInfo*, v8::internal::Object*, v8::internal::PretenureFlag)
-      4    0.1%    0.1%  v8::internal::Factory::NewFunctionPrototype(v8::internal::Handle<v8::internal::JSFunction>)
-      4    0.1%    0.1%  v8::internal::Accessors::FunctionGetLength(v8::internal::Isolate*, v8::internal::Object*, void*)
-      4    0.1%    0.1%  int v8::internal::FlexibleBodyVisitor<v8::internal::NewSpaceScavenger, v8::internal::JSObject::BodyDescriptor, int>::VisitSpecialized<48>(v8::internal::Map*, v8::internal::HeapObject*)
-      4    0.1%    0.1%  _pthread_cancel
-      3    0.0%    0.0%  v8::internal::SerializerDeserializer::Iterate(v8::internal::Isolate*, v8::internal::ObjectVisitor*)
-      3    0.0%    0.0%  v8::internal::Runtime_IsExtensible(int, v8::internal::Object**, v8::internal::Isolate*)
-      3    0.0%    0.0%  v8::internal::Runtime_GetOwnProperty(int, v8::internal::Object**, v8::internal::Isolate*)
-      3    0.0%    0.0%  v8::internal::Runtime_BoundFunctionGetBindings(int, v8::internal::Object**, v8::internal::Isolate*)
-      3    0.0%    0.0%  v8::internal::RuntimeHidden_CreateArrayLiteralStubBailout(int, v8::internal::Object**, v8::internal::Isolate*)
-      3    0.0%    0.0%  v8::internal::RecursiveMutex::Lock()
-      3    0.0%    0.0%  v8::internal::MarkCompactCollector::MigrateObject(v8::internal::HeapObject*, v8::internal::HeapObject*, int, v8::internal::AllocationSpace)
-      3    0.0%    0.0%  v8::internal::MarkCompactCollector::EvacuateLiveObjectsFromPage(v8::internal::Page*)
-      3    0.0%    0.0%  v8::internal::Map::NumberOfFields()
-      3    0.0%    0.0%  v8::internal::Map::CopyDropDescriptors()
-      3    0.0%    0.0%  v8::internal::Map::Copy(v8::internal::Handle<v8::internal::Map>)
-      3    0.0%    0.0%  v8::internal::KeyedLookupCache::Lookup(v8::internal::Map*, v8::internal::Name*)
-      3    0.0%    0.0%  v8::internal::JavaScriptFrame::fp_register()
-      3    0.0%    0.0%  v8::internal::JSObject::DeepWalk(v8::internal::Handle<v8::internal::JSObject>, v8::internal::AllocationSiteCreationContext*)
-      3    0.0%    0.0%  v8::internal::HPhase::~HPhase()
-      3    0.0%    0.0%  v8::internal::HObjectAccess::SetGVNFlags(v8::internal::HValue*, v8::internal::PropertyAccessType)
-      3    0.0%    0.0%  v8::internal::GetInitialFastElementsKind()
-      3    0.0%    0.0%  v8::internal::FixedArray::UnionOfKeys(v8::internal::FixedArray*)
-      3    0.0%    0.0%  v8::internal::Factory::CopyFixedArray(v8::internal::Handle<v8::internal::FixedArray>)
-      3    0.0%    0.0%  v8::internal::ElementsAccessor::ForArray(v8::internal::FixedArrayBase*)
-      3    0.0%    0.0%  v8::internal::DependentCode::MarkCodeForDeoptimization(v8::internal::Isolate*, v8::internal::DependentCode::DependencyGroup)
-      3    0.0%    0.0%  v8::internal::Deoptimizer::CopyDoubleRegisters(v8::internal::FrameDescription*)
-      3    0.0%    0.0%  node::SetupProcessObject(node::Environment*, int, char const* const*, int, char const* const*)
-      3    0.0%    0.0%  node::InitFs(v8::Handle<v8::Object>, v8::Handle<v8::Value>, v8::Handle<v8::Context>, void*)
-      3    0.0%    0.0%  _proc_listpidspath
-      2    0.0%    0.0%  void v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::ObjectEvacuationStrategy<(v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::ObjectContents)1>::VisitSpecialized<32>(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*)
+      4    0.1%    0.1%  v8::internal::String::SlowAsArrayIndex(unsigned int*)
+      4    0.1%    0.1%  v8::internal::Scanner::ScanIdentifierOrKeyword()
+      4    0.1%    0.1%  v8::internal::Runtime_IsJSProxy(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    0.1%    0.1%  v8::internal::RuntimeProfiler::OptimizeNow()
+      4    0.1%    0.1%  v8::internal::RecursiveMutex::Lock()
+      4    0.1%    0.1%  v8::internal::Object::GetPrototype(v8::internal::Isolate*)
+      4    0.1%    0.1%  v8::internal::MaybeObject* v8::internal::Heap::AllocateInternalizedStringImpl<false, v8::internal::Vector<char const> >(v8::internal::Vector<char const>, int, unsigned int)
+      4    0.1%    0.1%  v8::internal::Map::NumberOfFields()
+      4    0.1%    0.1%  v8::internal::Map::CopyAddDescriptor(v8::internal::Descriptor*, v8::internal::TransitionFlag)
+      4    0.1%    0.1%  v8::internal::LargeObjectSpace::FindPage(unsigned char*)
+      4    0.1%    0.1%  v8::internal::JSObject::UpdateAllocationSite(v8::internal::Handle<v8::internal::JSObject>, v8::internal::ElementsKind)
+      4    0.1%    0.1%  v8::internal::JSFunction::SetPrototype(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::Handle<v8::internal::Object>)
+      4    0.1%    0.1%  v8::internal::Heap::AllocateAllocationSite()
+      4    0.1%    0.1%  v8::internal::GetInitialFastElementsKind()
+      4    0.1%    0.1%  v8::internal::DependentCode::GroupStartIndexes::GroupStartIndexes(v8::internal::DependentCode*)
+      4    0.1%    0.1%  v8::internal::Deoptimizer::CopyDoubleRegisters(v8::internal::FrameDescription*)
+      4    0.1%    0.1%  _proc_listpidspath
+      4    0.1%    0.1%  _malloc_create_zone
+      4    0.1%    0.1%  _mach_make_memory_entry_64
+      3    0.1%    0.1%  void v8::internal::FlexibleBodyVisitor<v8::internal::IncrementalMarkingMarkingVisitor, v8::internal::JSObject::BodyDescriptor, void>::VisitSpecialized<32>(v8::internal::Map*, v8::internal::HeapObject*)
+      3    0.1%    0.1%  v8::internal::SharedStoreIC_ExtendStorage(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.1%    0.1%  v8::internal::SharedFunctionInfo::SearchOptimizedCodeMap(v8::internal::Context*, v8::internal::BailoutId)
+      3    0.1%    0.1%  v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::EvacuateFixedArray(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*)
+      3    0.1%    0.1%  v8::internal::Runtime_StringEquals(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    0.1%    0.1%  v8::internal::Object::GetPropertyWithReceiver(v8::internal::Object*, v8::internal::Name*, PropertyAttributes*)
+      3    0.1%    0.1%  v8::internal::IC::IC(v8::internal::IC::FrameDepth, v8::internal::Isolate*)
+      3    0.1%    0.1%  v8::internal::Heap::ProcessPretenuringFeedback()
+      3    0.1%    0.1%  v8::internal::Heap::AllocateJSArrayWithElements(v8::internal::FixedArrayBase*, v8::internal::ElementsKind, int, v8::internal::PretenureFlag)
+      3    0.1%    0.1%  v8::internal::Heap::AllocateHashTable(int, v8::internal::PretenureFlag)
+      3    0.1%    0.1%  v8::internal::Factory::NewJSArrayWithElements(v8::internal::Handle<v8::internal::FixedArrayBase>, v8::internal::ElementsKind, int, v8::internal::PretenureFlag)
+      3    0.1%    0.1%  v8::internal::Deoptimizer::Deoptimizer(v8::internal::Isolate*, v8::internal::JSFunction*, v8::internal::Deoptimizer::BailoutType, unsigned int, unsigned char*, int, v8::internal::Code*)
+      3    0.1%    0.1%  v8::internal::CodeStub::FindCodeInCache(v8::internal::Code**, v8::internal::Isolate*)
+      3    0.1%    0.1%  v8::internal::AllocationSiteUsageContext::ShouldCreateMemento(v8::internal::Handle<v8::internal::JSObject>)
+      3    0.1%    0.1%  v8::internal::AllocationSite::GetPretenureMode()
+      3    0.1%    0.1%  v8::internal::Accessors::FunctionGetPrototype(v8::internal::Handle<v8::internal::JSFunction>)
+      3    0.1%    0.1%  node::SetupProcessObject(node::Environment*, int, char const* const*, int, char const* const*)
+      3    0.1%    0.1%  int v8::internal::FlexibleBodyVisitor<v8::internal::NewSpaceScavenger, v8::internal::JSObject::BodyDescriptor, int>::VisitSpecialized<24>(v8::internal::Map*, v8::internal::HeapObject*)
+      3    0.1%    0.1%  _vfprintf
+      3    0.1%    0.1%  _pthread_workqueue_setdispatchoffset_np
+      3    0.1%    0.1%  _pthread_workqueue_setdispatch_np
+      3    0.1%    0.1%  _pthread_workqueue_addthreads_np
+      3    0.1%    0.1%  _pthread_condattr_setpshared
+      3    0.1%    0.1%  __pthread_wqthread
+      3    0.1%    0.1%  __os_once
       2    0.0%    0.0%  void v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::ObjectEvacuationStrategy<(v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::ObjectContents)1>::VisitSpecialized<24>(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*)
-      2    0.0%    0.0%  v8::internal::TypeImpl<v8::internal::HeapTypeConfig>::TypeHandle v8::internal::IC::MapToType<v8::internal::TypeImpl<v8::internal::HeapTypeConfig> >(v8::internal::Handle<v8::internal::Map>, v8::internal::TypeImpl<v8::internal::HeapTypeConfig>::Region*)
-      2    0.0%    0.0%  v8::internal::String::SlowTryFlatten(v8::internal::PretenureFlag)
-      2    0.0%    0.0%  v8::internal::StaticVisitorBase::GetVisitorId(int, int)
-      2    0.0%    0.0%  v8::internal::StaticMarkingVisitor<v8::internal::IncrementalMarkingMarkingVisitor>::VisitMap(v8::internal::Map*, v8::internal::HeapObject*)
-      2    0.0%    0.0%  v8::internal::Scanner::ScanIdentifierOrKeyword()
-      2    0.0%    0.0%  v8::internal::Runtime_DeleteProperty(int, v8::internal::Object**, v8::internal::Isolate*)
-      2    0.0%    0.0%  v8::internal::Runtime_DefineOrRedefineDataProperty(int, v8::internal::Object**, v8::internal::Isolate*)
-      2    0.0%    0.0%  v8::internal::RuntimeHidden_NotifyStubFailure(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  void v8::internal::FlexibleBodyVisitor<v8::internal::IncrementalMarkingMarkingVisitor, v8::internal::JSObject::BodyDescriptor, void>::VisitSpecialized<24>(v8::internal::Map*, v8::internal::HeapObject*)
+      2    0.0%    0.0%  v8::internal::Variable::Variable(v8::internal::Scope*, v8::internal::Handle<v8::internal::String>, v8::internal::VariableMode, bool, v8::internal::Variable::Kind, v8::internal::InitializationFlag, v8::internal::Interface*)
+      2    0.0%    0.0%  v8::internal::StaticMarkingVisitor<v8::internal::IncrementalMarkingMarkingVisitor>::VisitJSFunction(v8::internal::Map*, v8::internal::HeapObject*)
+      2    0.0%    0.0%  v8::internal::Scanner::Scan()
+      2    0.0%    0.0%  v8::internal::Runtime_IsInPrototypeChain(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  v8::internal::Runtime_GetOwnProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  v8::internal::Runtime_DebugCallbackSupportsStepping(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  v8::internal::RuntimeHidden_CreateArrayLiteralStubBailout(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    0.0%    0.0%  v8::internal::RecursiveMutex::Unlock()
+      2    0.0%    0.0%  v8::internal::MarkCompactCollector::SweepSpace(v8::internal::PagedSpace*, v8::internal::MarkCompactCollector::SweeperType)
       2    0.0%    0.0%  v8::internal::MarkCompactCollector::DiscoverAndPromoteBlackObjectsOnPage(v8::internal::NewSpace*, v8::internal::NewSpacePage*)
-      2    0.0%    0.0%  v8::internal::LoadIC::Load(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::String>)
+      2    0.0%    0.0%  v8::internal::MarkCompactCollector::ClearNonLivePrototypeTransitions(v8::internal::Map*)
+      2    0.0%    0.0%  v8::internal::Map::Copy(v8::internal::Handle<v8::internal::Map>)
+      2    0.0%    0.0%  v8::internal::Malloced::Delete(void*)
+      2    0.0%    0.0%  v8::internal::LCodeGen::WriteTranslation(v8::internal::LEnvironment*, v8::internal::Translation*)
+      2    0.0%    0.0%  v8::internal::LChunk::MarkEmptyBlocks()
+      2    0.0%    0.0%  v8::internal::JSObject::SetPropertyViaPrototypes(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, PropertyAttributes, v8::internal::StrictMode, bool*)
       2    0.0%    0.0%  v8::internal::JSObject::GetPropertyWithCallback(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Name>)
-      2    0.0%    0.0%  v8::internal::JSObject::GetLocalElementKeys(v8::internal::FixedArray*, PropertyAttributes)
-      2    0.0%    0.0%  v8::internal::JSObject::GetEnumElementKeys(v8::internal::FixedArray*)
       2    0.0%    0.0%  v8::internal::JSObject::DeepCopy(v8::internal::Handle<v8::internal::JSObject>, v8::internal::AllocationSiteUsageContext*, v8::internal::JSObject::DeepCopyHints)
-      2    0.0%    0.0%  v8::internal::JSObject::AddSlowProperty(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, PropertyAttributes)
-      2    0.0%    0.0%  v8::internal::JSFunction::SetPrototype(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::Handle<v8::internal::Object>)
-      2    0.0%    0.0%  v8::internal::JSFunction::EnsureHasInitialMap(v8::internal::Handle<v8::internal::JSFunction>)
-      2    0.0%    0.0%  v8::internal::IncrementalMarking::RecordWriteOfCodeEntrySlow(v8::internal::JSFunction*, v8::internal::Object**, v8::internal::Code*)
-      2    0.0%    0.0%  v8::internal::Heap::CreateFillerObjectAt(unsigned char*, int)
+      2    0.0%    0.0%  v8::internal::JSObject::AddConstantProperty(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, PropertyAttributes, v8::internal::TransitionFlag)
+      2    0.0%    0.0%  v8::internal::Isolate::get_initial_js_array_map(v8::internal::ElementsKind)
+      2    0.0%    0.0%  v8::internal::IncrementalMarking::StartMarking(v8::internal::IncrementalMarking::CompactionFlag)
       2    0.0%    0.0%  v8::internal::Heap::AllocateRawOneByteString(int, v8::internal::PretenureFlag)
-      2    0.0%    0.0%  v8::internal::Heap::AllocateJSArrayWithElements(v8::internal::FixedArrayBase*, v8::internal::ElementsKind, int, v8::internal::PretenureFlag)
-      2    0.0%    0.0%  v8::internal::HBasicBlock::CreateSimulate(v8::internal::BailoutId, v8::internal::RemovableSimulate)
-      2    0.0%    0.0%  v8::internal::FreeList::ContainsPageFreeListItems(v8::internal::Page*)
-      2    0.0%    0.0%  v8::internal::FreeList::Allocate(int)
-      2    0.0%    0.0%  v8::internal::Factory::NewJSObject(v8::internal::Handle<v8::internal::JSFunction>, v8::internal::PretenureFlag)
-      2    0.0%    0.0%  v8::internal::Deoptimizer::New(v8::internal::JSFunction*, v8::internal::Deoptimizer::BailoutType, unsigned int, unsigned char*, int, v8::internal::Isolate*)
+      2    0.0%    0.0%  v8::internal::Heap::AllocateJSObjectFromMap(v8::internal::Map*, v8::internal::PretenureFlag, bool, v8::internal::AllocationSite*)
+      2    0.0%    0.0%  v8::internal::Heap::AdjustLiveBytes(unsigned char*, int, v8::internal::Heap::InvocationMode)
+      2    0.0%    0.0%  v8::internal::Factory::NewFunctionPrototype(v8::internal::Handle<v8::internal::JSFunction>)
+      2    0.0%    0.0%  v8::internal::Deoptimizer::NotifyStubFailureBuiltin()
       2    0.0%    0.0%  v8::internal::Deoptimizer::Grab(v8::internal::Isolate*)
-      2    0.0%    0.0%  v8::internal::Deoptimizer::ComputeOutputFrames(v8::internal::Deoptimizer*)
-      2    0.0%    0.0%  v8::internal::CreateStackMap(v8::internal::Isolate*, v8::internal::Zone*)
-      2    0.0%    0.0%  v8::internal::CodeStub::CanUseFPRegisters()
-      2    0.0%    0.0%  v8::internal::CPU::FlushICache(void*, unsigned long)
-      2    0.0%    0.0%  v8::internal::AllocationSiteUsageContext::ShouldCreateMemento(v8::internal::Handle<v8::internal::JSObject>)
-      2    0.0%    0.0%  v8::internal::AllocationSite::GetPretenureMode()
-      2    0.0%    0.0%  long v8::internal::MarkCompactCollector::SweepConservatively<(v8::internal::MarkCompactCollector::SweepingParallelism)1>(v8::internal::PagedSpace*, v8::internal::FreeList*, v8::internal::Page*)
-      2    0.0%    0.0%  _vfwscanf
-      2    0.0%    0.0%  _pthread_workqueue_addthreads_np
+      2    0.0%    0.0%  v8::internal::AllocationSiteCreationContext::ExitScope(v8::internal::Handle<v8::internal::AllocationSite>, v8::internal::Handle<v8::internal::JSObject>)
+      2    0.0%    0.0%  v8::internal::Accessors::FunctionGetPrototype(v8::internal::Isolate*, v8::internal::Object*, void*)
+      2    0.0%    0.0%  v8::internal::Accessors::FunctionGetLength(v8::internal::Isolate*, v8::internal::Object*, void*)
+      2    0.0%    0.0%  int v8::internal::FlexibleBodyVisitor<v8::internal::NewSpaceScavenger, v8::internal::JSObject::BodyDescriptor, int>::VisitSpecialized<32>(v8::internal::Map*, v8::internal::HeapObject*)
       2    0.0%    0.0%  _pthread_cond_destroy
-      2    0.0%    0.0%  _mach_make_memory_entry_64
-      2    0.0%    0.0%  __pthread_wqthread
-      2    0.0%    0.0%  __os_once
-      1    0.0%    0.0%  v8::internal::Zone::NewExpand(int)
-      1    0.0%    0.0%  v8::internal::WeakHashTable::Lookup(v8::internal::Object*)
-      1    0.0%    0.0%  v8::internal::Variable::Variable(v8::internal::Scope*, v8::internal::Handle<v8::internal::String>, v8::internal::VariableMode, bool, v8::internal::Variable::Kind, v8::internal::InitializationFlag, v8::internal::Interface*)
-      1    0.0%    0.0%  v8::internal::TypeImpl<v8::internal::ZoneTypeConfig>::LubBitset(v8::internal::Map*)
-      1    0.0%    0.0%  v8::internal::TypeImpl<v8::internal::HeapTypeConfig>::LubBitset()
-      1    0.0%    0.0%  v8::internal::Translation::BeginJSFrame(v8::internal::BailoutId, int, unsigned int)
-      1    0.0%    0.0%  v8::internal::SubStringKey<unsigned char>::Hash()
-      1    0.0%    0.0%  v8::internal::StubCache::Clear()
+      2    0.0%    0.0%  _malloc_default_purgeable_zone
+      1    0.0%    0.0%  void v8::internal::FlexibleBodyVisitor<v8::internal::IncrementalMarkingMarkingVisitor, v8::internal::JSObject::BodyDescriptor, void>::VisitSpecialized<48>(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  v8::internal::StubFailureTrampolineFrame::context_register()
+      1    0.0%    0.0%  v8::internal::StringStream::Add(v8::internal::Vector<char const>, v8::internal::Vector<v8::internal::FmtElm>)
       1    0.0%    0.0%  v8::internal::String::IsOneByteEqualTo(v8::internal::Vector<unsigned char const>)
       1    0.0%    0.0%  v8::internal::StoreIC::Store(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::Object>, v8::internal::JSReceiver::StoreFromKeyed)
-      1    0.0%    0.0%  v8::internal::StaticMarkingVisitor<v8::internal::IncrementalMarkingMarkingVisitor>::VisitSharedFunctionInfo(v8::internal::Map*, v8::internal::HeapObject*)
-      1    0.0%    0.0%  v8::internal::SharedFunctionInfo::ClearOptimizedCodeMap()
-      1    0.0%    0.0%  v8::internal::Scope::AllocateParameterLocals()
-      1    0.0%    0.0%  v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::ObjectEvacuationStrategy<(v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::LoggingAndProfiling)0>::ObjectContents)0>::Visit(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*)
-      1    0.0%    0.0%  v8::internal::Scanner::Scan()
-      1    0.0%    0.0%  v8::internal::RuntimeHidden_Interrupt(int, v8::internal::Object**, v8::internal::Isolate*)
-      1    0.0%    0.0%  v8::internal::Runtime::GetObjectPropertyOrFail(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>)
-      1    0.0%    0.0%  v8::internal::ReduceFixedArrayTo(v8::internal::Handle<v8::internal::FixedArray>, int)
-      1    0.0%    0.0%  v8::internal::RecursiveMutex::Unlock()
-      1    0.0%    0.0%  v8::internal::PositionsRecorder::RecordPosition(int)
-      1    0.0%    0.0%  v8::internal::Name::IsCacheable(v8::internal::Isolate*)
-      1    0.0%    0.0%  v8::internal::MessageDispatchHelperThread::Run()
+      1    0.0%    0.0%  v8::internal::StoreBuffer::IteratePointersToNewSpaceAndClearMaps(void (*)(v8::internal::HeapObject**, v8::internal::HeapObject*))
+      1    0.0%    0.0%  v8::internal::StaticMarkingVisitor<v8::internal::IncrementalMarkingMarkingVisitor>::VisitMap(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  v8::internal::StaticMarkingVisitor<v8::internal::IncrementalMarkingMarkingVisitor>::VisitJSRegExp(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  v8::internal::StandardFrame::IterateCompiledFrame(v8::internal::ObjectVisitor*) const
+      1    0.0%    0.0%  v8::internal::StackFrameIterator::StackFrameIterator(v8::internal::Isolate*, v8::internal::ThreadLocalTop*)
+      1    0.0%    0.0%  v8::internal::StackFrameIterator::StackFrameIterator(v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Scanner::SkipMultiLineComment()
+      1    0.0%    0.0%  v8::internal::Scanner::Next()
+      1    0.0%    0.0%  v8::internal::SafepointTableBuilder::DefineSafepoint(v8::internal::Assembler*, v8::internal::Safepoint::Kind, int, v8::internal::Safepoint::DeoptMode)
+      1    0.0%    0.0%  v8::internal::Runtime_Typeof(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_RegExpExecMultiple(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_IsExtensible(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_DefineOrRedefineDataProperty(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::Runtime_BoundFunctionGetBindings(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::RelocInfoWriter::Write(v8::internal::RelocInfo const*)
+      1    0.0%    0.0%  v8::internal::Parser::ParseLazy(v8::internal::Utf16CharacterStream*)
+      1    0.0%    0.0%  v8::internal::Parser::Parse()
+      1    0.0%    0.0%  v8::internal::PagedSpace::SizeOfObjects()
+      1    0.0%    0.0%  v8::internal::Operand::Operand(v8::internal::Register, int)
+      1    0.0%    0.0%  v8::internal::OS::VSNPrintF(v8::internal::Vector<char>, char const*, __va_list_tag*)
       1    0.0%    0.0%  v8::internal::MemoryAllocator::AllocateChunk(long, long, v8::internal::Executability, v8::internal::Space*)
       1    0.0%    0.0%  v8::internal::MarkCompactCollector::RecordRelocSlot(v8::internal::RelocInfo*, v8::internal::Object*)
+      1    0.0%    0.0%  v8::internal::MarkCompactCollector::EvacuateNewSpaceAndCandidates()
+      1    0.0%    0.0%  v8::internal::MarkCompactCollector::EvacuateLiveObjectsFromPage(v8::internal::Page*)
       1    0.0%    0.0%  v8::internal::MarkCompactCollector::ClearNonLiveDependentCode(v8::internal::DependentCode*)
-      1    0.0%    0.0%  v8::internal::Map::UpdateCodeCache(v8::internal::Name*, v8::internal::Code*)
-      1    0.0%    0.0%  v8::internal::Map::CopyAddDescriptor(v8::internal::Descriptor*, v8::internal::TransitionFlag)
-      1    0.0%    0.0%  v8::internal::LoadIC::CompileHandler(v8::internal::LookupResult*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::Object>, v8::internal::InlineCacheHolderFlag)
+      1    0.0%    0.0%  v8::internal::Malloced::New(unsigned long)
+      1    0.0%    0.0%  v8::internal::Logger::CodeCreateEvent(v8::internal::Logger::LogEventsAndTags, v8::internal::Code*, v8::internal::SharedFunctionInfo*, v8::internal::CompilationInfo*, v8::internal::Name*, int, int)
+      1    0.0%    0.0%  v8::internal::LoadIC::Load(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::String>)
       1    0.0%    0.0%  v8::internal::Literal::Match(void*, void*)
-      1    0.0%    0.0%  v8::internal::Label::pos() const
+      1    0.0%    0.0%  v8::internal::LParallelMove::IsRedundant() const
+      1    0.0%    0.0%  v8::internal::LInstructionGap::CompileToNative(v8::internal::LCodeGen*)
       1    0.0%    0.0%  v8::internal::LGapResolver::BuildInitialMoveList(v8::internal::LParallelMove*)
-      1    0.0%    0.0%  v8::internal::LConstantT::CompileToNative(v8::internal::LCodeGen*)
       1    0.0%    0.0%  v8::internal::LCodeGen::DoLoadNamedField(v8::internal::LLoadNamedField*)
+      1    0.0%    0.0%  v8::internal::LCodeGen::DoInstructionGap(v8::internal::LInstructionGap*)
       1    0.0%    0.0%  v8::internal::LChunkBuilder::DoLoadFieldByIndex(v8::internal::HLoadFieldByIndex*)
-      1    0.0%    0.0%  v8::internal::LAllocator::AllocateRegisters()
-      1    0.0%    0.0%  v8::internal::JSObject::NumberOfEnumElements()
-      1    0.0%    0.0%  v8::internal::JSObject::NormalizeProperties(v8::internal::Handle<v8::internal::JSObject>, v8::internal::PropertyNormalizationMode, int)
-      1    0.0%    0.0%  v8::internal::JSObject::JSObjectShortPrint(v8::internal::StringStream*)
-      1    0.0%    0.0%  v8::internal::JSObject::DeleteNormalizedProperty(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Name>, v8::internal::JSReceiver::DeleteMode)
+      1    0.0%    0.0%  v8::internal::LAllocatorPhase::~LAllocatorPhase()
+      1    0.0%    0.0%  v8::internal::LAllocator::TryAllocateFreeReg(v8::internal::LiveRange*)
+      1    0.0%    0.0%  v8::internal::KeyedLookupCache::Lookup(v8::internal::Map*, v8::internal::Name*)
+      1    0.0%    0.0%  v8::internal::JavaScriptFrameIterator::Advance()
+      1    0.0%    0.0%  v8::internal::JavaScriptFrame::fp_register()
+      1    0.0%    0.0%  v8::internal::JSObject::GetLocalElementKeys(v8::internal::FixedArray*, PropertyAttributes)
+      1    0.0%    0.0%  v8::internal::JSObject::GetEnumElementKeys(v8::internal::FixedArray*)
+      1    0.0%    0.0%  v8::internal::JSObject::GetElementsTransitionMapSlow(v8::internal::ElementsKind)
       1    0.0%    0.0%  v8::internal::JSObject::AddProperty(v8::internal::Handle<v8::internal::JSObject>, v8::internal::Handle<v8::internal::Name>, v8::internal::Handle<v8::internal::Object>, PropertyAttributes, v8::internal::StrictMode, v8::internal::JSReceiver::StoreFromKeyed, v8::internal::JSReceiver::ExtensibilityCheck, v8::internal::Object::ValueType, v8::internal::StoreMode, v8::internal::TransitionFlag)
-      1    0.0%    0.0%  v8::internal::JSFunction::NativeContextFromLiterals(v8::internal::FixedArray*)
-      1    0.0%    0.0%  v8::internal::IncrementalMarking::SpaceLeftInOldSpace()
-      1    0.0%    0.0%  v8::internal::IncrementalMarking::OldSpaceStep(long)
-      1    0.0%    0.0%  v8::internal::IC::UpdateState(v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>)
-      1    0.0%    0.0%  v8::internal::IC::IC(v8::internal::IC::FrameDepth, v8::internal::Isolate*)
+      1    0.0%    0.0%  v8::internal::HeapSnapshotJSONSerializer::StringsMatch(void*, void*)
       1    0.0%    0.0%  v8::internal::Heap::SetNumberStringCache(v8::internal::Object*, v8::internal::String*)
-      1    0.0%    0.0%  v8::internal::Heap::ProcessArrayBuffers(v8::internal::WeakObjectRetainer*, bool)
-      1    0.0%    0.0%  v8::internal::Heap::MarkCompactPrologue()
-      1    0.0%    0.0%  v8::internal::Heap::InternalizedStringMapForString(v8::internal::String*)
-      1    0.0%    0.0%  v8::internal::Heap::GarbageCollectionPrologue()
-      1    0.0%    0.0%  v8::internal::Heap::CopyCode(v8::internal::Code*)
-      1    0.0%    0.0%  v8::internal::Heap::AllocateJSObject(v8::internal::JSFunction*, v8::internal::PretenureFlag, v8::internal::AllocationSite*)
-      1    0.0%    0.0%  v8::internal::Heap::AllocateHeapNumber(double, v8::internal::PretenureFlag)
-      1    0.0%    0.0%  v8::internal::Heap::AdjustLiveBytes(unsigned char*, int, v8::internal::Heap::InvocationMode)
-      1    0.0%    0.0%  v8::internal::HashTable<v8::internal::WeakHashTableShape<2>, v8::internal::Object*>::Rehash(v8::internal::Object*)
-      1    0.0%    0.0%  v8::internal::HandleScopeImplementer::IterateThis(v8::internal::ObjectVisitor*)
-      1    0.0%    0.0%  v8::internal::HValue::RegisterUse(int, v8::internal::HValue*)
-      1    0.0%    0.0%  v8::internal::HPhi::AddInput(v8::internal::HValue*)
-      1    0.0%    0.0%  v8::internal::HBasicBlock::HBasicBlock(v8::internal::HGraph*)
-      1    0.0%    0.0%  v8::internal::HBasicBlock::AddInstruction(v8::internal::HInstruction*, v8::internal::HSourcePosition)
-      1    0.0%    0.0%  v8::internal::FreeList::Free(unsigned char*, int)
+      1    0.0%    0.0%  v8::internal::Heap::CreateFillerObjectAt(unsigned char*, int)
+      1    0.0%    0.0%  v8::internal::HOptimizedGraphBuilder::VisitCall(v8::internal::Call*)
+      1    0.0%    0.0%  v8::internal::HOptimizedGraphBuilder::TryInline(v8::internal::Handle<v8::internal::JSFunction>, int, v8::internal::HValue*, v8::internal::BailoutId, v8::internal::BailoutId, v8::internal::InliningKind, v8::internal::HSourcePosition)
+      1    0.0%    0.0%  v8::internal::HOptimizedGraphBuilder::HandlePolymorphicElementAccess(v8::internal::HValue*, v8::internal::HValue*, v8::internal::HValue*, v8::internal::SmallMapList*, v8::internal::PropertyAccessType, v8::internal::KeyedAccessStoreMode, bool*)
+      1    0.0%    0.0%  v8::internal::FreeList::FindNodeFor(int, int*)
+      1    0.0%    0.0%  v8::internal::FrameDescription::SetCallerPc(unsigned int, long)
+      1    0.0%    0.0%  v8::internal::FlexibleBodyVisitor<v8::internal::IncrementalMarkingMarkingVisitor, v8::internal::StructBodyDescriptor, void>::Visit(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  v8::internal::FixedBodyVisitor<v8::internal::IncrementalMarkingMarkingVisitor, v8::internal::FixedBodyDescriptor<24, 40, 40>, void>::Visit(v8::internal::Map*, v8::internal::HeapObject*)
+      1    0.0%    0.0%  v8::internal::FixedArray::UnionOfKeys(v8::internal::FixedArray*)
+      1    0.0%    0.0%  v8::internal::Factory::NewJSObjectFromMap(v8::internal::Handle<v8::internal::Map>, v8::internal::PretenureFlag, bool, v8::internal::Handle<v8::internal::AllocationSite>)
       1    0.0%    0.0%  v8::internal::Factory::NewAllocationSite()
+      1    0.0%    0.0%  v8::internal::Factory::CopyFixedArray(v8::internal::Handle<v8::internal::FixedArray>)
       1    0.0%    0.0%  v8::internal::Factory::BaseNewFunctionFromSharedFunctionInfo(v8::internal::Handle<v8::internal::SharedFunctionInfo>, v8::internal::Handle<v8::internal::Map>, v8::internal::PretenureFlag)
-      1    0.0%    0.0%  v8::internal::Execution::ToObject(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, bool*)
+      1    0.0%    0.0%  v8::internal::ExitFrame::GetCallerStackPointer() const
+      1    0.0%    0.0%  v8::internal::Execution::HandleStackGuardInterrupt(v8::internal::Isolate*)
       1    0.0%    0.0%  v8::internal::Dictionary<v8::internal::SeededNumberDictionaryShape, unsigned int>::Shrink(unsigned int)
       1    0.0%    0.0%  v8::internal::Dictionary<v8::internal::NameDictionaryShape, v8::internal::Name*>::SetEntry(int, v8::internal::Object*, v8::internal::Object*, v8::internal::PropertyDetails)
-      1    0.0%    0.0%  v8::internal::Dictionary<v8::internal::NameDictionaryShape, v8::internal::Name*>::Add(v8::internal::Name*, v8::internal::Object*, v8::internal::PropertyDetails)
+      1    0.0%    0.0%  v8::internal::Deserializer::ReadChunk(v8::internal::Object**, v8::internal::Object**, int, unsigned char*)
       1    0.0%    0.0%  v8::internal::Deoptimizer::~Deoptimizer()
-      1    0.0%    0.0%  v8::internal::Deoptimizer::SetPlatformCompiledStubRegisters(v8::internal::FrameDescription*, v8::internal::CodeStubInterfaceDescriptor*)
-      1    0.0%    0.0%  v8::internal::ConsStringIteratorOp::NextLeaf(bool*, int*, unsigned int*)
-      1    0.0%    0.0%  v8::internal::CompilationPhase::ShouldProduceTraceOutput() const
-      1    0.0%    0.0%  v8::internal::CodeCache::UpdateDefaultCache(v8::internal::Name*, v8::internal::Code*)
-      1    0.0%    0.0%  v8::internal::CodeCache::LookupDefaultCache(v8::internal::Name*, unsigned int)
-      1    0.0%    0.0%  v8::internal::Code::PatchPlatformCodeAge(v8::internal::Isolate*, unsigned char*, v8::internal::Code::Age, v8::internal::MarkingParity)
+      1    0.0%    0.0%  v8::internal::Deoptimizer::DoComputeOutputFrames()
+      1    0.0%    0.0%  v8::internal::Deoptimizer::ComputeOutputFrames(v8::internal::Deoptimizer*)
+      1    0.0%    0.0%  v8::internal::CreateStackMap(v8::internal::Isolate*, v8::internal::Zone*)
+      1    0.0%    0.0%  v8::internal::Compiler::GetUnoptimizedCode(v8::internal::Handle<v8::internal::JSFunction>)
+      1    0.0%    0.0%  v8::internal::Compiler::BuildFunctionInfo(v8::internal::FunctionLiteral*, v8::internal::Handle<v8::internal::Script>)
+      1    0.0%    0.0%  v8::internal::CodeCache::UpdateNormalTypeCache(v8::internal::Name*, v8::internal::Code*)
+      1    0.0%    0.0%  v8::internal::Code::IsYoungSequence(unsigned char*)
+      1    0.0%    0.0%  v8::internal::Code::CopyFrom(v8::internal::CodeDesc const&)
       1    0.0%    0.0%  v8::internal::CallApiGetterStub::Generate(v8::internal::MacroAssembler*)
-      1    0.0%    0.0%  v8::internal::BaseLoadStoreStubCompiler::GetICCode(v8::internal::Code::Kind, v8::internal::Code::StubType, v8::internal::Handle<v8::internal::Name>, v8::internal::InlineCacheState)
-      1    0.0%    0.0%  v8::internal::Assembler::Nop(int)
-      1    0.0%    0.0%  v8::internal::AllocationSiteCreationContext::ExitScope(v8::internal::Handle<v8::internal::AllocationSite>, v8::internal::Handle<v8::internal::JSObject>)
+      1    0.0%    0.0%  v8::internal::CPU::FlushICache(void*, unsigned long)
+      1    0.0%    0.0%  v8::internal::AstTyper::VisitModuleStatement(v8::internal::ModuleStatement*)
+      1    0.0%    0.0%  v8::internal::AssemblerBase::~AssemblerBase()
+      1    0.0%    0.0%  v8::internal::Assembler::testb(v8::internal::Register, v8::internal::Immediate)
+      1    0.0%    0.0%  v8::internal::Assembler::movp(v8::internal::Register, void*, v8::internal::RelocInfo::Mode)
       1    0.0%    0.0%  v8::internal::AllocationSiteCreationContext::EnterNewScope()
-      1    0.0%    0.0%  node::smalloc::SliceOnto(v8::FunctionCallbackInfo<v8::Value> const&)
-      1    0.0%    0.0%  node::smalloc::Alloc(v8::FunctionCallbackInfo<v8::Value> const&)
-      1    0.0%    0.0%  _vm_read_list
-      1    0.0%    0.0%  _ungetwc_l
-      1    0.0%    0.0%  _sscanf_l
-      1    0.0%    0.0%  _sprintf_l
-      1    0.0%    0.0%  _sprintf
-      1    0.0%    0.0%  _pthread_testcancel
+      1    0.0%    0.0%  node::InitFs(v8::Handle<v8::Object>, v8::Handle<v8::Value>, v8::Handle<v8::Context>, void*)
+      1    0.0%    0.0%  node::Buffer::Utf8Write(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  node::Buffer::ByteLength(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  long v8::internal::MarkCompactCollector::SweepConservatively<(v8::internal::MarkCompactCollector::SweepingParallelism)1>(v8::internal::PagedSpace*, v8::internal::FreeList*, v8::internal::Page*)
       1    0.0%    0.0%  _pthread_condattr_init
-      1    0.0%    0.0%  _pthread_cond_wait$NOCANCEL
+      1    0.0%    0.0%  _pthread_condattr_getpshared
       1    0.0%    0.0%  _malloc_engaged_nano
-      1    0.0%    0.0%  _inet_pton
-      1    0.0%    0.0%  ___os_once_reset
-      1    0.0%    0.0%  ____runetype
 
  [GC]:
    ticks  total  nonlib   name
-    629    9.1%
+    353    7.5%
 
  [Bottom up (heavy) profile]:
   Note: percentage shows a share of a particular caller in the total
@@ -517,222 +468,203 @@ Statistical profiling result from v8.log, (6950 ticks, 104 unaccounted, 0 exclud
   Callers occupying less than 2.0% are not shown.
 
    ticks parent  name
-    399    5.7%  v8::internal::Dictionary<v8::internal::NameDictionaryShape, v8::internal::Name*>::NumberOfEnumElements()
-    142   35.6%    LazyCompile: *keys native v8natives.js:206:20
-     75   52.8%      LazyCompile: *keys /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:1617:49
-     74   98.7%        LazyCompile: *interestingCells /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:70:30
-     45   60.8%          LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-     45  100.0%            LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
-     29   39.2%          LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-     29  100.0%            LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-     36   25.4%      LazyCompile: *forOwn /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:2094:26
-     34   94.4%        LazyCompile: ~filter /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:3140:20
-     34  100.0%          LazyCompile: ~filterCells /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:74:25
-     34  100.0%            LazyCompile: ~updateCellmap /Users/jamkang/gcw/reactivecell/automaton.js:30:25
-      2    5.6%        LazyCompile: *baseClone /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:747:23
-      2  100.0%          LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
-      2  100.0%            LazyCompile: *map native array.js:963:18
-     31   21.8%      LazyCompile: *values /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:2904:20
-     31  100.0%        LazyCompile: ~interestingCells /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:70:30
-     19   61.3%          LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-     19  100.0%            LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
-     12   38.7%          LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-     12  100.0%            LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-     83   20.8%    LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
-     83  100.0%      LazyCompile: *map native array.js:963:18
-     83  100.0%        LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
-     83  100.0%          Stub: p
-     83  100.0%            LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-     60   15.0%    LazyCompile: *setCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:30:21
-     35   58.3%      LazyCompile: *forEach native array.js:874:22
-     35  100.0%        LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-     35  100.0%          LazyCompile: *forEach native array.js:874:22
-     35  100.0%            LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-     17   28.3%      LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-     17  100.0%        LazyCompile: *forEach native array.js:874:22
-     17  100.0%          LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-     17  100.0%            LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-      8   13.3%      LazyCompile: *updateCell /Users/jamkang/gcw/reactivecell/automaton.js:22:22
-      8  100.0%        LazyCompile: *forEach native array.js:874:22
-      8  100.0%          LazyCompile: ~updateCellmap /Users/jamkang/gcw/reactivecell/automaton.js:30:25
-      8  100.0%            LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-     19    4.8%    LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-     16   84.2%      LazyCompile: *forEach native array.js:874:22
-      9   56.3%        LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-      9  100.0%          LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-      9  100.0%            LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
-      7   43.8%        LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-      7  100.0%          LazyCompile: *forEach native array.js:874:22
-      7  100.0%            LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-      3   15.8%      LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-      3  100.0%        LazyCompile: *forEach native array.js:874:22
-      3  100.0%          LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-      3  100.0%            LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-     16    4.0%    LazyCompile: *baseClone /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:747:23
-     14   87.5%      LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
-     14  100.0%        LazyCompile: *map native array.js:963:18
-     14  100.0%          LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
-     14  100.0%            Stub: p
-      2   12.5%      LazyCompile: *assembleCell /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:151:22
+    287    6.1%  v8::internal::Dictionary<v8::internal::NameDictionaryShape, v8::internal::Name*>::NumberOfEnumElements()
+    111   38.7%    LazyCompile: *keys native v8natives.js:206:20
+     62   55.9%      LazyCompile: *values /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:2904:20
+     62  100.0%        LazyCompile: ~interestingCells /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:70:30
+     43   69.4%          LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
+     43  100.0%            LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
+     19   30.6%          LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
+     19  100.0%            LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
+     33   29.7%      LazyCompile: *forOwn /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:2094:26
+     32   97.0%        LazyCompile: ~filter /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:3140:20
+     32  100.0%          LazyCompile: ~filterCells /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:74:25
+     32  100.0%            LazyCompile: ~updateCellmap /Users/jamkang/gcw/reactivecell/automaton.js:30:25
+      1    3.0%        LazyCompile: *baseClone /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:747:23
+      1  100.0%          LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
+      1  100.0%            LazyCompile: *map native array.js:963:18
+     16   14.4%      LazyCompile: *keys /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:1617:49
+     14   87.5%        LazyCompile: *interestingCells /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:70:30
+     10   71.4%          LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
+     10  100.0%            LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
+      4   28.6%          LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
+      4  100.0%            LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
+      2   12.5%        LazyCompile: ~values /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:2904:20
+      2  100.0%          LazyCompile: ~interestingCells /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:70:30
+      2  100.0%            LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
+     63   22.0%    LazyCompile: *setCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:30:21
+     42   66.7%      LazyCompile: *forEach native array.js:874:22
+     42  100.0%        LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+     42  100.0%          LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+     42  100.0%            LazyCompile: *forEach native array.js:874:22
+     17   27.0%      LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+     17  100.0%        LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+     17  100.0%          LazyCompile: *forEach native array.js:874:22
+     17  100.0%            LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
+      4    6.3%      LazyCompile: *updateCell /Users/jamkang/gcw/reactivecell/automaton.js:22:22
+      4  100.0%        LazyCompile: *forEach native array.js:874:22
+      4  100.0%          LazyCompile: ~updateCellmap /Users/jamkang/gcw/reactivecell/automaton.js:30:25
+      4  100.0%            LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
+     38   13.2%    LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
+     38  100.0%      LazyCompile: *map native array.js:963:18
+     38  100.0%        LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
+     38  100.0%          LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+     38  100.0%            LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+     12    4.2%    LazyCompile: *baseClone /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:747:23
+     10   83.3%      LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
+     10  100.0%        LazyCompile: *map native array.js:963:18
+     10  100.0%          LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
+     10  100.0%            LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+      2   16.7%      LazyCompile: *assembleCell /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:151:22
       2  100.0%        LazyCompile: ~cellPackForToken /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:125:65
-      1   50.0%          LazyCompile: ~forEach native array.js:874:22
-      1  100.0%            LazyCompile: *ondata _stream_readable.js:534:18
-      1   50.0%          LazyCompile: *forEach native array.js:874:22
-      1  100.0%            LazyCompile: *ondata _stream_readable.js:534:18
-     14    3.5%    LazyCompile: ~INSTANCE_OF native runtime.js:210:21
-     14  100.0%      LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-     14  100.0%        LazyCompile: *forEach native array.js:874:22
-     14  100.0%          LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-     14  100.0%            LazyCompile: *forEach native array.js:874:22
-     11    2.8%    LazyCompile: Join native array.js:68:14
-     11  100.0%      LazyCompile: *toString native array.js:239:23
-      8   72.7%        LazyCompile: *setCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:30:21
-      6   75.0%          LazyCompile: *forEach native array.js:874:22
-      6  100.0%            LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-      1   12.5%          LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-      1  100.0%            LazyCompile: *forEach native array.js:874:22
-      1   12.5%          LazyCompile: *updateCell /Users/jamkang/gcw/reactivecell/automaton.js:22:22
-      1  100.0%            LazyCompile: *forEach native array.js:874:22
-      3   27.3%        LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
-      3  100.0%          LazyCompile: *map native array.js:963:18
-      3  100.0%            LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
-     11    2.8%    LazyCompile: *map native array.js:963:18
-     11  100.0%      LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
-     10   90.9%        Stub: p
+      2  100.0%          LazyCompile: *forEach native array.js:874:22
+      2  100.0%            LazyCompile: *ondata _stream_readable.js:534:18
+     10    3.5%    LazyCompile: *map native array.js:963:18
+     10  100.0%      LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
+     10  100.0%        LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
      10  100.0%          LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
      10  100.0%            LazyCompile: *forEach native array.js:874:22
-      1    9.1%        LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
-      1  100.0%          LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-      1  100.0%            LazyCompile: ~forEach native array.js:874:22
-     10    2.5%    LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
-     10  100.0%      Stub: p
-     10  100.0%        LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-     10  100.0%          LazyCompile: *forEach native array.js:874:22
-     10  100.0%            LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
+      9    3.1%    LazyCompile: Join native array.js:68:14
+      9  100.0%      LazyCompile: *toString native array.js:239:23
+      5   55.6%        LazyCompile: *setCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:30:21
+      5  100.0%          LazyCompile: *forEach native array.js:874:22
+      5  100.0%            LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+      4   44.4%        LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
+      4  100.0%          LazyCompile: *map native array.js:963:18
+      4  100.0%            LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
+      8    2.8%    LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+      5   62.5%      LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+      5  100.0%        LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+      5  100.0%          LazyCompile: *forEach native array.js:874:22
+      5  100.0%            LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
+      3   37.5%      LazyCompile: *forEach native array.js:874:22
+      3  100.0%        LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
+      3  100.0%          LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
+      3  100.0%            LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
+      8    2.8%    LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
+      8  100.0%      LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+      8  100.0%        LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+      8  100.0%          LazyCompile: *forEach native array.js:874:22
+      8  100.0%            LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
 
-    299    4.3%  v8::internal::ArrayConstructInitializeElements(v8::internal::Handle<v8::internal::JSArray>, v8::internal::Arguments*)
-    160   53.5%    LazyCompile: Join native array.js:68:14
-    160  100.0%      LazyCompile: *toString native array.js:239:23
-     88   55.0%        LazyCompile: *setCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:30:21
-     66   75.0%          LazyCompile: *forEach native array.js:874:22
-     66  100.0%            LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-     14   15.9%          LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-     14  100.0%            LazyCompile: *forEach native array.js:874:22
-      8    9.1%          LazyCompile: *updateCell /Users/jamkang/gcw/reactivecell/automaton.js:22:22
-      8  100.0%            LazyCompile: *forEach native array.js:874:22
-     72   45.0%        LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
-     72  100.0%          LazyCompile: *map native array.js:963:18
-     72  100.0%            LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
-     72   24.1%    LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-     71   98.6%      LazyCompile: *forEach native array.js:874:22
-     39   54.9%        LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-     39  100.0%          LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-     39  100.0%            LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
-     32   45.1%        LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-     32  100.0%          LazyCompile: *forEach native array.js:874:22
-     32  100.0%            LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-     33   11.0%    LazyCompile: *keys native v8natives.js:206:20
-     15   45.5%      LazyCompile: *keys /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:1617:49
-     14   93.3%        LazyCompile: *interestingCells /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:70:30
-      9   64.3%          LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-      9  100.0%            LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
-      5   35.7%          LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-      5  100.0%            LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-      1    6.7%        LazyCompile: ~forOwn /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:2094:26
-      1  100.0%          LazyCompile: ~baseClone /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:747:23
-      1  100.0%            LazyCompile: *assembleCell /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:151:22
-     13   39.4%      LazyCompile: *forOwn /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:2094:26
-      8   61.5%        LazyCompile: *baseClone /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:747:23
-      6   75.0%          LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
-      6  100.0%            LazyCompile: *map native array.js:963:18
-      2   25.0%          LazyCompile: *assembleCell /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:151:22
-      2  100.0%            LazyCompile: ~cellPackForToken /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:125:65
-      5   38.5%        LazyCompile: ~filter /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:3140:20
+    215    4.6%  v8::internal::ArrayConstructInitializeElements(v8::internal::Handle<v8::internal::JSArray>, v8::internal::Arguments*)
+    121   56.3%    LazyCompile: Join native array.js:68:14
+    121  100.0%      LazyCompile: *toString native array.js:239:23
+     65   53.7%        LazyCompile: *setCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:30:21
+     43   66.2%          LazyCompile: *forEach native array.js:874:22
+     43  100.0%            LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+     16   24.6%          LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+     16  100.0%            LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+      5    7.7%          LazyCompile: *updateCell /Users/jamkang/gcw/reactivecell/automaton.js:22:22
+      5  100.0%            LazyCompile: *forEach native array.js:874:22
+     56   46.3%        LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
+     56  100.0%          LazyCompile: *map native array.js:963:18
+     56  100.0%            LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
+     26   12.1%    LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+     26  100.0%      LazyCompile: *forEach native array.js:874:22
+     16   61.5%        LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+     16  100.0%          LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+     16  100.0%            LazyCompile: *forEach native array.js:874:22
+     10   38.5%        LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
+     10  100.0%          LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
+     10  100.0%            LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
+     21    9.8%    LazyCompile: *keys native v8natives.js:206:20
+     10   47.6%      LazyCompile: *values /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:2904:20
+     10  100.0%        LazyCompile: ~interestingCells /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:70:30
+      6   60.0%          LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
+      6  100.0%            LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
+      4   40.0%          LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
+      4  100.0%            LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
+     10   47.6%      LazyCompile: *forOwn /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:2094:26
+      5   50.0%        LazyCompile: ~filter /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:3140:20
       5  100.0%          LazyCompile: ~filterCells /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:74:25
       5  100.0%            LazyCompile: ~updateCellmap /Users/jamkang/gcw/reactivecell/automaton.js:30:25
-      5   15.2%      LazyCompile: *values /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:2904:20
-      5  100.0%        LazyCompile: ~interestingCells /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:70:30
-      4   80.0%          LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-      4  100.0%            LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
-      1   20.0%          LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
+      5   50.0%        LazyCompile: *baseClone /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:747:23
+      5  100.0%          LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
+      5  100.0%            LazyCompile: *map native array.js:963:18
+      1    4.8%      LazyCompile: *keys /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:1617:49
+      1  100.0%        LazyCompile: *interestingCells /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:70:30
+      1  100.0%          LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
       1  100.0%            LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-     28    9.4%    LazyCompile: ~IN native runtime.js:203:12
-     19   67.9%      LazyCompile: *forEach native array.js:874:22
-     14   73.7%        LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-     14  100.0%          LazyCompile: *forEach native array.js:874:22
-     14  100.0%            LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-      5   26.3%        LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-      5  100.0%          LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-      5  100.0%            LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
-      4   14.3%      LazyCompile: *map native array.js:963:18
-      4  100.0%        LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
-      4  100.0%          Stub: p
-      4  100.0%            LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-      2    7.1%      LazyCompile: *reduce native array.js:1085:21
-      2  100.0%        LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-      2  100.0%          LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
-      2  100.0%            LazyCompile: ~done /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:43:18
-      2    7.1%      LazyCompile: *filter native array.js:836:21
-      2  100.0%        LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-      2  100.0%          LazyCompile: *forEach native array.js:874:22
-      2  100.0%            LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-      1    3.6%      LazyCompile: ~forEach native array.js:874:22
-      1  100.0%        LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
-      1  100.0%          LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-      1  100.0%            LazyCompile: ~forEach native array.js:874:22
-      6    2.0%    LazyCompile: *baseClone /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:747:23
-      6  100.0%      LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
-      6  100.0%        LazyCompile: *map native array.js:963:18
-      6  100.0%          LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
-      6  100.0%            Stub: p
+     19    8.8%    LazyCompile: ~IN native runtime.js:203:12
+     11   57.9%      LazyCompile: *forEach native array.js:874:22
+      7   63.6%        LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+      7  100.0%          LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+      7  100.0%            LazyCompile: *forEach native array.js:874:22
+      3   27.3%        LazyCompile: ~updateCellmap /Users/jamkang/gcw/reactivecell/automaton.js:30:25
+      3  100.0%          LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
+      3  100.0%            LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
+      1    9.1%        LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
+      1  100.0%          LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
+      1  100.0%            LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
+      5   26.3%      LazyCompile: *map native array.js:963:18
+      5  100.0%        LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
+      5  100.0%          LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+      5  100.0%            LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+      2   10.5%      LazyCompile: *filter native array.js:836:21
+      2  100.0%        LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+      2  100.0%          LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+      2  100.0%            LazyCompile: *forEach native array.js:874:22
+      1    5.3%      LazyCompile: *reduce native array.js:1085:21
+      1  100.0%        LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
+      1  100.0%          LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
+      1  100.0%            LazyCompile: ~done /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:43:18
+     14    6.5%    LazyCompile: *baseClone /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:747:23
+     14  100.0%      LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
+     14  100.0%        LazyCompile: *map native array.js:963:18
+     14  100.0%          LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
+     14  100.0%            LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+     10    4.7%    LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+     10  100.0%      LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+     10  100.0%        LazyCompile: *forEach native array.js:874:22
+     10  100.0%          LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
+     10  100.0%            LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
 
-    270    3.9%  LazyCompile: Join native array.js:68:14
-    265   98.1%    LazyCompile: *toString native array.js:239:23
-    154   58.1%      LazyCompile: *setCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:30:21
-    119   77.3%        LazyCompile: *forEach native array.js:874:22
-    119  100.0%          LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-    119  100.0%            LazyCompile: *forEach native array.js:874:22
-     20   13.0%        LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-     20  100.0%          LazyCompile: *forEach native array.js:874:22
-     20  100.0%            LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-     14    9.1%        LazyCompile: *updateCell /Users/jamkang/gcw/reactivecell/automaton.js:22:22
-     14  100.0%          LazyCompile: *forEach native array.js:874:22
-     14  100.0%            LazyCompile: ~updateCellmap /Users/jamkang/gcw/reactivecell/automaton.js:30:25
-    111   41.9%      LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
-    111  100.0%        LazyCompile: *map native array.js:963:18
-    111  100.0%          LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
-    110   99.1%            Stub: p
+    188    4.0%  LazyCompile: Join native array.js:68:14
+    185   98.4%    LazyCompile: *toString native array.js:239:23
+     95   51.4%      LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
+     95  100.0%        LazyCompile: *map native array.js:963:18
+     95  100.0%          LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
+     94   98.9%            LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+     90   48.6%      LazyCompile: *setCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:30:21
+     65   72.2%        LazyCompile: *forEach native array.js:874:22
+     65  100.0%          LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+     65  100.0%            LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+     18   20.0%        LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+     18  100.0%          LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+     18  100.0%            LazyCompile: *forEach native array.js:874:22
+      7    7.8%        LazyCompile: *updateCell /Users/jamkang/gcw/reactivecell/automaton.js:22:22
+      7  100.0%          LazyCompile: *forEach native array.js:874:22
+      7  100.0%            LazyCompile: ~updateCellmap /Users/jamkang/gcw/reactivecell/automaton.js:30:25
 
-    147    2.1%  LazyCompile: *setCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:30:21
-    133   90.5%    LazyCompile: *forEach native array.js:874:22
-    133  100.0%      LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-    133  100.0%        LazyCompile: *forEach native array.js:874:22
-    133  100.0%          LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-    133  100.0%            LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-      8    5.4%    LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-      8  100.0%      LazyCompile: *forEach native array.js:874:22
-      8  100.0%        LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-      8  100.0%          LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-      8  100.0%            LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
-      6    4.1%    LazyCompile: *updateCell /Users/jamkang/gcw/reactivecell/automaton.js:22:22
-      6  100.0%      LazyCompile: *forEach native array.js:874:22
-      6  100.0%        LazyCompile: ~updateCellmap /Users/jamkang/gcw/reactivecell/automaton.js:30:25
-      6  100.0%          LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-      6  100.0%            LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
+    108    2.3%  LazyCompile: *setCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:30:21
+     97   89.8%    LazyCompile: *forEach native array.js:874:22
+     97  100.0%      LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+     97  100.0%        LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+     97  100.0%          LazyCompile: *forEach native array.js:874:22
+     97  100.0%            LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
+      7    6.5%    LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+      7  100.0%      LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+      7  100.0%        LazyCompile: *forEach native array.js:874:22
+      7  100.0%          LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
+      7  100.0%            LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
+      4    3.7%    LazyCompile: *updateCell /Users/jamkang/gcw/reactivecell/automaton.js:22:22
+      4  100.0%      LazyCompile: *forEach native array.js:874:22
+      4  100.0%        LazyCompile: ~updateCellmap /Users/jamkang/gcw/reactivecell/automaton.js:30:25
+      4  100.0%          LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
+      4  100.0%            LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
 
-    146    2.1%  LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-    117   80.1%    LazyCompile: *forEach native array.js:874:22
-     91   77.8%      LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-     91  100.0%        LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-     91  100.0%          LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
-     91  100.0%            LazyCompile: ~done /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:43:18
-     26   22.2%      LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-     26  100.0%        LazyCompile: *forEach native array.js:874:22
-     26  100.0%          LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-     26  100.0%            LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-     29   19.9%    LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
-     29  100.0%      LazyCompile: *forEach native array.js:874:22
-     29  100.0%        LazyCompile: ~applyReactionToCells /Users/jamkang/gcw/reactivecell/automaton.js:3:32
-     29  100.0%          LazyCompile: ~applyReactions /Users/jamkang/gcw/reactivecell/tests/airtests-fixtures.js:42:24
-     29  100.0%            LazyCompile: ~testDefault /Users/jamkang/gcw/reactivecell/tests/bigperftest.js:49:23
+     94    2.0%  v8::internal::JSObject::SetFastElement(v8::internal::Handle<v8::internal::JSObject>, unsigned int, v8::internal::Handle<v8::internal::Object>, v8::internal::StrictMode, bool)
+     94  100.0%    LazyCompile: Join native array.js:68:14
+     94  100.0%      LazyCompile: *toString native array.js:239:23
+     60   63.8%        LazyCompile: *setCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:30:21
+     48   80.0%          LazyCompile: *forEach native array.js:874:22
+     48  100.0%            LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+      9   15.0%          LazyCompile: *applyReactionToNeighbors /Users/jamkang/gcw/reactivecell/automaton.js:12:36
+      9  100.0%            LazyCompile: bound /Users/jamkang/gcw/reactivecell/node_modules/lodash/dist/lodash.js:932:21
+      3    5.0%          LazyCompile: *updateCell /Users/jamkang/gcw/reactivecell/automaton.js:22:22
+      3  100.0%            LazyCompile: *forEach native array.js:874:22
+     34   36.2%        LazyCompile: *getCell /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:18:21
+     34  100.0%          LazyCompile: *map native array.js:963:18
+     34  100.0%            LazyCompile: *getNeighbors /Users/jamkang/gcw/reactivecell/node_modules/cellmap/hashcellmapmaker.js:47:26
 

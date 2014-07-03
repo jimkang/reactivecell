@@ -21,15 +21,15 @@ function windTunnelSuite() {
       mapLegend: {
         l: {
           name: 'low',
-          p: 1
+          p: 1000
         },
         m: {
           name: 'medium',
-          p: 3
+          p: 3000
         },
         h: {
           name: 'high',
-          p: 5
+          p: 5000
         },
         x: {
           name: 'block',
