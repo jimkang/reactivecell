@@ -10,8 +10,12 @@ function createAirCAController() {
       return '#bbb';
     }
     else {
-      return 'hsla(200, 100%, 80%, ' + (0.25 + 0.75 * cell.d.p/20.0) + ')';
+      return 'hsla(200, 100%, 80%, ' + (0.25 + 0.75 * cell.d.p/20000) + ')';
     }
+  }
+
+  function getAlphaForPressure(pressure) {
+    return 0.25 + 0.75 * pressure/20000;
   }
 
   var airLayer = d3.select('#air-layer');
@@ -107,13 +111,13 @@ function createAirCAController() {
       d.inert = true;
     }
     else if (key === 'l') {
-      d.p = 1;
+      d.p = 1000;
     }
     else if (key === 'm') {
-      d.p = 8;
+      d.p = 8000;
     }
     else if (key === 'h') {
-      d.p = 20;
+      d.p = 20000;
     }
     return d;
   }
