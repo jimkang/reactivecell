@@ -113,10 +113,14 @@ function createLiquidCAController() {
   }
 
   function createCellDataForKey(key) {
+    // '.' key corresponds to this fallthrough case.
     var d = {
       elevation: 0,
-      liquid: {}
+      liquid: {
+        depth: 0
+      }
     };
+
     if (key === 'x') {
       d.inert = true;
     }
