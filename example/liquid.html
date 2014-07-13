@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<html>
+<head>
+  <title>Cellular Automaton: Liquid</title>
+  <link rel="stylesheet" type="text/css" href="example.css" />
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'med0yzx',
+        scriptTimeout: 3000
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+</head>
+
+<body>
+
+<h2>Cellular Automaton: Liquid</h2>
+
+<svg id="board" height="656">
+  <g id="backdroplayer">
+    <rect width="100%" height="100%"></rect>
+  </g>
+  <g id="container-layer">
+    <g id="liquid-layer" class="series-layer"></g>
+  </g>
+</svg>
+
+
+<button id="next-button">Next</button>
+
+<p class="instructions">
+  Use the button or the right, down, space, enter, or N keys to advance the CA.
+</p>
+
+<p class="explanation">
+  This is a demo of the liquid cellular automaton reaction from <a href="https://github.com/jimkang/reactivecell">reactivecell</a>, and its dependencies, <a href="https://github.com/jimkang/cellmap">cellmap</a>, 
+  <a href="https://github.com/jimkang/roguemap-parse-stream">roguemap-parse-stream</a>, and <a href="https://github.com/jimkang/cellgridrenderer">cellgridrenderer</a>. Advancing the automaton spreads the liquid pressure in each cell to its neighbor, represented by the blue tiles (darker for more pressure), unless they are inert tiles (gray).
+</p>
+
+<br /><br />
+
+<footer>
+  <div class="content-wrap">
+  </div>
+</footer>
+
+<script src="../node_modules/cellseriesviewer/d3.v3.min.js"></script>
+<!-- <script src="../node_modules/cellmap/node_modules/d3/d3.js"></script> -->
+
+<script src="../node_modules/cellseriesviewer/node_modules/accessorizer/accessorizer.js"></script>
+<script src="../node_modules/cellseriesviewer/node_modules/strokerouter/strokerouter.js"></script>
+<script src="../node_modules/lodash/dist/lodash.min.js"></script>
+<script src="../node_modules/cellgridrenderer/fixedcellgridrenderer.js"></script>
+<script src="../node_modules/cellmap/hashcellmapmaker.js"></script>
+<script src="../node_modules/basic-browser-request/basicrequest.js"></script>
+<script src="../node_modules/roguemap-parse-stream/mapparserstream-browserified.js"></script>
+<script src="../reactions/liquidreaction.js"></script>
+<script src="../automaton.js"></script>
+<script src="liquidcacontroller.js"></script>
+
+</body>
+</html>
