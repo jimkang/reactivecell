@@ -70,49 +70,26 @@ function createLiquidCAController() {
   });
   var liquidReaction = createLiquidReaction();
 
-  function loadMap(maptext, done) {
-    var parserStream = streampack.createMapParserStream({
-      batchSize: 100
-    });
 
-    var cellmapWriteStream = createCellmapWriteStream();
-    var textReadStream = createTextReadStream(maptext);
-    textReadStream.on('end', done);
-    // TODO: Make sure cellmapWriteStream and parserStream also emit end events.
+  var advancing = false;
+  var iteration = 0;
 
-    textReadStream.pipe(parserStream);
-    parserStream.pipe(cellmapWriteStream);
-    // parserStream.write(maptext);
-    // parserStream.end();
+  function advanceAutomaton() {
+    if (advancing) {
+      console.log('Already advancing!');
+    }
+    else {
+      automaton.applyReactionToCells(liquidReaction);
+      automaton.updateCellmap();
+      iteration += 1;
+
+      var cellsToRender = cellmap.interestingCells()
+        .filter(cellShouldBeReRendered);
+      renderer.renderCells(cellsToRender);
+    }
   }
 
-  function createCellmapWriteStream() {
-    var Writable = streampack.stream.Writable;
-    var cellmapWriteStream = Writable({objectMode: true});
-    cellmapWriteStream._write = addCellsToMap;
-    return cellmapWriteStream;
-  }
-
-  var lastCellCoordsAdded = [];
-
-  function addCellsToMap(cellPacks, enc, next) {
-    cellPacks.forEach(addCellToMap);
-    lastCellCoordsAdded = _.pluck(cellPacks, 'coords').map(function str(coords) {
-      return coords[0] + ', ' + coords[1];
-    });
-    next();
-  }
-
-  function addCellToMap(cellPack) {
-    cellmap.setCell({
-      id: cellPack.coords[0] + '_' + cellPack.coords[1],
-      d: createCellDataForKey(cellPack.key),
-      nextD: createCellDataForKey(cellPack.key),
-      coords: cellPack.coords.slice()
-    });
-  }
-
-  function createCellDataForKey(key) {
+function createCellDataForKey(key) {
     // '.' key corresponds to this fallthrough case.
     var d = {
       elevation: 0,
@@ -134,44 +111,7 @@ function createLiquidCAController() {
       d.liquid.depth = 20000;
     }
     return d;
-  }
-
-  function createTextReadStream(text) {
-    var Readable = streampack.stream.Readable;
-    var textReadStream = Readable({
-      objectMode: true,
-      encoding: 'utf8'
-    });
-    var index = 0;
-    textReadStream._read = function readTextChunk(size) {
-      if (index >= text.length) {
-        this.push(null);
-      }
-      else {
-        this.push(text.substr(index, size));
-        index += size;
-      }
-    };
-    return textReadStream;
-  }
-
-  var advancing = false;
-  var iteration = 0;
-
-  function advanceAutomaton() {
-    if (advancing) {
-      console.log('Already advancing!');
-    }
-    else {
-      automaton.applyReactionToCells(liquidReaction);
-      automaton.updateCellmap();
-      iteration += 1;
-
-      var cellsToRender = cellmap.interestingCells()
-        .filter(cellShouldBeReRendered);
-      renderer.renderCells(cellsToRender);
-    }
-  }
+  }  
 
   function cellShouldBeReRendered(cell) {
     return true;
@@ -200,7 +140,12 @@ function createLiquidCAController() {
           console.log(error);
         }
         else {
-          loadMap(maptext, function initialRenderAfteDelay() {
+          loadMap({
+              maptext: maptext,
+              cellmap: cellmap,
+              createCellDataForKey: createCellDataForKey
+            }, 
+            function initialRenderAfteDelay() {
             // HACK. Once roguemap-parse-stream and cellmapWriteStream emit 
             // 'end' events, remove this setTimeout.
             setTimeout(function initialRender() {
