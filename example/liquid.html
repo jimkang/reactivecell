@@ -4,7 +4,7 @@
 <html>
 <head>
   <title>Cellular Automaton: Liquid</title>
-  <link rel="stylesheet" type="text/css" href="example.css" />
+  <link rel="stylesheet" type="text/css" href="liquidexample.css" />
   <script>
     (function(d) {
       var config = {
@@ -20,7 +20,7 @@
 
 <h2>Cellular Automaton: Liquid</h2>
 
-<svg id="board" height="656">
+<svg id="board" height="464" width="624">
   <g id="backdroplayer">
     <rect width="100%" height="100%"></rect>
   </g>
@@ -38,7 +38,10 @@
 
 <p class="explanation">
   This is a demo of the liquid cellular automaton reaction from <a href="https://github.com/jimkang/reactivecell">reactivecell</a>, and its dependencies, <a href="https://github.com/jimkang/cellmap">cellmap</a>, 
-  <a href="https://github.com/jimkang/roguemap-parse-stream">roguemap-parse-stream</a>, and <a href="https://github.com/jimkang/cellgridrenderer">cellgridrenderer</a>. Advancing the automaton spreads the liquid pressure in each cell to its neighbor, represented by the blue tiles (darker for more pressure), unless they are inert tiles (gray).
+  <a href="https://github.com/jimkang/roguemap-parse-stream">roguemap-parse-stream</a>, and <a href="https://github.com/jimkang/cellgridrenderer">cellgridrenderer</a>.
+</p>
+<p class="explanation">
+  Advancing the automaton spreads the liquid depth in each cell to its neighbor, depending on whether it is at a higher level. The depth of liquid in each cell is represented by saturation (the deeper the blue, the greater the depth). The elevation of the cell is represented by lightness. The darker the cell, the further recessed it is.
 </p>
 
 <br /><br />
@@ -58,6 +61,7 @@
 <script src="../node_modules/cellmap/hashcellmapmaker.js"></script>
 <script src="../node_modules/basic-browser-request/basicrequest.js"></script>
 <script src="../node_modules/roguemap-parse-stream/mapparserstream-browserified.js"></script>
+<script src="../node_modules/queue-async/queue.min.js"></script>
 <script src="loadmap.js"></script>
 <script src="../reactions/liquidreaction.js"></script>
 <script src="../automaton.js"></script>

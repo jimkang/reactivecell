@@ -5,17 +5,17 @@ function createLiquidCAController() {
     return 'translate(' + d.offset[0] + ',' + d.offset[1] + ')';
   });
 
-  function fillForPressure(cell) {
+  function fillForCell(cell) {
     if (cell.d.inert) {
-      return '#bbb';
+      return '#555';
     }
     else {
-      return 'hsla(200, 100%, 80%, ' + (0.25 + 0.75 * cell.d.liquid.depth/20000) + ')';
+      // Saturation will be determined by liquid depth.
+      // Lightness will come from elevation.
+      var saturation = 100 * cell.d.liquid.depth/5000;
+      var lightness = 70 + 30 * cell.d.elevation/30000;
+      return 'hsl(200, ' +  saturation + '%, ' + lightness + '%)';
     }
-  }
-
-  function getAlphaForPressure(pressure) {
-    return 0.25 + 0.75 * pressure/20000;
   }
 
   var liquidLayer = d3.select('#liquid-layer');
@@ -27,7 +27,7 @@ function createLiquidCAController() {
     customUpdate: function renderCellFills(cells) {
       // Setting the fill for this <g> means <rect>s within it will use that 
       // fill, too.
-      cells.attr('fill', fillForPressure);
+      cells.attr('fill', fillForCell);
     },
     selectors: {
       root: '#liquid-layer' 
@@ -55,10 +55,20 @@ function createLiquidCAController() {
         coords: _.cloneDeep(coords)
       };
     },
-    isDefault: function cellIsAtZeroPressure(cell) {
-      return !cell.d.inert && 
-        cell.d.liquid.depth === 0 && 
-          (!cell.nextD || cell.nextD.liquid.depth === 0);
+    isDefault: function cellIsDefault(cell) {
+      var isDef = true;
+      if (cell.d.inert) {
+        isDef = false;
+      }
+      else if (cell.d.liquid.depth !== 0 || cell.d.elevation !== 0) {
+        isDef = false;
+      }
+      else if (cell.nextD && 
+        (cell.nextD.liquid.depth !== 0 || cell.nextD.elevation !== 0)) {
+        isDef = false;
+      }
+
+      return isDef;
     }
   });
 
@@ -89,7 +99,7 @@ function createLiquidCAController() {
     }
   }
 
-function createCellDataForKey(key) {
+  function createCellDataForKey(key) {
     // '.' key corresponds to this fallthrough case.
     var d = {
       elevation: 0,
@@ -105,10 +115,29 @@ function createCellDataForKey(key) {
       d.liquid.depth = 1000;
     }
     else if (key === 'm') {
-      d.liquid.depth = 8000;
+      d.liquid.depth = 2000;
     }
     else if (key === 'h') {
-      d.liquid.depth = 20000;
+      d.liquid.depth = 5000;
+    }
+    return d;
+  }  
+
+  function addElevationDataForKey(key, d) {
+    // '.' key corresponds to this fallthrough case.
+    d.elevation = 0;
+
+    if (key === 'x') {
+      d.inert = true;
+    }
+    else if (key === 's') {
+      d.elevation = -5000;
+    }
+    else if (key === 'm') {
+      d.elevation = -15000;
+    }
+    else if (key === 'd') {
+      d.elevation = -30000;
     }
     return d;
   }  
@@ -131,38 +160,41 @@ function createCellDataForKey(key) {
     setUpKeyCommands();
     d3.select('#next-button').on('click', advanceAutomaton);
 
-    var req = createRequestMaker().makeRequest({
-      method: 'GET',
+    var q = queue(1);
+    q.defer(loadMapFromURL, {
       url: '../tests/data/liquidtests-big-tunnel-map.txt',
-      mimeType: 'text/plain',
-      done: function done(error, maptext) {
-        if (error) {
-          console.log(error);
-        }
-        else {
-          loadMap({
-              maptext: maptext,
-              cellmap: cellmap,
-              createCellDataForKey: createCellDataForKey
-            }, 
-            function initialRenderAfteDelay() {
-            // HACK. Once roguemap-parse-stream and cellmapWriteStream emit 
-            // 'end' events, remove this setTimeout.
-            setTimeout(function initialRender() {
-              renderer.renderCells(cellmap.interestingCells());
-            },
-            500);
-          });
-        }
+      cellmap: cellmap,
+      createCellDataForKey: createCellDataForKey,
+    });
+
+    q.defer(loadMapFromURL, {
+      url: '../tests/data/liquidtests-big-tunnel-elevation-map.txt',
+      cellmap: cellmap,
+      updateCellDataForKey: addElevationDataForKey
+    });
+
+    q.await(function useMaps(error) {
+      if (error) {
+        console.log(error);
       }
-    });    
+      else {
+        // HACK. Once roguemap-parse-stream and cellmapWriteStream emit 
+        // 'end' events, remove this setTimeout.
+        setTimeout(function initialRender() {
+          // TODO: Load elevation map. Try out nlz.io.
+          renderer.renderCells(cellmap.interestingCells());
+        },
+        500);
+      }
+    });
+
   })();
 
   return {
     cellmap: cellmap,
     renderer: renderer
   };
-};
+}
 
 var liquidCAController = createLiquidCAController();
 

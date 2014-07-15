@@ -36,12 +36,21 @@ function loadMap(opts, done) {
   }
 
   function addCellToMap(cellPack) {
-    opts.cellmap.setCell({
-      id: cellPack.coords[0] + '_' + cellPack.coords[1],
-      d: opts.createCellDataForKey(cellPack.key),
-      nextD: opts.createCellDataForKey(cellPack.key),
-      coords: cellPack.coords.slice()
-    });
+    var cell;
+    if (opts.createCellDataForKey) {
+      cell = {
+        id: cellPack.coords[0] + '_' + cellPack.coords[1],
+        d: opts.createCellDataForKey(cellPack.key),
+        nextD: opts.createCellDataForKey(cellPack.key),
+        coords: cellPack.coords.slice()
+      };
+    }
+    else {
+      cell = opts.cellmap.getCell(cellPack.coords);
+      opts.updateCellDataForKey(cellPack.key, cell.d);
+      opts.updateCellDataForKey(cellPack.key, cell.d);
+    }
+    opts.cellmap.setCell(cell);
   }
 
   function createTextReadStream(text) {
@@ -62,4 +71,22 @@ function loadMap(opts, done) {
     };
     return textReadStream;
   }
+}
+
+function loadMapFromURL(opts, done) {
+  var req = createRequestMaker().makeRequest({
+    method: 'GET',
+    url: opts.url,
+    mimeType: 'text/plain',
+    done: function xhrDone(error, maptext) {
+      if (error) {
+        console.log(error);
+      }
+      else {
+        var loadMapOpts = _.cloneDeep(opts);
+        loadMapOpts.maptext = maptext;
+        loadMap(loadMapOpts, done);
+      }
+    }
+  });
 }

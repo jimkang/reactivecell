@@ -100,6 +100,7 @@ function createCellMapmaker() {
       createDefaultCell: opts.createDefaultCell,
       isDefault: opts.isDefault,
       getCell: getCell,
+      coordsAreWithinBounds: coordsAreWithinBounds,
       setCell: setCell,
       setCells: setCells,
       getNeighbors: getNeighbors,
