@@ -5,16 +5,28 @@ function createLiquidCAController() {
     return 'translate(' + d.offset[0] + ',' + d.offset[1] + ')';
   });
 
+  var greatestDepth = 5000;
+  var lowestElevation = -30000;
+
+  // var defaultLabColor = d3.lab();
+  var interpolator = d3.interpolate(
+    d3.lab('hsl(150, 50%, 70%)'), d3.lab('hsl(300, 50%, 70%)')
+  );
+
   function fillForCell(cell) {
     if (cell.d.inert) {
-      return '#555';
+      return '#fff';
     }
     else {
       // Saturation will be determined by liquid depth.
       // Lightness will come from elevation.
-      var saturation = 100 * cell.d.liquid.depth/5000;
-      var lightness = 70 + 30 * cell.d.elevation/30000;
-      return 'hsl(200, ' +  saturation + '%, ' + lightness + '%)';
+      // var saturation = 10 + 90 * cell.d.liquid.depth/greatestDepth;
+      var lightness = 70 + 30 * cell.d.elevation/(-lowestElevation);
+      var a = 256 * cell.d.liquid.depth/greatestDepth - 128;
+      // console.log(d3.lab(lightness, 0, 0).toString());
+      return d3.lab(lightness, a, 48).toString();
+      // return 'hsl(200, ' +  saturation + '%, ' + lightness + '%)';
+      // return interpolator(cell.d.liquid.depth/greatestDepth);
     }
   }
 
@@ -128,7 +140,7 @@ function createLiquidCAController() {
       d.liquid.depth = 2000;
     }
     else if (key === 'h') {
-      d.liquid.depth = 5000;
+      d.liquid.depth = greatestDepth;
     }
     return d;
   }  
@@ -147,7 +159,7 @@ function createLiquidCAController() {
       d.elevation = -15000;
     }
     else if (key === 'd') {
-      d.elevation = -30000;
+      d.elevation = lowestElevation;
     }
     return d;
   }  

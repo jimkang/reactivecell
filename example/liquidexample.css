@@ -95,7 +95,7 @@ dt.dismiss-link-container {
 
 #backdroplayer {
   /* Default cell color. */
-  fill: hsl(200, 0%, 70%);
+  fill: #00d54a;
 }
 
 @media all and (max-width: 586px) {
