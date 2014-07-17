@@ -83,6 +83,7 @@ function createLiquidCAController() {
 
   var advancing = false;
   var iteration = 0;
+  var advanceKey = null;
 
   function advanceAutomaton() {
     if (advancing) {
@@ -97,6 +98,15 @@ function createLiquidCAController() {
         .filter(cellShouldBeReRendered);
       renderer.renderCells(cellsToRender);
     }
+  }
+
+  function pauseAutomaton() {
+    clearInterval(advanceKey);
+    advanceKey = null;
+  }
+
+  function resumeAutomaton() {
+    advanceKey = setInterval(advanceAutomaton, 400);
   }
 
   function createCellDataForKey(key) {
@@ -159,6 +169,8 @@ function createLiquidCAController() {
   (function init() {
     setUpKeyCommands();
     d3.select('#next-button').on('click', advanceAutomaton);
+    d3.select('#pause-button').on('click', pauseAutomaton);
+    d3.select('#resume-button').on('click', resumeAutomaton);
 
     var q = queue(1);
     q.defer(loadMapFromURL, {
@@ -188,6 +200,7 @@ function createLiquidCAController() {
       }
     });
 
+    resumeAutomaton();
   })();
 
   return {
