@@ -98,6 +98,10 @@ dt.dismiss-link-container {
   fill: #00d54a;
 }
 
+#backdroplayer.elevation-only {
+  fill: #ababab;
+}
+
 @media all and (max-width: 586px) {
   /* If the screen is narrow, the sidebar comes first and takes up the whole 
   width. */

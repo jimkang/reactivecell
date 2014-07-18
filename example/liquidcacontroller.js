@@ -15,18 +15,26 @@ function createLiquidCAController() {
 
   function fillForCell(cell) {
     if (cell.d.inert) {
-      return '#fff';
+      return '#333';
     }
     else {
-      // Saturation will be determined by liquid depth.
       // Lightness will come from elevation.
-      // var saturation = 10 + 90 * cell.d.liquid.depth/greatestDepth;
-      var lightness = 70 + 30 * cell.d.elevation/(-lowestElevation);
-      var a = 256 * cell.d.liquid.depth/greatestDepth - 128;
-      // console.log(d3.lab(lightness, 0, 0).toString());
-      return d3.lab(lightness, a, 48).toString();
-      // return 'hsl(200, ' +  saturation + '%, ' + lightness + '%)';
-      // return interpolator(cell.d.liquid.depth/greatestDepth);
+      // a and be will come from liquid depth.
+      // Deeper is purpler, shallower is greener.
+      var lightness = 70;
+      if (depictElevation) {
+        lightness = 70 + 30 * cell.d.elevation/(-lowestElevation);
+      }
+      var a = 0;
+      var b = 0;
+      if (depictDepth) {
+        var depthRatio = cell.d.liquid.depth/greatestDepth;
+        // a = (1.0 - depthRatio) * -128;
+        a = depthRatio * -128;
+        b = depthRatio * 256 - 128;
+      }
+      
+      return d3.lab(lightness, a, b).toString();
     }
   }
 
@@ -118,7 +126,42 @@ function createLiquidCAController() {
   }
 
   function resumeAutomaton() {
-    advanceKey = setInterval(advanceAutomaton, 400);
+    advanceKey = setInterval(advanceAutomaton, 700);
+  }
+
+  var displayMode = 0;
+  var depictElevation = true;
+  var depictDepth = true;
+
+  function toggleDisplayMode() {
+    displayMode += 1;
+    if (displayMode > 2) {
+      displayMode = 0;
+    }
+
+    var modeTextSpan = d3.select('#display-mode-text');
+    var modeButton = d3.select('#toggle-display-mode-button');
+
+    if (displayMode === 0) {
+      depictElevation = true;
+      depictDepth = true;
+      modeTextSpan.text('both liquid depth and elevation');
+      modeButton.text('Show elevation only');
+    }
+    else if (displayMode === 1) {
+      depictElevation = true;
+      depictDepth = false;
+      modeTextSpan.text('elevation only');
+      modeButton.text('Show liquid depth only');
+    }
+    else if (displayMode === 2) {
+      depictElevation = false;
+      depictDepth = true;
+      modeTextSpan.text('liquid depth only');
+      modeButton.text('Show both liquid depth and elevation');
+    }
+
+    d3.select('#backdroplayer').classed('elevation-only', !depictDepth);
   }
 
   function createCellDataForKey(key) {
@@ -183,6 +226,7 @@ function createLiquidCAController() {
     d3.select('#next-button').on('click', advanceAutomaton);
     d3.select('#pause-button').on('click', pauseAutomaton);
     d3.select('#resume-button').on('click', resumeAutomaton);
+    d3.select('#toggle-display-mode-button').on('click', toggleDisplayMode);
 
     var q = queue(1);
     q.defer(loadMapFromURL, {
