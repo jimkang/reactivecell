@@ -32,6 +32,11 @@ a {
   border: 2px solid #ddd;
 }
 
+ul.instructions {
+  padding-left: 1.5em;
+  list-style-type: circle;
+}
+
 dt {
   font-weight: 500;
 }

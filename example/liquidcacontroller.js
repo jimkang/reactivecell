@@ -247,8 +247,17 @@ function createLiquidCAController() {
 
     function routeToNext(key) {
       strokerouter.routeKeyUp(key, null, advanceAutomaton);
+    }    
+    function routeToTogglePlay(key) {
+      strokerouter.routeKeyUp(key, null, toggleAutomaton);
     }
-    ['rightArrow', 'downArrow', 'space', 'enter', 'n'].forEach(routeToNext);
+    function routeToDisplayMode(key) {
+      strokerouter.routeKeyUp(key, null, toggleDisplayMode);
+    }
+
+    ['rightArrow', 'downArrow', 'n'].forEach(routeToNext);
+    ['space', 'enter', 'p'].forEach(routeToTogglePlay);
+    ['v', 'd'].forEach(routeToDisplayMode);
   }
 
   (function init() {
