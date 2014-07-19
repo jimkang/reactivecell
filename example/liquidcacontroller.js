@@ -13,17 +13,17 @@ function createLiquidCAController() {
     d3.lab('hsl(150, 50%, 70%)'), d3.lab('hsl(300, 50%, 70%)')
   );
 
-  // Blue
+  // Orange
   var maxDepthColor = {
     l: 70,
-    a: -34,
-    b: 28
+    a: 69,
+    b: 38
   };
-  // Yellow
+  // Green
   var minDepthColor = {
     l: 70,
-    a: -23,
-    b: 71
+    a: -79,
+    b: 82
   };
 
   var interpolator = d3.interpolateLab(
