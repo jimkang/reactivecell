@@ -13,9 +13,27 @@ function createLiquidCAController() {
     d3.lab('hsl(150, 50%, 70%)'), d3.lab('hsl(300, 50%, 70%)')
   );
 
+  // Blue
+  var maxDepthColor = {
+    l: 70,
+    a: -34,
+    b: 28
+  };
+  // Yellow
+  var minDepthColor = {
+    l: 70,
+    a: -23,
+    b: 71
+  };
+
+  var interpolator = d3.interpolateLab(
+    d3.lab(minDepthColor.l, minDepthColor.a, minDepthColor.b), 
+    d3.lab(maxDepthColor.l, maxDepthColor.a, maxDepthColor.b)
+  );
+
   function fillForCell(cell) {
     if (cell.d.inert) {
-      return '#333';
+      return '#fff';
     }
     else {
       // Lightness will come from elevation.
@@ -25,16 +43,15 @@ function createLiquidCAController() {
       if (depictElevation) {
         lightness = 70 + 30 * cell.d.elevation/(-lowestElevation);
       }
-      var a = 0;
-      var b = 0;
+      var colorString = 'hsl(0, 0%, ' + lightness +'%)';
       if (depictDepth) {
         var depthRatio = cell.d.liquid.depth/greatestDepth;
-        // a = (1.0 - depthRatio) * -128;
-        a = depthRatio * -128;
-        b = depthRatio * 256 - 128;
+        var color = interpolator(depthRatio);
+        color.l = lightness;
+        colorString = color.toString();
       }
       
-      return d3.lab(lightness, a, b).toString();
+      return colorString;
     }
   }
 
@@ -126,7 +143,7 @@ function createLiquidCAController() {
   }
 
   function resumeAutomaton() {
-    advanceKey = setInterval(advanceAutomaton, 700);
+    advanceKey = setInterval(advanceAutomaton, 1000);
   }
 
   var displayMode = 0;
@@ -162,6 +179,7 @@ function createLiquidCAController() {
     }
 
     d3.select('#backdroplayer').classed('elevation-only', !depictDepth);
+    renderer.renderCells(cellmap.interestingCells());
   }
 
   function createCellDataForKey(key) {
