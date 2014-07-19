@@ -46,7 +46,7 @@ function createLiquidCAController() {
       var colorString = 'hsl(0, 0%, ' + lightness +'%)';
       if (depictDepth) {
         var depthRatio = cell.d.liquid.depth/greatestDepth;
-        var color = interpolator(depthRatio);
+        var color = d3.lab(interpolator(depthRatio));
         color.l = lightness;
         colorString = color.toString();
       }
