@@ -19,7 +19,7 @@ function clamp(value, min, max) {
 function createLiquidReaction(opts) {
   opts = opts ? opts : {};
   _.defaults(opts, {
-    flowCoeff: 0.28
+    flowCoeff: 0.26
   });
 
   function flowOutToCell(src, level, numberOfDestCells, dest) {

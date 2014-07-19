@@ -137,6 +137,18 @@ function createLiquidCAController() {
     }
   }
 
+  function toggleAutomaton() {
+    var toggleAutomatonButton = d3.select('#toggle-play-button');
+    if (advanceKey) {
+      pauseAutomaton();
+      toggleAutomatonButton.text('Play');
+    }
+    else {
+      resumeAutomaton();
+      toggleAutomatonButton.text('Pause');
+    }
+  }
+
   function pauseAutomaton() {
     clearInterval(advanceKey);
     advanceKey = null;
@@ -242,8 +254,7 @@ function createLiquidCAController() {
   (function init() {
     setUpKeyCommands();
     d3.select('#next-button').on('click', advanceAutomaton);
-    d3.select('#pause-button').on('click', pauseAutomaton);
-    d3.select('#resume-button').on('click', resumeAutomaton);
+    d3.select('#toggle-play-button').on('click', toggleAutomaton);
     d3.select('#toggle-display-mode-button').on('click', toggleDisplayMode);
 
     var q = queue(1);
@@ -274,7 +285,6 @@ function createLiquidCAController() {
       }
     });
 
-    resumeAutomaton();
   })();
 
   return {
