@@ -30,7 +30,7 @@
 </svg>
 
 <p>
-  Displaying <span id="display-mode-text">both liquid depth and elevation</span>.
+  Displaying <span id="display-mode-text">both liquid concentration and elevation</span>.
 </p>
 
 <p>
@@ -42,7 +42,7 @@
 
 <ul class="legend">
   <li>
-      <h3>Liquid depth</h3>
+      <h3>Liquid concentration</h3>
   </li>
   <li id="legend-low">
     <svg width="64" height="30"><rect width="100%" height="100%"></rect></svg> <span>0 units deep</span>
@@ -59,7 +59,7 @@
 <ul class="instructions">
   <li>To advance the automaton one step, use the Next button or the right, down, or N keys.</li>
   <li>To make the automaton advance on its own, hit the Play button or the P, space, or enter keys. Use those same keys to pause it.</li>
-  <li>To change the display mode (show the depth of the liquid, the elevation, or both), hit the button on the right or the V or D.</li>
+  <li>To change the display mode (show the concentration of the liquid, the elevation, or both), hit the button on the right or the V or D.</li>
 </ul>
 
 <p class="explanation">
@@ -67,7 +67,7 @@
   <a href="https://github.com/jimkang/roguemap-parse-stream">roguemap-parse-stream</a>, and <a href="https://github.com/jimkang/cellgridrenderer">cellgridrenderer</a>.
 </p>
 <p class="explanation">
-  Advancing the automaton spreads the liquid depth in each cell to its neighbor, depending on whether it is at a higher level. The depth of liquid in each cell is represented by color (green is shallow and pink/orange is deep). The elevation of the cell is represented by lightness. The darker the cell, the further recessed it is.
+  Advancing the automaton spreads the liquid concentration in each cell to its neighbor, depending on whether it is at a higher level. The concentration of liquid in each cell is represented by color (green is shallow and pink/orange is deep). The elevation of the cell is represented by lightness. The darker the cell, the further recessed it is.
 </p>
 
 <br /><br />

@@ -200,20 +200,20 @@ function createLiquidCAController() {
     if (displayMode === 0) {
       depictElevation = true;
       depictDepth = true;
-      modeTextSpan.text('both liquid depth and elevation');
+      modeTextSpan.text('both liquid concentration and elevation');
       modeButton.text('Show elevation only');
     }
     else if (displayMode === 1) {
       depictElevation = true;
       depictDepth = false;
       modeTextSpan.text('elevation only');
-      modeButton.text('Show liquid depth only');
+      modeButton.text('Show liquid concentration only');
     }
     else if (displayMode === 2) {
       depictElevation = false;
       depictDepth = true;
       modeTextSpan.text('liquid depth only');
-      modeButton.text('Show both liquid depth and elevation');
+      modeButton.text('Show both liquid concentration and elevation');
     }
 
     d3.select('#backdroplayer').classed('elevation-only', !depictDepth);
