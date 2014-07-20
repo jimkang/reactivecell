@@ -7,29 +7,52 @@ function createLiquidCAController() {
 
   var greatestDepth = 5000;
   var lowestElevation = -30000;
+  var greatestPotentialDepth = -lowestElevation;
 
-  // var defaultLabColor = d3.lab();
-  var interpolator = d3.interpolate(
-    d3.lab('hsl(150, 50%, 70%)'), d3.lab('hsl(300, 50%, 70%)')
-  );
+  var baseLightness = 75;
+
+  // Pink
+  var maxDepthColor = {
+    l: baseLightness,
+    a: 75,
+    b: -20
+  };
 
   // Orange
-  var maxDepthColor = {
-    l: 70,
-    a: 69,
-    b: 38
+  var middleDepthColor = {
+    l: baseLightness,
+    a: 55,
+    b: 29
   };
+
   // Green
   var minDepthColor = {
-    l: 70,
+    l: baseLightness,
     a: -79,
     b: 82
   };
 
-  var interpolator = d3.interpolateLab(
-    d3.lab(minDepthColor.l, minDepthColor.a, minDepthColor.b), 
-    d3.lab(maxDepthColor.l, maxDepthColor.a, maxDepthColor.b)
-  );
+  var easeABFirstHalf = d3.ease('cubic-out'); // Big initial steepness.
+  var easeABSecondHalf = d3.ease('cubic-in'); // Steepness at end.
+
+  function easeDimensionFirstHalf(dimension, ratio) {
+    var range = middleDepthColor[dimension] - minDepthColor[dimension];
+    return minDepthColor[dimension] + easeABFirstHalf(ratio) * range;
+  }
+
+  function easeDimensionSecondHalf(dimension, ratio) {
+    var range = maxDepthColor[dimension] - middleDepthColor[dimension];
+    return middleDepthColor[dimension] + easeABSecondHalf(ratio) * range;
+  }
+
+  function easeDimension(dimension, ratio) {
+    if (ratio < 0.5) {
+      return easeDimensionFirstHalf(dimension, ratio * 2);
+    }
+    else {
+      return easeDimensionSecondHalf(dimension, (ratio - 0.5) * 2);
+    }
+  }
 
   function fillForCell(cell) {
     if (cell.d.inert) {
@@ -37,17 +60,20 @@ function createLiquidCAController() {
     }
     else {
       // Lightness will come from elevation.
-      // a and be will come from liquid depth.
-      // Deeper is purpler, shallower is greener.
-      var lightness = 70;
+      // a and b will come from liquid depth.
+      var lightness = baseLightness;
       if (depictElevation) {
-        lightness = 70 + 30 * cell.d.elevation/(-lowestElevation);
+        lightness += (100 - lightness) * cell.d.elevation/(-lowestElevation);
       }
       var colorString = 'hsl(0, 0%, ' + lightness +'%)';
       if (depictDepth) {
-        var depthRatio = cell.d.liquid.depth/greatestDepth;
-        var color = d3.lab(interpolator(depthRatio));
-        color.l = lightness;
+        var depthRatio = cell.d.liquid.depth/greatestPotentialDepth;
+        var color = d3.lab(
+          lightness,
+          easeDimension('a', depthRatio),
+          easeDimension('b', depthRatio)
+        );
+
         colorString = color.toString();
       }
       

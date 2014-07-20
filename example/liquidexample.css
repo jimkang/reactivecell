@@ -100,11 +100,28 @@ dt.dismiss-link-container {
 
 #backdroplayer {
   /* Default cell color. */
-  fill: #00c900;
+  fill: #00d700;
 }
 
 #backdroplayer.elevation-only {
-  fill: #ababab;
+  fill: hsl(0, 0%, 75%);
+}
+
+#legend-low {
+  fill: #00d700;
+}
+
+#legend-medium {
+  fill: #ebac66;
+}
+
+#legend-high {
+  fill: #ff77df;
+}
+
+ul.legend {
+  list-style-type: none;
+  padding-left: 0.1em;
 }
 
 @media all and (max-width: 586px) {
